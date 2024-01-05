@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .two {
+            /* Define styles for the div with class "two" here */
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+        }
+
+        .three {
+            /* Define styles for the added class "three" here */
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="one" onclick="toggleClass()">Toggle Class</button>
+    <div class="two" id="targetDiv">Content</div>
+
+    <script>
+        function toggleClass() {
+            var targetDiv = document.getElementById('targetDiv');
+
+            // Toggle the class "three" on the div
+            targetDiv.classList.toggle('three');
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./techversol.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+
+            <nav class="desktop-menu">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="logo">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Company </a></li>
+                        <li><a href="#">Visualization </a></li>
+                        <li><a href="#">Development </a></li>
+                        <li><a href="#">Industries </a></li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="tablet-mobile-menu">
+                <div class="menu-first-row">
+                    <div class="logo">
+                        <img src="./images/logo.png" alt="logo">
+                    </div>
+                    <div class="hamburger hamburger-icon" id="hamburger-icon" onclick="toggleClass()">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+
+
+                <div class="tab-mob-menu">
+
+                    <div class="menu-container" id="targetDiv">
+                        <ul>
+                            <li><a href="#">Company </a></li>
+                            <li><a href="#">Visualization </a></li>
+                            <li><a href="#">Development </a></li>
+                            <li><a href="#">Industries </a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="banner-section">
+        <div class="banner flex-col">
+
+            <div class="banner-content content-center-flex ">
+                <h1>
+                    We
+                    <br>
+                    Are
+                    <br>
+                    Techversol
+                </h1>
+                <p>
+                    We help clients visually represent their project ideas. And we can also build these environments
+                    when needed. We develop digital assets, apps, and utilities to help clients like you achieve
+                    strategic and tactical goals.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="section">
+            <div class="flex-row">
+                <div class="flex-col col1 ">
+                    <div class="alignment">
+                        <div class="sub-heading">
+                            <h2>
+                                VISUALIZE ARCHITECTURE & ENVIRONMENTS 
+                            </h2>
+                        </div>
+                        <div class="paragraph">
+                            <p>
+                                We give our clients the ability to see the future and deliver enriched customer experiences
+                                in a variety of virtual environments and visualization modes.
+                            </p>
+                        </div>
+                        <div class="button-container">
+                            <div class="flex-row button-row">
+                                <button> <a href="#">row1 button 1</a></button>
+                                <button> <a href="#">row1 button 1</a></button>
+                                
+                            </div>
+                            <div class="flex-row button-row">
+                                <button> <a href="#">row1 button 1</a></button>
+                                <button> <a href="#">row1 button 1</a></button>
+                            </div>
+    
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="flex-col col2">
+                    <div>
+                        <img src="./images/Group 30.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        hamburgerIcon.addEventListener('click', function () {
+            hamburgerIcon.classList.toggle('open');
+        });
+        function toggleClass() {
+            var targetDiv = document.getElementById('targetDiv');
+
+            // Toggle the class "three" on the div
+            targetDiv.classList.toggle('three');
+        }
+    </script>
+
+
+</body>
+
+</html>
