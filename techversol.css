@@ -10,7 +10,9 @@ body {
     margin: 0px;
     padding: 0px;
     box-sizing: box;
+    scroll-behavior: smooth;
     /* overflow: hidden; */
+    transition: background-color 0.8s ease;
 }
 
 section {
@@ -23,6 +25,7 @@ img {
 a{
     text-decoration: none;
 }
+
 /* ----------- */
 
 
@@ -258,7 +261,9 @@ ul li a:hover:before {
 
 
 
-
+section{
+    height:100%;
+}
 
 
 
@@ -269,8 +274,8 @@ ul li a:hover:before {
 /* home 2nd sec */
 .section2 .section {
     display: flex;
-    background-color: #52C1D0;
-
+    /* background-color: #52C1D0; */
+    background-color: transparent;
     align-items: center;
     justify-content: center;
 }
@@ -280,6 +285,7 @@ ul li a:hover:before {
     /* background-color: #52C1D0; */
     padding-left: 100px;
     width: 50%;
+    background-color: transparent;
 }
 
 .section2 .section .flex-row .col2 {
@@ -299,8 +305,8 @@ ul li a:hover:before {
 }
 
 .section2 .section .flex-row {
-
-    background-color: #52C1D0;
+    background-color: transparent;
+    /* background-color: #52C1D0; */
     width: 100%;
     max-width: 1800px;
     display: flex;
@@ -408,7 +414,7 @@ ul li a:hover:before {
 .section3 .section {
     display: flex;
     background-color: #ffffff;
-
+    background: transparent;
     align-items: center;
     justify-content: center;
 }
@@ -418,6 +424,7 @@ ul li a:hover:before {
     /* background-color: #52C1D0; */
     padding-left: 100px;
     width: 50%;
+    background: transparent;
 }
 
 .section3 .section .flex-row .col2 {
@@ -426,15 +433,16 @@ ul li a:hover:before {
     background-repeat: no-repeat;
     display: flex;
     width: 50%;
-    background-color: #ddedef;
+    background-color: transparent;
+    /* background-color: #ddedef; */
     background-size: cover;
     align-items: center;
     justify-content: flex-start;
 }
 
 .section3 .section .flex-row {
-
-    background-color: #ffffff;
+    background-color: transparent;
+    /* background-color: #ffffff; */
     width: 100%;
     max-width: 1800px;
     display: flex;
@@ -560,8 +568,9 @@ ul li a:hover:before {
 
 /* sec 4 */
 .section4 .section {
+    background-color: transparent;
     display: flex;
-    background-color: #082C4C;
+    /* background-color: #082C4C; */
 
     align-items: center;
     justify-content: center;
@@ -586,8 +595,8 @@ ul li a:hover:before {
 }
 
 .section4 .section .flex-row {
-
-    background-color: #082C4C;
+background-color: transparent;
+    /* background-color: #082C4C; */
     width: 100%;
     max-width: 1800px;
     display: flex;
@@ -608,7 +617,9 @@ ul li a:hover:before {
     text-transform: uppercase;
 
 }
-
+section{
+    background-color: transparent;
+}
 .section4 .section .flex-row .alignment .paragraph p {
     color: #ffffff;
     font-family: Poppins;
