@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- header section of home -->
     <header>
         <div class="navbar">
 
@@ -54,6 +55,9 @@
             </nav>
         </div>
     </header>
+
+
+    <!-- first body section -->
     <section class="banner-section">
         <div class="banner flex-col">
 
@@ -75,14 +79,16 @@
         </div>
     </section>
 
-    <section class="section2" >
+
+    <!-- second body section -->
+    <section class="section2">
         <div class="section">
-            <div class="flex-row" id="section1">
+            <div class="flex-row padding" id="section1">
                 <div class="flex-col col1 ">
                     <div class="alignment">
                         <div class="sub-heading">
                             <h2>
-                                VISUALIZE <br>ARCHITECTURE & ENVIRONMENTS 
+                                VISUALIZE ENVIRONMENTS 
                             </h2>
                         </div>
                         <div class="paragraph">
@@ -107,7 +113,7 @@
                     </div>
 
                 </div>
-                <div class="flex-col col2">
+                <div class="flex-col col2" id="col1">
                     <div class="bg-img">
                         <!-- <img src="./images/Group 30.png" alt=""> -->
                     </div>
@@ -115,16 +121,16 @@
             </div>
         </div>
     </section>
-    <section class="section3" >
+
+    <!-- third body section -->
+    <section class="section3">
         <div class="section">
-            <div class="flex-row" id="section2">
+            <div class="flex-row padding" id="section2" >
                 <div class="flex-col col1 ">
                     <div class="alignment">
                         <div class="sub-heading">
                             <h2>
-                                DEVELOP<br>
-                                DIGITAL UTILITIES
-                                & PRODUCTS  
+                                DEVELOP DIGITAL ASSETS
                             </h2>
                         </div>
                         <div class="paragraph">
@@ -139,8 +145,8 @@
                                 <button> <a href="#">WEBSITES</a></button>
 
                             </div>
-                            <div class="flex-row button-row">
-                                <button> <a href="#">Apps</a></button>
+                            <div class="flex-row button-row width-a">
+                                <button class="width-o"> <a href="#">Apps</a></button>
                                 <!-- <button> <a href="#">row1 button 1</a></button> -->
                             </div>
 
@@ -148,7 +154,7 @@
                     </div>
 
                 </div>
-                <div class="flex-col col2">
+                <div class="flex-col col2" id="col2">
                     <div class="bg-img">
                         <!-- <img src="./images/Group 30.png" alt=""> -->
                     </div>
@@ -158,9 +164,11 @@
             </div>
         </div>
     </section>
-    <section class="section4" >
+
+    <!-- four body section -->
+    <section class="section4">
         <div class="section">
-            <div class="flex-row" id="section3">
+            <div class="flex-row padding" id="section3">
                 <div class="flex-col col1 ">
                     <div class="alignment">
                         <div class="sub-heading">
@@ -192,7 +200,7 @@
                     </div>
 
                 </div>
-                <div class="flex-col col2">
+                <div class="flex-col col2" id="col3">
                     <div class="bg-img">
                         <!-- <img src="./images/Group 30.png" alt=""> -->
                     </div>
@@ -202,6 +210,217 @@
             </div>
         </div>
     </section>
+
+    <!-- five body section -->
+    <section class="section5">
+        <div class="slider-main">
+            <div class="slider">
+                <div class="navigation-arrows-container">
+                    <div class="quote-image"><img src="./images/Quote.png" alt=""></div>
+                    <div class="arrows">
+                        <div class="left-arrow" onclick="prevSlide()"><img src="./images/Arrow 4 (1).png" alt=""></div>
+                        <div class="right-arrow" onclick="nextSlide()"><img src="./images/Arrow 3.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div id="slide1" class="slide">
+                        <p>“It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution”</p>
+                    </div>
+                    <div id="slide2" class="slide">
+                        <p>“Its is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution”</p>
+                    </div>
+                    <div id="slide3" class="slide">
+                        <p>“Itss is a long established fact that a reader will be distracted by the readable content of
+                            a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution”</p>
+                    </div>
+                    <div id="slide4" class="slide">
+                        <p>“Itsss is a long established fact that a reader will be distracted by the readable content of
+                            a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution”</p>
+                    </div>
+                    <div id="slide5" class="slide">
+                        <p>“It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution”</p>
+                    </div>
+                </div>
+                <div class="complete-percentage"><span style="width: 0;"></span></div>
+                <div class="tabs-container">
+
+                    <div class="slide1 tabs" onclick="goToSlide(1)">
+                        <h4>
+                            John Brent
+                        </h4>
+                        <p>
+                            It is a long established
+                        </p>
+                    </div>
+                    <div class="slide2 tabs" onclick="goToSlide(2)">
+                        <h4>
+                            John Brent
+                        </h4>
+                        <p>
+                            It is a long established
+                        </p>
+                    </div>
+                    <div class="slide3 tabs" onclick="goToSlide(3)">
+                        <h4>
+                            John Brent
+                        </h4>
+                        <p>
+                            It is a long established
+                        </p>
+                    </div>
+                    <div class="slide4 tabs" onclick="goToSlide(4)">
+                        <h4>
+                            John Brent
+                        </h4>
+                        <p>
+                            It is a long established
+                        </p>
+                    </div>
+                    <div class="slide5 tabs" onclick="goToSlide(5)">
+                        <h4>
+                            John Brent
+                        </h4>
+                        <p>
+                            It is a long established
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- six body section -->
+    <section class="section6">
+        <div class="row">
+            <div class="column">
+                <h2>Reserve your spot today!</h2>
+                <button><a href="">Let’s Talk</a></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- seven body section -->
+
+    <footer>
+
+        <div class="row">
+            <div class="column">
+                <div class="inner-column1">
+                    <div class="inner-column1-item1">
+                        <p class="gray-text">US Office</p>
+                        <p>8 The Green, Ste 16430, Dover, DE 19901</p>
+                    </div>
+                    <div class="inner-column1-item2">
+                        <p class="gray-text">Pakistan Office</p>
+                        <p>Plot # S3-S6 Block D Gulshan-e-Jamal, Suite #101, Karachi, Sindh 75300, PK.</p>
+                    </div>
+                </div>
+                <div class="inner-column2">
+                    <div class="inner-column2-item1">
+                        <p>About Us</p>
+                        <p>Contact Us</p>
+                        <p>Blog & News</p>
+                        <p>Careers</p>
+                    </div>
+                    <div class="inner-column2-item2">
+                        <P>3D Rendering</P>
+                        <P>Configurators</P>
+                        <P>Metaverse</P>
+                        <P>Alternate Reality</P>
+                        <P>Websites</P>
+                        <P>Apps</P>
+                        <P>Games</P>
+                    </div>
+                    <div class="inner-column2-item3">
+                        <P>Instagram </P>
+                        <P>LinkedIn</P>
+                        <P>Twitter</P>
+                    </div>
+                    <div class="inner-column2-item4">
+                        <P>hello@techversol.com</P>
+                        <P>jobs@techversol.com</P>
+                        <P>business@techversol.com</P>
+                        <P>press@techversol.com</P>
+                    </div>
+                </div>
+                <div class="inner-column3">
+<P>© 2024 <SPan style="color: #52C1D0;">Techversol </SPan>Inc. All Rights Reserved</P>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- slider section -->
+    <script>
+        // script.js
+
+        let currentSlide = 1;
+        let completionWidth = 0;
+
+        document.addEventListener('DOMContentLoaded', function () {
+            showSlide(currentSlide);
+        });
+
+        function showSlide(n) {
+            const slides = document.getElementsByClassName("slide");
+            const percentageSpan = document.querySelector(".complete-percentage span");
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slides[currentSlide - 1].style.display = "block";
+
+            // Update completion width for each individual slide
+            completionWidth = (currentSlide / slides.length) * 100;
+
+            percentageSpan.style.width = completionWidth + "%";
+        }
+
+        function nextSlide() {
+            if (currentSlide < 5) {
+                currentSlide++;
+            } else {
+                currentSlide = 1;
+            }
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            if (currentSlide > 1) {
+                currentSlide--;
+            } else {
+                currentSlide = 5;
+            }
+            showSlide(currentSlide);
+        }
+
+        function goToSlide(n) {
+            currentSlide = n;
+            showSlide(currentSlide);
+        }
+
+        function autoPlay() {
+            nextSlide();
+        }
+
+        // Auto play every 3 seconds
+        setInterval(autoPlay, 5000);
+    </script>
+
+    <!-- menu toggle humburger scripte  -->
     <script>
         const hamburgerIcon = document.getElementById('hamburger-icon');
         hamburgerIcon.addEventListener('click', function () {
@@ -214,10 +433,11 @@
             targetDiv.classList.toggle('three');
         }
 
-        
+
     </script>
 
-<script src="./script.js"></script>
+    <script src="./script.js"></script>
+    <script src="./script2.js"> </script>
 </body>
 
 </html>

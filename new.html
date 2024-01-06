@@ -1,75 +1,355 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-    margin: 0;
-    padding: 0;
-    transition: background-color 0.8s ease;
-}
+    <style>
+        /* styles.css */
 
-.section {
-    height: 60vh;
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .slider-main {
+            padding: 150px 0px;
+            display: flex;
+            /* width: 90%; */
+            /* max-width: 1600px; */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slider {
+            max-width: 1600px;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navigation-arrows-container {
+            width: 100%;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navigation-arrows-container .arrows {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+
+        .left-arrow,
+        .right-arrow {
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        .slider-container {
+            overflow: hidden;
+            width: 100%;
+            /* Adjust the width as needed */
+            position: relative;
+        }
+
+        .slide {
+            width: 100%;
+            display: none;
+            padding: 20px;
+        }
+
+        .slide p {
+           
+            color: #000;
+            font-family: Poppins;
+            font-size: 45px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 57px;
+            /* 126.667% */
+        }
+
+        .complete-percentage {
+            width: 100%;
+            height: 5px;
+            background-color: #ffffff;
+            margin-top: 10px;
+            position: relative;
+        }
+
+        .complete-percentage span {
+            display: block;
+            height: 100%;
+            background: #52C1D0;
+            transition: width 0.3s ease;
+            /* Transition effect for a smoother animation */
+        }
+
+        .tabs-container {
+            column-gap: 5px;
+            width: 100%;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* styles.css */
+
+        .tabs {
+            width: 100%;
+            /* background-color: #ccc; */
+            margin: 0 0px;
+            cursor: pointer;
+        }
+
+        .tabs h4 {
+            margin-bottom: 0px;
+            color: #000;
+            font-family: Poppins;
+            font-size: 22.416px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        .tabs p {
+            margin-top: 5px;
+            color: #626262;
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            /* 160% */
+        }
+
+        .tabs.active {
+            /* Removed the border effect from active tabs */
+        }
+
+
+
+
+
+
+/* section5 */
+        .row {
+    background: #52C1D0;
     display: flex;
-    justify-content: center;
+    padding: 100px 30px;
     align-items: center;
-    font-size: 2em;
+    justify-content: center;
+}
+.column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.column h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 900;
+    margin-bottom: 10px;
+    line-height: 97px;
+    text-transform: capitalize;
+}
+.column button {
+    padding: 10px 0px;
+    border: 2px solid #FFF;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+
 }
 
-#section1 {
-    background-color: rgba(255, 255, 255, 0);
+.column button a {
+    transition: all 0.3s ease-in-out;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    text-decoration: none;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 45px;
+    text-transform: uppercase;
+    padding: 30px;
 }
+.column button:hover {
+    transform: scale(1.03);
+    background: #ffffff;
+    border: 2px solid #ffffff;
+ }
+ .column button:hover a {
+     color: #7FDAE7 !important;
+     /* Text color remains unchanged on hover */
+ }
 
-#section2 {
-    background-color: rgba(255, 255, 255, 0);
-}
-
-#section3 {
-    background-color: rgba(255, 255, 255, 0);
-}
-
-/* Add additional styling for each section as needed */
-
-  </style>
-    <title>Scroll Color Change</title>
+    </style>
+    <title>Slider</title>
 </head>
 
 <body>
-    <div class="section" id="section1">Section 1</div>
-    <div class="section" id="section2">Section 2</div>
-    <div class="section" id="section3">Section 3</div>
-    <div class="section" id="section4">Section 3</div>
-</body>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const section1 = document.getElementById("section1");
-    const section2 = document.getElementById("section2");
-    const section3 = document.getElementById("section3");
+    <section class="section5">
+        <div class="slider-main">
+            <div class="slider">
+                <div class="navigation-arrows-container">
+                    <div class="quote-image"><img src="./images/Quote.png" alt=""></div>
+                    <div class="arrows">
+                        <div class="left-arrow" onclick="prevSlide()"><img src="./images/Arrow 4 (1).png" alt=""></div>
+                        <div class="right-arrow" onclick="nextSlide()"><img src="./images/Arrow 3.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <div id="slide1" class="slide">
+                        <p>“It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution”</p>
+                    </div>
+                    <div id="slide2" class="slide">
+                        <p>“Its is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution”</p>
+                    </div>
+                    <div id="slide3" class="slide">
+                        <p>“Itss is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution”</p>
+                    </div>
+                    <div id="slide4" class="slide">
+                        <p>“Itsss is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution”</p>
+                    </div>
+                    <div id="slide5" class="slide">
+                        <p>“It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution”</p>
+                    </div>
+                </div>
+                <div class="complete-percentage"><span style="width: 0;"></span></div>
+                <div class="tabs-container">
 
-    const changeBackgroundColor = (color) => {
-        document.body.style.backgroundColor = color;
-    };
+                    <div class="slide1 tabs" onclick="goToSlide(1)">
+                        <h4>
+                            John Brent
+                        </h4>
+                        <p>
+                            It is a long established
+                        </p>
+                    </div>
+                    <div class="slide2 tabs" onclick="goToSlide(2)">
+                        <h4>
+                            John Brent
+                        </h4>
+                        <p>
+                            It is a long established
+                        </p>
+                    </div>
+                    <div class="slide3 tabs" onclick="goToSlide(3)">
+                        <h4>
+                            John Brent
+                        </h4>
+                        <p>
+                            It is a long established
+                        </p>
+                    </div>
+                    <div class="slide4 tabs" onclick="goToSlide(4)">
+                        <h4>
+                            John Brent
+                        </h4>
+                        <p>
+                            It is a long established
+                        </p>
+                    </div>
+                    <div class="slide5 tabs" onclick="goToSlide(5)">
+                        <h4>
+                            John Brent
+                        </h4>
+                        <p>
+                            It is a long established
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    const handleScroll = () => {
-        const scrollPosition = window.scrollY;
-        const section1Height = section1.offsetHeight;
-        const threshold = section1Height * 0.7;
+    </section>
 
-        if (scrollPosition < threshold) {
-            changeBackgroundColor("red");
-        } else if (scrollPosition >= threshold && scrollPosition < section3.offsetTop) {
-            changeBackgroundColor("green");
-        } else {
-            // Handle the case when the scroll position is at or beyond the last section
-            changeBackgroundColor("blue");
+<section class="section6">
+    <div class="row">
+        <div class="column">
+<h2>Reserve your spot today!</h2>
+<button><a href="">Let’s Talk</a></button>
+        </div>
+    </div>
+</section>
+
+    <script>
+        // script.js
+
+        let currentSlide = 1;
+        let completionWidth = 0;
+
+        document.addEventListener('DOMContentLoaded', function () {
+            showSlide(currentSlide);
+        });
+
+        function showSlide(n) {
+            const slides = document.getElementsByClassName("slide");
+            const percentageSpan = document.querySelector(".complete-percentage span");
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slides[currentSlide - 1].style.display = "block";
+
+            // Update completion width for each individual slide
+            completionWidth = (currentSlide / slides.length) * 100;
+
+            percentageSpan.style.width = completionWidth + "%";
         }
-    };
 
-    window.addEventListener("scroll", handleScroll);
-});
+        function nextSlide() {
+            if (currentSlide < 5) {
+                currentSlide++;
+            } else {
+                currentSlide = 1;
+            }
+            showSlide(currentSlide);
+        }
 
+        function prevSlide() {
+            if (currentSlide > 1) {
+                currentSlide--;
+            } else {
+                currentSlide = 5;
+            }
+            showSlide(currentSlide);
+        }
 
-</script>
-</html> -->
+        function goToSlide(n) {
+            currentSlide = n;
+            showSlide(currentSlide);
+        }
+
+        function autoPlay() {
+            nextSlide();
+        }
+
+        // Auto play every 3 seconds
+        setInterval(autoPlay, 5000);
+    </script>
+</body>
+
+</html>

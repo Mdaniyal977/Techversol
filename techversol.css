@@ -12,7 +12,9 @@ body {
     box-sizing: box;
     scroll-behavior: smooth;
     /* overflow: hidden; */
-    transition: background-color 0.8s ease;
+    background-color: white;
+    /* background-color: rgba(82, 193, 208, 0); */
+    transition: background-color 0.9s ease;
 }
 
 section {
@@ -273,11 +275,13 @@ section{
 
 /* home 2nd sec */
 .section2 .section {
+    /* background-color: #FFFFFF; */
     display: flex;
     /* background-color: #52C1D0; */
     background-color: transparent;
     align-items: center;
     justify-content: center;
+    background: transparent;
 }
 
 .section2 .section .flex-row .col1 {
@@ -289,14 +293,16 @@ section{
 }
 
 .section2 .section .flex-row .col2 {
-    background-image: url(./images/Group\ 30.png);
+    background-image: url(./images/1.png);
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     width: 50%;
-    background-size: cover;
+    background-size: contain;
     align-items: center;
     justify-content: flex-start;
+    
+   
 }
 
 .bg-img {
@@ -405,7 +411,18 @@ section{
 
 
 
-
+#col1{
+    transition: opacity 0.3s ease-in-out;
+    opacity:  1;
+}
+#col2{
+    transition: opacity 0.3s ease-in-out;
+    opacity:  1;
+}
+#col3{
+    transition: opacity 0.3s ease-in-out;
+    opacity:  1;
+}
 
 
 
@@ -428,16 +445,16 @@ section{
 }
 
 .section3 .section .flex-row .col2 {
-    background-image: url(./images/Group\ 31.png);
+    background-image: url(./images/2.png);
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     width: 50%;
-    background-color: transparent;
-    /* background-color: #ddedef; */
     background-size: cover;
     align-items: center;
     justify-content: flex-start;
+   
+    
 }
 
 .section3 .section .flex-row {
@@ -483,10 +500,19 @@ section{
     line-height: normal;
     transition: all 0.4s ease-in-out;
 }
-
+.width-a{
+    display: inline-block !important;
+    float: left;
+}
+button.width-o{
+    display: inline-block !important;
+    float: left;
+    margin: 0px;
+    width: 50% !important;
+}
 .section3 .button-container button {
     cursor: pointer;
-    width: 100%;
+  width: 100%;
     padding: 15px;
     border: 2px solid #C1D5E7;
     background: #EDF4F4;
@@ -584,14 +610,16 @@ section{
 }
 
 .section4 .section .flex-row .col2 {
-    background-image: url(./images/Group\ 32\ \(1\).png);
+    background-image: url(./images/3.png);
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     width: 50%;
-    background-size: cover;
+    background-size: contain;
     align-items: center;
     justify-content: flex-start;
+   
+   
 }
 
 .section4 .section .flex-row {
@@ -688,3 +716,232 @@ background: #0D375C;
 }
 
 /* -------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section5 */
+section.section5{
+    background-color: #ffffff;
+}
+.slider-main {
+    padding: 150px 0px;
+    display: flex;
+    /* width: 90%; */
+    /* max-width: 1600px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    max-width: 1600px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigation-arrows-container {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation-arrows-container .arrows {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.left-arrow,
+.right-arrow {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    /* Adjust the width as needed */
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+    padding: 50px 0px;
+}
+
+.slide p {
+   
+    color: #000;
+    font-family: Poppins;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 57px;
+    /* 126.667% */
+}
+
+.complete-percentage {
+    width: 100%;
+    margin-bottom: 30px;
+    height: 5px;
+    background-color: #ffffff;
+    margin-top: 10px;
+    position: relative;
+}
+
+.complete-percentage span {
+    display: block;
+    height: 100%;
+    background: #52C1D0;
+    transition: width 0.3s ease;
+    /* Transition effect for a smoother animation */
+}
+
+.tabs-container {
+    column-gap: 5px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* styles.css */
+
+.tabs {
+    width: 100%;
+    /* background-color: #ccc; */
+    margin: 0 0px;
+    cursor: pointer;
+}
+
+.tabs h4 {
+    margin-bottom: 0px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 22.416px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.tabs p {
+    margin-top: 5px;
+    color: #626262;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 160% */
+}
+
+.tabs.active {
+    /* Removed the border effect from active tabs */
+}
+
+
+
+
+
+
+
+/* section6 */
+.row {
+    background: #52C1D0;
+    display: flex;
+    padding: 100px 30px;
+    align-items: center;
+    justify-content: center;
+    }
+    .column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+    .column h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 900;
+    margin-bottom: 10px;
+    line-height: 97px;
+    text-transform: capitalize;
+    }
+    .column button {
+    padding: 10px 0px;
+    border: 2px solid #FFF;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    
+    }
+    
+    .column button a {
+    transition: all 0.3s ease-in-out;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    text-decoration: none;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 45px;
+    text-transform: uppercase;
+    padding: 30px;
+    }
+    .column button:hover {
+    transform: scale(1.03);
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    }
+    .column button:hover a {
+    color: #7FDAE7 !important;
+    /* Text color remains unchanged on hover */
+    }
+    
+
+    
+
+
+
+
+.padding{
+    padding: 100px 0px;
+}
+
+
+
+
+    /* footer */
+    footer{
+        background-color: white;
+    }
+    footer .row{
+        padding: 50px 0px;
+        background-color: white;
+    }
+
+
