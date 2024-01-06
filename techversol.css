@@ -293,7 +293,7 @@ section{
 }
 
 .section2 .section .flex-row .col2 {
-    background-image: url(./images/1.png);
+    background-image: url(./images/Group\ 65.png);
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -445,7 +445,7 @@ section{
 }
 
 .section3 .section .flex-row .col2 {
-    background-image: url(./images/2.png);
+    background-image: url(./images/Group\ 62.png);
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -610,7 +610,7 @@ button.width-o{
 }
 
 .section4 .section .flex-row .col2 {
-    background-image: url(./images/3.png);
+    background-image: url(./images/Group\ 70.png);
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -944,4 +944,62 @@ section.section5{
         background-color: white;
     }
 
-
+    footer .column {
+        max-width: 1400px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    footer .inner-column1 {
+        column-gap: 20px;
+        display: flex;
+        width: 80%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    footer .inner-column2 {
+        display: flex;
+        margin-top: 80px;
+        width: 90%;
+        margin-bottom: 80px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    p.gray-text {
+        color: #C3C3C3;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+    }
+    footer p {
+        color: #000;
+        font-family: Poppins;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 34px;
+    }
+    footer .inner-column2-item4 {
+        display: flex;
+        row-gap: 20px;
+        flex-direction: column;
+    }
+    footer .inner-column2-item3 {
+        display: flex;
+        row-gap: 20px;
+        flex-direction: column;
+    }
+    footer .inner-column2-item2 {
+        display: flex;
+        row-gap: 20px;
+        flex-direction: column;
+    }
+    footer .inner-column2-item1 {
+        display: flex;
+        row-gap: 20px;
+        flex-direction: column;
+    }
