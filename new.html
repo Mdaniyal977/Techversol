@@ -1,355 +1,1919 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><!-- Last Published: Tue Dec 19 2023 12:01:38 GMT+0000 (Coordinated Universal Time) -->
+<html data-wf-domain="www.knguru.de" data-wf-page="649d794f5d0731922f83a898" data-wf-site="61aab412062c50600ffad9ac"
+    lang="de">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>App Entwicklung und UX/UI Design mit 100% Kundenzufriedenheit</title>
+    <meta
+        content="Die #1 Agentur für Firmen &amp; Start-ups. App Entwicklung und Websites ausgezeichnet mit dem German Design Award &#x27;23. Jetzt App kosten berechnen"
+        name="description" />
+    <meta content="App Entwicklung und UX/UI Design mit 100% Kundenzufriedenheit" property="og:title" />
+    <meta
+        content="Die #1 Agentur für Firmen &amp; Start-ups. App Entwicklung und Websites ausgezeichnet mit dem German Design Award &#x27;23. Jetzt App kosten berechnen"
+        property="og:description" />
+    <meta
+        content="https://assets-global.website-files.com/61aab412062c50600ffad9ac/625d5f6801cb8fc66c5dd7f3_searchClip.jpg"
+        property="og:image" />
+    <meta content="App Entwicklung und UX/UI Design mit 100% Kundenzufriedenheit" property="twitter:title" />
+    <meta
+        content="Die #1 Agentur für Firmen &amp; Start-ups. App Entwicklung und Websites ausgezeichnet mit dem German Design Award &#x27;23. Jetzt App kosten berechnen"
+        property="twitter:description" />
+    <meta
+        content="https://assets-global.website-files.com/61aab412062c50600ffad9ac/625d5f6801cb8fc66c5dd7f3_searchClip.jpg"
+        property="twitter:image" />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="https://assets-global.website-files.com/61aab412062c50600ffad9ac/css/kngurudv.2c555090e.min.css"
+        rel="stylesheet" type="text/css" />
     <style>
-        /* styles.css */
-
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
+        @media (min-width:992px) {
+            html.w-mod-js:not(.w-mod-ix) [data-w-id="b9eea796-37d5-a1f2-ffb9-f1c1748c2dcc"] {
+                opacity: 0;
+            }
         }
 
-        .slider-main {
-            padding: 150px 0px;
-            display: flex;
-            /* width: 90%; */
-            /* max-width: 1600px; */
-            justify-content: center;
-            align-items: center;
+        @media (max-width:991px) and (min-width:768px) {
+            html.w-mod-js:not(.w-mod-ix) [data-w-id="b9eea796-37d5-a1f2-ffb9-f1c1748c2dcc"] {
+                opacity: 0;
+            }
         }
-
-        .slider {
-            max-width: 1600px;
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .navigation-arrows-container {
-            width: 100%;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .navigation-arrows-container .arrows {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            gap: 20px;
-        }
-
-        .left-arrow,
-        .right-arrow {
-            cursor: pointer;
-            font-size: 24px;
-        }
-
-        .slider-container {
-            overflow: hidden;
-            width: 100%;
-            /* Adjust the width as needed */
-            position: relative;
-        }
-
-        .slide {
-            width: 100%;
-            display: none;
-            padding: 20px;
-        }
-
-        .slide p {
-           
-            color: #000;
-            font-family: Poppins;
-            font-size: 45px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 57px;
-            /* 126.667% */
-        }
-
-        .complete-percentage {
-            width: 100%;
-            height: 5px;
-            background-color: #ffffff;
-            margin-top: 10px;
-            position: relative;
-        }
-
-        .complete-percentage span {
-            display: block;
-            height: 100%;
-            background: #52C1D0;
-            transition: width 0.3s ease;
-            /* Transition effect for a smoother animation */
-        }
-
-        .tabs-container {
-            column-gap: 5px;
-            width: 100%;
-            align-items: center;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        /* styles.css */
-
-        .tabs {
-            width: 100%;
-            /* background-color: #ccc; */
-            margin: 0 0px;
-            cursor: pointer;
-        }
-
-        .tabs h4 {
-            margin-bottom: 0px;
-            color: #000;
-            font-family: Poppins;
-            font-size: 22.416px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-        }
-
-        .tabs p {
-            margin-top: 5px;
-            color: #626262;
-            font-family: Poppins;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 32px;
-            /* 160% */
-        }
-
-        .tabs.active {
-            /* Removed the border effect from active tabs */
-        }
-
-
-
-
-
-
-/* section5 */
-        .row {
-    background: #52C1D0;
-    display: flex;
-    padding: 100px 30px;
-    align-items: center;
-    justify-content: center;
-}
-.column {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.column h2 {
-    color: #FFF;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 65px;
-    font-style: normal;
-    font-weight: 900;
-    margin-bottom: 10px;
-    line-height: 97px;
-    text-transform: capitalize;
-}
-.column button {
-    padding: 10px 0px;
-    border: 2px solid #FFF;
-    background: transparent;
-    transition: all 0.3s ease-in-out;
-
-}
-
-.column button a {
-    transition: all 0.3s ease-in-out;
-    color: #FFF;
-    text-align: center;
-    font-family: Poppins;
-    text-decoration: none;
-    font-size: 33px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 45px;
-    text-transform: uppercase;
-    padding: 30px;
-}
-.column button:hover {
-    transform: scale(1.03);
-    background: #ffffff;
-    border: 2px solid #ffffff;
- }
- .column button:hover a {
-     color: #7FDAE7 !important;
-     /* Text color remains unchanged on hover */
- }
+    </style>
 
     </style>
-    <title>Slider</title>
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=61aab412062c50600ffad9ac"
+        type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 </head>
 
-<body>
-    <section class="section5">
-        <div class="slider-main">
-            <div class="slider">
-                <div class="navigation-arrows-container">
-                    <div class="quote-image"><img src="./images/Quote.png" alt=""></div>
-                    <div class="arrows">
-                        <div class="left-arrow" onclick="prevSlide()"><img src="./images/Arrow 4 (1).png" alt=""></div>
-                        <div class="right-arrow" onclick="nextSlide()"><img src="./images/Arrow 3.png" alt=""></div>
+<body class="bodyblack">
+    <div class="menu menuwrapper">
+        <div class="desktopmenu">
+            <div class="desktoplogo"><a href="/" aria-current="page" class="logolink w-inline-block w--current">
+                    <div class="logo w-embed">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg id="Ebene_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450.56 154.54"
+                            width="currentWidth" height="currentHeight" fill="currentColor">
+                            <g id="Layer_1">
+                                <path
+                                    d="M450.42,88.02c-2.28,3.12-4.63,6.22-7.11,9.28-2.47,3.06-4.96,5.7-7.45,7.93-2.5,2.23-4.89,3.89-7.19,4.98-2.3,1.09-4.35,1.12-6.17,.1-3.22-1.9-5.54-4.01-6.97-6.32-1.43-2.31-1.56-5.51-.4-9.61-2.48,2.78-4.82,5.35-7.01,7.72-2.19,2.37-5.28,5.15-9.28,8.36-1.43,1.21-3.26,1.84-5.49,1.89-2.23,.05-4.36-.31-6.39-1.07-2.03-.76-3.75-1.86-5.17-3.29-1.41-1.43-2.02-3.02-1.83-4.77,.23-1.96,.89-4.44,1.96-7.44,3.06-8.49,7.05-16.6,11.48-24.46,2.05-3.64,13.93-25.92,17.37-26.29,2.74-.29,8.84,2.35,8.94,5.68,.07,2.33-12.73,20.79-21.84,40.44-1.77,3.82-3.03,6.57-3.46,8.4,.57-.06,1.61-.81,3.14-2.24,1.52-1.42,3.36-3.35,5.5-5.77,2.14-2.42,4.49-5.24,7.05-8.46,2.56-3.21,5.23-6.61,8.02-10.2,2.79-3.58,5.53-7.25,8.24-11,2.71-3.75,5.27-7.46,7.68-11.13,.91-1.36,2.2-1.98,3.9-1.85,1.69,.13,3.3,.64,4.81,1.53,1.51,.89,2.67,2,3.49,3.33,.82,1.33,.93,2.47,.32,3.41-1.66,2.51-3.62,5.81-5.88,9.87-2.26,4.07-4.42,8.3-6.46,12.71-2.04,4.41-3.8,8.6-5.26,12.56-1.47,3.96-2.22,6.99-2.25,9.07,2.31-1.14,4.8-3.04,7.48-5.7,2.68-2.65,5.31-5.55,7.91-8.64,1.16-1.38,9.63-.81,8.32,.97Zm-214.36,25.24c-2.06,4.31-5.01,9.77-8.88,15.36,58.83-7.09,129.22-7.98,188.89,9.97l1.94-2.55c-53.03-20.13-122.38-24.93-181.95-22.79Zm-5.42-3.73c-3.56,5.6-7.28,11.01-11.18,16.22-3.9,5.21-7.76,9.74-11.59,13.58-3.83,3.84-7.32,6.26-10.49,7.25-1.36,.44-3.35,.33-5.98-.33-2.62-.66-4.98-1.81-7.08-3.46-2.09-1.65-3.51-3.73-4.26-6.26-.06-.19-.04-.4-.08-.59-36.19,7.08-67.17,18.35-67.17,18.35-5.53,1.56-6.43-4.46-7.67-9.76-3.48-14.85-11.34-42.24-23.8-52.53-2.12-1.75-7.1-4.83-14.01-4.17-3.49,6.33-13.13,23.26-16.49,28.86-3.68,6.13-7.36,11.59-10.93,16.23-3.61,4.69-7.18,8.52-10.59,11.36-3.67,3.06-7.25,4.61-10.65,4.61-2.68,0-5.19-.48-7.47-1.42-2.21-.91-4.15-2.04-5.78-3.36-1.61-1.31-2.9-2.65-3.84-4-.99-1.42-1.49-2.58-1.58-3.61-.12-1.59,1.26-3.01,2.97-3.02,2.56-.01,5.31-1.04,8.18-3.07,14.95-10.56,24.01-29.4,32.98-44.9,11.3-19.5,21.43-39.65,31.61-59.75,2.34-4.62,8.9-16.1,6.68-12.49,3.93-6.39,.15-8.13,1.02-11.91,.23-.99,31.7-5.67,23.85,10.91-.95,2.01-8.07,14.87-10.35,18.99-2.3,4.15-4.71,8.67-7.21,13.55l-14.6,28.47c28.27-16.03,60.84-42.28,77.1-65.65,3.59-5.16,28.91-.31,26,6.83-6.44,15.78-81.23,67.89-85.13,69.09,2.91,2.36,5.5,5.04,7.72,8.01,2.89,3.86,5.55,7.92,7.91,12.06,2.37,4.16,4.54,8.36,6.74,12.37,1.36,2.47,3.59,7.38,5.88,12.61,14.35-4.69,40.16-9.46,71.83-12.51,.26-.24,.5-.48,.77-.72,4.8-4.34,9.58-8.37,14.33-12.1,4.75-3.73,8.99-7.03,12.72-9.88,3.73-2.85,5.92-4.83,6.58-5.93,1.42-2.19,2.81-4.75,4.19-7.66,1.37-2.91,2.55-5.46,3.53-7.66-1.72,1.87-3.65,3.95-5.79,6.26-2.14,2.3-4.39,4.61-6.76,6.92-2.36,2.3-4.73,4.45-7.12,6.42-2.39,1.98-4.63,3.62-6.73,4.94-1.28,.77-2.89,.99-4.84,.66-1.94-.33-3.78-.99-5.49-1.98-.96-.55-1.8-1.2-2.55-1.91-2.36,2.65-4.72,5.16-7.1,7.4-3.23,3.05-6.16,5.21-8.77,6.5-1.74,.82-3.66,1.14-5.75,.97-2.09-.18-4.1-.62-6.01-1.32-1.91-.7-3.57-1.64-4.95-2.81-1.39-1.17-2.13-2.34-2.23-3.51-.23-1.99,.08-4.68,.95-8.08,.86-3.4,1.94-6.79,3.22-10.19,1.28-3.4,2.52-6.47,3.72-9.22,1.2-2.75,2.03-4.54,2.48-5.36-2.59,1.99-5.56,4.86-8.93,8.61-3.38,3.75-6.75,7.73-10.12,11.95-3.37,4.22-6.5,8.38-9.38,12.48-2.89,4.1-5.13,7.5-6.74,10.19-.71,1.05-1.95,1.61-3.72,1.67-1.77,.06-3.5-.2-5.19-.79-1.69-.58-3.15-1.4-4.38-2.46-1.23-1.05-1.6-2.11-1.13-3.16,1.03-2.81,2.52-6.53,4.48-11.16,1.95-4.63,4.18-9.66,6.7-15.11,2.52-5.45,11.69-23.59,15.09-28.51,1.01-1.64,2.43-2.46,4.25-2.46s3.56,.41,5.22,1.23c1.66,.82,2.98,1.88,3.95,3.16,.96,1.29,1.21,2.4,.75,3.34-1.46,2.46-9.28,14.31-10.35,15.95-1.07,1.64-1.7,2.76-1.89,3.34,2.19-2.69,4.53-5.39,7.02-8.08,2.49-2.69,4.95-5.21,7.4-7.56,2.45-2.34,4.89-4.45,7.34-6.33,2.45-1.87,4.81-3.45,7.07-4.74,1.5-.82,3.26-1.05,5.28-.7,2.01,.35,3.84,1.05,5.48,2.11,1.64,1.05,2.87,2.31,3.7,3.78,.83,1.47,.86,2.9,.11,4.3-1.21,2.34-2.79,5.24-4.72,8.7-1.93,3.46-3.82,7.09-5.68,10.89-1.86,3.81-3.52,7.47-4.98,10.98-1.47,3.52-2.35,6.5-2.63,8.96,2.38-1.29,5-3.1,7.86-5.45,2.85-2.34,5.72-5.04,8.6-8.08,1.34-1.42,2.66-2.89,3.98-4.41,.83-1.88,1.74-3.79,2.82-5.75,2.39-4.34,5.12-8.51,8.19-12.51,3.07-4.01,6.31-7.71,9.71-11.12,3.4-3.4,6.74-6.2,10.03-8.4,2.11-1.43,4-2.25,5.67-2.47,1.67-.22,3.19-.08,4.57,.41,1.38,.49,2.71,1.24,3.99,2.22,1.28,.99,2.58,2.03,3.9,3.13,.49-.55,1.21-1.43,2.14-2.63,.94-1.21,1.64-1.98,2.12-2.31,1.06-.77,2.33-1.12,3.8-1.07,1.48,.06,2.87,.39,4.19,.99,1.31,.6,2.37,1.37,3.15,2.31,.79,.93,1.08,1.89,.88,2.88-.66,2.31-1.5,4.8-2.53,7.49-1.03,2.69-2.08,5.41-3.17,8.15-1.09,2.75-2.16,5.38-3.23,7.9-1.07,2.53-1.96,4.72-2.69,6.59,3.6-2.37,16.98-9.33,30.69-19.91,4.75-8.13,9.53-15.43,12.99-19.83,2.25-2.85,8.01-9.11,12.43-9.02h0s.07,0,.18,.02c.67,.04,1.3,.24,1.88,.62,1.08,.53,2.24,1.46,2.54,3.11,.76,1.91-.12,3.55-1.52,5.62-.41,.71-.91,1.47-1.52,2.29-.27,.42-.55,.84-.82,1.31-2.09,3.62-32.1,49.73-28.9,53.63,3.64,4.43,23.53-17.38,38.56-36.14,3.36-4.19,4.91-9.21,6.87-13.54,.72-1.03,1.95-1.55,3.71-1.55,1.65,0,3.36,.46,5.13,1.39,1.89,.72,3.34,1.76,4.35,3.09,1.12,1.24,1.26,2.42,.43,3.56-3.87,5.88-6.95,11.22-9.27,16.02-2.32,4.8-3.92,9.21-4.82,13.23-1.8,7.94-1.95,12.28-.47,13,2.73,.62,5.38-2.31,9.07-7.54,3.9-5.24,21.7-39.91,22.18-40.92,2.69-5.59,5.33-10.6,7.91-15.01,.54-.97,1.29-1.56,2.26-1.77,.97-.21,1.99-.16,3.07,.16,2.47,.86,4.22,1.91,5.25,3.15s1.16,2.66,.41,4.28c-1.4,3.02-2.91,6.16-4.52,9.44-1.61,3.28-3.28,7.02-5,11.22,1.61-2.26,3.07-4.36,4.36-6.29,1.18-1.61,2.23-3.17,3.15-4.68,.91-1.51,1.48-2.42,1.69-2.74,.97-1.51,1.78-2.34,2.42-2.5s1.72,.08,3.23,.73c3.01,1.18,5.27,2.04,6.78,2.58,1.51,.54,2.53,1.24,3.07,2.1,.54,.86,.7,2.1,.49,3.71-.22,1.61-.49,4.09-.81,7.42-.64,4.84-.76,7.02-.32,11.43,.11,.97,.35,1.64,.72,2.02,.38,.38,.75,.65,1.13,.81,.37,.16,.7,.32,.97,.48,.27,.16,.35,.51,.24,1.05-.22,.86-1.16,1.35-2.82,1.45-1.67,.11-3.47-.05-5.41-.48-1.94-.43-3.74-1.05-5.4-1.86-1.67-.81-2.61-1.75-2.82-2.82-.54-1.83-.54-7.66-.65-9.81-5.7,6.24-10.6,12.99-14.69,20.26-4.09,7.26-7.32,15.74-9.68,25.42-.33,1.19-1.21,1.8-2.67,1.86-1.45,.06-2.99-.24-4.6-.89-1.61-.65-3.01-1.51-4.2-2.58-1.18-1.07-1.67-2.2-1.45-3.39,.85-5.13,2.08-10.51,3.57-16.07-1.87,3.53-3.47,6.37-4.44,7.67-3.54,4.8-12.24,16.3-21.06,12.68-4.71-1.93-10.57-9.87-7.14-14.26-12.56,16.07-37.69,27.32-43.2,9.75-1.57-5.01,4.09-18.62,11.3-32.27-12.41,9.33-28.41,21.35-30.74,23.16-1.41,.99-2.7,2.42-3.87,4.28-2.52,4.5-5.55,9.55-9.11,15.15Zm5.16-51.38c.63-.88,1.17-1.89,1.61-3.05,.44-1.15,.67-2.11,.69-2.88,.02-.77-.27-1.21-.86-1.32-.59-.11-1.66,.44-3.21,1.65-2.38,1.87-4.75,4.09-7.14,6.67-2.39,2.58-4.65,5.24-6.78,7.99-2.13,2.75-4.03,5.38-5.7,7.9-1.67,2.53-2.92,4.72-3.76,6.59-.31,.99-.14,1.48,.52,1.48s1.85-.66,3.57-1.98c1.71-1.32,3.7-3.13,5.95-5.43,2.25-2.31,4.7-4.97,7.35-7.99,2.65-3.02,5.23-6.23,7.75-9.63Zm-15.67,44.93c-1.3,1.19-15.68,11.09-24.07,20.08-5.59,5.99-8.5,11.58-6.56,12.72,3.44,2.02,8.74-4.14,12.87-8.86,4.13-4.72,14.58-19.33,17.76-23.94Z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="logodivider"></div><img
+                        src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/648b7ba908757625628b7640_GWA23_Siegel1_Weiss.webp"
+                        loading="lazy" sizes="(max-width: 767px) 100vw, 78.51250457763672px"
+                        srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/648b7ba908757625628b7640_GWA23_Siegel1_Weiss-p-500.webp 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/648b7ba908757625628b7640_GWA23_Siegel1_Weiss.webp 1284w"
+                        alt="" class="awwardslogo" />
+                </a></div>
+            <div class="desktopnavigation">
+                <div class="desktopnaventrywrapper"><a href="/" aria-current="page"
+                        class="desktopnaventry w--current">Home</a></div>
+                <div class="desktopnaventrywrapper"><a href="/blog" class="desktopnaventry">Tipps &amp; Storys</a></div>
+                <div data-w-id="d8790e40-2be2-7850-c294-734b9e6845fa" class="desktopnaventrydropdowncontainer">
+                    <div class="desktopnaventrywrapper dropdown">
+                        <div class="naventrydropwdown"><a href="#" class="desktopnaventry nohover">Leistungen</a>
+                            <div class="arrow w-embed"><svg viewBox="0 -93 512 512" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m441.667969 0-185.667969 185.667969-185.667969-185.667969-70.332031 70.332031 256 256 256-256zm0 0" />
+                                </svg></div>
+                        </div>
+                        <div class="naventrydropwdownpseudo"></div>
+                    </div>
+                    <div class="desktopnaventrydropcontainer">
+                        <div class="desktopnaventrydropwrapper-2"><a href="/uxuidesign"
+                                class="desktopnaventrydrop">UX/UI Design</a></div>
+                        <div class="desktopnaventrydropwrapper-2"><a href="/webdesign"
+                                class="desktopnaventrydrop">Webdesign</a></div>
+                        <div class="desktopnaventrydropwrapper-2"><a href="/app-entwicklung"
+                                class="desktopnaventrydrop">App Entwicklung</a></div>
                     </div>
                 </div>
-                <div class="slider-container">
-                    <div id="slide1" class="slide">
-                        <p>“It is a long established fact that a reader will be distracted by the readable content of a
-                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                            more-or-less normal distribution”</p>
+                <div class="desktopnaventrywrapper"><a href="https://calendly.com/knguru/louis" target="_blank"
+                        class="secondarybutton nav w-button">Termin buchen</a></div>
+            </div>
+        </div>
+        <div class="mobilemenu">
+            <div class="mobilelogo"><a href="/uxuidesign" class="logolink w-inline-block">
+                    <div class="logo w-embed">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg id="Ebene_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450.56 154.54"
+                            width="currentWidth" height="currentHeight" fill="currentColor">
+                            <g id="Layer_1">
+                                <path
+                                    d="M450.42,88.02c-2.28,3.12-4.63,6.22-7.11,9.28-2.47,3.06-4.96,5.7-7.45,7.93-2.5,2.23-4.89,3.89-7.19,4.98-2.3,1.09-4.35,1.12-6.17,.1-3.22-1.9-5.54-4.01-6.97-6.32-1.43-2.31-1.56-5.51-.4-9.61-2.48,2.78-4.82,5.35-7.01,7.72-2.19,2.37-5.28,5.15-9.28,8.36-1.43,1.21-3.26,1.84-5.49,1.89-2.23,.05-4.36-.31-6.39-1.07-2.03-.76-3.75-1.86-5.17-3.29-1.41-1.43-2.02-3.02-1.83-4.77,.23-1.96,.89-4.44,1.96-7.44,3.06-8.49,7.05-16.6,11.48-24.46,2.05-3.64,13.93-25.92,17.37-26.29,2.74-.29,8.84,2.35,8.94,5.68,.07,2.33-12.73,20.79-21.84,40.44-1.77,3.82-3.03,6.57-3.46,8.4,.57-.06,1.61-.81,3.14-2.24,1.52-1.42,3.36-3.35,5.5-5.77,2.14-2.42,4.49-5.24,7.05-8.46,2.56-3.21,5.23-6.61,8.02-10.2,2.79-3.58,5.53-7.25,8.24-11,2.71-3.75,5.27-7.46,7.68-11.13,.91-1.36,2.2-1.98,3.9-1.85,1.69,.13,3.3,.64,4.81,1.53,1.51,.89,2.67,2,3.49,3.33,.82,1.33,.93,2.47,.32,3.41-1.66,2.51-3.62,5.81-5.88,9.87-2.26,4.07-4.42,8.3-6.46,12.71-2.04,4.41-3.8,8.6-5.26,12.56-1.47,3.96-2.22,6.99-2.25,9.07,2.31-1.14,4.8-3.04,7.48-5.7,2.68-2.65,5.31-5.55,7.91-8.64,1.16-1.38,9.63-.81,8.32,.97Zm-214.36,25.24c-2.06,4.31-5.01,9.77-8.88,15.36,58.83-7.09,129.22-7.98,188.89,9.97l1.94-2.55c-53.03-20.13-122.38-24.93-181.95-22.79Zm-5.42-3.73c-3.56,5.6-7.28,11.01-11.18,16.22-3.9,5.21-7.76,9.74-11.59,13.58-3.83,3.84-7.32,6.26-10.49,7.25-1.36,.44-3.35,.33-5.98-.33-2.62-.66-4.98-1.81-7.08-3.46-2.09-1.65-3.51-3.73-4.26-6.26-.06-.19-.04-.4-.08-.59-36.19,7.08-67.17,18.35-67.17,18.35-5.53,1.56-6.43-4.46-7.67-9.76-3.48-14.85-11.34-42.24-23.8-52.53-2.12-1.75-7.1-4.83-14.01-4.17-3.49,6.33-13.13,23.26-16.49,28.86-3.68,6.13-7.36,11.59-10.93,16.23-3.61,4.69-7.18,8.52-10.59,11.36-3.67,3.06-7.25,4.61-10.65,4.61-2.68,0-5.19-.48-7.47-1.42-2.21-.91-4.15-2.04-5.78-3.36-1.61-1.31-2.9-2.65-3.84-4-.99-1.42-1.49-2.58-1.58-3.61-.12-1.59,1.26-3.01,2.97-3.02,2.56-.01,5.31-1.04,8.18-3.07,14.95-10.56,24.01-29.4,32.98-44.9,11.3-19.5,21.43-39.65,31.61-59.75,2.34-4.62,8.9-16.1,6.68-12.49,3.93-6.39,.15-8.13,1.02-11.91,.23-.99,31.7-5.67,23.85,10.91-.95,2.01-8.07,14.87-10.35,18.99-2.3,4.15-4.71,8.67-7.21,13.55l-14.6,28.47c28.27-16.03,60.84-42.28,77.1-65.65,3.59-5.16,28.91-.31,26,6.83-6.44,15.78-81.23,67.89-85.13,69.09,2.91,2.36,5.5,5.04,7.72,8.01,2.89,3.86,5.55,7.92,7.91,12.06,2.37,4.16,4.54,8.36,6.74,12.37,1.36,2.47,3.59,7.38,5.88,12.61,14.35-4.69,40.16-9.46,71.83-12.51,.26-.24,.5-.48,.77-.72,4.8-4.34,9.58-8.37,14.33-12.1,4.75-3.73,8.99-7.03,12.72-9.88,3.73-2.85,5.92-4.83,6.58-5.93,1.42-2.19,2.81-4.75,4.19-7.66,1.37-2.91,2.55-5.46,3.53-7.66-1.72,1.87-3.65,3.95-5.79,6.26-2.14,2.3-4.39,4.61-6.76,6.92-2.36,2.3-4.73,4.45-7.12,6.42-2.39,1.98-4.63,3.62-6.73,4.94-1.28,.77-2.89,.99-4.84,.66-1.94-.33-3.78-.99-5.49-1.98-.96-.55-1.8-1.2-2.55-1.91-2.36,2.65-4.72,5.16-7.1,7.4-3.23,3.05-6.16,5.21-8.77,6.5-1.74,.82-3.66,1.14-5.75,.97-2.09-.18-4.1-.62-6.01-1.32-1.91-.7-3.57-1.64-4.95-2.81-1.39-1.17-2.13-2.34-2.23-3.51-.23-1.99,.08-4.68,.95-8.08,.86-3.4,1.94-6.79,3.22-10.19,1.28-3.4,2.52-6.47,3.72-9.22,1.2-2.75,2.03-4.54,2.48-5.36-2.59,1.99-5.56,4.86-8.93,8.61-3.38,3.75-6.75,7.73-10.12,11.95-3.37,4.22-6.5,8.38-9.38,12.48-2.89,4.1-5.13,7.5-6.74,10.19-.71,1.05-1.95,1.61-3.72,1.67-1.77,.06-3.5-.2-5.19-.79-1.69-.58-3.15-1.4-4.38-2.46-1.23-1.05-1.6-2.11-1.13-3.16,1.03-2.81,2.52-6.53,4.48-11.16,1.95-4.63,4.18-9.66,6.7-15.11,2.52-5.45,11.69-23.59,15.09-28.51,1.01-1.64,2.43-2.46,4.25-2.46s3.56,.41,5.22,1.23c1.66,.82,2.98,1.88,3.95,3.16,.96,1.29,1.21,2.4,.75,3.34-1.46,2.46-9.28,14.31-10.35,15.95-1.07,1.64-1.7,2.76-1.89,3.34,2.19-2.69,4.53-5.39,7.02-8.08,2.49-2.69,4.95-5.21,7.4-7.56,2.45-2.34,4.89-4.45,7.34-6.33,2.45-1.87,4.81-3.45,7.07-4.74,1.5-.82,3.26-1.05,5.28-.7,2.01,.35,3.84,1.05,5.48,2.11,1.64,1.05,2.87,2.31,3.7,3.78,.83,1.47,.86,2.9,.11,4.3-1.21,2.34-2.79,5.24-4.72,8.7-1.93,3.46-3.82,7.09-5.68,10.89-1.86,3.81-3.52,7.47-4.98,10.98-1.47,3.52-2.35,6.5-2.63,8.96,2.38-1.29,5-3.1,7.86-5.45,2.85-2.34,5.72-5.04,8.6-8.08,1.34-1.42,2.66-2.89,3.98-4.41,.83-1.88,1.74-3.79,2.82-5.75,2.39-4.34,5.12-8.51,8.19-12.51,3.07-4.01,6.31-7.71,9.71-11.12,3.4-3.4,6.74-6.2,10.03-8.4,2.11-1.43,4-2.25,5.67-2.47,1.67-.22,3.19-.08,4.57,.41,1.38,.49,2.71,1.24,3.99,2.22,1.28,.99,2.58,2.03,3.9,3.13,.49-.55,1.21-1.43,2.14-2.63,.94-1.21,1.64-1.98,2.12-2.31,1.06-.77,2.33-1.12,3.8-1.07,1.48,.06,2.87,.39,4.19,.99,1.31,.6,2.37,1.37,3.15,2.31,.79,.93,1.08,1.89,.88,2.88-.66,2.31-1.5,4.8-2.53,7.49-1.03,2.69-2.08,5.41-3.17,8.15-1.09,2.75-2.16,5.38-3.23,7.9-1.07,2.53-1.96,4.72-2.69,6.59,3.6-2.37,16.98-9.33,30.69-19.91,4.75-8.13,9.53-15.43,12.99-19.83,2.25-2.85,8.01-9.11,12.43-9.02h0s.07,0,.18,.02c.67,.04,1.3,.24,1.88,.62,1.08,.53,2.24,1.46,2.54,3.11,.76,1.91-.12,3.55-1.52,5.62-.41,.71-.91,1.47-1.52,2.29-.27,.42-.55,.84-.82,1.31-2.09,3.62-32.1,49.73-28.9,53.63,3.64,4.43,23.53-17.38,38.56-36.14,3.36-4.19,4.91-9.21,6.87-13.54,.72-1.03,1.95-1.55,3.71-1.55,1.65,0,3.36,.46,5.13,1.39,1.89,.72,3.34,1.76,4.35,3.09,1.12,1.24,1.26,2.42,.43,3.56-3.87,5.88-6.95,11.22-9.27,16.02-2.32,4.8-3.92,9.21-4.82,13.23-1.8,7.94-1.95,12.28-.47,13,2.73,.62,5.38-2.31,9.07-7.54,3.9-5.24,21.7-39.91,22.18-40.92,2.69-5.59,5.33-10.6,7.91-15.01,.54-.97,1.29-1.56,2.26-1.77,.97-.21,1.99-.16,3.07,.16,2.47,.86,4.22,1.91,5.25,3.15s1.16,2.66,.41,4.28c-1.4,3.02-2.91,6.16-4.52,9.44-1.61,3.28-3.28,7.02-5,11.22,1.61-2.26,3.07-4.36,4.36-6.29,1.18-1.61,2.23-3.17,3.15-4.68,.91-1.51,1.48-2.42,1.69-2.74,.97-1.51,1.78-2.34,2.42-2.5s1.72,.08,3.23,.73c3.01,1.18,5.27,2.04,6.78,2.58,1.51,.54,2.53,1.24,3.07,2.1,.54,.86,.7,2.1,.49,3.71-.22,1.61-.49,4.09-.81,7.42-.64,4.84-.76,7.02-.32,11.43,.11,.97,.35,1.64,.72,2.02,.38,.38,.75,.65,1.13,.81,.37,.16,.7,.32,.97,.48,.27,.16,.35,.51,.24,1.05-.22,.86-1.16,1.35-2.82,1.45-1.67,.11-3.47-.05-5.41-.48-1.94-.43-3.74-1.05-5.4-1.86-1.67-.81-2.61-1.75-2.82-2.82-.54-1.83-.54-7.66-.65-9.81-5.7,6.24-10.6,12.99-14.69,20.26-4.09,7.26-7.32,15.74-9.68,25.42-.33,1.19-1.21,1.8-2.67,1.86-1.45,.06-2.99-.24-4.6-.89-1.61-.65-3.01-1.51-4.2-2.58-1.18-1.07-1.67-2.2-1.45-3.39,.85-5.13,2.08-10.51,3.57-16.07-1.87,3.53-3.47,6.37-4.44,7.67-3.54,4.8-12.24,16.3-21.06,12.68-4.71-1.93-10.57-9.87-7.14-14.26-12.56,16.07-37.69,27.32-43.2,9.75-1.57-5.01,4.09-18.62,11.3-32.27-12.41,9.33-28.41,21.35-30.74,23.16-1.41,.99-2.7,2.42-3.87,4.28-2.52,4.5-5.55,9.55-9.11,15.15Zm5.16-51.38c.63-.88,1.17-1.89,1.61-3.05,.44-1.15,.67-2.11,.69-2.88,.02-.77-.27-1.21-.86-1.32-.59-.11-1.66,.44-3.21,1.65-2.38,1.87-4.75,4.09-7.14,6.67-2.39,2.58-4.65,5.24-6.78,7.99-2.13,2.75-4.03,5.38-5.7,7.9-1.67,2.53-2.92,4.72-3.76,6.59-.31,.99-.14,1.48,.52,1.48s1.85-.66,3.57-1.98c1.71-1.32,3.7-3.13,5.95-5.43,2.25-2.31,4.7-4.97,7.35-7.99,2.65-3.02,5.23-6.23,7.75-9.63Zm-15.67,44.93c-1.3,1.19-15.68,11.09-24.07,20.08-5.59,5.99-8.5,11.58-6.56,12.72,3.44,2.02,8.74-4.14,12.87-8.86,4.13-4.72,14.58-19.33,17.76-23.94Z" />
+                            </g>
+                        </svg>
                     </div>
-                    <div id="slide2" class="slide">
-                        <p>“Its is a long established fact that a reader will be distracted by the readable content of a
-                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                            more-or-less normal distribution”</p>
+                </a></div>
+            <div data-w-id="9eab1ff3-fe1b-2526-f239-b8abd1f8e97c" class="mobilemenubars">
+                <div class="menubars w-embed"><svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <line x1="11" y1="14.25" x2="32" y2="14.25" stroke="white" stroke-width="1.5" />
+                        <line x1="11" y1="20.25" x2="32" y2="20.25" stroke="white" stroke-width="1.5" />
+                        <line x1="11" y1="26.25" x2="32" y2="26.25" stroke="white" stroke-width="1.5" />
+                    </svg></div>
+                <div class="menucross w-embed"><svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <line x1="11.5158" y1="10.4555" x2="30.5158" y2="28.4555" stroke="white" stroke-width="1.5" />
+                        <line x1="10.4983" y1="28.4425" x2="30.4983" y2="10.4425" stroke="white" stroke-width="1.5" />
+                    </svg></div>
+            </div>
+            <div class="mobilemenunavigation">
+                <div class="mobileentryswrapper"><a data-w-id="9eab1ff3-fe1b-2526-f239-b8abd1f8e982" href="/"
+                        aria-current="page" class="mobilemenuentry w-inline-block w--current">
+                        <div class="h3 mobilemenuentryfont">Home</div>
+                    </a><a data-w-id="9eab1ff3-fe1b-2526-f239-b8abd1f8e985" href="/uxuidesign"
+                        class="mobilemenuentry w-inline-block">
+                        <div class="h3 mobilemenuentryfont">UX/UI Design</div>
+                    </a><a data-w-id="694a4afd-a631-bdd0-6491-21b8c8fc8321" href="/webdesign"
+                        class="mobilemenuentry w-inline-block">
+                        <div class="h3 mobilemenuentryfont">Webdesign</div>
+                    </a><a data-w-id="97aa7ba4-63f3-296a-6214-cc2f708e512f" href="/app-entwicklung"
+                        class="mobilemenuentry w-inline-block">
+                        <div class="h3 mobilemenuentryfont">App Entwicklung</div>
+                    </a><a data-w-id="9eab1ff3-fe1b-2526-f239-b8abd1f8e98e" href="/blog"
+                        class="mobilemenuentry w-inline-block">
+                        <div class="h3 mobilemenuentryfont">Tipps &amp; Storys</div>
+                    </a>
+                    <div class="bookcallmobile">
+                        <div class="mobilefooterdivider"></div><a href="https://calendly.com/knguru/louis?month=2023-11"
+                            target="_blank" class="bookcallmobilemenu w-inline-block">
+                            <div class="h3 mobilemenuentryfont">Beratungstermin buchen</div>
+                            <div class="arrowdiagonal yellow w-embed"><svg width="currentWidth" height="currentHeight"
+                                    viewBox="0 0 19 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.75 5C5.75 4.58579 6.08579 4.25 6.5 4.25L14 4.25C14.1989 4.25 14.3897 4.32902 14.5303 4.46967C14.671 4.61032 14.75 4.80109 14.75 5L14.75 12.5C14.75 12.9142 14.4142 13.25 14 13.25C13.5858 13.25 13.25 12.9142 13.25 12.5L13.25 6.81066L5.53033 14.5303C5.23744 14.8232 4.76256 14.8232 4.46967 14.5303C4.17678 14.2374 4.17678 13.7626 4.46967 13.4697L12.1893 5.75L6.5 5.75C6.08579 5.75 5.75 5.41421 5.75 5Z" />
+                                </svg></div>
+                        </a>
+                        <div class="mobilefooterdivider"></div>
                     </div>
-                    <div id="slide3" class="slide">
-                        <p>“Itss is a long established fact that a reader will be distracted by the readable content of a
-                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                            more-or-less normal distribution”</p>
-                    </div>
-                    <div id="slide4" class="slide">
-                        <p>“Itsss is a long established fact that a reader will be distracted by the readable content of a
-                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                            more-or-less normal distribution”</p>
-                    </div>
-                    <div id="slide5" class="slide">
-                        <p>“It is a long established fact that a reader will be distracted by the readable content of a
-                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                            more-or-less normal distribution”</p>
-                    </div>
-                </div>
-                <div class="complete-percentage"><span style="width: 0;"></span></div>
-                <div class="tabs-container">
-
-                    <div class="slide1 tabs" onclick="goToSlide(1)">
-                        <h4>
-                            John Brent
-                        </h4>
-                        <p>
-                            It is a long established
-                        </p>
-                    </div>
-                    <div class="slide2 tabs" onclick="goToSlide(2)">
-                        <h4>
-                            John Brent
-                        </h4>
-                        <p>
-                            It is a long established
-                        </p>
-                    </div>
-                    <div class="slide3 tabs" onclick="goToSlide(3)">
-                        <h4>
-                            John Brent
-                        </h4>
-                        <p>
-                            It is a long established
-                        </p>
-                    </div>
-                    <div class="slide4 tabs" onclick="goToSlide(4)">
-                        <h4>
-                            John Brent
-                        </h4>
-                        <p>
-                            It is a long established
-                        </p>
-                    </div>
-                    <div class="slide5 tabs" onclick="goToSlide(5)">
-                        <h4>
-                            John Brent
-                        </h4>
-                        <p>
-                            It is a long established
-                        </p>
+                    <div class="mobilemenufooter"><a href="tel:+4934122327691"
+                            class="footerentry nohoverfooterentry">+49 341 223 276 91</a><a
+                            href="mailto:hello@knguru.de" class="footerentry nohoverfooterentry">hello@knguru.de</a><a
+                            href="/uxuidesign" class="footerentry nohoverfooterentry">Mo-Fr 10:00 - 18:00</a>
+                        <div class="footercontainer"></div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div id="loadingAnimationWrapper" class="loadinganimationwrapper">
+        <div class="lottie-animation" data-w-id="64265a7c-b2b7-102b-7893-fdeae9feb522" data-animation-type="lottie"
+            data-src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/625986c11d15bd3e5925b744_KNGURU%205.json"
+            data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
+            data-default-duration="2.3" data-duration="0"></div>
+    </div>
+    <div id="page-wrap" class="page-wrap">
+        <div class="scrollcontainer">
+            <div class="container">
+                <div id="hero" class="herosectionnew home">
+                    <div class="homeherowrapper"><img
+                            src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/63fab02da506ca456a264a42_15%20Kopie.webp"
+                            loading="eager" sizes="100vw"
+                            srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/63fab02da506ca456a264a42_15%20Kopie-p-500.webp 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/63fab02da506ca456a264a42_15%20Kopie.webp 709w"
+                            alt="" class="mobileheroknguru" />
+                        <div class="w-layout-grid _2colcontentgird homehero">
+                            <div data-w-id="afaf0eea-db35-c62d-2528-80cbca363565" style="opacity:0"
+                                class="homeheroleft"><a
+                                    href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0zLIwKalMTrcwYLRSNagwMU80M7U0TU5KMzFINDRPszKoMDYwM0pOsUg2S05LSU4xTvHiy85LLy0qVSguKU3JzC8GAMIkFY4&amp;q=knguru+studios&amp;oq=knguru+&amp;aqs=chrome.1.69i57j46i19i175i199j69i60l6.5754j0j7&amp;sourceid=chrome&amp;ie=UTF-8#lrd=0x47a6595cbf40a17f:0x3062cd8c6cfdcd3d,1,,,"
+                                    target="_blank" class="googlestarscontainer w-inline-block">
+                                    <div class="_5stars w-embed"><svg viewBox="0 0 97 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.69954 1.6167L12.1973 6.67687L17.7829 7.49328L13.7412 11.4299L14.695 16.9912L9.69954 14.3641L4.70404 16.9912L5.65788 11.4299L1.61621 7.49328L7.20179 6.67687L9.69954 1.6167Z"
+                                                fill="currentColor" />
+                                            <path
+                                                d="M29.0999 1.6167L31.5977 6.67687L37.1833 7.49328L33.1416 11.4299L34.0954 16.9912L29.0999 14.3641L24.1044 16.9912L25.0583 11.4299L21.0166 7.49328L26.6022 6.67687L29.0999 1.6167Z"
+                                                fill="currentColor" />
+                                            <path
+                                                d="M48.5003 1.6167L50.9981 6.67687L56.5837 7.49328L52.542 11.4299L53.4958 16.9912L48.5003 14.3641L43.5048 16.9912L44.4587 11.4299L40.417 7.49328L46.0026 6.67687L48.5003 1.6167Z"
+                                                fill="currentColor" />
+                                            <path
+                                                d="M67.8997 1.6167L70.3975 6.67687L75.9831 7.49328L71.9414 11.4299L72.8952 16.9912L67.8997 14.3641L62.9042 16.9912L63.8581 11.4299L59.8164 7.49328L65.402 6.67687L67.8997 1.6167Z"
+                                                fill="currentColor" />
+                                            <path
+                                                d="M87.3001 1.6167L89.7979 6.67687L95.3835 7.49328L91.3418 11.4299L92.2956 16.9912L87.3001 14.3641L82.3046 16.9912L83.2585 11.4299L79.2168 7.49328L84.8024 6.67687L87.3001 1.6167Z"
+                                                fill="currentColor" />
+                                        </svg></div><img
+                                        src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/632345c6e056193cdaf7a845_googleShort.webp"
+                                        loading="lazy" alt="" class="google" />
+                                </a>
+                                <h1 data-w-id="afaf0eea-db35-c62d-2528-80cbca363569" style="opacity:0"
+                                    class="h1hero herohome v2">Wir erstellen preisgekrönte <strong
+                                        class="headlineblock big">Apps &amp; Websites</strong> <br /></h1>
+                                <div data-w-id="afaf0eea-db35-c62d-2528-80cbca363571" style="opacity:0"
+                                    class="herotext v2">Jung, kreativ und genau die richtigen, wenn es darum geht,
+                                    erstklassige Apps und Websites zu entwickeln. Spring jetzt mit uns auf das nächste
+                                    Level!</div>
+                                <div class="primarybuttonwrapper hero"><a href="https://calendly.com/knguru/louis"
+                                        target="_blank" class="specialbutton newbutton v2 w-inline-block">
+                                        <div class="buttontext">kostenloses Erstgespräch</div>
+                                        <div class="arrowdiagonal w-embed"><svg width="currentWidth"
+                                                height="currentHeight" viewBox="0 0 19 19" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M5.75 5C5.75 4.58579 6.08579 4.25 6.5 4.25L14 4.25C14.1989 4.25 14.3897 4.32902 14.5303 4.46967C14.671 4.61032 14.75 4.80109 14.75 5L14.75 12.5C14.75 12.9142 14.4142 13.25 14 13.25C13.5858 13.25 13.25 12.9142 13.25 12.5L13.25 6.81066L5.53033 14.5303C5.23744 14.8232 4.76256 14.8232 4.46967 14.5303C4.17678 14.2374 4.17678 13.7626 4.46967 13.4697L12.1893 5.75L6.5 5.75C6.08579 5.75 5.75 5.41421 5.75 5Z" />
+                                            </svg></div>
+                                    </a><a href="#showreelSection" data-w-id="afaf0eea-db35-c62d-2528-80cbca363578"
+                                        style="opacity:0" class="secondarybutton v2 w-button">Referenzen</a></div>
+                            </div>
+                            <div id="w-node-afaf0eea-db35-c62d-2528-80cbca36357a-2f83a898" class="homeheroright">
+                                <div class="knguruhead w-embed"><svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 342.51 457.36" height="currentHeight" width="currentWidth">
+                                        <g id="Ebene_2" data-name="Ebene 2">
+                                            <g id="Ebene_1-2" data-name="Ebene 1">
+                                                <polygon fill="currentColor"
+                                                    points="83.7 183.89 84.99 186.75 84.81 186.83 91.78 205.4 108.56 194.21 101.14 120.61 7.06 13.88 83.7 183.9 83.7 183.89" />
+                                                <path fill="currentColor"
+                                                    d="M171.31,195l-29.38-10-46,31.68-5.17,24.21,80.51.66,81.14-.69-6.2-24.31L201,185l-27.66,10A3.66,3.66,0,0,1,171.31,195Z" />
+                                                <polygon fill="currentColor"
+                                                    points="250.99 205.17 257.71 186.8 257.63 186.77 258.8 183.91 335.45 13.88 241.37 120.61 233.96 194.04 250.99 205.17" />
+                                                <polygon fill="currentColor"
+                                                    points="92.21 297.69 84.16 270.87 79.07 299.12 81.03 323.67 92.21 297.69" />
+                                                <polygon fill="currentColor"
+                                                    points="258.35 270.88 250.3 297.69 261.47 323.67 263.44 299.12 258.35 270.88" />
+                                                <path fill="currentColor"
+                                                    d="M319.86,113.2l13.31-26.61,9.34-63-66.37,147.2L313,144.92l6.42-30.47A5.28,5.28,0,0,1,319.86,113.2Z" />
+                                                <path fill="currentColor"
+                                                    d="M173.37,431.12h0l-.24.09a5,5,0,0,1-3.76,0l-.19-.08a2.27,2.27,0,0,1-.43-.19L144,417.75l-1.35.23,7.82,12.28,20.75,4.45L192,430.26,199.83,418l-1.36-.23Z" />
+                                                <path fill="currentColor"
+                                                    d="M240.41,369.47l17.87-26.8L244.22,310l-16.52,30.5L224,431.29,231.3,423l8.31-51.51A5.27,5.27,0,0,1,240.41,369.47Z" />
+                                                <path fill="currentColor"
+                                                    d="M98.29,310,84.23,342.67l17.86,26.8a5.13,5.13,0,0,1,.81,2.07l8.31,51.5,7.26,8.25-3.66-90.84Z" />
+                                                <path fill="currentColor"
+                                                    d="M125.18,338.83,126.36,368l19.45-37.64,14.32-59.65-22.28,30.38a5.21,5.21,0,0,1-4.2,2.13H106.51l18,33.32A5.3,5.3,0,0,1,125.18,338.83Z" />
+                                                <polygon fill="currentColor"
+                                                    points="243.17 102.8 333.78 0 312.32 4.09 246.44 70.36 243.17 102.8" />
+                                                <polygon fill="currentColor"
+                                                    points="139.76 173.42 128.74 123.06 108.55 90.11 118.39 187.66 139.76 173.42" />
+                                                <polygon fill="currentColor"
+                                                    points="96.07 70.36 30.19 4.09 8.73 0 99.34 102.8 96.07 70.36" />
+                                                <path fill="currentColor"
+                                                    d="M9.34,86.59l13.3,26.6a5.4,5.4,0,0,1,.44,1.26l6.42,30.47,36.87,25.9L0,23.62Z" />
+                                                <path fill="currentColor"
+                                                    d="M186.7,333.44l-15.45-64.36-15.44,64.33a5,5,0,0,1-.44,1.19l-13.82,26.74,1.58,12.19a5.18,5.18,0,0,1,4.19-2.11h47.87a5.19,5.19,0,0,1,4.19,2.11L201,361.34l-13.82-26.75A4.81,4.81,0,0,1,186.7,333.44Z" />
+                                                <path fill="currentColor"
+                                                    d="M129.56,446.71l17,7.37L171,457.34a2.81,2.81,0,0,0,.58,0l24.23-3.23,17.17-7.4a.47.47,0,0,0,.28-.4l2.18-57.19-5.94-11.5-2.07,15.91,4.93,21.35a5.29,5.29,0,0,1-.68,4l-12,20.84a5.26,5.26,0,0,1-3.36,2.37l-25.08,5.37-25.08-5.37a5.26,5.26,0,0,1-3.32-2.31l-12-21a5.2,5.2,0,0,1-.64-3.91l4.93-21.36L133,377.62l-5.94,11.5,2.18,57.19A.46.46,0,0,0,129.56,446.71Z" />
+                                                <path fill="currentColor"
+                                                    d="M191.71,381.87H150.8l-4,10,13.74,9.62a5.07,5.07,0,0,1,1.35,1.38h0l9.36,14,9.36-14a5.33,5.33,0,0,1,1.37-1.39l13.73-9.61Z" />
+                                                <polygon fill="currentColor"
+                                                    points="224.07 187.45 233.96 90.11 213.77 123.06 202.6 174.09 224.07 187.45" />
+                                                <path fill="currentColor"
+                                                    d="M236,303.22H208.86a5.25,5.25,0,0,1-4.21-2.13l-22.27-30.38,14.31,59.65L216.15,368l1.17-29.18a5.23,5.23,0,0,1,.63-2.28Z" />
+                                            </g>
+                                        </g>
+                                    </svg></div><img
+                                    src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/63faace869cf80ccb407a9b1_15%20Kopie.webp"
+                                    loading="lazy" sizes="100vw"
+                                    srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/63faace869cf80ccb407a9b1_15%20Kopie-p-500.webp 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/63faace869cf80ccb407a9b1_15%20Kopie.webp 748w"
+                                    alt="" class="heroknguru" />
+                            </div>
+                        </div>
+                        <div class="herologocontainer">
+                            <div class="herologowrapper"><a href="https://sprylab.com/" target="_blank"
+                                    class="herolink w-inline-block"><img class="herologo sprylab"
+                                        src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/653fb488e3572daf0b373ef5_sprylab.png"
+                                        width="113" height="35" alt="" sizes="(max-width: 767px) 100vw, 155.125px"
+                                        data-w-id="9502b597-082a-41fa-c514-194da57d1c2d" loading="lazy"
+                                        srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/653fb488e3572daf0b373ef5_sprylab-p-500.png 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/653fb488e3572daf0b373ef5_sprylab.png 695w" /></a><a
+                                    href="https://smartmove.eu/" target="_blank" class="herolink w-inline-block"><img
+                                        src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/653fb4a6327ec69cbe736da6_smartmove.png"
+                                        height="26" loading="lazy" alt=""
+                                        data-w-id="9502b597-082a-41fa-c514-194da57d1c2f"
+                                        srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/653fb4a6327ec69cbe736da6_smartmove-p-500.png 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/653fb4a6327ec69cbe736da6_smartmove.png 867w"
+                                        sizes="(max-width: 767px) 100vw, 171.83750915527344px"
+                                        class="herologo smartmove" /></a><a href="https://buecherbuechse.de/"
+                                    target="_blank" class="herolink w-inline-block"><img class="herologo buebue"
+                                        src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/653fb4c5f29fc491d236c1eb_buebue.png"
+                                        width="120" height="" alt="" sizes="(max-width: 767px) 100vw, 170px"
+                                        data-w-id="9502b597-082a-41fa-c514-194da57d1c31"
+                                        id="w-node-_9502b597-082a-41fa-c514-194da57d1c31-a57d1c2b" loading="lazy"
+                                        srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/653fb4c5f29fc491d236c1eb_buebue-p-500.png 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/653fb4c5f29fc491d236c1eb_buebue.png 888w" /></a><a
+                                    href="https://www.x-root.de/" target="_blank" class="herolink w-inline-block"><img
+                                        src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/653fb4e7264b0d477fe29d3a_xroot.png"
+                                        height="30" loading="lazy" alt=""
+                                        data-w-id="9502b597-082a-41fa-c514-194da57d1c33" class="herologo yroot" /></a><a
+                                    href="https://conbotics.com/" target="_blank" class="herolink w-inline-block"><img
+                                        src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/653fb50159fd68105ef0170e_conbotics.png"
+                                        height="32" loading="lazy" alt=""
+                                        data-w-id="9502b597-082a-41fa-c514-194da57d1c35"
+                                        srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/653fb50159fd68105ef0170e_conbotics-p-500.png 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/653fb50159fd68105ef0170e_conbotics.png 762w"
+                                        sizes="(max-width: 767px) 100vw, 174.0124969482422px"
+                                        class="herologo conbotics" /></a></div>
+                        </div>
+                    </div>
+                    <div class="fluidanimationcanvas w-embed">
+                        <style>
+                            canvas {
+                                width: 100%;
+                                max-width: 100%;
+                                height: 100%;
+                                position: absolute;
+                                top: 0%;
+                                right: 0%;
+                                bottom: 0%;
+                                left: 0%;
+                                z-index: -1;
+                            }
+                        </style>
+                        <canvas id="fluidCanvas"></canvas>
+                    </div>
+                </div>
+                <div class="projectslidersectionv2">
+                    <div class="projectslider carousel"><a href="#" class="projectsliderelement w-inline-block"><img
+                                src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/6427758e07c9bb91238cd673_Plactron%206.webp"
+                                loading="eager" width="554" height="432" alt=""
+                                srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/6427758e07c9bb91238cd673_Plactron%25206-p-500.webp 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/6427758e07c9bb91238cd673_Plactron%25206-p-800.webp 800w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/6427758e07c9bb91238cd673_Plactron%206.webp 923w"
+                                sizes="(max-width: 479px) 100vw, 554px" class="projectsliderimage" />
+                            <div class="projectslideoverlay">
+                                <div class="projectoverlaybutton">
+                                    <div class="projectoverlaybuttontext">Explore Project</div>
+                                </div>
+                            </div>
+                        </a><a href="#" class="projectsliderelement w-inline-block"><img
+                                src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/64147e64a70cad09724b4daf_Leipzigbeats%202x.webp"
+                                loading="eager" width="554" height="432" alt=""
+                                srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/64147e64a70cad09724b4daf_Leipzigbeats%202x-p-500.webp 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/64147e64a70cad09724b4daf_Leipzigbeats%202x-p-800.webp 800w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/64147e64a70cad09724b4daf_Leipzigbeats%202x-p-1080.webp 1080w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/64147e64a70cad09724b4daf_Leipzigbeats%202x.webp 1098w"
+                                sizes="(max-width: 479px) 100vw, 554px" class="projectsliderimage" />
+                            <div class="projectslideoverlay">
+                                <div class="projectoverlaybutton">
+                                    <div class="projectoverlaybuttontext">Explore Project</div>
+                                </div>
+                            </div>
+                        </a><a href="#" class="projectsliderelement w-inline-block"><img
+                                src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/6427758e07c9bb2c108cd66b_Golf%20pro%208.webp"
+                                loading="eager" width="554" height="432" alt=""
+                                srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/6427758e07c9bb2c108cd66b_Golf%2520pro%25208-p-500.webp 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/6427758e07c9bb2c108cd66b_Golf%2520pro%25208-p-800.webp 800w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/6427758e07c9bb2c108cd66b_Golf%20pro%208.webp 923w"
+                                sizes="(max-width: 479px) 100vw, 554px" class="projectsliderimage" />
+                            <div class="projectslideoverlay">
+                                <div class="projectoverlaybutton">
+                                    <div class="projectoverlaybuttontext">Explore Project</div>
+                                </div>
+                            </div>
+                        </a><a href="#" class="projectsliderelement w-inline-block"><img
+                                src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/6415b4d0babae483f0d46847_FoodMe%20Cover.webp"
+                                loading="eager" width="554" height="432" alt=""
+                                srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/6415b4d0babae483f0d46847_FoodMe%20Cover-p-500.webp 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/6415b4d0babae483f0d46847_FoodMe%20Cover-p-800.webp 800w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/6415b4d0babae483f0d46847_FoodMe%20Cover-p-1080.webp 1080w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/6415b4d0babae483f0d46847_FoodMe%20Cover.webp 1098w"
+                                sizes="(max-width: 479px) 100vw, 554px" class="projectsliderimage" />
+                            <div class="projectslideoverlay">
+                                <div class="projectoverlaybutton">
+                                    <div class="projectoverlaybuttontext">Explore Project</div>
+                                </div>
+                            </div>
+                        </a><a href="#" class="projectsliderelement w-inline-block"><img
+                                src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/6415aee55070921f008c91f3_Local%20ID%202x.webp"
+                                loading="eager" width="554" height="432" alt=""
+                                srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/6415aee55070921f008c91f3_Local%20ID%202x-p-500.webp 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/6415aee55070921f008c91f3_Local%20ID%202x-p-800.webp 800w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/6415aee55070921f008c91f3_Local%20ID%202x-p-1080.webp 1080w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/6415aee55070921f008c91f3_Local%20ID%202x.webp 1098w"
+                                sizes="(max-width: 479px) 100vw, 554px" class="projectsliderimage" />
+                            <div class="projectslideoverlay">
+                                <div class="projectoverlaybutton">
+                                    <div class="projectoverlaybuttontext">Explore Project</div>
+                                </div>
+                            </div>
+                        </a><a href="#" class="projectsliderelement w-inline-block"><img
+                                src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/6415aca1b5ad31ac4ae7e73d_GLD%202x.webp"
+                                loading="eager" width="554" height="432" alt=""
+                                srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/6415aca1b5ad31ac4ae7e73d_GLD%202x-p-500.webp 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/6415aca1b5ad31ac4ae7e73d_GLD%202x-p-800.webp 800w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/6415aca1b5ad31ac4ae7e73d_GLD%202x-p-1080.webp 1080w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/6415aca1b5ad31ac4ae7e73d_GLD%202x.webp 1098w"
+                                sizes="(max-width: 479px) 100vw, 554px" class="projectsliderimage" />
+                            <div class="projectslideoverlay">
+                                <div class="projectoverlaybutton">
+                                    <div class="projectoverlaybuttontext">Explore Project</div>
+                                </div>
+                            </div>
+                        </a><a href="#" class="projectsliderelement w-inline-block"><img
+                                src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/64147fe30a2bea1b0dbc75aa_Golf_Two%202x.webp"
+                                loading="eager" width="554" height="432" alt=""
+                                srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/64147fe30a2bea1b0dbc75aa_Golf_Two%202x-p-500.webp 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/64147fe30a2bea1b0dbc75aa_Golf_Two%202x-p-800.webp 800w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/64147fe30a2bea1b0dbc75aa_Golf_Two%202x-p-1080.webp 1080w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/64147fe30a2bea1b0dbc75aa_Golf_Two%202x.webp 1098w"
+                                sizes="(max-width: 479px) 100vw, 554px" class="projectsliderimage" />
+                            <div class="projectslideoverlay">
+                                <div class="projectoverlaybutton">
+                                    <div class="projectoverlaybuttontext">Explore Project</div>
+                                </div>
+                            </div>
+                        </a><a href="#" class="projectsliderelement w-inline-block"><img
+                                src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/64147f67318bac7e5bf362df_Freebies%202x.webp"
+                                loading="eager" width="554" height="432" alt=""
+                                srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/64147f67318bac7e5bf362df_Freebies%202x-p-500.webp 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/64147f67318bac7e5bf362df_Freebies%202x-p-800.webp 800w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/64147f67318bac7e5bf362df_Freebies%202x.webp 1098w"
+                                sizes="(max-width: 479px) 100vw, 554px" class="projectsliderimage" />
+                            <div class="projectslideoverlay">
+                                <div class="projectoverlaybutton">
+                                    <div class="projectoverlaybuttontext">Explore Project</div>
+                                </div>
+                            </div>
+                        </a></div>
+                </div>
+                <div class="developmentintrosection">
+                    <div class="devintrowrapper">
+                        <div class="headingcontainer">
+                            <h2 data-w-id="7318fb6d-9be1-cc37-7911-db7a9ab02c57" style="opacity:0"
+                                class="h1 home intro">Gewinne <strong class="headlineblock">mehr Kunden</strong> durch
+                                maßgeschneiderte, digitale Lösungen</h2>
+                            <div data-w-id="7318fb6d-9be1-cc37-7911-db7a9ab02c5c" style="opacity:0"
+                                class="textblockv2 home">Der erste Eindruck zählt! Damit der Funke zukünftig auch bei
+                                deinen Kunden überspringt, funktionieren unsere Apps &amp; Website nicht nur gut,
+                                sondern sehen noch besser aus.</div>
+                        </div>
+                        <div class="devvideocontainer">
+                            <div data-w-id="8f5deb2a-9ee0-2658-d0b1-754c989dea2a" style="opacity:0"
+                                class="youtubedesktop w-embed">
+                                <div class="youtube-player" data-id="MKTM58jd3eQ" data-related="0" data-control="1"
+                                    data-info="0" data-fullscreen="0"
+                                    style="width:100%;display: block; position: relative;cursor: pointer;max-height:333px;height:100%; overflow:hidden;padding-bottom:56.25%;margin:0 auto">
+                                    <img loading="lazy" src="//i.ytimg.com/vi/MKTM58jd3eQ/hqdefault.jpg"
+                                        style="bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%; width: 100%;height:auto; position: absolute; right: 0; top: -100%;">
+                                    <div
+                                        style="height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url('https://cdn.jsdelivr.net/gh/Libero793/KNGURUWebsite3.0@latest/images/play.webp') no-repeat;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="devintrobackground"></div>
+                </div>
+                <div class="solutionssection">
+                    <div class="contentwrapper center">
+                        <div class="w-embed">
+                            <style type="text/css">
+                                @media (max-width: 600px) {
+                                    .hireusecardsmobilescroller {
+                                        overflow-x: scroll;
+                                        overflow-y: hidden:
+                                    }
+                                }
+                            </style>
+                        </div>
+                        <div class="hireusecardsmobilescroller">
+                            <div class="solutionscardswrapper">
+                                <div data-w-id="0c6ac3fa-fc9f-b3de-af75-8f7c31715098" style="opacity:0"
+                                    class="solutionscard">
+                                    <div class="hireusiconcontainer">
+                                        <div class="hireusicon uidesignicon w-embed"><svg
+                                                enable-background="new 0 0 24 24" height="currentHeight"
+                                                viewBox="0 0 24 24" width="currentWidth"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="currentColor"
+                                                    d="m6.529 17.427c-.062 0-.125-.012-.186-.036-3.245-1.298-5.343-4.396-5.343-7.891 0-4.687 3.813-8.5 8.5-8.5s8.5 3.813 8.5 8.5c0 2.809-1.39 5.44-3.717 7.04-.229.158-.539.099-.695-.129s-.099-.539.129-.695c2.055-1.412 3.283-3.737 3.283-6.216 0-4.136-3.364-7.5-7.5-7.5s-7.5 3.364-7.5 7.5c0 3.084 1.851 5.816 4.715 6.963.257.103.381.394.278.649-.078.196-.265.315-.464.315z" />
+                                                <path fill="currentColor"
+                                                    d="m10 13h-2.5c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h2.5c.552 0 1-.449 1-1s-.448-1-1-1h-1c-1.103 0-2-.897-2-2s.897-2 2-2h2.5c.276 0 .5.224.5.5s-.224.5-.5.5h-2.5c-.552 0-1 .449-1 1s.448 1 1 1h1c1.103 0 2 .897 2 2s-.897 2-2 2z" />
+                                                <path fill="currentColor"
+                                                    d="m9.5 7c-.276 0-.5-.224-.5-.5v-2c0-.276.224-.5.5-.5s.5.224.5.5v2c0 .276-.224.5-.5.5z" />
+                                                <path fill="currentColor"
+                                                    d="m9.5 15c-.276 0-.5-.224-.5-.5v-2c0-.276.224-.5.5-.5s.5.224.5.5v2c0 .276-.224.5-.5.5z" />
+                                                <path fill="currentColor"
+                                                    d="m.5 24c-.165 0-.326-.082-.422-.231-.148-.233-.079-.542.153-.69l11-7c.198-.126.456-.098.622.068l3.646 3.646 7.646-7.646c.195-.195.512-.195.707 0s.195.512 0 .707l-8 8c-.195.195-.512.195-.707 0l-3.717-3.717-10.659 6.785c-.083.053-.176.078-.269.078z" />
+                                                <path fill="currentColor"
+                                                    d="m23.5 17c-.276 0-.5-.224-.5-.5v-3.5h-3.5c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h4c.276 0 .5.224.5.5v4c0 .276-.224.5-.5.5z" />
+                                            </svg></div>
+                                    </div>
+                                    <div class="hireustitle h3">Passive Einnahmen</div>
+                                    <div class="hireustext">Ein gute App oder Website kostet nicht nur Geld, sondern
+                                        generiert dir passive Einnahmen.</div>
+                                </div>
+                                <div class="solutionsdivider"></div>
+                                <div data-w-id="4ea70790-826b-801d-d66a-eeb983e308d4" style="opacity:0"
+                                    class="solutionscard">
+                                    <div class="hireusiconcontainer">
+                                        <div class="returningcustomericon w-embed"><svg id="Icons"
+                                                height="currentHeight" viewBox="0 0 512 512" width="currentWidth"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="currentColor"
+                                                    d="m255 160.61c15.12 0 29.61-7.62 40.8-21.45 10.22-12.63 16.08-28.56 16.08-43.72 0-30.54-24.45-53.57-56.88-53.57s-56.88 23-56.88 53.57c0 15.16 5.86 31.09 16.08 43.72 11.19 13.84 25.68 21.45 40.8 21.45zm0-102.24c23.4 0 40.38 15.59 40.38 37.07 0 27-22.09 48.67-40.38 48.67-22.37 0-40.38-26.63-40.38-48.67 0-21.44 16.98-37.07 40.38-37.07z" />
+                                                <path fill="currentColor"
+                                                    d="m187.69 239.79-5.79 82.59a8.25 8.25 0 0 0 7.65 8.81h.58a8.26 8.26 0 0 0 8.23-7.67l5.79-82.52a8.25 8.25 0 1 0 -16.46-1.16z" />
+                                                <path fill="currentColor"
+                                                    d="m366.89 331.18a8.49 8.49 0 0 0 7.71-9.18s-8.72-62.53-10-83.51c-2.37-37.67-25.38-67.89-61.33-73.39-12.64-1.94-35.6-3.4-47.6-3.41a474.77 474.77 0 0 0 -49 3.39 70 70 0 0 0 -43.44 23.55c-11.7 13.51-16.93 30.78-18 49.9-1.2 21-9.15 83.56-9.15 83.56a8.25 8.25 0 1 0 16.4 1.8s8.07-63.24 9.22-84.45c1.64-30.06 19.43-54.22 47.22-58a453.74 453.74 0 0 1 46.73-3.24c11.18 0 33.37 1.42 45.11 3.22a55.35 55.35 0 0 1 33.32 18.22c9.16 10.52 13.13 24.65 14 39.85 1.27 21.24 10.13 84.49 10.13 84.49a8.52 8.52 0 0 0 8.68 7.2z" />
+                                                <path fill="currentColor"
+                                                    d="m313.26 232.14a8.25 8.25 0 0 0 -7.66 8.86l5.8 82.58a8.25 8.25 0 0 0 8.22 7.68h.59a8.26 8.26 0 0 0 7.65-8.81l-5.8-82.59a8.27 8.27 0 0 0 -8.8-7.72z" />
+                                                <path fill="currentColor"
+                                                    d="m307.64 405.88 39.68-38.68a8.25 8.25 0 0 0 -4.57-14.07l-54.83-8-24.52-49.65a8.25 8.25 0 0 0 -14.8 0l-24.52 49.68-54.83 8a8.25 8.25 0 0 0 -4.57 14.07l39.68 38.68-9.36 54.57a8.25 8.25 0 0 0 12 8.7l49-25.78 49 25.78a8.33 8.33 0 0 0 3.84.95 8.26 8.26 0 0 0 8.13-9.65zm-55.48 20.9c-9.58 4.88-38.08 20-38.08 20l7.27-42.41a8.25 8.25 0 0 0 -2.37-7.3l-30.81-30 42.58-6.19a8.26 8.26 0 0 0 6.21-4.51l19-38.59 19 38.59a8.26 8.26 0 0 0 6.21 4.51l42.58 6.19-30.81 30a8.25 8.25 0 0 0 -2.37 7.3l7.27 42.41s-28.5-15.14-38.08-20a8 8 0 0 0 -7.6 0z" />
+                                                <path fill="currentColor"
+                                                    d="m482.63 378.21-40.09-5.83-17.93-36.32a8.24 8.24 0 0 0 -14.79 0l-17.93 36.32-40.09 5.83a8.25 8.25 0 0 0 -4.57 14.07l29 28.28-6.85 39.92a8.25 8.25 0 0 0 12 8.7l35.85-18.85 35.86 18.85a8.33 8.33 0 0 0 3.84.95 8.26 8.26 0 0 0 8.13-9.65l-6.85-39.92 29-28.28a8.25 8.25 0 0 0 -4.57-14.07zm-69.25 55.5c-6.29 3.16-24.91 13.09-24.91 13.09l4.76-27.73a8.25 8.25 0 0 0 -2.37-7.3l-20.15-19.64 27.84-4a8.23 8.23 0 0 0 6.21-4.52l12.45-25.22 12.45 25.22a8.27 8.27 0 0 0 6.22 4.52l27.83 4-20.14 19.64a8.23 8.23 0 0 0 -2.37 7.3l4.8 27.73s-18.61-9.93-24.9-13.09a8.14 8.14 0 0 0 -7.72 0z" />
+                                                <path fill="currentColor"
+                                                    d="m160.2 378.21-40.09-5.83-17.93-36.32a8.24 8.24 0 0 0 -14.79 0l-17.93 36.32-40.09 5.83a8.25 8.25 0 0 0 -4.57 14.07l29 28.28-6.8 39.92a8.25 8.25 0 0 0 12 8.7l35.86-18.85 35.85 18.85a8.33 8.33 0 0 0 3.84.95 8.26 8.26 0 0 0 8.13-9.65l-6.85-39.92 29-28.28a8.25 8.25 0 0 0 -4.57-14.07zm-69.2 55.5-24.95 13.09 4.75-27.73a8.23 8.23 0 0 0 -2.37-7.3l-20.14-19.64 27.83-4a8.27 8.27 0 0 0 6.22-4.52l12.45-25.22 12.45 25.22a8.23 8.23 0 0 0 6.21 4.52l27.84 4-20.15 19.64a8.25 8.25 0 0 0 -2.37 7.3l4.76 27.73-24.91-13.09a7.3 7.3 0 0 0 -7.62 0z" />
+                                            </svg></div>
+                                    </div>
+                                    <div class="hireustitle h3">Wiederkehrende Kunden</div>
+                                    <div class="hireustext">Intuitives Design sorgt dafür das deine Kunden dir
+                                        langfristig treu bleiben.</div>
+                                </div>
+                                <div class="solutionsdivider"></div>
+                                <div data-w-id="2a771380-0bd5-f7af-abba-e8c8931cf7c1" style="opacity:0"
+                                    class="solutionscard">
+                                    <div class="hireusiconcontainer">
+                                        <div class="competitionicon w-embed">
+                                            <?xml version="1.0" encoding="iso-8859-1"?>
+                                            <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                                xml:space="preserve" height="currentHeight" width="currentWidth">
+                                                <g>
+                                                    <g>
+                                                        <path fill="currentColor" d="M454.254,258.609l-55.703-86.019c-4.317-6.667-11.637-10.648-19.58-10.648H133.204c-7.931,0-15.244,3.971-19.563,10.621
+                l-55.876,86.03c-5.71,8.79-4.828,20.396,2.145,28.222l178.662,200.58c4.422,4.964,10.77,7.812,17.418,7.812c0.001,0,0,0,0.001,0
+                c6.647,0,12.997-2.847,17.419-7.811l178.682-200.592C459.055,278.987,459.944,267.393,454.254,258.609z M367.687,181.941
+                l-46.846,72.44l-46.874-72.44H367.687z M302.462,262.793h-92.944l46.472-71.819L302.462,262.793z M238.013,181.943l-46.745,72.241
+                l-46.729-72.241H238.013z M126.048,190.178l46.97,72.615H78.885L126.048,190.178z M83.109,282.793h100.645l53.216,172.735
+                L83.109,282.793z M255.99,449.336l-51.309-166.543h102.618L255.99,449.336z M275.009,455.534l53.218-172.74h100.654
+                L275.009,455.534z M339.22,262.793l46.927-72.565l46.989,72.565H339.22z" />
+                                                    </g>
+                                                </g>
+                                                <g>
+                                                    <g>
+                                                        <path fill="currentColor" d="M30.333,262.793H10c-5.522,0-10,4.477-10,10s4.478,10,10,10h20.333c5.522,0,10-4.477,10-10S35.855,262.793,30.333,262.793
+                z" />
+                                                    </g>
+                                                </g>
+                                                <g>
+                                                    <g>
+                                                        <path fill="currentColor"
+                                                            d="M502,262.793h-20.333c-5.522,0-10,4.477-10,10s4.478,10,10,10H502c5.522,0,10-4.477,10-10S507.522,262.793,502,262.793z" />
+                                                    </g>
+                                                </g>
+                                                <g>
+                                                    <g>
+                                                        <path fill="currentColor" d="M437.146,91.826c-3.906-3.905-10.236-3.905-14.143,0l-33.217,33.217c-3.905,3.905-3.905,10.237,0,14.142
+                c1.954,1.953,4.513,2.929,7.072,2.929c2.56,0,5.118-0.977,7.071-2.929l33.217-33.217
+                C441.051,102.063,441.051,95.732,437.146,91.826z" />
+                                                    </g>
+                                                </g>
+                                                <g>
+                                                    <g>
+                                                        <path fill="currentColor"
+                                                            d="M122.646,124.865L89.43,91.647c-3.904-3.905-10.234-3.905-14.143,0c-3.905,3.905-3.905,10.237,0,14.142l33.217,33.217
+                c1.953,1.953,4.512,2.929,7.071,2.929c2.559,0,5.118-0.977,7.071-2.929C126.551,135.102,126.551,128.769,122.646,124.865z" />
+                                                    </g>
+                                                </g>
+                                                <g>
+                                                    <g>
+                                                        <path fill="currentColor" d="M256.254,16.793c-5.522,0-10,4.477-10,10v65.168c0,5.523,4.477,10,10,10c5.522,0,10-4.477,10-10V26.793
+                C266.254,21.271,261.776,16.793,256.254,16.793z" />
+                                                    </g>
+                                                </g>
+                                                <g>
+                                                    <g>
+                                                        <path fill="currentColor" d="M263.319,118.72c-1.859-1.86-4.439-2.93-7.069-2.93s-5.21,1.07-7.07,2.93c-1.86,1.86-2.93,4.44-2.93,7.07
+                c0,2.64,1.069,5.21,2.93,7.07c1.86,1.87,4.44,2.93,7.07,2.93s5.21-1.06,7.069-2.93c1.87-1.86,2.931-4.44,2.931-7.07
+                S265.189,120.581,263.319,118.72z" />
+                                                    </g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="hireustitle h3">Hohe Qualität</div>
+                                    <div class="hireustext">Eine maßgeschneiderte App oder Website steigert die Qualität
+                                        deines Produkts.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="processsectionheading-2">
+                    <div data-w-id="9c0ec083-1122-2483-7f85-b7f234892b48" class="kangcomp">
+                        <div class="kang-rel"><img
+                                src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/636d9dcc61df29c9548b475f_kangmask.webp"
+                                loading="lazy" sizes="(max-width: 991px) 100vw, 370px"
+                                srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/636d9dcc61df29c9548b475f_kangmask-p-500.webp 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/636d9dcc61df29c9548b475f_kangmask.webp 607w"
+                                alt="" class="kangaroo lazy" /><img
+                                src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/636d9dcc61df29e2558b477f_shadeskang.webp"
+                                loading="eager"
+                                style="-webkit-transform:translate3d(-200%, -200%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(-360deg) skew(0, 0);-moz-transform:translate3d(-200%, -200%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(-360deg) skew(0, 0);-ms-transform:translate3d(-200%, -200%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(-360deg) skew(0, 0);transform:translate3d(-200%, -200%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(-360deg) skew(0, 0)"
+                                alt="" class="shades lazy" /></div>
+                    </div>
+                    <div class="contentwrapperbackground projectsintro hide">
+                        <div class="contentwrapper center">
+                            <h2 class="h1 projectsintroheading">Von der Idee zum Launch in <strong
+                                    class="headlineblock-5">3 einfachen Schritten</strong></h2>
+                            <div class="textblock projectsintrosubheading">Keine komplizierten Prozesse oder langweilige
+                                Meetings. Mit uns wird Softwareentwicklung einfach und verständlich.</div>
+                            <div class="arrowdown w-embed"><svg viewBox="0 0 146 221" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1717_61011)">
+                                        <path
+                                            d="M12.0095 21.8875C15.5932 21.3642 19.0131 20.2294 22.5018 20.1685C27.5303 20.132 32.6681 20.5031 37.6156 21.7992C68.1726 29.5602 93.5831 45.91 109.569 72.8687C125.719 100.439 126.716 130.321 111.741 159.459C104.281 174.129 93.8082 186.548 81.3584 197.313C79.0291 199.247 76.9042 201.128 73.2129 204.52C79.8501 205.582 84.8928 206.415 90.1398 207.194C90.0992 207.86 90.2631 208.472 90.2772 209.342C88.9011 209.929 87.6343 210.924 86.149 211.104C78.8317 212.409 71.4598 213.51 64.0879 214.612C59.2232 215.26 54.2088 216.166 50.7994 211.618C47.1311 206.921 48.9952 201.615 51.5412 197.218C55.1902 191.216 59.5616 185.456 63.9876 179.901C64.9954 178.757 67.4621 178.97 69.3016 178.477C69.7931 180.312 71.0071 182.39 70.5173 183.832C68.8434 188.213 66.3926 192.147 64.0509 196.488C64.7187 196.528 65.2367 196.826 65.3865 196.567C106.091 168.619 124.126 128.831 106.972 83.6145C106.167 81.427 105.157 79.2943 103.739 77.2711C85.3672 48.7668 59.7788 30.9354 26.1701 24.866C21.7952 24.0719 17.0803 24.4614 12.4605 24.3884C12.242 23.573 12.228 22.7029 12.0095 21.8875Z"
+                                            fill="#FCD702" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1717_61011">
+                                            <rect width="202" height="97" fill="white"
+                                                transform="translate(93.6948) rotate(75)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="processsection">
+                    <div class="contentwrapper">
+                        <div class="kangaroobenefits">
+                            <div class="kangaroobenefititemwrapper">
+                                <div class="kangaroobenefitimage benefitimage1"><img class="kangaroobenefitidea"
+                                        src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/636d9dcc61df2956118b476c_iPhone%20Pro%20Longscroll%20Mockups.webp"
+                                        width="863" height="855" alt=""
+                                        sizes="(max-width: 479px) 100vw, (max-width: 767px) 700px, (max-width: 991px) 600px, 800px"
+                                        data-w-id="b9eea796-37d5-a1f2-ffb9-f1c1748c2dcc" loading="lazy"
+                                        srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/636d9dcc61df2956118b476c_iPhone%2520Pro%2520Longscroll%2520Mockups-p-500.webp 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/636d9dcc61df2956118b476c_iPhone%2520Pro%2520Longscroll%2520Mockups-p-800.webp 800w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/636d9dcc61df2956118b476c_iPhone%20Pro%20Longscroll%20Mockups.webp 899w" />
+                                </div>
+                                <div class="kangaroobenefitdivider"></div>
+                                <div class="kangaroobenefitcontent">
+                                    <div data-w-id="b9eea796-37d5-a1f2-ffb9-f1c1748c2dcf" style="opacity:0"
+                                        class="h2 marginbottom benefitheading"><strong>Kostenlose Analyse</strong></div>
+                                    <div data-w-id="b9eea796-37d5-a1f2-ffb9-f1c1748c2dd3" style="opacity:0"
+                                        class="textblock">Damit sich dein Investment in eine neue App oder Website auch
+                                        wirklich lohnt, checken wir vorher, ob dein Unternehmen zu uns passt. Dadurch
+                                        können wir sicherstellen, dass jedes Projekt, das wir angehen, am Ende auch ein
+                                        voller Erfolg wird<br /></div>
+                                </div>
+                            </div>
+                            <div class="kangaroobenefititemwrapper reversemobile">
+                                <div class="kangaroobenefitcontent left">
+                                    <div data-w-id="b9eea796-37d5-a1f2-ffb9-f1c1748c2dd7" style="opacity:0"
+                                        class="h2 marginbottom benefitheading">UX/UI Design &amp; Prototyp</div>
+                                    <div data-w-id="b9eea796-37d5-a1f2-ffb9-f1c1748c2dd9" style="opacity:0"
+                                        class="textblock">Wenn du ein Haus bauen willst, brauchst du einen Architekten,
+                                        für eine App oder Website benötigst du uns als UX/UI Designer. So garantieren
+                                        wir ein intuitives Nutzungserlebnis und können bereits vor der
+                                        Softwareentwicklung einen Prototypen bereitstellen.</div>
+                                </div>
+                                <div class="kangaroobenefitdivider"></div>
+                                <div class="kangaroobenefitimage benefitimage2"><img class="step2 v2"
+                                        src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/64405d3075fa827032f135a9_image%20400%402x.webp"
+                                        height="831" alt="" style="opacity:0"
+                                        sizes="(max-width: 479px) 92vw, (max-width: 767px) 100vw, (max-width: 991px) 357px, 700px"
+                                        data-w-id="2a6ff021-8a66-422c-68ed-d80c24a56efc" loading="lazy"
+                                        srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/64405d3075fa827032f135a9_image%20400%402x-p-500.png 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/64405d3075fa827032f135a9_image%20400%402x.webp 754w" />
+                                </div>
+                            </div>
+                            <div class="kangaroobenefititemwrapper">
+                                <div class="kangaroobenefitimage benefitimage3"><img class="kangaroobenefitmarketing"
+                                        src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/632779793adc8b94af8ccbb9_step%201%20(4).webp"
+                                        height="831" alt="" style="opacity:0"
+                                        sizes="(max-width: 479px) 100vw, (max-width: 767px) 700px, (max-width: 991px) 550px, 760px"
+                                        data-w-id="b9eea796-37d5-a1f2-ffb9-f1c1748c2de0" loading="lazy"
+                                        srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/632779793adc8b94af8ccbb9_step%201%20(4)-p-500.webp 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/632779793adc8b94af8ccbb9_step%201%20(4)-p-800.png 800w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/632779793adc8b94af8ccbb9_step%201%20(4)-p-1080.png 1080w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/632779793adc8b94af8ccbb9_step%201%20(4)-p-1600.png 1600w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/632779793adc8b94af8ccbb9_step%201%20(4).webp 1686w" />
+                                </div>
+                                <div class="kangaroobenefitdivider"></div>
+                                <div class="kangaroobenefitcontent">
+                                    <div data-w-id="b9eea796-37d5-a1f2-ffb9-f1c1748c2de3" style="opacity:0"
+                                        class="h2 marginbottom benefitheading">Entwicklung &amp; Support</div>
+                                    <div data-w-id="b9eea796-37d5-a1f2-ffb9-f1c1748c2de5" style="opacity:0"
+                                        class="textblock">Bei der Entwicklung von Apps &amp; Websites setzen wir auf
+                                        modernste Cloudtechnologien in Verbindung mit leistungsfähigen Plattformen wie
+                                        Webflow, ReactNative oder Flutter. Dabei erhältst du auf Grundlage des Designs
+                                        ein Fixpreisangebot für die Entwicklung und auch langfristig lassen wir dich
+                                        nicht im Regen stehen.</div>
+                                </div>
+                            </div>
+                            <div class="kangaroobenefitsabsolutewrapper">
+                                <div data-w-id="b9eea796-37d5-a1f2-ffb9-f1c1748c2de8"
+                                    class="kangaroobenefitprogressbar">
+                                    <div class="kangaroobenefitprogressindicator-2">
+                                        <div class="html-embed-13 w-embed"><svg width="16" height="17"
+                                                viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M14.3747 3.08529L9.51276 0.397227C8.53508 -0.142958 7.34601 -0.130095 6.38154 0.422952L1.546 3.17532C0.581537 3.72837 -0.0129961 4.74443 0.000215717 5.8248L0.0398497 11.2781C0.0530616 12.3713 0.647595 13.3745 1.62527 13.9147L6.48724 16.6028C7.46492 17.143 8.65399 17.1301 9.61845 16.577L14.454 13.8247C15.4185 13.2716 16.013 12.2556 15.9998 11.1752L15.9601 5.72191C15.9601 4.62867 15.3524 3.62547 14.3747 3.08529Z"
+                                                    fill="#FCD702" />
+                                            </svg></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section id="teamSection" class="teamsection home">
+                    <div class="contentwrapper">
+                        <div class="teamwrapper">
+                            <div class="teamcontentwrapper"><img
+                                    src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/648b7ba908757625628b7640_GWA23_Siegel1_Weiss.webp"
+                                    loading="lazy" sizes="(max-width: 479px) 100vw, 140px"
+                                    srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/648b7ba908757625628b7640_GWA23_Siegel1_Weiss-p-500.webp 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/648b7ba908757625628b7640_GWA23_Siegel1_Weiss.webp 1284w"
+                                    alt="" class="webawardsteam" />
+                                <h3 class="h2 marketing">Unser Team ist preisgekrönt!</h3>
+                                <div class="contenttext">Wir haben bereits über <strong class="bold-text-99">100
+                                        Projekte</strong> im Bereich UX/UI Design betreut und wurde zuletzt sogar mit
+                                    dem <strong class="bold-text-100">German Web Award &#x27;23</strong> ausgezeichnet.
+                                    Wer in Deutschland richtig gutes UX/UI Design braucht, kommt zu uns.</div><a
+                                    href="/uxuidesign" class="specialbutton newbutton v2 team w-inline-block">
+                                    <div class="buttontext">UX/UI Design Service</div>
+                                    <div class="arrowdiagonal w-embed"><svg width="currentWidth" height="currentHeight"
+                                            viewBox="0 0 19 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M5.75 5C5.75 4.58579 6.08579 4.25 6.5 4.25L14 4.25C14.1989 4.25 14.3897 4.32902 14.5303 4.46967C14.671 4.61032 14.75 4.80109 14.75 5L14.75 12.5C14.75 12.9142 14.4142 13.25 14 13.25C13.5858 13.25 13.25 12.9142 13.25 12.5L13.25 6.81066L5.53033 14.5303C5.23744 14.8232 4.76256 14.8232 4.46967 14.5303C4.17678 14.2374 4.17678 13.7626 4.46967 13.4697L12.1893 5.75L6.5 5.75C6.08579 5.75 5.75 5.41421 5.75 5Z" />
+                                        </svg></div>
+                                </a>
+                            </div>
+                            <div class="teamimagewrapper"><img
+                                    src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/6463ed1287254e1f0c68729e_Rectangle%201330.webp"
+                                    loading="lazy" id="w-node-_05d7e747-fdd4-f5f4-6da6-ab5477e1babf-2f83a898"
+                                    sizes="100vw" alt=""
+                                    srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/6463ed1287254e1f0c68729e_Rectangle%201330-p-500.webp 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/6463ed1287254e1f0c68729e_Rectangle%201330.webp 582w"
+                                    class="teamimage" /><img
+                                    src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/6463ed2004db95871bc699cb_Rectangle%201331.webp"
+                                    loading="lazy" id="w-node-_05d7e747-fdd4-f5f4-6da6-ab5477e1bac0-2f83a898"
+                                    sizes="100vw" alt=""
+                                    srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/6463ed2004db95871bc699cb_Rectangle%201331-p-500.webp 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/6463ed2004db95871bc699cb_Rectangle%201331.webp 582w"
+                                    class="teamimage" /><img
+                                    src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/6463edf5a077e3fcec0b9c7f_Group%201000001280.webp"
+                                    loading="lazy" id="w-node-_05d7e747-fdd4-f5f4-6da6-ab5477e1bac1-2f83a898"
+                                    sizes="100vw" alt=""
+                                    srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/6463edf5a077e3fcec0b9c7f_Group%201000001280-p-500.webp 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/6463edf5a077e3fcec0b9c7f_Group%201000001280.webp 582w"
+                                    class="teamimage" /><img
+                                    src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/6463ed327b261fe564731598_Rectangle%201333.webp"
+                                    loading="lazy" id="w-node-_05d7e747-fdd4-f5f4-6da6-ab5477e1bac2-2f83a898"
+                                    sizes="100vw" alt=""
+                                    srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/6463ed327b261fe564731598_Rectangle%201333-p-500.webp 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/6463ed327b261fe564731598_Rectangle%201333.webp 582w"
+                                    class="teamimage" /></div>
+                            <div class="teamwrapperbackground"></div>
+                        </div>
+                    </div>
+                </section>
+                <section id="showreelSection" class="showreelsection home">
+                    <div class="devintrowrapper">
+                        <div class="contentwrapper centerwrapper showreel">
+                            <h2 class="h2 projects center">Apps und Websites die deine Kunden <strong
+                                    class="headlineblock">sofort</strong> überzeugen.</h2>
+                            <div class="textblock projectsintrosubheading">Der erste Eindruck zählt und das nicht nur
+                                beim Dating! Wir sorgen dafür, dass der Funke auch bei deinen Kunden zukünftig sofort
+                                überspringt.</div>
+                        </div>
+                        <div class="devvideocontainer fullwidth">
+                            <div style="padding-top:56.17021276595745%" class="w-embed-youtubevideo"><iframe
+                                    src="https://www.youtube.com/embed/7NEw8zzWQk4?rel=0&amp;controls=1&amp;autoplay=1&amp;mute=1&amp;start=0"
+                                    frameBorder="0"
+                                    style="position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:auto"
+                                    allow="autoplay; encrypted-media" allowfullscreen=""
+                                    title="Showreel KNGURU Studios 2023"></iframe></div>
+                        </div>
+                    </div>
+                </section>
+                <div id="projectsSection" class="projectssection-3 bottompadding">
+                    <div class="staticprojectslistwrapper">
+                        <div class="projectitemcontainer">
+                            <div class="projectitem">
+                                <div class="desktopcasecol">
+                                    <div data-w-id="aa5d83e0-ae29-d2d1-b04a-17c6a70acc17" style="opacity:0"
+                                        class="w-embed">
+                                        <div class="w-background-video projectvideo">
+                                            <video class="lazy" autoplay muted loop playsinline
+                                                poster="https://assets-global.website-files.com/61aab412062c50600ffad9ac/633794dd1e9aa911568b8637_lb.webp">
+                                                <source
+                                                    data-src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/6332295a7669e393c5e72c25_beatzz (1)-transcode.webm"
+                                                    type="video/webm">
+                                                <source
+                                                    data-src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/6332295a7669e393c5e72c25_beatzz (1)-transcode.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="w-embed w-script">
+                                        <script>
+                                            document.addEventListener("DOMContentLoaded", function () {
+                                                var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
 
-    </section>
+                                                if ("IntersectionObserver" in window) {
+                                                    var lazyVideoObserver = new IntersectionObserver(function (entries, observer) {
+                                                        entries.forEach(function (video) {
+                                                            if (video.isIntersecting) {
 
-<section class="section6">
-    <div class="row">
-        <div class="column">
-<h2>Reserve your spot today!</h2>
-<button><a href="">Let’s Talk</a></button>
+                                                                for (var source in video.target.children) {
+                                                                    var videoSource = video.target.children[source];
+                                                                    if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+                                                                        videoSource.src = videoSource.dataset.src;
+                                                                    }
+                                                                }
+
+                                                                video.target.load();
+                                                                video.target.classList.remove("lazy");
+                                                                lazyVideoObserver.unobserve(video.target);
+
+
+                                                            }
+                                                        });
+                                                    });
+
+                                                    lazyVideos.forEach(function (lazyVideo) {
+                                                        lazyVideoObserver.observe(lazyVideo);
+                                                    });
+                                                }
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                                <div data-w-id="aa5d83e0-ae29-d2d1-b04a-17c6a70acc19" style="opacity:0"
+                                    class="desktopcasecol projecttextright">
+                                    <h2 class="h3 homeprojectsheading">Leipzig Beatzz</h2>
+                                    <p class="textblock">Ein Radiosender, dem seine DAB Frequenz geklaut wurde. Die
+                                        Lösung? Eine brandneue Cross-Plattform App. So können die treuen Hörer jetzt
+                                        nicht nur jederzeit den Livestream einschalten, sondern erhalten gleichzeitig
+                                        auch eine Übersicht, welche Events in Leipzig aktuell anstehen. Dadurch konnten
+                                        wir dem Betreiber nicht nur Helfen zu überleben, sondern auch neue
+                                        Geschäftsfelder für sich zu erschließen.</p>
+                                    <div class="desktopprojectstatswrapperleft-3"><a href="https://www.beatzz.app/"
+                                            target="_blank" class="desktopprojectstat-3 link w-inline-block">
+                                            <div class="iconlink-2 w-embed"><svg id="Layer_1"
+                                                    enable-background="new 0 0 512 512" height="currentHeight"
+                                                    viewBox="0 0 512 512" width="currentWidth"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g>
+                                                        <path fill="currentColor"
+                                                            d="m384 208c-8.8 0-16 7.2-16 16v184c0 13.2-10.8 24-24 24h-240c-13.2 0-24-10.8-24-24v-240c0-13.2 10.8-24 24-24h167.5c8.8 0 16-7.2 16-16s-7.2-16-16-16h-167.5c-30.9 0-56 25.1-56 56v240c0 30.9 25.1 56 56 56h240c30.9 0 56-25.1 56-56v-184c0-8.8-7.2-16-16-16z" />
+                                                        <path fill="currentColor"
+                                                            d="m448 48h-112c-8.8 0-16 7.2-16 16s7.2 16 16 16h73.4l-196.7 196.7c-6.2 6.2-6.2 16.4 0 22.6 3.1 3.1 7.2 4.7 11.3 4.7s8.2-1.6 11.3-4.7l196.7-196.7v73.4c0 8.8 7.2 16 16 16s16-7.2 16-16v-112c0-8.8-7.2-16-16-16z" />
+                                                    </g>
+                                                </svg></div>
+                                            <div class="projectstattext">https://www.beatzz.app</div>
+                                        </a></div>
+                                    <div class="wrapperleft"><a
+                                            href="https://www.figma.com/proto/OUNYBIHnt1ULrCjX08486Y/9000-ClubKit-app?type=design&amp;node-id=397-10205&amp;scaling=scale-down&amp;page-id=397%3A10177&amp;starting-point-node-id=397%3A10205&amp;show-proto-sidebar=1"
+                                            target="_blank" class="specialbutton newbutton v2 w-inline-block">
+                                            <div class="buttontext">Prototyp starten</div>
+                                            <div class="arrowdiagonal w-embed"><svg width="currentWidth"
+                                                    height="currentHeight" viewBox="0 0 19 19" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M5.75 5C5.75 4.58579 6.08579 4.25 6.5 4.25L14 4.25C14.1989 4.25 14.3897 4.32902 14.5303 4.46967C14.671 4.61032 14.75 4.80109 14.75 5L14.75 12.5C14.75 12.9142 14.4142 13.25 14 13.25C13.5858 13.25 13.25 12.9142 13.25 12.5L13.25 6.81066L5.53033 14.5303C5.23744 14.8232 4.76256 14.8232 4.46967 14.5303C4.17678 14.2374 4.17678 13.7626 4.46967 13.4697L12.1893 5.75L6.5 5.75C6.08579 5.75 5.75 5.41421 5.75 5Z" />
+                                                </svg></div>
+                                        </a><a
+                                            href="https://www.figma.com/file/OUNYBIHnt1ULrCjX08486Y/9000-ClubKit-app?type=design&amp;node-id=397%3A10177&amp;t=vlHCoMAspBwVADyd-1"
+                                            target="_blank"
+                                            class="specialbutton newbutton v2 secondary spaceleft w-inline-block">
+                                            <div class="buttontext secondary">Design</div>
+                                            <div class="arrowdiagonal w-embed"><svg width="currentWidth"
+                                                    height="currentHeight" viewBox="0 0 19 19" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M5.75 5C5.75 4.58579 6.08579 4.25 6.5 4.25L14 4.25C14.1989 4.25 14.3897 4.32902 14.5303 4.46967C14.671 4.61032 14.75 4.80109 14.75 5L14.75 12.5C14.75 12.9142 14.4142 13.25 14 13.25C13.5858 13.25 13.25 12.9142 13.25 12.5L13.25 6.81066L5.53033 14.5303C5.23744 14.8232 4.76256 14.8232 4.46967 14.5303C4.17678 14.2374 4.17678 13.7626 4.46967 13.4697L12.1893 5.75L6.5 5.75C6.08579 5.75 5.75 5.41421 5.75 5Z" />
+                                                </svg></div>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projectitemcontainer backgroundimage">
+                            <div class="projectitem reversemobile">
+                                <div data-w-id="aa5d83e0-ae29-d2d1-b04a-17c6a70acc2e" style="opacity:0"
+                                    class="desktopcasecol">
+                                    <h2 class="h3 homeprojectsheading">Mitarbeiter Aktionen</h2>
+                                    <p class="textblock width90">Die Aufgabe bestand darin, eine App zu designen, die es
+                                        jedem Unternehmen ermöglicht, ein eigenes Bonusprogramm für Mitarbeiter
+                                        anzubieten. Dazu haben wir sowohl ein helles als auch ein dunkles Design der App
+                                        erstellt, das mit den Hauptfarben der Partnerunternehmen problemlos kombiniert
+                                        werden kann. Eine einfache Lösung, die maximale Flexibilität bietet, um mehr
+                                        Kunden zu erreichen.</p>
+                                    <div class="desktopprojectstatswrapperleft-3"><a
+                                            href="https://www.mitarbeiteraktionen.de/welcome" target="_blank"
+                                            class="desktopprojectstat-3 link w-inline-block">
+                                            <div class="iconlink-2 w-embed"><svg id="Layer_1"
+                                                    enable-background="new 0 0 512 512" height="currentHeight"
+                                                    viewBox="0 0 512 512" width="currentWidth"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g>
+                                                        <path fill="currentColor"
+                                                            d="m384 208c-8.8 0-16 7.2-16 16v184c0 13.2-10.8 24-24 24h-240c-13.2 0-24-10.8-24-24v-240c0-13.2 10.8-24 24-24h167.5c8.8 0 16-7.2 16-16s-7.2-16-16-16h-167.5c-30.9 0-56 25.1-56 56v240c0 30.9 25.1 56 56 56h240c30.9 0 56-25.1 56-56v-184c0-8.8-7.2-16-16-16z" />
+                                                        <path fill="currentColor"
+                                                            d="m448 48h-112c-8.8 0-16 7.2-16 16s7.2 16 16 16h73.4l-196.7 196.7c-6.2 6.2-6.2 16.4 0 22.6 3.1 3.1 7.2 4.7 11.3 4.7s8.2-1.6 11.3-4.7l196.7-196.7v73.4c0 8.8 7.2 16 16 16s16-7.2 16-16v-112c0-8.8-7.2-16-16-16z" />
+                                                    </g>
+                                                </svg></div>
+                                            <div class="projectstattext">https://mitarbeiteraktionen.de</div>
+                                        </a></div>
+                                    <div class="wrapperleft"><a
+                                            href="https://www.figma.com/proto/UC1uDlndK5r53kb7okyXJ4/Freebies?type=design&amp;node-id=436-18581&amp;scaling=scale-down&amp;page-id=436%3A14114&amp;starting-point-node-id=436%3A18581&amp;show-proto-sidebar=1"
+                                            target="_blank" class="specialbutton newbutton v2 w-inline-block">
+                                            <div class="buttontext">Prototyp starten</div>
+                                            <div class="arrowdiagonal w-embed"><svg width="currentWidth"
+                                                    height="currentHeight" viewBox="0 0 19 19" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M5.75 5C5.75 4.58579 6.08579 4.25 6.5 4.25L14 4.25C14.1989 4.25 14.3897 4.32902 14.5303 4.46967C14.671 4.61032 14.75 4.80109 14.75 5L14.75 12.5C14.75 12.9142 14.4142 13.25 14 13.25C13.5858 13.25 13.25 12.9142 13.25 12.5L13.25 6.81066L5.53033 14.5303C5.23744 14.8232 4.76256 14.8232 4.46967 14.5303C4.17678 14.2374 4.17678 13.7626 4.46967 13.4697L12.1893 5.75L6.5 5.75C6.08579 5.75 5.75 5.41421 5.75 5Z" />
+                                                </svg></div>
+                                        </a><a
+                                            href="https://www.figma.com/file/UC1uDlndK5r53kb7okyXJ4/Freebies?type=design&amp;node-id=436%3A14114&amp;t=vlHCoMAspBwVADyd-1"
+                                            target="_blank"
+                                            class="specialbutton newbutton v2 secondary spaceleft w-inline-block">
+                                            <div class="buttontext secondary">Design</div>
+                                            <div class="arrowdiagonal w-embed"><svg width="currentWidth"
+                                                    height="currentHeight" viewBox="0 0 19 19" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M5.75 5C5.75 4.58579 6.08579 4.25 6.5 4.25L14 4.25C14.1989 4.25 14.3897 4.32902 14.5303 4.46967C14.671 4.61032 14.75 4.80109 14.75 5L14.75 12.5C14.75 12.9142 14.4142 13.25 14 13.25C13.5858 13.25 13.25 12.9142 13.25 12.5L13.25 6.81066L5.53033 14.5303C5.23744 14.8232 4.76256 14.8232 4.46967 14.5303C4.17678 14.2374 4.17678 13.7626 4.46967 13.4697L12.1893 5.75L6.5 5.75C6.08579 5.75 5.75 5.41421 5.75 5Z" />
+                                                </svg></div>
+                                        </a></div>
+                                </div>
+                                <div class="desktopcasecol">
+                                    <div data-w-id="aa5d83e0-ae29-d2d1-b04a-17c6a70acc42" style="opacity:0"
+                                        class="html-embed-29 w-embed">
+                                        <div class="w-background-video projectvideo">
+                                            <video class="lazy" autoplay muted loop playsinline
+                                                poster="https://assets-global.website-files.com/61aab412062c50600ffad9ac/633794dd9841f952ea972683_63322990e0d6e8dd1d90ee21_ma%20(1)-poster-00001.webp">
+                                                <source
+                                                    data-src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/63322990e0d6e8dd1d90ee21_ma (1)-transcode.webm"
+                                                    type="video/webm">
+                                                <source
+                                                    data-src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/63322990e0d6e8dd1d90ee21_ma (1)-transcode.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projectitemcontainer">
+                            <div class="projectitem">
+                                <div class="desktopcasecol">
+                                    <div data-w-id="aa5d83e0-ae29-d2d1-b04a-17c6a70acc46" style="opacity:0"
+                                        class="w-embed">
+                                        <div class="w-background-video projectvideo">
+                                            <video class="lazy" autoplay muted loop playsinline
+                                                poster="https://assets-global.website-files.com/61aab412062c50600ffad9ac/646cadf2e94c5dc81ee06012_4_3-poster-00001.jpg">
+                                                <source
+                                                    data-src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/646cadf2e94c5dc81ee06012_4_3-transcode.webm"
+                                                    type="video/webm">
+                                                <source
+                                                    data-src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/646cadf2e94c5dc81ee06012_4_3-transcode.mp4"
+                                                    type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desktopcasecol projecttextright">
+                                    <h2 class="h3 homeprojectsheading">Bücherbüchse</h2>
+                                    <p class="textblock">Willkommen in der zauberhaften Welt von Bücherbüchse. Einem Ort
+                                        speziell für alle Bücherliebhaber. Stell dir vor, du betrittst unser Reich und
+                                        wirst von einem endlosen Meer voller Bücher empfangen. Wenn du weitergehst,
+                                        öffnet sich ein magischer Feed, der dich mit den neuesten Geschichten, Themen
+                                        und Neuigkeiten aus der Bücherwelt versorgt. Hier findest du nicht nur Bücher,
+                                        sondern auch besondere Schätze wie Büchsenmerch, exklusive Ausgaben, Boxen und
+                                        Buchhüllen, die dein Lesevergnügen vervollständigen.</p>
+                                    <div class="desktopprojectstatswrapperleft-3"><a href="https://buecherbuechse.de/"
+                                            target="_blank" class="desktopprojectstat-3 link w-inline-block">
+                                            <div class="iconlink-2 w-embed"><svg id="Layer_1"
+                                                    enable-background="new 0 0 512 512" height="currentHeight"
+                                                    viewBox="0 0 512 512" width="currentWidth"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g>
+                                                        <path fill="currentColor"
+                                                            d="m384 208c-8.8 0-16 7.2-16 16v184c0 13.2-10.8 24-24 24h-240c-13.2 0-24-10.8-24-24v-240c0-13.2 10.8-24 24-24h167.5c8.8 0 16-7.2 16-16s-7.2-16-16-16h-167.5c-30.9 0-56 25.1-56 56v240c0 30.9 25.1 56 56 56h240c30.9 0 56-25.1 56-56v-184c0-8.8-7.2-16-16-16z" />
+                                                        <path fill="currentColor"
+                                                            d="m448 48h-112c-8.8 0-16 7.2-16 16s7.2 16 16 16h73.4l-196.7 196.7c-6.2 6.2-6.2 16.4 0 22.6 3.1 3.1 7.2 4.7 11.3 4.7s8.2-1.6 11.3-4.7l196.7-196.7v73.4c0 8.8 7.2 16 16 16s16-7.2 16-16v-112c0-8.8-7.2-16-16-16z" />
+                                                    </g>
+                                                </svg></div>
+                                            <div class="projectstattext">https://buecherbuechse.de/</div>
+                                        </a></div>
+                                    <div class="wrapperleft"><a
+                                            href="https://www.figma.com/proto/S3kPZIXGKvPllpiaUNUS0n/156---bookbox?type=design&amp;node-id=4456-73151&amp;scaling=scale-down&amp;page-id=4456%3A69415&amp;starting-point-node-id=4456%3A73151&amp;show-proto-sidebar=1"
+                                            target="_blank" class="specialbutton newbutton v2 w-inline-block">
+                                            <div class="buttontext">Prototyp starten</div>
+                                            <div class="arrowdiagonal w-embed"><svg width="currentWidth"
+                                                    height="currentHeight" viewBox="0 0 19 19" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M5.75 5C5.75 4.58579 6.08579 4.25 6.5 4.25L14 4.25C14.1989 4.25 14.3897 4.32902 14.5303 4.46967C14.671 4.61032 14.75 4.80109 14.75 5L14.75 12.5C14.75 12.9142 14.4142 13.25 14 13.25C13.5858 13.25 13.25 12.9142 13.25 12.5L13.25 6.81066L5.53033 14.5303C5.23744 14.8232 4.76256 14.8232 4.46967 14.5303C4.17678 14.2374 4.17678 13.7626 4.46967 13.4697L12.1893 5.75L6.5 5.75C6.08579 5.75 5.75 5.41421 5.75 5Z" />
+                                                </svg></div>
+                                        </a><a
+                                            href="https://www.figma.com/file/S3kPZIXGKvPllpiaUNUS0n/156---bookbox?type=design&amp;node-id=4456%3A69415&amp;t=1GvwiCMYnRH3iGTM-1"
+                                            target="_blank"
+                                            class="specialbutton newbutton v2 secondary spaceleft w-inline-block">
+                                            <div class="buttontext secondary">Design</div>
+                                            <div class="arrowdiagonal w-embed"><svg width="currentWidth"
+                                                    height="currentHeight" viewBox="0 0 19 19" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M5.75 5C5.75 4.58579 6.08579 4.25 6.5 4.25L14 4.25C14.1989 4.25 14.3897 4.32902 14.5303 4.46967C14.671 4.61032 14.75 4.80109 14.75 5L14.75 12.5C14.75 12.9142 14.4142 13.25 14 13.25C13.5858 13.25 13.25 12.9142 13.25 12.5L13.25 6.81066L5.53033 14.5303C5.23744 14.8232 4.76256 14.8232 4.46967 14.5303C4.17678 14.2374 4.17678 13.7626 4.46967 13.4697L12.1893 5.75L6.5 5.75C6.08579 5.75 5.75 5.41421 5.75 5Z" />
+                                                </svg></div>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projectitemcontainer backgroundimage">
+                            <div data-w-id="aa5d83e0-ae29-d2d1-b04a-17c6a70acc5b" style="opacity:0"
+                                class="projectitem reversemobile">
+                                <div class="desktopcasecol">
+                                    <h2 class="h3 homeprojectsheading">KIGA web</h2>
+                                    <p class="textblock width90">Kinder sind unsere wertvollsten Schätze, und ihre
+                                        Betreuung erfordert eine gut organisierte und effiziente Verwaltung. Mit dieser
+                                        App haben Pädagogen einen Überblick über den Stundenplan und den Aufenthaltsort
+                                        der Kinder. Eltern können mit dem Kindergarten kommunizieren und wichtige
+                                        Informationen austauschen. Eine innovative Lösung für eine bessere Betreuung und
+                                        Kommunikation in Kindertagesstätten.</p>
+                                    <div class="desktopprojectstatswrapperleft-3"><a href="https://www.kigaweb.at/"
+                                            target="_blank" class="desktopprojectstat-3 link w-inline-block">
+                                            <div class="iconlink-2 w-embed"><svg id="Layer_1"
+                                                    enable-background="new 0 0 512 512" height="currentHeight"
+                                                    viewBox="0 0 512 512" width="currentWidth"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g>
+                                                        <path fill="currentColor"
+                                                            d="m384 208c-8.8 0-16 7.2-16 16v184c0 13.2-10.8 24-24 24h-240c-13.2 0-24-10.8-24-24v-240c0-13.2 10.8-24 24-24h167.5c8.8 0 16-7.2 16-16s-7.2-16-16-16h-167.5c-30.9 0-56 25.1-56 56v240c0 30.9 25.1 56 56 56h240c30.9 0 56-25.1 56-56v-184c0-8.8-7.2-16-16-16z" />
+                                                        <path fill="currentColor"
+                                                            d="m448 48h-112c-8.8 0-16 7.2-16 16s7.2 16 16 16h73.4l-196.7 196.7c-6.2 6.2-6.2 16.4 0 22.6 3.1 3.1 7.2 4.7 11.3 4.7s8.2-1.6 11.3-4.7l196.7-196.7v73.4c0 8.8 7.2 16 16 16s16-7.2 16-16v-112c0-8.8-7.2-16-16-16z" />
+                                                    </g>
+                                                </svg></div>
+                                            <div class="projectstattext">https://www.kigaweb.at/</div>
+                                        </a></div>
+                                    <div class="wrapperleft"><a
+                                            href="https://www.figma.com/proto/qteqxwjAnOqUmO1gcGGhMJ/123-%7C-Valuedimensions?type=design&amp;node-id=29-1124&amp;scaling=scale-down&amp;page-id=29%3A229&amp;starting-point-node-id=29%3A1124&amp;show-proto-sidebar=1"
+                                            target="_blank" class="specialbutton newbutton v2 w-inline-block">
+                                            <div class="buttontext">Prototyp starten</div>
+                                            <div class="arrowdiagonal w-embed"><svg width="currentWidth"
+                                                    height="currentHeight" viewBox="0 0 19 19" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M5.75 5C5.75 4.58579 6.08579 4.25 6.5 4.25L14 4.25C14.1989 4.25 14.3897 4.32902 14.5303 4.46967C14.671 4.61032 14.75 4.80109 14.75 5L14.75 12.5C14.75 12.9142 14.4142 13.25 14 13.25C13.5858 13.25 13.25 12.9142 13.25 12.5L13.25 6.81066L5.53033 14.5303C5.23744 14.8232 4.76256 14.8232 4.46967 14.5303C4.17678 14.2374 4.17678 13.7626 4.46967 13.4697L12.1893 5.75L6.5 5.75C6.08579 5.75 5.75 5.41421 5.75 5Z" />
+                                                </svg></div>
+                                        </a><a
+                                            href="https://www.figma.com/file/qteqxwjAnOqUmO1gcGGhMJ/123-%7C-Valuedimensions?type=design&amp;node-id=29-229&amp;t=2xljbgd7frADfdyG-0"
+                                            target="_blank"
+                                            class="specialbutton newbutton v2 secondary spaceleft w-inline-block">
+                                            <div class="buttontext secondary">Design</div>
+                                            <div class="arrowdiagonal w-embed"><svg width="currentWidth"
+                                                    height="currentHeight" viewBox="0 0 19 19" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M5.75 5C5.75 4.58579 6.08579 4.25 6.5 4.25L14 4.25C14.1989 4.25 14.3897 4.32902 14.5303 4.46967C14.671 4.61032 14.75 4.80109 14.75 5L14.75 12.5C14.75 12.9142 14.4142 13.25 14 13.25C13.5858 13.25 13.25 12.9142 13.25 12.5L13.25 6.81066L5.53033 14.5303C5.23744 14.8232 4.76256 14.8232 4.46967 14.5303C4.17678 14.2374 4.17678 13.7626 4.46967 13.4697L12.1893 5.75L6.5 5.75C6.08579 5.75 5.75 5.41421 5.75 5Z" />
+                                                </svg></div>
+                                        </a></div>
+                                </div>
+                                <div data-w-id="aa5d83e0-ae29-d2d1-b04a-17c6a70acc6f" style="opacity:0"
+                                    class="desktopcasecol"><img
+                                        src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/646c9f4cd44c1433f46ff561_Valuedimensions%201%20-%20923x680.webp"
+                                        loading="eager" width="923"
+                                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 700px, 50vw"
+                                        alt=""
+                                        srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/646c9f4cd44c1433f46ff561_Valuedimensions%201%20-%20923x680-p-500.webp 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/646c9f4cd44c1433f46ff561_Valuedimensions%201%20-%20923x680-p-800.webp 800w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/646c9f4cd44c1433f46ff561_Valuedimensions%201%20-%20923x680-p-1080.webp 1080w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/646c9f4cd44c1433f46ff561_Valuedimensions%201%20-%20923x680-p-1600.webp 1600w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/646c9f4cd44c1433f46ff561_Valuedimensions%201%20-%20923x680.webp 1846w"
+                                        class="funnelprojectimage" /></div>
+                            </div>
+                        </div>
+                        <div class="projectitemcontainer">
+                            <div class="projectitem">
+                                <div class="desktopcasecol"><img class="funnelprojectimage"
+                                        src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/646c9fc421d9bb0393aa1e60_2x.webp"
+                                        width="923" alt="" style="opacity:0"
+                                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 700px, 50vw"
+                                        data-w-id="aa5d83e0-ae29-d2d1-b04a-17c6a70acc74" loading="eager"
+                                        srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/646c9fc421d9bb0393aa1e60_2x-p-500.webp 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/646c9fc421d9bb0393aa1e60_2x-p-800.webp 800w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/646c9fc421d9bb0393aa1e60_2x-p-1080.webp 1080w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/646c9fc421d9bb0393aa1e60_2x-p-1600.webp 1600w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/646c9fc421d9bb0393aa1e60_2x.webp 1846w" />
+                                </div>
+                                <div data-w-id="aa5d83e0-ae29-d2d1-b04a-17c6a70acc75" style="opacity:0"
+                                    class="desktopcasecol projecttextright">
+                                    <h2 class="h3 homeprojectsheading">Smartmove</h2>
+                                    <p class="textblock">Mit der Smartmove App können Firmen ihren Mitarbeitern
+                                        jederzeit ein Fahrzeug zur Verfügung stellen. Egal ob spontane Dienstreisen oder
+                                        Geschäftsmeetings. Smartmove macht es möglich. Auf einer interaktiven Karte
+                                        werden alle verfügbaren Fahrzeuge angezeigt und können mit nur einem Klick
+                                        gebucht werden. So können Firmen, auch ohne eigenen Fuhrpark, ihren Mitarbeitern
+                                        schnell und unkompliziert einen Dienstwagen zur Verfügung stellen.</p>
+                                    <div class="desktopprojectstatswrapperleft-3"><a href="https://smartmove.eu/"
+                                            target="_blank" class="desktopprojectstat-3 link w-inline-block">
+                                            <div class="iconlink-2 w-embed"><svg id="Layer_1"
+                                                    enable-background="new 0 0 512 512" height="currentHeight"
+                                                    viewBox="0 0 512 512" width="currentWidth"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g>
+                                                        <path fill="currentColor"
+                                                            d="m384 208c-8.8 0-16 7.2-16 16v184c0 13.2-10.8 24-24 24h-240c-13.2 0-24-10.8-24-24v-240c0-13.2 10.8-24 24-24h167.5c8.8 0 16-7.2 16-16s-7.2-16-16-16h-167.5c-30.9 0-56 25.1-56 56v240c0 30.9 25.1 56 56 56h240c30.9 0 56-25.1 56-56v-184c0-8.8-7.2-16-16-16z" />
+                                                        <path fill="currentColor"
+                                                            d="m448 48h-112c-8.8 0-16 7.2-16 16s7.2 16 16 16h73.4l-196.7 196.7c-6.2 6.2-6.2 16.4 0 22.6 3.1 3.1 7.2 4.7 11.3 4.7s8.2-1.6 11.3-4.7l196.7-196.7v73.4c0 8.8 7.2 16 16 16s16-7.2 16-16v-112c0-8.8-7.2-16-16-16z" />
+                                                    </g>
+                                                </svg></div>
+                                            <div class="projectstattext">https://smartmove.eu/</div>
+                                        </a></div>
+                                    <div class="wrapperleft hide"><a
+                                            href="https://www.figma.com/proto/gV5jZxdf6vHJSRkcOAlyXa/Kir-%7C-Webiste-Version?type=design&amp;node-id=1434-24152&amp;scaling=scale-down&amp;page-id=1434%3A24151&amp;starting-point-node-id=1434%3A24152&amp;show-proto-sidebar=1"
+                                            target="_blank" class="specialbutton newbutton v2 w-inline-block">
+                                            <div class="buttontext">Prototyp starten</div>
+                                            <div class="arrowdiagonal w-embed"><svg width="currentWidth"
+                                                    height="currentHeight" viewBox="0 0 19 19" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M5.75 5C5.75 4.58579 6.08579 4.25 6.5 4.25L14 4.25C14.1989 4.25 14.3897 4.32902 14.5303 4.46967C14.671 4.61032 14.75 4.80109 14.75 5L14.75 12.5C14.75 12.9142 14.4142 13.25 14 13.25C13.5858 13.25 13.25 12.9142 13.25 12.5L13.25 6.81066L5.53033 14.5303C5.23744 14.8232 4.76256 14.8232 4.46967 14.5303C4.17678 14.2374 4.17678 13.7626 4.46967 13.4697L12.1893 5.75L6.5 5.75C6.08579 5.75 5.75 5.41421 5.75 5Z" />
+                                                </svg></div>
+                                        </a><a
+                                            href="https://www.figma.com/file/gV5jZxdf6vHJSRkcOAlyXa/Kir-%7C-Webiste-Version?type=design&amp;node-id=1434%3A24151&amp;t=tF1phXn9V9WPI2UG-1"
+                                            target="_blank"
+                                            class="specialbutton newbutton v2 secondary spaceleft w-inline-block">
+                                            <div class="buttontext secondary">Design</div>
+                                            <div class="arrowdiagonal w-embed"><svg width="currentWidth"
+                                                    height="currentHeight" viewBox="0 0 19 19" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M5.75 5C5.75 4.58579 6.08579 4.25 6.5 4.25L14 4.25C14.1989 4.25 14.3897 4.32902 14.5303 4.46967C14.671 4.61032 14.75 4.80109 14.75 5L14.75 12.5C14.75 12.9142 14.4142 13.25 14 13.25C13.5858 13.25 13.25 12.9142 13.25 12.5L13.25 6.81066L5.53033 14.5303C5.23744 14.8232 4.76256 14.8232 4.46967 14.5303C4.17678 14.2374 4.17678 13.7626 4.46967 13.4697L12.1893 5.75L6.5 5.75C6.08579 5.75 5.75 5.41421 5.75 5Z" />
+                                                </svg></div>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="portfolio" class="reviewsectionv2 formsection">
+                    <div class="contentwrapper review center">
+                        <div class="reviewwrapper">
+                            <div class="reviewbox">
+                                <div class="reviewalternative"><img class="image-39 no-lazy"
+                                        src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/6204532db81451e28d8fbc0f_Group%2045.webp"
+                                        width="798" height="602" alt="" style="opacity:0"
+                                        sizes="(max-width: 479px) 83vw, (max-width: 767px) 86vw, (max-width: 991px) 630px, 70vw"
+                                        data-w-id="03b70be8-ed14-996e-08a3-ed86a8a0ac03" loading="lazy"
+                                        srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/6204532db81451e28d8fbc0f_Group%2045-p-500.webp 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/6204532db81451e28d8fbc0f_Group%2045-p-800.webp 800w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/6204532db81451e28d8fbc0f_Group%2045.webp 1166w" />
+                                </div>
+                                <div data-w-id="03b70be8-ed14-996e-08a3-ed86a8a0ac04" style="opacity:0"
+                                    class="reviewcontent alignleftmobile">
+                                    <div class="div-block-30">
+                                        <h2 class="h2 review">Kundenzufriedenheit steht bei uns im Fokus!</h2><a
+                                            href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0zLIwKalMTrcwYLRSNagwMU80M7U0TU5KMzFINDRPszKoMDYwM0pOsUg2S05LSU4xTvHiy85LLy0qVSguKU3JzC8GAMIkFY4&amp;q=knguru+studios&amp;oq=knguru+&amp;aqs=chrome.1.69i57j46i19i175i199j69i60l6.5754j0j7&amp;sourceid=chrome&amp;ie=UTF-8#lrd=0x47a6595cbf40a17f:0x3062cd8c6cfdcd3d,1,,,"
+                                            target="_blank" class="googlelink-2 w-inline-block">
+                                            <div class="_5stars w-embed"><svg viewBox="0 0 97 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.69954 1.6167L12.1973 6.67687L17.7829 7.49328L13.7412 11.4299L14.695 16.9912L9.69954 14.3641L4.70404 16.9912L5.65788 11.4299L1.61621 7.49328L7.20179 6.67687L9.69954 1.6167Z"
+                                                        fill="currentColor" />
+                                                    <path
+                                                        d="M29.0999 1.6167L31.5977 6.67687L37.1833 7.49328L33.1416 11.4299L34.0954 16.9912L29.0999 14.3641L24.1044 16.9912L25.0583 11.4299L21.0166 7.49328L26.6022 6.67687L29.0999 1.6167Z"
+                                                        fill="currentColor" />
+                                                    <path
+                                                        d="M48.5003 1.6167L50.9981 6.67687L56.5837 7.49328L52.542 11.4299L53.4958 16.9912L48.5003 14.3641L43.5048 16.9912L44.4587 11.4299L40.417 7.49328L46.0026 6.67687L48.5003 1.6167Z"
+                                                        fill="currentColor" />
+                                                    <path
+                                                        d="M67.8997 1.6167L70.3975 6.67687L75.9831 7.49328L71.9414 11.4299L72.8952 16.9912L67.8997 14.3641L62.9042 16.9912L63.8581 11.4299L59.8164 7.49328L65.402 6.67687L67.8997 1.6167Z"
+                                                        fill="currentColor" />
+                                                    <path
+                                                        d="M87.3001 1.6167L89.7979 6.67687L95.3835 7.49328L91.3418 11.4299L92.2956 16.9912L87.3001 14.3641L82.3046 16.9912L83.2585 11.4299L79.2168 7.49328L84.8024 6.67687L87.3001 1.6167Z"
+                                                        fill="currentColor" />
+                                                </svg></div><img
+                                                src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/62e3db1d774e4adfa4b5b82d_googleShort.webp"
+                                                loading="lazy" width="130" height="32" alt="" class="googlereview" />
+                                        </a>
+                                    </div>
+                                    <div class="div-block-31">
+                                        <p class="h5-2 contacttextformating grey">Wir sind ein junges Team, aber
+                                            trotzdem nicht erst seit gestern dabei. Über 200 Apps und Websites durften
+                                            wir dabei in den letzten Jahre umsetzen, wobei jedes individuell auf die
+                                            Bedürfnisse unserer Kunden zugeschnitten war. Dabei haben wir immer einen
+                                            klaren Fokus: Das Endergebnis muss auf ganzer Linie überzeugen.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommendsection home">
+                    <div data-w-id="e1cdc50d-103d-eb65-77e1-4c44cdaf4aca" class="kangcomp">
+                        <div class="kang-rel"><img
+                                src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/636d9dcc61df29c9548b475f_kangmask.webp"
+                                loading="lazy" sizes="(max-width: 991px) 100vw, 370px"
+                                srcset="https://assets-global.website-files.com/61aab412062c50600ffad9ac/636d9dcc61df29c9548b475f_kangmask-p-500.webp 500w, https://assets-global.website-files.com/61aab412062c50600ffad9ac/636d9dcc61df29c9548b475f_kangmask.webp 607w"
+                                alt="" class="kangaroo lazy" /><img
+                                src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/636d9dcc61df29e2558b477f_shadeskang.webp"
+                                loading="eager"
+                                style="-webkit-transform:translate3d(-200%, -200%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(-360deg) skew(0, 0);-moz-transform:translate3d(-200%, -200%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(-360deg) skew(0, 0);-ms-transform:translate3d(-200%, -200%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(-360deg) skew(0, 0);transform:translate3d(-200%, -200%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(-360deg) skew(0, 0)"
+                                alt="" class="shades lazy" /></div>
+                    </div>
+                    <div class="contentwrapperbackground">
+                        <div class="contentwrapper center">
+                            <h2 class="h2 center blog">Zwischen <strong>Agenturalltag</strong> und
+                                <strong>Startup</strong> - unser <strong class="headlineblock">Blog</strong>
+                            </h2>
+                            <div class="textblock projectsintrosubheading">In unserem Blog teilen wir Tipps rund um das
+                                Thema Appentwicklung, Startups und einige verrückte Geschichten aus unserem
+                                Agenturalltag mit euch.</div>
+                            <div class="relatedblogposts w-dyn-list">
+                                <div role="list" class="blogpostlist w-dyn-items">
+                                    <div role="listitem" class="blogpostcard inblogstyle w-dyn-item"><a
+                                            href="/blog/weihnachtliche-bytes-die-app-designer-und-das-flauschige-kanguru"
+                                            class="linkblock w-inline-block">
+                                            <div class="relatedpostimagewrapper"><img
+                                                    src="https://assets-global.website-files.com/61aab412062c508ef6fad9b3/6582fc1813ad36766cccb269_annie-spratt-V705bwrTnQI-unsplash.png"
+                                                    loading="lazy" alt="" class="image-7" /></div>
+                                            <div class="blogpostcardinblogwrapper">
+                                                <div class="blogpostdate">December 20, 2023</div>
+                                                <div class="h4 relatedposthero">Weihnachtliche Bytes: Die App-Designer
+                                                    und das flauschige Känguru</div>
+                                                <p class="textblockv2 blogpreviewtext">Es war einmal in der verschneiten
+                                                    Stadt Leipzig, in der eine Gruppe talentierter App-Designer </p>
+                                                <div class="arrowlinkblog">
+                                                    <div class="arrow-link-text">Story lesen</div>
+                                                    <div class="arrow-circle-2"><img
+                                                            src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/61aab412062c50a268fada0e_noun_Arrow_1808422.svg"
+                                                            alt="" loading="lazy" class="arrow-icon lazy" /></div>
+                                                </div>
+                                            </div>
+                                        </a></div>
+                                    <div role="listitem" class="blogpostcard inblogstyle w-dyn-item"><a
+                                            href="/blog/material-design-oder-massgeschneidertes-design"
+                                            class="linkblock w-inline-block">
+                                            <div class="relatedpostimagewrapper"><img
+                                                    src="https://assets-global.website-files.com/61aab412062c508ef6fad9b3/65734901dc52f8f8b71cac5b_mika-baumeister-DsJw-V-Wz-4-unsplash.png"
+                                                    loading="lazy" alt="" sizes="100vw"
+                                                    srcset="https://assets-global.website-files.com/61aab412062c508ef6fad9b3/65734901dc52f8f8b71cac5b_mika-baumeister-DsJw-V-Wz-4-unsplash-p-500.png 500w, https://assets-global.website-files.com/61aab412062c508ef6fad9b3/65734901dc52f8f8b71cac5b_mika-baumeister-DsJw-V-Wz-4-unsplash-p-800.png 800w, https://assets-global.website-files.com/61aab412062c508ef6fad9b3/65734901dc52f8f8b71cac5b_mika-baumeister-DsJw-V-Wz-4-unsplash-p-1080.png 1080w, https://assets-global.website-files.com/61aab412062c508ef6fad9b3/65734901dc52f8f8b71cac5b_mika-baumeister-DsJw-V-Wz-4-unsplash.png 1240w"
+                                                    class="image-7" /></div>
+                                            <div class="blogpostcardinblogwrapper">
+                                                <div class="blogpostdate">December 8, 2023</div>
+                                                <div class="h4 relatedposthero">Material Design oder maßgeschneidertes
+                                                    Design?</div>
+                                                <p class="textblockv2 blogpreviewtext">In einer Welt voller digitaler
+                                                    Innovationen spielt das Design von Benutzeroberflächen eine
+                                                    entscheidende Rolle.</p>
+                                                <div class="arrowlinkblog">
+                                                    <div class="arrow-link-text">Story lesen</div>
+                                                    <div class="arrow-circle-2"><img
+                                                            src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/61aab412062c50a268fada0e_noun_Arrow_1808422.svg"
+                                                            alt="" loading="lazy" class="arrow-icon lazy" /></div>
+                                                </div>
+                                            </div>
+                                        </a></div>
+                                    <div role="listitem" class="blogpostcard inblogstyle w-dyn-item"><a
+                                            href="/blog/was-kostet-es-eine-app-im-appstore-zu-veroffentlichen"
+                                            class="linkblock w-inline-block">
+                                            <div class="relatedpostimagewrapper"><img
+                                                    src="https://assets-global.website-files.com/61aab412062c508ef6fad9b3/6570b0872154354036ab5681_iosplaystore%20(1).png"
+                                                    loading="lazy" alt="" sizes="100vw"
+                                                    srcset="https://assets-global.website-files.com/61aab412062c508ef6fad9b3/6570b0872154354036ab5681_iosplaystore%20(1)-p-500.png 500w, https://assets-global.website-files.com/61aab412062c508ef6fad9b3/6570b0872154354036ab5681_iosplaystore%20(1)-p-800.png 800w, https://assets-global.website-files.com/61aab412062c508ef6fad9b3/6570b0872154354036ab5681_iosplaystore%20(1).png 1240w"
+                                                    class="image-7" /></div>
+                                            <div class="blogpostcardinblogwrapper">
+                                                <div class="blogpostdate">December 6, 2023</div>
+                                                <div class="h4 relatedposthero">Was kostet es, eine App im Appstore zu
+                                                    veröffentlichen? </div>
+                                                <p class="textblockv2 blogpreviewtext">Finde heraus, was es kostet,
+                                                    deine App im Appstore und Play Store zu veröffentlichen - essenziell
+                                                    für Entwickler und Start-ups.</p>
+                                                <div class="arrowlinkblog">
+                                                    <div class="arrow-link-text">Story lesen</div>
+                                                    <div class="arrow-circle-2"><img
+                                                            src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/61aab412062c50a268fada0e_noun_Arrow_1808422.svg"
+                                                            alt="" loading="lazy" class="arrow-icon lazy" /></div>
+                                                </div>
+                                            </div>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pricing" class="techsection">
+                    <div class="contentwrapper">
+                        <div class="headingcontainer seo left">
+                            <h2 data-w-id="114ed546-d0e6-048d-0d01-ad3f4943e0ca" style="opacity:0" class="h2">App
+                                Entwicklung mit React-Native und Cloud Technologien.</h2>
+                            <div data-w-id="114ed546-d0e6-048d-0d01-ad3f4943e0cf" style="opacity:0" class="textblockv2">
+                                Wir setzen bei der Entwicklung von Apps auf modernste Technologien um sicherzustellen
+                                das deine App auch großen Userzahlen standhalten kann. Mehr dazu erfährst du auf unserer
+                                Unterseite <a href="/app-entwicklung">zum Thema App Entwicklung</a>.</div>
+                        </div>
+                        <div class="w-layout-grid techstackwrapper">
+                            <div class="techname">Back-end</div>
+                            <div id="w-node-_114ed546-d0e6-048d-0d01-ad3f4943e0d4-2f83a898" class="tech">
+                                <div id="w-node-_114ed546-d0e6-048d-0d01-ad3f4943e0d5-2f83a898" class="techlink"><img
+                                        src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/643d7a69b3d52fa9cc0ca85a_firebaseSmall.webp"
+                                        loading="lazy" alt="" class="firebase" /><a href="#"
+                                        class="techtext">Firebase</a></div>
+                                <div id="w-node-_114ed546-d0e6-048d-0d01-ad3f4943e0d9-2f83a898" class="techlink"><img
+                                        src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/643899af7f54db65fb9dd010_aws2.webp"
+                                        loading="lazy" alt="" class="aws" /><a href="#" class="techtext">AWS</a></div>
+                            </div>
+                        </div>
+                        <div class="w-layout-grid techstackwrapper">
+                            <div class="techname">Front-end</div>
+                            <div id="w-node-_114ed546-d0e6-048d-0d01-ad3f4943e0e0-2f83a898" class="tech">
+                                <div id="w-node-_114ed546-d0e6-048d-0d01-ad3f4943e0e1-2f83a898" class="techlink"><img
+                                        src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/643d79ee0afb1710ca85ddc1_reactNativeSmall.webp"
+                                        loading="lazy" alt="" class="reactnative" /><a href="#" class="techtext">React
+                                        Native</a></div>
+                                <div id="w-node-_114ed546-d0e6-048d-0d01-ad3f4943e0e5-2f83a898" class="techlink"><img
+                                        src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/643d7ab0233ed31588911d3e_flutterSmall.webp"
+                                        loading="lazy" alt="" class="flutter" /><a href="#" class="techtext">Flutter</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-layout-grid techstackwrapper">
+                            <div class="techname">Management</div>
+                            <div id="w-node-_114ed546-d0e6-048d-0d01-ad3f4943e0ec-2f83a898" class="tech">
+                                <div id="w-node-_114ed546-d0e6-048d-0d01-ad3f4943e0ed-2f83a898" class="techlink"><img
+                                        src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/643d771f381781656c848d2d_discordSmall.webp"
+                                        loading="lazy" alt="" class="discord" /><a href="#" class="techtext">Discord</a>
+                                </div>
+                                <div id="w-node-_114ed546-d0e6-048d-0d01-ad3f4943e0f1-2f83a898" class="techlink"><img
+                                        src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/643d7aeaa919e46a6533b67d_notionSmall.webp"
+                                        loading="lazy" alt="" class="notion" /><a href="#" class="techtext">Notion</a>
+                                </div>
+                                <div id="w-node-_114ed546-d0e6-048d-0d01-ad3f4943e0f5-2f83a898" class="techlink"><img
+                                        src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/643d785bfa5ac9503ecbe18c_trelloSmall.webp"
+                                        loading="lazy" alt="" class="trello" /><a href="#" class="techtext">Trello</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-layout-grid techstackwrapper">
+                            <div class="techname">UX/UI Design</div>
+                            <div id="w-node-_114ed546-d0e6-048d-0d01-ad3f4943e0fc-2f83a898" class="tech">
+                                <div id="w-node-_114ed546-d0e6-048d-0d01-ad3f4943e0fd-2f83a898" class="techlink"><img
+                                        src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/643d77a1d912973a0ee654b1_figmaSmall.webp"
+                                        loading="lazy" alt="" class="figma" /><a href="#" class="techtext">Figma</a>
+                                </div>
+                                <div id="w-node-_114ed546-d0e6-048d-0d01-ad3f4943e101-2f83a898" class="techlink"><img
+                                        src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/643d7b2dfcefbae33aac3d2c_aiSmall.webp"
+                                        loading="lazy" alt="" class="ai" /><a href="#" class="techtext">Illustrator</a>
+                                </div>
+                                <div id="w-node-_114ed546-d0e6-048d-0d01-ad3f4943e105-2f83a898" class="techlink"><img
+                                        src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/643d7b719373a7260f75192a_aeSmall.webp"
+                                        loading="lazy" alt="" class="ai" /><a href="#" class="techtext">After
+                                        Effects</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="faqsectionv3">
+                    <div class="contentwrapper faqwrapper">
+                        <div class="faqheader">
+                            <div class="_2colcontentgird reversemobile">
+                                <div id="w-node-_8a413a2d-8302-df2c-e1a2-d9b5bd0b213b-2f83a898"
+                                    data-w-id="8a413a2d-8302-df2c-e1a2-d9b5bd0b213b" style="opacity:0"
+                                    class="faqcontent">
+                                    <h2 class="h1 fullwidth">Lass uns doch einfach mal quatschen!</h2>
+                                    <div class="textblock faq">Du bist dir noch nicht sicher, ob wir dir wirklich
+                                        weiterhelfen können? Dann buche doch einfach einen kostenlosen Beratungstermin
+                                        mit uns oder check unsere FAQ Sektion aus.</div><a
+                                        href="https://calendly.com/knguru/louis" target="_blank"
+                                        class="specialbutton newbutton v2 faq w-inline-block">
+                                        <div class="buttontext">kostenloses Erstgespräch</div>
+                                        <div class="arrowdiagonal w-embed"><svg width="currentWidth"
+                                                height="currentHeight" viewBox="0 0 19 19" fill="currentColor"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M5.75 5C5.75 4.58579 6.08579 4.25 6.5 4.25L14 4.25C14.1989 4.25 14.3897 4.32902 14.5303 4.46967C14.671 4.61032 14.75 4.80109 14.75 5L14.75 12.5C14.75 12.9142 14.4142 13.25 14 13.25C13.5858 13.25 13.25 12.9142 13.25 12.5L13.25 6.81066L5.53033 14.5303C5.23744 14.8232 4.76256 14.8232 4.46967 14.5303C4.17678 14.2374 4.17678 13.7626 4.46967 13.4697L12.1893 5.75L6.5 5.75C6.08579 5.75 5.75 5.41421 5.75 5Z" />
+                                            </svg></div>
+                                    </a>
+                                </div>
+                                <div id="w-node-_8a413a2d-8302-df2c-e1a2-d9b5bd0b2147-2f83a898"
+                                    class="workwithkangaroogif"><img
+                                        src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/63322c13358ead6625f0877c_knguruAnimationComp2.gif"
+                                        loading="lazy" height="750" width="1000" alt="" class="image-36" /></div>
+                            </div>
+                        </div>
+                        <div class="faq-wrapper">
+                            <div class="accordion">
+                                <div data-w-id="8a413a2d-8302-df2c-e1a2-d9b5bd0b214b" style="opacity:0"
+                                    class="accordion__item">
+                                    <div class="accordion-header">
+                                        <div class="chev-icon">
+                                            <div class="plus-line-2"></div>
+                                            <div class="plus-line-2 plus-second"></div>
+                                        </div>
+                                        <p class="faqheading">Lohnt es sich überhaupt für mein Unternehmen, eine App
+                                            oder Website entwickeln zu lassen?</p>
+                                    </div>
+                                    <div class="accordion-body">
+                                        <p style="display:none" class="faqanswer">Kann dein Unternehmen von einer neuen
+                                            App oder Website profitieren? Wir sagen es dir und sind dabei gnadenlos
+                                            ehrlich. Insgesamt lehnen wir ca. 30 % aller Anfragen ab, damit denen helfen
+                                            können, die wirklich Potenzial haben, von einer App oder Website zu
+                                            profitieren. Du willst wissen, wie wir dein Vorhaben einschätzen? Dann buche
+                                            dir einfach einen kostenlosen Beratungstermin mit uns!</p>
+                                    </div>
+                                </div>
+                                <div data-w-id="8a413a2d-8302-df2c-e1a2-d9b5bd0b2155" style="opacity:0"
+                                    class="accordion__item">
+                                    <div class="accordion-header">
+                                        <div class="chev-icon">
+                                            <div class="plus-line-2"></div>
+                                            <div class="plus-line-2 plus-second"></div>
+                                        </div>
+                                        <p class="faqheading">Was kostet eine App oder Website bei euch?</p>
+                                    </div>
+                                    <div class="accordion-body">
+                                        <p style="display:none" class="faqanswer">Diese Frage hören wir tagtäglich, die
+                                            Standardantwort: Es kommt auf das Projekt an. Um so größer das Budget, desto
+                                            mehr Zeit können wir auch in dein Projekt investieren. Wenn du ein Angebot
+                                            anfordern willst, buche dir einfach einen kostenlosen Beratungstermin mit
+                                            uns, um dein Projekt genauer zu besprechen.</p>
+                                    </div>
+                                </div>
+                                <div data-w-id="8a413a2d-8302-df2c-e1a2-d9b5bd0b215f" style="opacity:0"
+                                    class="accordion__item">
+                                    <div class="accordion-header">
+                                        <div class="chev-icon">
+                                            <div class="plus-line-2"></div>
+                                            <div class="plus-line-2 plus-second"></div>
+                                        </div>
+                                        <p class="faqheading">Muss ich nach Leipzig kommen um mit euch zu arbeiten?</p>
+                                    </div>
+                                    <div class="accordion-body">
+                                        <p style="display:none" class="faqanswer">Unser Team arbeitet 100 % online &amp;
+                                            remote, wie sollte es auch anders sein in unserer Branche. Daher ist es
+                                            egal, wo du dich grade auf der Welt befindest, wir sind immer nur einen
+                                            Klick entfernt! Natürlich kommen wir aber auch gerne für Workshops bei dir
+                                            vor Ort vorbei.</p>
+                                    </div>
+                                </div>
+                                <div data-w-id="8a413a2d-8302-df2c-e1a2-d9b5bd0b2169" style="opacity:0"
+                                    class="accordion__item">
+                                    <div class="accordion-header">
+                                        <div class="chev-icon">
+                                            <div class="plus-line-2"></div>
+                                            <div class="plus-line-2 plus-second"></div>
+                                        </div>
+                                        <p class="faqheading">Ich habe keine Ahnung von Technik, Apps und Websites - ist
+                                            das ein Problem?</p>
+                                    </div>
+                                    <div class="accordion-body">
+                                        <p style="display:none" class="faqanswer">Kurz und knapp: Nein! Am wichtigsten
+                                            ist das du dich mit deinem Unternehmen, deinen Kunden und deiner Branche gut
+                                            auskennst. Für alles andere hast du ab sofort uns an deiner Seite. Wir
+                                            übersetzen komplizierte Fachsprache in einfache Prozesse, in denen du auch
+                                            ohne Fachkenntnis, ohne Probleme Mitwirken kannst.</p>
+                                    </div>
+                                </div>
+                                <div data-w-id="8a413a2d-8302-df2c-e1a2-d9b5bd0b2173" style="opacity:0"
+                                    class="accordion__item">
+                                    <div class="accordion-header">
+                                        <div class="chev-icon">
+                                            <div class="plus-line-2"></div>
+                                            <div class="plus-line-2 plus-second"></div>
+                                        </div>
+                                        <p class="faqheading">Ist der Beratungstermin wirklich kostenlos?</p>
+                                    </div>
+                                    <div class="accordion-body">
+                                        <p style="display:none" class="faqanswer">Ja zu 100%! Allerdings haben wir jeden
+                                            Monat nur eine begrenzte Anzahl an Slots zur Verfügung. Wenn du deine
+                                            Chancen auf einen Beratungstermin steigern willst, hilft es uns, möglichst
+                                            viele Informationen über dein Projekt schon vorab zur Verfügung zu stellen.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="contentwrapper">
+                        <div class="w-layout-grid grid">
+                            <div id="w-node-_41c7f045-723c-9662-2b76-7ad614083c31-55e3c4ad" class="div-block-21"></div>
+                            <div id="w-node-e4b32ccd-65a1-6ec9-939c-9bc455e3c4b0-55e3c4ad" class="footercontainer">
+                                <div class="h5 footerlogoclaim">KNGURU</div><a href="tel:+4934122327691"
+                                    class="footerentry nohoverfooterentry">+49 341 223 276 91</a><a
+                                    href="mailto:hello@knguru.de"
+                                    class="footerentry nohoverfooterentry">hello@knguru.de</a><a href="/uxuidesign"
+                                    class="footerentry nohoverfooterentry">Mo-Fr 10:00 - 18:00</a>
+                            </div>
+                            <div id="w-node-c3b468d3-6870-072e-fc61-3238491dcb6c-55e3c4ad" class="footercontainer">
+                                <div class="h5 sitemap">Sitemap</div><a href="/" aria-current="page"
+                                    class="footerentry margin-bottom w--current">Home</a><a href="/uxuidesign"
+                                    class="footerentry">UX/UI Design</a><a href="/webdesign"
+                                    class="footerentry">Webdesign</a><a href="/app-entwicklung" class="footerentry">App
+                                    Entwicklung</a>
+                            </div>
+                            <div id="w-node-_62315455-18c6-e35a-8460-5efaa1ee2f47-55e3c4ad" class="footercontainer"><a
+                                    href="/blog" class="footerentry">Tipps &amp; Stories</a><a href="/appcostcalculator"
+                                    class="footerentry">App Kosten berechnen</a><a href="/en"
+                                    class="footerentry">English Version</a></div>
+                            <div id="w-node-_5f7edda2-c170-6bdc-39be-78ecd202437b-55e3c4ad"
+                                class="footercontainer lowheight"><a href="/uxuidesign"
+                                    class="footerentry nohoverfooterentry center">© 2023 KNGURU | All rights
+                                    reserved.</a></div>
+                            <div id="w-node-_27fb0625-ee10-1270-d378-0eb19314558d-55e3c4ad" class="footercontainer">
+                                <div class="h5 sitemap">Locations</div>
+                                <div class="footerentry nohoverfooterentry">Leipzig, Germany</div>
+                                <div class="footerentry nohoverfooterentry">Niš, Serbia</div>
+                                <div class="footerentry nohoverfooterentry">Remote, Worldwide</div>
+                            </div>
+                            <div id="w-node-e4b32ccd-65a1-6ec9-939c-9bc455e3c4ce-55e3c4ad" class="footercontainer">
+                                <div class="footer-col-inner-row">
+                                    <div class="w-layout-grid grid-2">
+                                        <div id="w-node-_48ff7df8-00ff-aea1-4efb-b4053fddf8fd-55e3c4ad"
+                                            class="footerlinkspacer"><a
+                                                id="w-node-e4b32ccd-65a1-6ec9-939c-9bc455e3c4d0-55e3c4ad"
+                                                href="/impressum" class="footerentry marg-right">Imprint</a></div>
+                                        <div class="footerlinkspacer"><a
+                                                id="w-node-e4b32ccd-65a1-6ec9-939c-9bc455e3c4d2-55e3c4ad"
+                                                href="/datenschutz" class="footerentry marg-right">Dataprivacy</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="w-node-e4b32ccd-65a1-6ec9-939c-9bc455e3c4d6-55e3c4ad"
+                                class="footercontainer lowheight">
+                                <div class="collection-list-wrapper-2 w-dyn-list">
+                                    <div role="list" class="socal-row w-dyn-items">
+                                        <div role="listitem" class="collection-item-3 w-dyn-item"><a
+                                                href="https://www.linkedin.com/company/knguru-studios" target="_blank"
+                                                class="w-inline-block"><img height="24" loading="lazy" width="24"
+                                                    src="https://assets-global.website-files.com/61aab412062c508ef6fad9b3/624d90b96e31a5d230e97292_61793a0375656a1581823cc3_linkedin.png"
+                                                    alt="" class="social lazy" /></a>
+                                            <link rel="prerender"
+                                                href="https://www.linkedin.com/company/knguru-studios" />
+                                        </div>
+                                        <div role="listitem" class="collection-item-3 w-dyn-item"><a
+                                                href="https://dribbble.com/knguru" target="_blank"
+                                                class="w-inline-block"><img height="24" loading="lazy" width="24"
+                                                    src="https://assets-global.website-files.com/61aab412062c508ef6fad9b3/624d909d42aedf30d1ebdacd_61793a0375656a2bc4823cc4_dribbble.png"
+                                                    alt="" class="social lazy" /></a>
+                                            <link rel="prerender" href="https://dribbble.com/knguru" />
+                                        </div>
+                                        <div role="listitem" class="collection-item-3 w-dyn-item"><a
+                                                href="https://www.instagram.com/knguru.de/?hl=de" target="_blank"
+                                                class="w-inline-block"><img height="24" loading="lazy" width="24"
+                                                    src="https://assets-global.website-files.com/61aab412062c508ef6fad9b3/624d906dc622c4333e183a15_61793a0375656a0e05823cc2_instagram.png"
+                                                    alt="" class="social lazy" /></a>
+                                            <link rel="prerender" href="https://www.instagram.com/knguru.de/?hl=de" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="w-node-e4b32ccd-65a1-6ec9-939c-9bc455e3c4c5-55e3c4ad" class="footercontainer blog">
+                            <div class="w-dyn-list">
+                                <div role="list" class="w-dyn-items">
+                                    <div role="listitem" class="w-dyn-item">
+                                        <div class="footerblogentry"><a
+                                                href="/blog/weihnachtliche-bytes-die-app-designer-und-das-flauschige-kanguru"
+                                                class="footerentry blogpost">Weihnachtliche Bytes: Die App-Designer und
+                                                das flauschige Känguru</a>
+                                            <div class="arrowdiagonal footerblog w-embed"><svg width="currentWidth"
+                                                    height="currentHeight" viewBox="0 0 19 19" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M5.75 5C5.75 4.58579 6.08579 4.25 6.5 4.25L14 4.25C14.1989 4.25 14.3897 4.32902 14.5303 4.46967C14.671 4.61032 14.75 4.80109 14.75 5L14.75 12.5C14.75 12.9142 14.4142 13.25 14 13.25C13.5858 13.25 13.25 12.9142 13.25 12.5L13.25 6.81066L5.53033 14.5303C5.23744 14.8232 4.76256 14.8232 4.46967 14.5303C4.17678 14.2374 4.17678 13.7626 4.46967 13.4697L12.1893 5.75L6.5 5.75C6.08579 5.75 5.75 5.41421 5.75 5Z" />
+                                                </svg></div>
+                                        </div>
+                                    </div>
+                                    <div role="listitem" class="w-dyn-item">
+                                        <div class="footerblogentry"><a
+                                                href="/blog/material-design-oder-massgeschneidertes-design"
+                                                class="footerentry blogpost">Material Design oder maßgeschneidertes
+                                                Design?</a>
+                                            <div class="arrowdiagonal footerblog w-embed"><svg width="currentWidth"
+                                                    height="currentHeight" viewBox="0 0 19 19" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M5.75 5C5.75 4.58579 6.08579 4.25 6.5 4.25L14 4.25C14.1989 4.25 14.3897 4.32902 14.5303 4.46967C14.671 4.61032 14.75 4.80109 14.75 5L14.75 12.5C14.75 12.9142 14.4142 13.25 14 13.25C13.5858 13.25 13.25 12.9142 13.25 12.5L13.25 6.81066L5.53033 14.5303C5.23744 14.8232 4.76256 14.8232 4.46967 14.5303C4.17678 14.2374 4.17678 13.7626 4.46967 13.4697L12.1893 5.75L6.5 5.75C6.08579 5.75 5.75 5.41421 5.75 5Z" />
+                                                </svg></div>
+                                        </div>
+                                    </div>
+                                    <div role="listitem" class="w-dyn-item">
+                                        <div class="footerblogentry"><a
+                                                href="/blog/was-kostet-es-eine-app-im-appstore-zu-veroffentlichen"
+                                                class="footerentry blogpost">Was kostet es, eine App im Appstore zu
+                                                veröffentlichen? </a>
+                                            <div class="arrowdiagonal footerblog w-embed"><svg width="currentWidth"
+                                                    height="currentHeight" viewBox="0 0 19 19" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M5.75 5C5.75 4.58579 6.08579 4.25 6.5 4.25L14 4.25C14.1989 4.25 14.3897 4.32902 14.5303 4.46967C14.671 4.61032 14.75 4.80109 14.75 5L14.75 12.5C14.75 12.9142 14.4142 13.25 14 13.25C13.5858 13.25 13.25 12.9142 13.25 12.5L13.25 6.81066L5.53033 14.5303C5.23744 14.8232 4.76256 14.8232 4.46967 14.5303C4.17678 14.2374 4.17678 13.7626 4.46967 13.4697L12.1893 5.75L6.5 5.75C6.08579 5.75 5.75 5.41421 5.75 5Z" />
+                                                </svg></div>
+                                        </div>
+                                    </div>
+                                    <div role="listitem" class="w-dyn-item">
+                                        <div class="footerblogentry"><a
+                                                href="/blog/dark-patterns-manipulatives-ux-design"
+                                                class="footerentry blogpost">Dark Patterns - Manipulatives UX Design</a>
+                                            <div class="arrowdiagonal footerblog w-embed"><svg width="currentWidth"
+                                                    height="currentHeight" viewBox="0 0 19 19" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M5.75 5C5.75 4.58579 6.08579 4.25 6.5 4.25L14 4.25C14.1989 4.25 14.3897 4.32902 14.5303 4.46967C14.671 4.61032 14.75 4.80109 14.75 5L14.75 12.5C14.75 12.9142 14.4142 13.25 14 13.25C13.5858 13.25 13.25 12.9142 13.25 12.5L13.25 6.81066L5.53033 14.5303C5.23744 14.8232 4.76256 14.8232 4.46967 14.5303C4.17678 14.2374 4.17678 13.7626 4.46967 13.4697L12.1893 5.75L6.5 5.75C6.08579 5.75 5.75 5.41421 5.75 5Z" />
+                                                </svg></div>
+                                        </div>
+                                    </div>
+                                    <div role="listitem" class="w-dyn-item">
+                                        <div class="footerblogentry"><a
+                                                href="/blog/workation-bei-knguru-eine-woche-in-thessaloniki"
+                                                class="footerentry blogpost">Workation bei KNGURU: Eine Woche in
+                                                Thessaloniki</a>
+                                            <div class="arrowdiagonal footerblog w-embed"><svg width="currentWidth"
+                                                    height="currentHeight" viewBox="0 0 19 19" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M5.75 5C5.75 4.58579 6.08579 4.25 6.5 4.25L14 4.25C14.1989 4.25 14.3897 4.32902 14.5303 4.46967C14.671 4.61032 14.75 4.80109 14.75 5L14.75 12.5C14.75 12.9142 14.4142 13.25 14 13.25C13.5858 13.25 13.25 12.9142 13.25 12.5L13.25 6.81066L5.53033 14.5303C5.23744 14.8232 4.76256 14.8232 4.46967 14.5303C4.17678 14.2374 4.17678 13.7626 4.46967 13.4697L12.1893 5.75L6.5 5.75C6.08579 5.75 5.75 5.41421 5.75 5Z" />
+                                                </svg></div>
+                                        </div>
+                                    </div>
+                                    <div role="listitem" class="w-dyn-item">
+                                        <div class="footerblogentry"><a
+                                                href="/blog/mikrointeraktionen-kleine-animationen-die-grosses-bewirken"
+                                                class="footerentry blogpost">Mikrointeraktionen - kleine Animationen die
+                                                Großes bewirken</a>
+                                            <div class="arrowdiagonal footerblog w-embed"><svg width="currentWidth"
+                                                    height="currentHeight" viewBox="0 0 19 19" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M5.75 5C5.75 4.58579 6.08579 4.25 6.5 4.25L14 4.25C14.1989 4.25 14.3897 4.32902 14.5303 4.46967C14.671 4.61032 14.75 4.80109 14.75 5L14.75 12.5C14.75 12.9142 14.4142 13.25 14 13.25C13.5858 13.25 13.25 12.9142 13.25 12.5L13.25 6.81066L5.53033 14.5303C5.23744 14.8232 4.76256 14.8232 4.46967 14.5303C4.17678 14.2374 4.17678 13.7626 4.46967 13.4697L12.1893 5.75L6.5 5.75C6.08579 5.75 5.75 5.41421 5.75 5Z" />
+                                                </svg></div>
+                                        </div>
+                                    </div>
+                                    <div role="listitem" class="w-dyn-item">
+                                        <div class="footerblogentry"><a
+                                                href="/blog/app-entwicklung-mit-react-native-vor-und-nachteile"
+                                                class="footerentry blogpost">App-Entwicklung mit React Native: Vor- und
+                                                Nachteile</a>
+                                            <div class="arrowdiagonal footerblog w-embed"><svg width="currentWidth"
+                                                    height="currentHeight" viewBox="0 0 19 19" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M5.75 5C5.75 4.58579 6.08579 4.25 6.5 4.25L14 4.25C14.1989 4.25 14.3897 4.32902 14.5303 4.46967C14.671 4.61032 14.75 4.80109 14.75 5L14.75 12.5C14.75 12.9142 14.4142 13.25 14 13.25C13.5858 13.25 13.25 12.9142 13.25 12.5L13.25 6.81066L5.53033 14.5303C5.23744 14.8232 4.76256 14.8232 4.46967 14.5303C4.17678 14.2374 4.17678 13.7626 4.46967 13.4697L12.1893 5.75L6.5 5.75C6.08579 5.75 5.75 5.41421 5.75 5Z" />
+                                                </svg></div>
+                                        </div>
+                                    </div>
+                                    <div role="listitem" class="w-dyn-item">
+                                        <div class="footerblogentry"><a
+                                                href="/blog/website-oder-web-app-dein-guide-zu-einer-entscheidung"
+                                                class="footerentry blogpost">Website oder Web App: Dein Guide zu einer
+                                                Entscheidung</a>
+                                            <div class="arrowdiagonal footerblog w-embed"><svg width="currentWidth"
+                                                    height="currentHeight" viewBox="0 0 19 19" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M5.75 5C5.75 4.58579 6.08579 4.25 6.5 4.25L14 4.25C14.1989 4.25 14.3897 4.32902 14.5303 4.46967C14.671 4.61032 14.75 4.80109 14.75 5L14.75 12.5C14.75 12.9142 14.4142 13.25 14 13.25C13.5858 13.25 13.25 12.9142 13.25 12.5L13.25 6.81066L5.53033 14.5303C5.23744 14.8232 4.76256 14.8232 4.46967 14.5303C4.17678 14.2374 4.17678 13.7626 4.46967 13.4697L12.1893 5.75L6.5 5.75C6.08579 5.75 5.75 5.41421 5.75 5Z" />
+                                                </svg></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <div class="w-embed w-script">
+                    <script type="text/javascript">
+
+                        //
+                        //   Variables
+                        //
+                        //////////////////////////////////////////////////////////////////////
+
+                        // Play with this value to change the speed
+                        let tickerSpeed = 1.5;
+                        let flickity = null;
+                        let isPaused = false;
+                        const carousels = document.querySelectorAll('.carousel');
+
+                        //
+                        //   Create Flickity
+                        //
+                        //////////////////////////////////////////////////////////////////////
+
+                        carousels.forEach(carousel => {
+                            // create a new Flickity instance for each carousel element
+                            let flickity = new Flickity(carousel, {
+                                autoPlay: false,
+                                prevNextButtons: true,
+                                pageDots: false,
+                                draggable: true,
+                                wrapAround: true,
+                                selectedAttraction: 0.015,
+                                friction: 0.25,
+                                pageDots: false,
+                                prevNextButtons: false
+                            });
+
+                            flickity.x = 0;
+                            let isPaused = false;
+
+                            carousel.addEventListener('mouseenter', () => {
+                                isPaused = true;
+                            });
+
+                            carousel.addEventListener('mouseleave', () => {
+                                isPaused = false;
+                                window.requestAnimationFrame(update);
+                            });
+
+                            flickity.on('dragStart', () => {
+                                isPaused = true;
+                            });
+
+                            const update = () => {
+                                if (isPaused) return;
+                                if (flickity.slides) {
+                                    flickity.x = (flickity.x - tickerSpeed) % flickity.slideableWidth;
+                                    flickity.selectedIndex = flickity.dragEndRestingSelect();
+                                    flickity.updateSelectedSlide();
+                                    flickity.settle(flickity.x);
+                                }
+                                window.requestAnimationFrame(update);
+                            };
+
+                            update();
+                        });
+
+                    </script>
+                    <style>
+                        .flickity-viewport {
+                            width: 100%;
+                            overflow: visible !important;
+                        }
+                    </style>
+                </div>
+            </div>
         </div>
     </div>
-</section>
+    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=61aab412062c50600ffad9ac"
+        type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+    <script src="https://assets-global.website-files.com/61aab412062c50600ffad9ac/js/kngurudv.e1412c99c.js"
+        type="text/javascript"></script><!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ8VMGL" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
+    <!-- loading Animation -->
+    <script type="text/javascript">
+        var loadingWrapper = document.getElementById("loadingAnimationWrapper")
+        var storage = sessionStorage.getItem("loadingAnimation")
+        var body = document.body
+
+        if (storage !== null) {
+            loadingWrapper.style.display = "none";
+        } else {
+            sessionStorage.setItem("loadingAnimationRunning", "true");  // Set the flag
+            loadingWrapper.style.display = "flex";
+            body.classList.add("stop-scrolling");
+
+            setTimeout(() => {
+                body.classList.remove("stop-scrolling");
+                loadingWrapper.style.opacity = "0"
+            }, 2300);
+
+            setTimeout(() => {
+                loadingWrapper.style.display = "none";
+                sessionStorage.removeItem("loadingAnimationRunning");  // Clear the flag
+                sessionStorage.setItem("loadingAnimation", "true");
+            }, 3000);
+        }
+    </script>
+
+
+    <style>
+        .stop-scrolling {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body,
+        .body,
+        html {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        body>div {
+            transform: translate3d(0, 0, 0);
+            -webkit-transform: translate3d(0, 0, 0);
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+
+    <!-- facebook conversion tracking -->
     <script>
-        // script.js
+        var fbua = window.navigator.userAgent;
+        var ip;
 
-        let currentSlide = 1;
-        let completionWidth = 0;
+        $.getJSON("https://ipgeolocation.abstractapi.com/v1/?api_key=208c281d737d4de59b851ca91b4048f9", function (data) {
+            ip = data.ip_address;
+            sendTracking(fbua, ip, "ViewContent");
+        })
 
-        document.addEventListener('DOMContentLoaded', function () {
-            showSlide(currentSlide);
+        //call conversion api on load 
+        async function sendTracking(fbua, ip, event) {
+            const options = {
+                method: 'GET',
+                mode: 'no-cors'
+            };
+            try {
+                let response = fetch('https://dev.knguru.de/conversionapi/index.php?conversionApiCall&action=' + event + '&agent=' + fbua + '&ip=' + ip, { mode: 'no-cors' });
+                console.log(response);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+    </script>
+
+    <!-- conversion events -->
+    <script>
+        $('.conversionfullfilled').click(() => {
+            gtag("event", 'booking_completed');
+            sendTracking(fbua, ip, "Lead");
+            console.log("conversion");
+        });
+    </script>
+    <!-- fluid script -->
+    <script type="text/javascript">
+        function loadFluidScript() {
+            if (screen.width > 960) {
+                var head = document.getElementsByTagName('head')[0];
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.src = 'https://cdn.jsdelivr.net/gh/Libero793/KNGURUWebsite3.0@latest/js/script.js';
+                head.appendChild(script);
+                console.log("running fluid animation script");
+            }
+        }
+
+        // Check the flag every 100 milliseconds.
+        // If the flag is not set (loading animation has finished), execute the fluid script.
+        var checkInterval = setInterval(function () {
+            var loadingAnimationRunning = sessionStorage.getItem("loadingAnimationRunning");
+            if (!loadingAnimationRunning) {
+                clearInterval(checkInterval);  // Stop checking
+                loadFluidScript();  // Execute the fluid script
+            }
+        }, 1000);
+    </script>
+
+    <!-- yt player -->
+    <script> (function () { var v = document.getElementsByClassName("youtube-player"); for (var n = 0; n < v.length; n++) { v[n].onclick = function () { var iframe = document.createElement("iframe"); iframe.setAttribute("src", "//www.youtube.com/embed/" + this.dataset.id + "?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&rel=" + this.dataset.related + "&controls=" + this.dataset.control + "&showinfo=" + this.dataset.info); iframe.setAttribute("frameborder", "0"); iframe.setAttribute("id", "youtube-iframe"); iframe.setAttribute("style", "width: 100%; height: 100%; position: absolute; top: 0; left: 0;"); if (this.dataset.fullscreen == 1) { iframe.setAttribute("allowfullscreen", ""); } while (this.firstChild) { this.removeChild(this.firstChild); } this.appendChild(iframe); }; } })(); </script>
+
+    <!-- calculator -->
+    <script>
+        var Webflow = Webflow || [];
+
+        Webflow.push(function () {
+            var l = $('#flowbaseSlider .w-slider-arrow-left');
+            var r = $('#flowbaseSlider .w-slider-arrow-right');
+            var price = 0;
+            var minPriceOutput = document.getElementById("minPriceResult");
+            var maxPriceOutput = document.getElementById("maxPriceResult");
+            var costEstimate = document.getElementById("costestimate");
+
+            $('#flowbaseSlider')
+                .on('click', '.slide-left', function () {
+                    l.trigger('tap');
+                });
+
+
+            $('.tap-card').click(function () {
+                r.trigger('tap');
+                if (this.dataset.funnelStep < 7) {
+                    price = price + (Number(this.dataset.cost) * 1000);
+                    minPriceOutput.innerHTML = insertDecimal(price) + "€";
+                    maxPriceOutput.innerHTML = insertDecimal(price + 20000) + "€";
+                    costEstimate.value = (price) + " to " + (price + 20000);
+                    console.log(price)
+                } else {
+                    console.log("calc already finsihed");
+                }
+            });
+
         });
 
-        function showSlide(n) {
-            const slides = document.getElementsByClassName("slide");
-            const percentageSpan = document.querySelector(".complete-percentage span");
-
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-
-            slides[currentSlide - 1].style.display = "block";
-
-            // Update completion width for each individual slide
-            completionWidth = (currentSlide / slides.length) * 100;
-
-            percentageSpan.style.width = completionWidth + "%";
+        function insertDecimal(num) {
+            return (num / 1000).toFixed(3);
         }
 
-        function nextSlide() {
-            if (currentSlide < 5) {
-                currentSlide++;
-            } else {
-                currentSlide = 1;
-            }
-            showSlide(currentSlide);
-        }
 
-        function prevSlide() {
-            if (currentSlide > 1) {
-                currentSlide--;
-            } else {
-                currentSlide = 5;
-            }
-            showSlide(currentSlide);
-        }
+        //Funnel Conversions
+        $('.appfunnelstarted').click(() => {
+            gtag("event", "app_funnel_started", {
+                'origin': 'home'
+            });
+            gtag("event", "funnel_started");
+        });
 
-        function goToSlide(n) {
-            currentSlide = n;
-            showSlide(currentSlide);
-        }
+        $('.appfunnelcompleted').click(() => {
+            gtag("event", "app_funnel_completed", {
+                'origin': 'home'
+            });
+            gtag("event", "funnel_completed");
+        });
 
-        function autoPlay() {
-            nextSlide();
-        }
 
-        // Auto play every 3 seconds
-        setInterval(autoPlay, 5000);
+        $('.tap-card').click(function () {
+            console.log(this.dataset.funnelStep);
+            gtag("event", "funnel_step", {
+                'step': this.dataset.funnelStep
+            });
+        });
+
     </script>
+
 </body>
 
 </html>
