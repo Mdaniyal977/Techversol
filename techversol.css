@@ -314,7 +314,9 @@ section {
     height: 100%;
     padding: 600px 0px;
 }
-
+.bg-imgg img {
+    width: 150%;
+}
 .section2 .section .flex-row {
     background-color: transparent;
     /* background-color: #52C1D0; */
