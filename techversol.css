@@ -292,7 +292,7 @@ section {
 .section2 .section .flex-row .col1 {
     padding: 0px 40px;
     /* background-color: #52C1D0; */
-    /* padding-left: 50px; */
+    padding-left: 100px;
     width: 45%;
     background-color: transparent;
 }
@@ -302,7 +302,7 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    width: 60%;
+    width: 55%;
     background-size:contain;
     align-items: center;
     justify-content: flex-start;
@@ -450,17 +450,17 @@ section {
 .section3 .section .flex-row .col1 {
     padding: 0px 40px;
     /* background-color: #52C1D0; */
-    /* padding-left: 100px; */
+    padding-left: 100px;
     width: 45%;
     background: transparent;
 }
 
 .section3 .section .flex-row .col2 {
-    background-image: url(./images/bottel\ final.png);
+    /* background-image: url(./images/bottel\ final.png); */
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    width: 60%;
+    width: 55%;
     background-size: cover;
     align-items: center;
     justify-content: flex-start;
@@ -609,23 +609,25 @@ button.width-o {
 .section4 .section .flex-row .col1 {
     padding: 0px 40px;
     /* background-color: #52C1D0; */
-    /* padding-left: 100px; */
+    padding-left: 100px;
     width: 45%;
 }
 
 .section4 .section .flex-row .col2 {
-    background-image: url(./images/final\ tree.png);
+    /* background-image: url(./images/final\ tree.png); */
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    width: 60%;
+    width: 55%;
     background-size: contain;
     align-items: center;
     justify-content: flex-start;
 
 
 }
-
+.section4 .section .flex-row .col2 .bg-imgg{
+    /* margin-left: 100p; */
+}
 .section4 .section .flex-row {
     background-color: transparent;
     /* background-color: #082C4C; */
@@ -635,8 +637,11 @@ button.width-o {
     align-content: center;
     justify-content: center;
     align-items: center;
+    
 }
-
+.section4 .section .padding{
+column-gap: 100px;
+}
 .section4 .section .flex-row .alignment .sub-heading h2 {
     word-wrap: break-word;
     color: #ffffff;
