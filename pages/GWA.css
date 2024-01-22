@@ -1971,5 +1971,101 @@ line-height: 34px; /* 154.545% */
  section.Architecture-secion2{
     background-color: #082C4C !important;
     background: #082C4C !important;
+    margin-bottom: 0px;
  }
+ section.Architecture-secion2 .row{
+    margin-bottom: 0px;
+    background-color: #082C4C !important;
+    background: #082C4C !important;
+ }
+ .Architecture-secion2 .col-left{
+width: 100%;
+ }
+ .Architecture-secion2 .col-left h2{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 125px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 137px; /* 89.091% */
+    text-transform: uppercase;
+     }
+     .Architecture-secion2 .col-left h6{
+         text-align: left;
+         color: #FFF;
+         font-family: Poppins;
+         font-size: 24px;
+         font-style: normal;
+         font-weight: 500;
+         line-height: 34px; /* 141.667% */
+         letter-spacing: 3.12px;
+         text-transform: uppercase;
+         }
+/* --------- */
+
+
+
+
+
+
+
+
+
+/* tranining */
+section.training{
+    background-image: url(../images/Group\ 66.png);
+    
+}
+.training .column {
+    margin-top: 20vh !important;
+    margin-bottom: 40vh !important;
+    width: 90%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* --------- */
+
+
+
+
+
+
+
+/*auto */
+section.auto{
+    background-image: url(../images/automation.png);
+    
+}
+.auto .column {
+    margin-top: 20vh !important;
+    margin-bottom: 40vh !important;
+    width: 90%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* --------- */
+
+
+/* tranining */
+section.r-d{
+    background-image: url(../images/r&d.png);
+    
+}
+.r-d .column {
+    margin-top: 20vh !important;
+    margin-bottom: 40vh !important;
+    width: 90%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 /* --------- */
