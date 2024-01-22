@@ -1,0 +1,265 @@
+/* banner */
+.career-section1 {
+    background-image: url(../images/about\ hero\ img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 35vh;
+    padding-bottom: 25vh;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+div.b-h h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+
+.d-f-a-j .w-m-d-f-a-j .b-s-h p {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+
+.d-f-a-j .w-m-d-f-a-j .b-s-h p span {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.5;
+}
+/* -------------------------------- */
+
+
+
+/* career section2 */
+.career-section2-row{
+    padding: 150px 0px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+
+.career-section2-column{
+    display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+row-gap: 50px;
+width: 90%;
+max-width: 1400px;
+}
+
+
+
+.career-section2-column :nth-child(1){
+    width: 70%;
+}
+
+
+.career-section2-column p{
+    color: #395874;
+text-align: center;
+font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: 34px; /* 154.545% */
+}
+/* ------------------ */
+
+
+
+
+
+
+/* career section3 */
+
+.career-section3-row{
+    padding: 150px 0px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.career-section3-column{
+    display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+/* row-gap: 50px; */
+width: 90%;
+max-width: 1400px;
+
+}
+.career-section3-column h1{
+    width: 100%;
+    margin-bottom: 40px;
+    color: #FFF;
+font-family: Poppins;
+font-size: 67px;
+font-style: normal;
+font-weight: 900;
+line-height: 80px; /* 119.403% */
+text-transform: uppercase;
+}
+.list-container:hover p {
+    opacity: 1;
+    color: white; /* Text color on hover */
+}
+.career-section3-row{
+    background-color: #0D375C;
+}
+
+.list-container:hover img {
+   opacity: 1; /* Text color on hover */
+}
+.list-container{
+    margin-top: 40px;
+    transition: all 0.4s ease-in-out;
+ cursor: pointer;
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 2.5%;
+}
+.list-container :nth-child(1){
+    margin-right: 0%;
+    width: 50px;
+}
+.list-container p{
+    transition: all 0.4s ease-in-out;
+    color: #356998;
+    opacity: 0.3;
+font-family: Poppins;
+font-size: 35.442px;
+font-style: normal;
+font-weight: 500;
+line-height: 94.513px; /* 266.667% */
+}
+
+
+.list-container img{
+    transition: opacity 0.4s ease-in-out;
+    opacity: 0.2;
+    width: 20px;
+}
+
+.list-container:hover{
+    transform: scale(1.019);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+/* -------------------------9--------------------------------- */
+
+
+
+
+/* career section4 */
+
+.career-section4-row{
+    padding: 150px 0px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+
+.career-section4-column{
+    column-gap: 30px;
+    display: flex;
+align-items: center;
+justify-content: center;
+width: 90%;
+max-width: 1400px;
+
+}
+.left-column{
+    width: 50%;
+}
+.right-column{
+    width: 50%;
+}
+.right-column h2{
+    color: #082C4C;
+    font-family: Poppins;
+    font-size: 67px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 80px; /* 119.403% */
+    text-transform: uppercase;
+}
+.right-column p{
+    color: #395874;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px; /* 154.545% */
+}
+/* ---------------- */
+
+
+/* career section5 */
+
+.career-section3-column p{
+    width: 70%;
+    text-align: center;
+    color: #FFF;
+text-align: center;
+font-family: Poppins;
+margin-bottom: 50px;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: 34px; /* 154.545% */
+
+}
+.color-change{
+    background-color: #52C1D0;
+}
+.color-change .list-container p{
+opacity: 0.5;
+}
+.color-change  .list-container:hover p {
+    color: white !important; 
+    opacity: 1;/* Text color on hover */
+}
+.color-change .career-section3-column h1{
+    width: 100%;
+    margin-bottom: 0px !important;
+    color: #FFF;
+    text-align: center;
+font-family: Poppins;
+font-size: 67px;
+font-style: normal;
+font-weight: 900;
+line-height: 80px; /* 119.403% */
+text-transform: uppercase;
+}
+/* ---------------- */

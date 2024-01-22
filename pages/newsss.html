@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slides-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide-item {
+    width: calc(100% / 3); /* Adjust width for three slides */
+    box-sizing: border-box;
+}
+
+.carousel-arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.prev-arrow,
+.next-arrow {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="carousel-container">
+    <div class="slides-container">
+        <!-- Your slide items go here -->
+        <div class="slide-item">
+            <div class="profle-image">
+                <img src="../images/team.png" alt="">
+            </div>
+            <div class="profile-bio">
+                <div class="bio">
+                    <h4>John Brent</h4>
+                    <p>Designer</p>
+                </div>
+                <div class="social-icons">
+                    <img src="../images/fb.png" alt="">
+                    <img src="../images/fb.png" alt="">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="slide-item">
+            <div class="profle-image">
+                <img src="../images/team.png" alt="">
+            </div>
+            <div class="profile-bio">
+                <div class="bio">
+                    <h4>John Brent</h4>
+                    <p>Designer</p>
+                </div>
+                <div class="social-icons">
+                    <img src="../images/fb.png" alt="">
+                    <img src="../images/fb.png" alt="">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="slide-item">
+            <div class="profle-image">
+                <img src="../images/team.png" alt="">
+            </div>
+            <div class="profile-bio">
+                <div class="bio">
+                    <h4>John Brent</h4>
+                    <p>Designer</p>
+                </div>
+                <div class="social-icons">
+                    <img src="../images/fb.png" alt="">
+                    <img src="../images/fb.png" alt="">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="slide-item">
+            <div class="profle-image">
+                <img src="../images/team.png" alt="">
+            </div>
+            <div class="profile-bio">
+                <div class="bio">
+                    <h4>John Brent</h4>
+                    <p>Designer</p>
+                </div>
+                <div class="social-icons">
+                    <img src="../images/fb.png" alt="">
+                    <img src="../images/fb.png" alt="">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="slide-item">
+            <div class="profle-image">
+                <img src="../images/team.png" alt="">
+            </div>
+            <div class="profile-bio">
+                <div class="bio">
+                    <h4>John Brent</h4>
+                    <p>Designer</p>
+                </div>
+                <div class="social-icons">
+                    <img src="../images/fb.png" alt="">
+                    <img src="../images/fb.png" alt="">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-arrows">
+        <img src="../images/Arrow 4 (1).png" alt="" class="prev-arrow">
+        <img src="../images/Arrow 3.png" alt="" class="next-arrow">
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script >
+    $(document).ready(function () {
+    const slidesContainer = $(".slides-container");
+    const slideItems = $(".slide-item");
+    const totalSlides = slideItems.length;
+    const slideWidth = $(".slide-item").outerWidth();
+    let currentIndex = 0;
+
+    // Set initial position for three slides
+    slidesContainer.css("width", `${totalSlides * slideWidth}px`);
+
+    // Auto Play
+    setInterval(function () {
+        showNextSlide();
+    }, 3000);
+
+    // Next Button Click
+    $(".next-arrow").on("click", function () {
+        showNextSlide();
+    });
+
+    // Previous Button Click
+    $(".prev-arrow").on("click", function () {
+        showPrevSlide();
+    });
+
+    function showNextSlide() {
+        if (currentIndex < totalSlides - 3) {
+            currentIndex++;
+        } else {
+            currentIndex = 0;
+        }
+        updateSlidePosition();
+    }
+
+    function showPrevSlide() {
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            currentIndex = totalSlides - 3;
+        }
+        updateSlidePosition();
+    }
+
+    function updateSlidePosition() {
+        const translateValue = -currentIndex * slideWidth;
+        slidesContainer.css("transform", `translateX(${translateValue}px)`);
+    }
+});
+
+</script>
+</body>
+</html>

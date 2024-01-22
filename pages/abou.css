@@ -1,0 +1,413 @@
+
+
+/* ABOUT PAGE CSS START FROM HERE */
+
+
+/* banner */
+.about-section1 {
+    background-image: url(../images/about\ hero\ img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 35vh;
+    padding-bottom: 25vh;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+div.b-h h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+
+.d-f-a-j .w-m-d-f-a-j .b-s-h p {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+
+.d-f-a-j .w-m-d-f-a-j .b-s-h p span {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.5;
+}
+/* -------------------------------- */
+
+
+/* about section2  */
+.about-section2{
+    background: #52C1D0;
+    padding: 150px 0px;
+}
+.d-f-a-j {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.w-m-d-a-j {
+    width: 90%;
+    max-width: 1600px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    column-gap: 50px;
+}
+
+
+
+.col {
+    width: 50%;
+}
+
+
+.col h2{
+    color: #FFF;
+/* text-align: center; */
+font-family: Poppins;
+font-size: 67px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+text-transform: uppercase;
+}
+
+
+.col p{
+    color: #FFF;
+font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: 34px; /* 154.545% */
+}
+
+
+
+.col img{
+width: 100%;
+}
+
+.m-t{
+    margin-top: 100px;
+
+}
+
+
+
+.w-m-d-f-a-j {
+    width: 90%;
+    max-width: 1600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+    column-gap: 50px;
+}
+
+
+.heading-and-para  h2{
+    color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 67px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.heading-and-para{
+width: 80%;
+}
+
+
+
+.heading-and-para p{
+    color: #FFF;
+font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+text-align: center;
+line-height: 34px; /* 154.545% */
+}
+
+/* ------------- */
+
+
+
+.col-md-4 {
+    text-align: center;
+    padding-bottom: 50px;
+    border-right: 1px dashed black;
+  }
+  .col-md-4 h1{
+    color: #FFF;
+font-family: Poppins;
+font-size: 124.122px;
+font-style: normal;
+font-weight: 400;
+line-height: 134.612px; /* 108.451% */
+  }
+  .col-md-4:last-child {
+    border-right: 0px solid black;
+  }
+  
+  .counter {
+    animation-duration: 1s;
+    animation-delay: 0s;
+  }
+  .col-md-4 h3{
+    padding-top: 10px;
+    border-top: 1px solid white;
+    color: #FFF;
+font-family: Poppins;
+font-size: 36.712px;
+font-style: normal;
+font-weight: 500;
+line-height: 45px; /* 23.944% */
+  }
+  .col2-about-2nd-section{
+    margin-top: 150px;
+  }
+
+
+
+
+/* last section*/
+/* Your existing styles here */
+section.about-section4 .row {
+    display: flex;
+    background: #082C4C;
+    align-items: center;
+    justify-content: center;
+}
+
+section.about-section4 .column {
+    width: 90%;
+    max-width: 1400px;
+}
+
+ .about-section4-toogle-container .toggle-item {
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.274);
+}
+
+section.about-section4 .column h2{
+    padding-top: 50px;
+    color: #ffffff;
+    font-family: Poppins;
+    text-align: left;
+    font-size: 67px;
+    font-style: normal;
+    width: 100%;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+.toggle-item-left h3{
+    color: #ffffff28;
+    margin-bottom: 20px;
+    font-family: Poppins;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50.667px; /* 58.333% */
+    transition: all 0.4s ease-in-out;
+}
+
+.toggle-item:hover .toggle-item-left h3{
+    color: #ffffff;
+ 
+}
+
+.toggle-item-left p{
+    opacity: 0;
+    height: 0px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px; /* 154.545% */
+    transition: height 0.8s ease-in-out;
+}
+
+.toggle-item .toggle-item-left{
+width: 60%;
+}
+
+
+.toggle-item .toggle-item-right{
+    transition: height 0.8s ease-in-out;
+    opacity: 0;
+    height: 0px;
+width: 40%;
+}
+
+.toggle-item .toggle-item-right img{
+    width: 100%;
+    }
+
+    .active .toggle-item-left h3,
+        .active .toggle-item-left p,
+        .active .toggle-item-right {
+            color: white; /* Change the color on click */
+            height: auto;
+            opacity: 1;
+            transition: height 0.8s ease-in-out;
+        }
+
+/* ------ */
+
+
+
+
+
+
+
+/* avout section3 */
+section.about-section3 .row {
+    display: flex;
+    background: #ffffff;
+    align-items: center;
+    justify-content: center;
+}
+
+section.about-section3 .column {
+    overflow: hidden;
+    width: 90%;
+    max-width: 1400px;
+}
+section.about-section3 .column h2{
+    color: #082C4C;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 67px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.slides-container {
+    width: 100% !important;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.sliders-arrows {
+    position: absolute;
+    top: 50%;
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+   
+}
+
+.carousel-container .sliders-arrows img {
+    box-shadow: 1px 3px 25px #0000004f;
+    width: 25px;
+    padding: 10px;
+    height: 25px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: transform  0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.carousel-container .sliders-arrows img:hover{
+    transform: scale(1.099);
+}
+
+
+.profle-image{
+    margin-bottom: -30%;
+}
+
+.profile-bio .bio h4{
+    color: #082C4C;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 36.167px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 39.667px; /* 109.677% */
+}
+
+.profile-bio .bio p{
+    color: #5B7C99;
+text-align: center;
+font-family: Montserrat;
+font-size: 29.167px;
+font-style: normal;
+font-weight: 600;
+line-height: 39.667px; /* 136% */
+}
+
+.profile-bio{
+    position: relative;
+    padding-top: 45%;
+    padding-bottom: 100px;
+    margin: 0px 50px;
+    background-color: #EBF9FB;
+}
+
+.profile-bio  .social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    background: #52C1D0;
+    padding: 20px 0px;
+}
+.profile-bio  .social-icons img{
+   width: 25px;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+ 
+}
+.slide-item {
+    width: calc(70vw / 3); /* Adjust width for three slides */
+    box-sizing: border-box;
+}
+.prev-arrow{
+    position: relative;
+    z-index: 9999;
+}
+/* ================= */
+/* ABOUT PAGE CSS END FROM THEIR *
