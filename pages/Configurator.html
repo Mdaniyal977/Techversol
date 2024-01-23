@@ -8,51 +8,193 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="../techversol.css">
     <link rel="stylesheet" href="./GWA.css">
-    <title>Document</title>
+    <title>CONFIGURATORS</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Function to show the corresponding menu box on hover
+            function showMenuBox(className) {
+                $('.menu-box').css({ height: 0, visibility: 'hidden' }); // Reset height and visibility for all menu boxes
+                $('#' + className + '-menu').css({ height: 'auto', visibility: 'visible' , overflow: 'visible' }); // Set height to auto for the specific menu box
+                $('.menu-container').css({ overflow: 'visible' }); // Show overflow when menu is visible
+            }
+    
+            // Hover event for each menu item
+            $('.menu li').mouseenter(function() {
+                // On hover in
+                var className = $(this).find('a').attr('class').split('-')[0];
+                showMenuBox(className);
+            });
+    
+            // Check mouse leave on both li and menu box
+            $('.menu li, .menu-box').mouseleave(function() {
+                setTimeout(function() {
+                    if (!$('.menu li:hover, .menu-box:hover').length) {
+                        $('.menu-box').css({ height: 0, visibility: 'hidden' });
+                        $('.menu-container').css({ overflow: 'hidden' }); // Hide overflow when menu is hidden
+                    }
+                }, 100);
+            });
+        });
+    </script>
 </head>
 
 <body>
-    <header>
+    <header class="toping">
         <div class="navbar">
             <nav class="desktop-menu">
                 <div class="logo">
                     <a href="../index.html"> <img src="../images/logo.png" alt="logo"></a>
                 </div>
                 <div class="menu">
-                    <ul>
-                        <li><a href="#">Company </a></li>
-                        <li><a href="#">Visualization </a></li>
-                        <li><a href="#">Development </a></li>
-                        <li><a href="#">Industries </a></li>
-                    </ul>
-                </div>
-            </nav>
-            <nav class="tablet-mobile-menu">
-                <div class="menu-first-row">
-                    <div class="logo">
-                        <img src="./images/logo.png" alt="logo">
-                    </div>
-                    <div class="hamburger hamburger-icon" id="hamburger-icon" onclick="toggleClass()">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </div>
-
-
-                <div class="tab-mob-menu">
-
-                    <div class="menu-container" id="targetDiv">
+                    <div class="menu">
                         <ul>
-                            <li><a href="#">Company </a></li>
-                            <li><a href="#">Visualization </a></li>
-                            <li><a href="#">Development </a></li>
-                            <li><a href="#">Industries </a></li>
+                            <li><a class="company-menu-trigger" href="#">Company </a></li>
+                            <li><a class="Visualization-menu-trigger" href="#">Visualization </a></li>
+                            <li><a class="development-menu-trigger" href="#">Development </a></li>
+                            <li><a class="Industries-menu-trigger" href="#">Industries </a></li>
                         </ul>
                     </div>
-
+                </nav>
+                <div class="dropdown-menu">
+                    <div class="menu-container">
+                        <div id="Visualization-menu" class=" menu-box">
+                            <div class="menu-content-container">
+                                <h3>VISUALIZE ARCHITECTURE & ENVIRONMENTS </h3>
+                                <p>We give our clients the ability to see the future and deliver enriched customer
+                                    experiences
+                                    in a variety of virtual environments and visualization modes.</p>
+                            </div>
+                            <div class="menu-li-items-container">
+                                <div class="li-item">
+                                    <a href="../pages/3D Rendering.html">
+                                        <img src="../images/3d m3nu.png" alt="">
+                                        <p>3D RENDERING</p>
+                                    </a>
+                                </div>
+                                <div class="li-item">
+                                    <a href="../pages/Configurator.html">
+                                        <img src="../images/config-menu.png" alt="">
+                                        <p>CONFIGURATORS</p>
+                                    </a>
+                                </div>
+                                <div class="li-item">
+                                    <a href="../pages/Metaverse.html">
+                                        <img src="../images/METAVERSEmenu.png" alt="">
+                                        <p>METAVERSE</p>
+                                    </a>
+                                </div>
+                                <div class="li-item">
+                                    <a href="../pages/Alternate Reality.html">
+                                        <img src="../images/alterreat.png" alt="">
+                                        <p>ALTERNATE REALITY</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div id="development-menu" class=" menu-box">
+                            <div class="menu-content-container">
+                                <h3>Develop Digital Utilities and products </h3>
+                                <p>We develop assets, products, applications, and games that help clients solve their
+                                    customers’ problems or create value in their lives and businesses.</p>
+                            </div>
+                            <div class="menu-li-items-container">
+                                <div class="li-item">
+                                    <a href="../pages/website.html">
+                                        <img src="../images/dev3menu (8).png" alt="">
+                                        <p>Websites</p>
+                                    </a>
+                                </div>
+                                <div class="li-item">
+                                    <a href="../pages/games.html">
+                                        <img src="../images/dev3menu (7).png" alt="">
+                                        <p>GAMES</p>
+                                    </a>
+                                </div>
+                                <div class="li-item">
+                                    <a href="../pages/apps.html">
+                                        <img src="../images/dev3menu (2).png" alt="">
+                                        <p>APPS</p>
+                                    </a>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                        <div id="company-menu" class="menu-box">
+                            <div class="menu-content-container">
+                                <h3>COMPANY</h3>
+                                <p>We give our clients the ability to see the future and deliver enriched customer
+                                    experiences
+                                    in a variety of virtual environments and visualization modes.</p>
+                            </div>
+                            <div class="menu-li-items-container">
+                                <div class="li-item">
+                                    <a href="../pages/About-Us.html">
+                                        <img src="../images/3d m3nu.png" alt="">
+                                        <p>ABOUT</p>
+                                    </a>
+                                </div>
+                                <div class="li-item">
+                                    <a href="../pages/career.html">
+                                        <img src="../images/config-menu.png" alt="">
+                                        <p>CAREERS</p>
+                                    </a>
+                                </div>
+                                <div class="li-item">
+                                    <a href="../pages/contact us .html">
+                                        <img src="../images/METAVERSEmenu.png" alt="">
+                                        <p>CONTACT</p>
+                                    </a>
+                                </div>
+                                <div class="li-item">
+                                    <a href="#">
+                                        <img src="../images/alterreat.png" alt="">
+                                        <p>BLOG & NEWS</p>
+                                    </a>
+                                </div>
+                            </div>v>
+                        </div>
+    
+                        <div id="Industries-menu" class="menu-box">
+                            <div class="menu-content-container">
+                                <h3>Industries Shaping
+                                    The Future</h3>
+                                <p>Our 3D visualization team enables you to bring your complex product and architecture
+                                    designs to life in all the dimensions that matter..</p>
+                            </div>
+                            <div class="menu-li-items-container">
+                                <div class="li-item">
+                                    <a href="../pages/Architecture.html">
+                                        <img src="../images/artmene.png" alt="">
+                                        <p>Architecture</p>
+                                    </a>
+                                </div>
+                                <div class="li-item">
+                                    <a href="../pages/training.html">
+                                        <img src="../images/trainmenu.png" alt="">
+                                        <p>Training</p>
+                                    </a>
+                                </div>
+                                <div class="li-item">
+                                    <a href="../pages/automation.html">
+                                        <img src="../images/automenu.png" alt="">
+                                        <p>Automation</p>
+                                    </a>
+                                </div>
+                                <div class="li-item">
+                                    <a href="../pages/r&d.html">
+                                        <img src="../images/rndmenu.png" alt="">
+                                        <p>R&D</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+    
                 </div>
-            </nav>
         </div>
     </header>
 
