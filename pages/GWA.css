@@ -2245,8 +2245,152 @@ section.r-d{
        
         line-height: 28px;
     }
+    .config .column {
+        margin-top: 40vh;
+        margin-bottom: 10vh;
+ 
+    }.games .column .content h1 {
+
+        font-size: 80px;
+      
+        line-height: 90px;
+        text-transform: uppercase;
+    }
+    .games .column .content p {
+      
+        font-size: 18px;
+
+        line-height: 28px;
+    }
+    section.games {
+        padding-top: 35vh;
+        padding-bottom: 25vh;
+      
+    }
+    .games-section1 .column .col-right p {
+      
+        font-size: 18px;
+      
+        line-height: 28px;
+    }
+    .games-section1 .column .col-left h2 {
+        
+        font-size: 80px;
+        
+        font-weight: 900;
+        line-height: 90px;
+        
+    }
+    .games-section3 .column .col-left h2 {
+      
+        font-size: 80px;
+      
+        line-height: 90px;
+    }
+    .games-section3 .column .col-left p {
+   
+        width: 90%;
+        font-size: 18px;
+      
+        line-height: 28px;
+    
+    }
+    .config .column {
+        margin-top: 40vh;
+        margin-bottom: 10vh;
+        width: 90%;
+        max-width: 1400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+.games-section5 .top-content-wrapper {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 @media only screen and (max-width:767px) {
+    section.games {
+        padding-top: 35vh;
+        padding-bottom: 25vh;
+    }
+    .games .column .content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .games .column .content h1 {
+        font-size: 40px;
+        line-height: 50px;
+        text-transform: uppercase;
+    }
+    .games-section3 .column .animated-div p {
+        font-size: 18px;
+      
+        line-height: 28px;
+    }
+    .games-section3 .column .col-left p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .games-section3 .column .col-left h2 {
+        font-size: 30px;
+        font-weight: 900;
+        margin-top: 0px;
+        line-height: 40px;
+    }
+    .games-section3 .column .col-left h6 {
+        font-size: 18px;
+      
+        line-height: 28px;
+    }
+    .games-section3 .column .col-right {
+        width: 100%;
+    }
+    .games-section3 .column .col-left {
+        
+        width: 100%;
+    }
+    .games-section3 .column {
+     
+        flex-direction: column;
+    }
+    .games-section1 .column .col-right p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .games-section1 .column .col-left h2 {
+        font-size: 30px;
+        font-weight: 900;
+        margin-top: 0px;
+        line-height: 40px;
+    }
+    .games-section1 .column .col-left p {
+     
+        font-size: 18px;
+  
+        line-height: 28px;
+        
+    }
+    .games-section1 .column .col-right {
+        width: 100%;
+        padding-top: 30px;
+    }
+    .games-section1 .column .col-left {
+ 
+        width: 100%;
+    }
+    .games-section1 .column {
+        
+        flex-direction: column;
+    }
+    .config .column {
+        margin-top: 20vh;
+        margin-bottom: 10vh;
+ 
+    }
     .blurb {
         display: flex;
         flex-direction: column;
