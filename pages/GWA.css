@@ -471,6 +471,7 @@ section.games .row {
     overflow: visible;
     overflow-y: visible !important;
 }
+
 .carousel .carousel-item {
     width: 450px;
     height: auto !important;
@@ -1748,14 +1749,17 @@ section.config .row {
     flex-direction: column;
     row-gap: 20px;
 }
-.config-section3 .column .col-right .paragraph1 p{
+
+.config-section3 .column .col-right .paragraph1 p {
     color: #FFF;
-font-family: Poppins;
-font-size: 22px;
-font-style: normal;
-font-weight: 500;
-line-height: 34px; /* 154.545% */
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    /* 154.545% */
 }
+
 .config-section3 .row .full-widthcolumn {
     width: 90% !important;
     padding: 100px 0px;
@@ -1809,7 +1813,7 @@ line-height: 34px; /* 154.545% */
     border: none;
 }
 
-.config-section3  .row .full-widthcolumn .col2 a {
+.config-section3 .row .full-widthcolumn .col2 a {
     color: #FFF;
     background: linear-gradient(180deg, #62DCEB 0%, #3795A5 100%);
     font-family: Poppins;
@@ -1819,14 +1823,17 @@ line-height: 34px; /* 154.545% */
     line-height: normal;
     padding: 20px 40px;
 }
-.config-slidera{
+
+.config-slidera {
     background: #52C1D0;
     padding: 100px 0px;
 }
-.config-sec-5{
+
+.config-sec-5 {
     padding-top: 100px !important;
 }
-.config-sec-6{
+
+.config-sec-6 {
     background: #52C1D0 !important;
 }
 
@@ -1836,7 +1843,7 @@ line-height: 34px; /* 154.545% */
 
 
 /* matavers */
-section.metaverse{
+section.metaverse {
     /* padding: 40vh 0px;00 */
     padding-top: 300px;
     background-repeat: no-repeat;
@@ -1844,6 +1851,7 @@ section.metaverse{
     background-position: center;
     background-size: cover;
 }
+
 .metaverse .column {
     margin-top: 20vh !important;
     margin-bottom: 40vh !important;
@@ -1854,7 +1862,8 @@ section.metaverse{
     justify-content: center;
     flex-direction: column;
 }
-section.rendring3d{
+
+section.rendring3d {
     /* padding: 40vh 0px;00 */
     padding-top: 300px;
     background-repeat: no-repeat;
@@ -1862,6 +1871,7 @@ section.rendring3d{
     background-position: center;
     background-size: cover;
 }
+
 /* ----------- */
 
 
@@ -1869,7 +1879,7 @@ section.rendring3d{
 
 
 /* Architecture*/
-section.Architecture{
+section.Architecture {
     /* padding: 40vh 0px;00 */
     padding-top: 300px;
     background-repeat: no-repeat;
@@ -1877,6 +1887,7 @@ section.Architecture{
     background-position: center;
     background-size: cover;
 }
+
 .Architecture .column {
     margin-top: 20vh !important;
     margin-bottom: 40vh !important;
@@ -1887,52 +1898,60 @@ section.Architecture{
     justify-content: center;
     flex-direction: column;
 }
-.Architecture-secion1{
+
+.Architecture-secion1 {
     padding: 100px 0px;
 }
 
-.Architecture-secion1 .row{
-   background-color: transparent;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+.Architecture-secion1 .row {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.Architecture-secion1 .row .column{
+
+.Architecture-secion1 .row .column {
     background-color: transparent;
     display: flex;
     align-items: center;
     width: 90%;
     max-width: 1400px;
     justify-content: center;
- }
- .Architecture-secion1 .row .column .content{
+}
+
+.Architecture-secion1 .row .column .content {
     display: flex;
     align-items: center;
     justify-content: center;
     row-gap: 30px;
     flex-direction: column;
- }
- .Architecture-secion1 .row .column .content h6{
+}
+
+.Architecture-secion1 .row .column .content h6 {
     color: #082C4C;
     font-family: Poppins;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
-    line-height: 34px; /* 141.667% */
+    line-height: 34px;
+    /* 141.667% */
     letter-spacing: 3.12px;
     text-transform: uppercase;
- }
- .Architecture-secion1 .row .column .content h2{
+}
+
+.Architecture-secion1 .row .column .content h2 {
     color: #082C4C;
     text-align: center;
     font-family: Poppins;
     font-size: 165px;
     font-style: normal;
     font-weight: 900;
-    line-height: 147px; /* 89.091% */
+    line-height: 147px;
+    /* 89.091% */
     text-transform: uppercase;
- }
- .Architecture-secion1 .row .column .content p{
+}
+
+.Architecture-secion1 .row .column .content p {
     color: #395874;
     text-align: center;
     width: 70%;
@@ -1940,67 +1959,81 @@ section.Architecture{
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
-    line-height: 34px; /* 154.545% */
- }
- .Architecture-secion1 .row .column .content img{
-   width: 80%;
- }
+    line-height: 34px;
+    /* 154.545% */
+}
 
- .col-rightArchitecture{
+.Architecture-secion1 .row .column .content img {
+    width: 80%;
+}
+
+.col-rightArchitecture {
     display: flex;
     align-items: center;
     margin-top: 100px;
     justify-content: center;
     column-gap: 30px;
- }
- .col-rightArchitecture div{
+}
+
+.col-rightArchitecture div {
     width: 50%;
- }
- .col-rightArchitecture div img{
+}
+
+.col-rightArchitecture div img {
     width: 80%;
- }
- .col-rightArchitecture div p{
+}
+
+.col-rightArchitecture div p {
     color: #FFF;
-font-family: Poppins;
-font-size: 22px;
-font-style: normal;
-font-weight: 500;
-line-height: 34px; /* 154.545% */
- }
- section.Architecture-secion2{
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    /* 154.545% */
+}
+
+section.Architecture-secion2 {
     background-color: #082C4C !important;
     background: #082C4C !important;
     margin-bottom: 0px;
- }
- section.Architecture-secion2 .row{
+}
+
+section.Architecture-secion2 .row {
     margin-bottom: 0px;
     background-color: #082C4C !important;
     background: #082C4C !important;
- }
- .Architecture-secion2 .col-left{
-width: 100%;
- }
- .Architecture-secion2 .col-left h2{
+}
+
+.Architecture-secion2 .col-left {
+    width: 100%;
+}
+
+.Architecture-secion2 .col-left h2 {
     color: #FFF;
     font-family: Poppins;
     font-size: 125px;
     text-align: left;
     font-style: normal;
     font-weight: 900;
-    line-height: 137px; /* 89.091% */
+    line-height: 137px;
+    /* 89.091% */
     text-transform: uppercase;
-     }
-     .Architecture-secion2 .col-left h6{
-         text-align: left;
-         color: #FFF;
-         font-family: Poppins;
-         font-size: 24px;
-         font-style: normal;
-         font-weight: 500;
-         line-height: 34px; /* 141.667% */
-         letter-spacing: 3.12px;
-         text-transform: uppercase;
-         }
+}
+
+.Architecture-secion2 .col-left h6 {
+    text-align: left;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    /* 141.667% */
+    letter-spacing: 3.12px;
+    text-transform: uppercase;
+}
+
 /* --------- */
 
 
@@ -2012,10 +2045,11 @@ width: 100%;
 
 
 /* tranining */
-section.training{
+section.training {
     background-image: url(../images/Group\ 66.png);
-    
+
 }
+
 .training .column {
     margin-top: 20vh !important;
     margin-bottom: 40vh !important;
@@ -2026,6 +2060,7 @@ section.training{
     justify-content: center;
     flex-direction: column;
 }
+
 /* --------- */
 
 
@@ -2035,10 +2070,11 @@ section.training{
 
 
 /*auto */
-section.auto{
+section.auto {
     background-image: url(../images/automation.png);
-    
+
 }
+
 .auto .column {
     margin-top: 20vh !important;
     margin-bottom: 40vh !important;
@@ -2049,14 +2085,16 @@ section.auto{
     justify-content: center;
     flex-direction: column;
 }
+
 /* --------- */
 
 
 /* tranining */
-section.r-d{
+section.r-d {
     background-image: url(../images/r&d.png);
-    
+
 }
+
 .r-d .column {
     margin-top: 20vh !important;
     margin-bottom: 40vh !important;
@@ -2067,6 +2105,7 @@ section.r-d{
     justify-content: center;
     flex-direction: column;
 }
+
 /* --------- */
 
 
@@ -2078,37 +2117,41 @@ section.r-d{
 
 @media only screen and (max-width:1200px) {
     .config .column .content h1 {
-        
+
         font-size: 80px;
-      
+
         line-height: 95px;
-      
+
     }
+
     .website .column .content p {
-   
+
         width: 80%;
-      
+
         font-size: 18px;
-       
+
         line-height: 28px;
     }
 
     .training .column {
         margin-top: 15vh !important;
         margin-bottom: 0vh !important;
-        
+
     }
+
     section.config {
         padding-top: 0px;
-    padding: 30vh 0px;
+        padding: 30vh 0px;
     }
+
     .Architecture-secion1 .row .column .content h2 {
-    
+
         font-size: 80px;
-     margin: 0px;
+        margin: 0px;
         line-height: 95px;
-      
+
     }
+
     .Architecture-secion1 .row .column .content p {
         color: #395874;
         text-align: center;
@@ -2120,181 +2163,212 @@ section.r-d{
         margin-bottom: 50px;
         line-height: 28px;
     }
+
     .row {
-      
+
         padding: 50px 30px;
-       
+
     }
+
     .Architecture-secion2 .col-left h2 {
         font-size: 80px;
         margin: 0px;
-           line-height: 95px;
+        line-height: 95px;
     }
+
     .col-rightArchitecture {
-      
+
         margin-top: 50px;
-        
+
     }
+
     section.Architecture-secion2 .row {
         padding: 50px 30px;
     }
+
     .col-rightArchitecture div p {
         font-size: 18px;
-       
+
         line-height: 28px;
     }
+
     .games-section5 .top-content h2 {
         font-size: 80px;
         margin: 0px;
-           line-height: 95px;
+        line-height: 95px;
     }
+
     .main-text h2 {
-       
+
         font-size: 60px;
-     
+
         font-weight: 800;
         line-height: 76.864px;
-      
+
     }
+
     .main-text p {
-        
+
         font-size: 18px;
-      
+
         line-height: 28px;
-       
+
     }
+
     nav.desktop-menu {
-       display: none;
+        display: none;
     }
 
     .metaverse .column {
         margin-top: 20vh !important;
         margin-bottom: 10vh !important;
-    
+
     }
+
     .config-section1 .column .col-left h2 {
-      
+
         font-size: 80px;
-        
+
         line-height: 90px;
         text-transform: uppercase;
     }
+
     .config-section1 .column .col-left p {
-      
+
         font-size: 18px;
-     
+
         line-height: 24px;
         width: 80%;
     }
+
     .config-section1 .column .col-right img {
         width: 400px;
         /* padding-top: 100px; */
     }
+
     .config-section3 .column .col-left h2 {
-     
+
         font-size: 80px;
-   
+
         line-height: 90px;
-      
+
     }
+
     .config-section3 .column .col-right .paragraph1 p {
-       
+
         font-size: 18px;
-     
+
         line-height: 24px;
     }
+
     .config-section3 .row .full-widthcolumn .col1 h5 {
- 
+
         font-size: 30px;
-  
+
         line-height: normal;
     }
+
     .config-section3 .row .full-widthcolumn .col1 p {
-    
+
         font-size: 25px;
-   
+
         line-height: normal;
     }
-    .config-section3  .row .full-widthcolumn .col2 a {
-       
+
+    .config-section3 .row .full-widthcolumn .col2 a {
+
         font-size: 18px;
-     
+
         padding: 10px 20px;
     }
+
     .slider-remain .row .column h2 {
-   
+
         font-size: 80px;
-    
+
         line-height: 90px;
         text-transform: uppercase;
     }
+
     .slider-remain .row .column .blurbs-slider .blurb h2.blurb-title {
-        
+
         font-size: 30px;
-    
-    margin-bottom: 5px;
+
+        margin-bottom: 5px;
         line-height: 40.864px;
         text-transform: uppercase;
     }
+
     .slider-remain .row .column .blurbs-slider .blurb .blurb-img {
         width: 100px;
     }
+
     .blurb-para {
-     
+
         font-size: 18px;
-       
+
         line-height: 28px;
     }
+
     .config .column {
         margin-top: 40vh;
         margin-bottom: 10vh;
- 
-    }.games .column .content h1 {
+
+    }
+
+    .games .column .content h1 {
 
         font-size: 80px;
-      
+
         line-height: 90px;
         text-transform: uppercase;
     }
+
     .games .column .content p {
-      
+
         font-size: 18px;
 
         line-height: 28px;
     }
+
     section.games {
         padding-top: 35vh;
         padding-bottom: 25vh;
-      
+
     }
+
     .games-section1 .column .col-right p {
-      
+
         font-size: 18px;
-      
+
         line-height: 28px;
     }
+
     .games-section1 .column .col-left h2 {
-        
+
         font-size: 80px;
-        
+
         font-weight: 900;
         line-height: 90px;
-        
+
     }
+
     .games-section3 .column .col-left h2 {
-      
+
         font-size: 80px;
-      
+
         line-height: 90px;
     }
+
     .games-section3 .column .col-left p {
-   
+
         width: 90%;
         font-size: 18px;
-      
+
         line-height: 28px;
-    
+
     }
+
     .config .column {
         margin-top: 40vh;
         margin-bottom: 10vh;
@@ -2305,103 +2379,200 @@ section.r-d{
         justify-content: center;
         flex-direction: column;
     }
+
+    .apps .column .content h1 {
+
+        font-size: 80px;
+
+        line-height: 90px;
+        text-transform: uppercase;
+    }
+
+    .apps .column {
+        margin-top: 30vh;
+        margin-bottom: 10vh;
+
+    }
+
+    .website-section1-apps .column .col-left h2 {
+
+        font-size: 80px;
+        MARGIN: 0px;
+        line-height: 90px;
+        text-transform: uppercase;
+    }
+
+    .website-section1-apps .column .col-right p {
+
+        font-size: 18px;
+
+        line-height: 28px;
+    }
+
+    .website-section3 .column .col-left h2 {
+        font-size: 80px;
+
+        line-height: 90px;
+    }
+
+    .website-section3 .column .col-right .paragraph1 {
+        font-size: 18px;
+
+        line-height: 28px;
+    }
+
+    .website-section3 .row .full-widthcolumn .col1 h5 {
+
+        font-size: 30px;
+
+        line-height: normal;
+    }
+
+    .website-section3 .row .full-widthcolumn .col1 p {
+
+        font-size: 25px;
+
+    }
+
+    .website-section3 .row .full-widthcolumn .col2 a {
+
+        font-size: 18px;
+
+        padding: 10px 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
-.games-section5 .top-content-wrapper {
-    padding-top: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 @media only screen and (max-width:767px) {
     section.games {
         padding-top: 35vh;
         padding-bottom: 25vh;
     }
+
     .games .column .content p {
         font-size: 14px;
         line-height: 24px;
     }
+
     .games .column .content h1 {
         font-size: 40px;
         line-height: 50px;
         text-transform: uppercase;
     }
+
     .games-section3 .column .animated-div p {
         font-size: 18px;
-      
+
         line-height: 28px;
     }
+
     .games-section3 .column .col-left p {
         font-size: 14px;
         line-height: 24px;
     }
+
     .games-section3 .column .col-left h2 {
         font-size: 30px;
         font-weight: 900;
         margin-top: 0px;
         line-height: 40px;
     }
+
     .games-section3 .column .col-left h6 {
         font-size: 18px;
-      
+
         line-height: 28px;
     }
+
     .games-section3 .column .col-right {
         width: 100%;
     }
+
     .games-section3 .column .col-left {
-        
+
         width: 100%;
     }
+
     .games-section3 .column {
-     
+
         flex-direction: column;
     }
+
     .games-section1 .column .col-right p {
         font-size: 14px;
         line-height: 24px;
     }
+
     .games-section1 .column .col-left h2 {
         font-size: 30px;
         font-weight: 900;
         margin-top: 0px;
         line-height: 40px;
     }
+
     .games-section1 .column .col-left p {
-     
+
         font-size: 18px;
-  
+
         line-height: 28px;
-        
+
     }
+
     .games-section1 .column .col-right {
         width: 100%;
         padding-top: 30px;
     }
+
     .games-section1 .column .col-left {
- 
+
         width: 100%;
     }
+
     .games-section1 .column {
-        
+
         flex-direction: column;
     }
+
     .config .column {
         margin-top: 20vh;
         margin-bottom: 10vh;
- 
+
     }
+
     .blurb {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     p.blurb-para {
         text-align: center;
         font-size: 14px;
         line-height: 28px;
     }
+
     .slider-remain .row .column .blurbs-slider .blurb h2.blurb-title {
         font-size: 25px;
         margin-bottom: 5px;
@@ -2409,12 +2580,14 @@ section.r-d{
         line-height: 40.864px;
         text-transform: uppercase;
     }
+
     .slider-remain .row .column h2 {
         margin: 30px 0px;
         font-size: 30px;
         line-height: 40px;
         text-transform: uppercase;
     }
+
     .slider-remain .row .column .blurbs-slider {
         column-gap: 30px;
         display: flex;
@@ -2423,205 +2596,375 @@ section.r-d{
         justify-content: center;
         flex-direction: column;
     }
+
     .slider-remain .row .column h6 {
-        
+
         font-size: 18px;
-        
-        line-height:  23.12px;
+
+        line-height: 23.12px;
         text-transform: uppercase;
     }
-    .config-section3  .row .full-widthcolumn .col2 a {
+
+    .config-section3 .row .full-widthcolumn .col2 a {
         font-size: 14px;
         padding: 10px 20px;
     }
+
     .config-section3 .row .full-widthcolumn .col2 {
         align-items: flex-start;
         width: 100% !important;
     }
+
     .config-section3 .row .full-widthcolumn .col1 {
         width: 100% !important;
     }
+
     .config-section3 .row .full-widthcolumn {
         row-gap: 30px;
         flex-direction: column;
     }
+
     .config-section3 .column .col-right {
         width: 100% !important;
         padding-top: 0px;
     }
+
     .config-section3 .column .col-left {
-     
+
         width: 100% !important;
     }
+
     .config-section3 .column {
-     
+
         flex-direction: column;
     }
+
     .config-section3 .column .col-left h6 {
-     
+
         font-size: 18px;
-        
+
         line-height: 24px;
-        
+
     }
+
     .config-section3 .column .col-right .paragraph1 p {
         font-size: 14px;
         line-height: 24px;
     }
+
     .config-section3 .column .col-left h2 {
         font-size: 30px;
         margin-top: 0px;
         line-height: 40px;
     }
+
     .config-section1 .column .col-left h2 {
         font-size: 30px;
         line-height: 40px;
         margin-top: 0px;
         text-transform: uppercase;
     }
+
     .config-section1 .column .col-right img {
         width: 250px;
         /* padding-top: 100px; */
     }
+
     .config-section1 .column .col-left p {
         font-size: 14px;
         line-height: 24px;
         width: 100%;
     }
+
     .config-section1 .column .col-left h6 {
-      
+
         font-size: 18px;
-  
+
         line-height: 34px;
-    
+
     }
+
     .card {
-       
+
         width: 250px !important;
-       
-}
-.carousel .carousel-item {
-    width: 250px !important;
-    height: auto !important;
-}
-.main-text h2 {
-    font-size: 30px;
-    font-weight: 800;
-    line-height: 40.864px;
-}
-.main-text p {
-    font-size: 14px;
-    line-height: 24px;
-}
-.games-section5 .top-content h2 {
-    font-size: 30px;
-    margin: 0px;
-    line-height: 40px;
-}
-.games-section5 .top-content h6 {
 
-    font-weight: 500;
-    line-height: 24px;
-    
-}
-.img-area {
-    height: 300px;
-    width: 100%;
-}
-.carousel {
- 
-    margin-top: 35%;
-  
-}
-.Architecture-secion2 .col-left h2 {
-    font-size: 30px;
-    margin: 0px;
-    line-height: 40px;
-}
-.Architecture-secion2 .col-left h6 {
- 
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 26px;
-   
-}
-.col-rightArchitecture {
-    row-gap: 30px;
-    flex-direction: column;
-}
-.col-rightArchitecture div {
-    width: 100%;
-}
-.Architecture-secion1 .row .column .content h2 {
-    font-size: 30px;
-    margin: 0px;
-    line-height: 40px;
-}
-.Architecture-secion1 .row .column .content p {
-  
-    font-size: 14px;
-   
-    line-height: 24px;
-}
-.col-rightArchitecture div p {
-    font-size: 14px;
-    line-height: 24px;
-}
-.Architecture-secion1 .row .column .content h6 {
-   
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
+    }
 
-}
-.Architecture-secion1 {
-    padding: 50px 0px;
-}
-html {
-    overflow-x: hidden;
-    font-size: 14px;
-}
-.config .column .content h1 {
+    .carousel .carousel-item {
+        width: 250px !important;
+        height: auto !important;
+    }
 
-    font-size: 40px;
+    .main-text h2 {
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 40.864px;
+    }
 
-    line-height: 50px;
- 
-}
-.website .column .content p {
-    width: 80%;
-    font-size: 14px;
-    line-height: 24px;
-}
-section.config {
-    padding-top: 0px;
-    padding: 20vh 0px;
-}
-.Architecture-secion1 .row .column .content p {
-    width: 100%;
-    font-size: 14px;
-    line-height: 24px;
-}
-.Architecture-secion1 .row .column .content img {
-    width: 100%;
-}
-.Architecture .column {
-    margin-top: 20vh !important;
-    margin-bottom: 5vh !important;
+    .main-text p {
+        font-size: 14px;
+        line-height: 24px;
+    }
 
+    .games-section5 .top-content h2 {
+        font-size: 30px;
+        margin: 0px;
+        line-height: 40px;
+    }
+
+    .games-section5 .top-content h6 {
+
+        font-weight: 500;
+        line-height: 24px;
+
+    }
+
+    .img-area {
+        height: 300px;
+        width: 100%;
+    }
+
+    .carousel {
+
+        margin-top: 35%;
+
+    }
+
+    .Architecture-secion2 .col-left h2 {
+        font-size: 30px;
+        margin: 0px;
+        line-height: 40px;
+    }
+
+    .Architecture-secion2 .col-left h6 {
+
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+
+    }
+
+    .col-rightArchitecture {
+        row-gap: 30px;
+        flex-direction: column;
+    }
+
+    .col-rightArchitecture div {
+        width: 100%;
+    }
+
+    .Architecture-secion1 .row .column .content h2 {
+        font-size: 30px;
+        margin: 0px;
+        line-height: 40px;
+    }
+
+    .Architecture-secion1 .row .column .content p {
+
+        font-size: 14px;
+
+        line-height: 24px;
+    }
+
+    .col-rightArchitecture div p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .Architecture-secion1 .row .column .content h6 {
+
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+
+    }
+
+    .Architecture-secion1 {
+        padding: 50px 0px;
+    }
+
+    html {
+        overflow-x: hidden;
+        font-size: 14px;
+    }
+
+    .config .column .content h1 {
+
+        font-size: 40px;
+
+        line-height: 50px;
+
+    }
+
+    .website .column .content p {
+        width: 80%;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    section.config {
+        padding-top: 0px;
+        padding: 20vh 0px;
+    }
+
+    .Architecture-secion1 .row .column .content p {
+        width: 100%;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .Architecture-secion1 .row .column .content img {
+        width: 100%;
+    }
+
+    .Architecture .column {
+        margin-top: 20vh !important;
+        margin-bottom: 5vh !important;
+
+    }
+
+    .r-d .column {
+        margin-top: 20vh !important;
+        margin-bottom: 5vh !important;
+
+    }
+
+    .auto .column {
+        margin-top: 20vh !important;
+        margin-bottom: 5vh !important;
+    }
+
+    .metaverse .column {
+        margin-top: 20vh !important;
+        margin-bottom: 5vh !important;
+    }
+
+    .website-section3 .row {
+        padding: 50px 0px !important;
+
+    }
+
+    .website-section3 .column {
+
+        flex-direction: column;
+    }
+
+    .website-section3 .column .col-left h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .website-section3 .column .col-left h6 {
+
+        font-size: 18px;
+
+        line-height: 28px;
+        letter-spacing: 3.12px;
+        text-transform: uppercase;
+    }
+
+    .website-section3 .column .col-right {
+        width: 100% !important;
+        padding-top: 0px;
+
+    }
+
+    .website-section3 .column .col-left {
+
+        width: 100% !important;
+    }
+
+    .website-section3 .column .col-left h2 {
+        font-size: 30px;
+        line-height: 40px;
+        margin: 10px 0px;
+    }
+
+    .website-section1-apps .column {
+
+        flex-direction: column;
+    }
+
+    .website-section1-apps .column .col-left {
+
+        width: 100%;
+    }
+
+    .website-section1-apps .column .col-right {
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    .website-section3 .row .full-widthcolumn {
+        row-gap: 30px;
+        flex-direction: column;
+    }
+
+    .website-section3 .row .full-widthcolumn .col1 {
+        width: 100%;
+
+    }
+
+    .website-section3 .row .full-widthcolumn .col2 {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .apps .column .content h1 {
+        font-size: 40px;
+        line-height: 50px;
+        text-transform: uppercase;
+    }
+
+    .website-section1-apps .column .col-left h2 {
+        font-size: 30px;
+        line-height: 50px;
+        text-transform: uppercase;
+    }
+
+    .website-section1-apps .column .col-left p {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 18px;
+        margin-bottom: 10px;
+
+    }
+
+    .website-section1-apps .column .col-right p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .website-section3 .column .col-right .paragraph1 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .website .column .content p {
+        width: 100%;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    section.apps {
+        padding-top: 100px;
+
+    }
+
+    .apps .column {
+        margin-top: 20vh;
+        margin-bottom: 20vh;
+    }
 }
-.r-d .column {
-    margin-top: 20vh !important;
-    margin-bottom: 5vh !important;
- 
-}
-.auto .column {
-    margin-top: 20vh !important;
-    margin-bottom: 5vh !important;
-}.metaverse .column {
-    margin-top: 20vh !important;
-    margin-bottom: 5vh !important;
-}
+
+.games-section5 .top-content-wrapper {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

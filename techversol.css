@@ -1061,7 +1061,7 @@ footer .inner-column2-item1 {
     }
 
     .section2 .section .flex-row .col1 {
-width: 50%;
+        width: 50%;
         padding-left: 0px;
 
     }
@@ -1080,11 +1080,13 @@ width: 50%;
 
         line-height: 28px;
     }
+
     .section2 .section .flex-row .col2 {
-      
+
         width: 50%;
-        
+
     }
+
     .section2 .section .flex-row .alignment .paragraph p {
 
         font-size: 18px;
@@ -1093,86 +1095,100 @@ width: 50%;
     }
 
     .section3 .section .flex-row .col1 {
-   
+
         padding-left: 0px;
 
     }
+
     .section3 .section .flex-row .alignment .sub-heading h2 {
         font-size: 50px;
 
         line-height: 60px;
     }
+
     .section3 .section .flex-row .alignment .paragraph p {
         font-size: 18px;
 
         line-height: 28px;
     }
+
     .section2 .section .flex-row .button-container button a {
-       
+
         font-size: 18px;
-      
+
     }
+
     .section3 .section .flex-row .col1 {
-     
+
         width: 50%;
-       
+
     }
+
     .section3 .section .flex-row .col2 {
-      
+
         width: 50%;
-      
+
     }
+
     .section3 .section .flex-row .button-container button a {
         font-size: 18px;
-      
+
     }
+
     .section4 .section .flex-row .col1 {
         padding-left: 0px;
         width: 50%;
     }
+
     .section4 .section .flex-row .alignment .sub-heading h2 {
         font-size: 50px;
         line-height: 65px;
-       
+
     }
+
     .section4 .section .flex-row .alignment .paragraph p {
-       
+
         line-height: 28px;
         font-size: 18px;
     }
+
     .section4 .section .flex-row .button-container button a {
         font-size: 18px;
-    
+
     }
+
     .slide p {
-    
+
         font-size: 25px;
-   
+
         line-height: 35px;
     }
+
     .tabs p {
-    
+
         font-size: 18px;
-      
+
         line-height: 24px;
     }
 
     .column h2 {
-      
+
         font-size: 50px;
         margin-bottom: 30px;
-   
+
         line-height: 55px;
-       
+
     }
+
     .column button a {
-       
+
         font-size: 18px;
-   
+
         line-height: 25px;
-     
+
         padding: 20px;
     }
+
     footer p {
         color: #000;
         font-family: Poppins;
@@ -1181,6 +1197,7 @@ width: 50%;
         font-weight: 500;
         line-height: 34px;
     }
+
     footer .inner-column1 {
         column-gap: 20px;
         display: flex;
@@ -1189,46 +1206,56 @@ width: 50%;
         justify-content: space-between;
     }
 }
-@media only screen and (max-width:767px){
+
+@media only screen and (max-width:767px) {
     .banner-content h1 {
         font-size: 40px;
-    
+
         line-height: 55px;
     }
+
     .banner-content p {
         font-size: 14px;
         line-height: 24px;
     }
+
     .banner {
-       
+
         padding-top: 35vh;
         padding-bottom: 25vh;
 
     }
+
     .section2 .section .flex-row .alignment .sub-heading h2 {
         font-size: 30px;
         line-height: 40px;
     }
+
     .sub-heading {
         margin-bottom: 10px;
     }
+
     .section2 .section .flex-row .alignment .paragraph p {
         font-size: 14px;
         line-height: 24px;
     }
+
     .section2 .section .flex-row .button-container button a {
         font-size: 14px;
     }
+
     .section2 .section .flex-row {
-      
+
         flex-direction: column;
-      
+
     }
+
     .section2 .section .flex-row .col1 {
         width: 100%;
         padding-left: 0px;
     }
-    .button-row{
+
+    .button-row {
         display: flex;
         align-content: center;
         justify-content: center;
@@ -1236,79 +1263,99 @@ width: 50%;
 
         align-items: center;
     }
+
     .section2 .section .flex-row .col2 {
         /* display: none; */
         width: 100%;
     }
+
     .bg-imgg img {
         width: 80%;
     }
+
     .section3 .section .flex-row {
-      
+
         flex-direction: column;
-        
+
     }
+
     .section3 .section .flex-row .col1 {
         width: 100%;
     }
+
     .section3 .section .flex-row .col2 {
         width: 100%;
     }
+
     .section3 .section .flex-row .alignment .sub-heading h2 {
         font-size: 30px;
         line-height: 40px;
     }
+
     .section3 .section .flex-row .alignment .paragraph p {
         font-size: 14px;
         line-height: 24px;
     }
+
     .section3 .section .flex-row .button-container button a {
         font-size: 14px;
     }
+
     .section4 .section .flex-row {
         flex-direction: column;
-      
+
     }
+
     .section4 .section .flex-row .alignment .sub-heading h2 {
         font-size: 30px;
         line-height: 40px;
     }
+
     .section4 .section .flex-row .alignment .paragraph p {
         line-height: 24px;
         font-size: 14px;
     }
+
     .section4 .section .flex-row .button-container button a {
         font-size: 14px;
     }
+
     .section4 .section .flex-row .col1 {
         padding-left: 0px;
         width: 100%;
     }
+
     .section4 .section .flex-row .col2 {
         width: 100%;
-       
+
     }
+
     .tabs-container {
-      display: none;
+        display: none;
     }
+
     .slide p {
         font-size: 18px;
         line-height: 25px;
     }
+
     .slider-main {
         padding: 50px 0px;
-        
+
     }
+
     .column h2 {
         font-size: 30px;
         margin-bottom: 20px;
         line-height: 40px;
     }
+
     .column button a {
         font-size: 14px;
         line-height: 25px;
         padding: 10px 20px;
     }
+
     footer .inner-column2 {
         display: flex;
         margin-top: 80px;
@@ -1319,6 +1366,7 @@ width: 50%;
         align-items: flex-start;
         flex-direction: column;
     }
+
     footer .inner-column1 {
         column-gap: 20px;
         display: flex;
@@ -1328,38 +1376,46 @@ width: 50%;
         justify-content: space-between;
         flex-direction: column;
     }
+
     footer p {
-    color: #000;
+        color: #000;
         font-family: Poppins;
         font-size: 14px;
-       
+
         line-height: 24px;
     }
+
     .padding {
         padding: 10vh 10px;
     }
+
     .section2 .section .flex-row .col1 {
         width: 100%;
         padding-left: 0px;
-        padding: 0px ;
+        padding: 0px;
     }
+
     .section3 .section .flex-row .col1 {
         padding: 0px;
         width: 100%;
     }
+
     .section4 .section .flex-row .col1 {
         padding-left: 0px;
         padding: 0px;
         width: 100%;
     }
+
     .inner-column3 {
         border-top: 2px solid #2121212e;
         width: 100%;
         padding-top: 20px;
     }
+
     footer p {
         text-align: center;
     }
+
     footer .inner-column2 {
         display: flex;
         margin-top: 80px;
@@ -1370,9 +1426,10 @@ width: 50%;
         align-items: center;
         flex-direction: column;
     }
+
     .bg-imgg img {
         width: 100%;
     }
 }
 
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500;600;700&display=swap');
