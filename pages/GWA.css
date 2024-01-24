@@ -2166,8 +2166,191 @@ section.r-d{
     nav.desktop-menu {
        display: none;
     }
+
+    .metaverse .column {
+        margin-top: 20vh !important;
+        margin-bottom: 10vh !important;
+    
+    }
+    .config-section1 .column .col-left h2 {
+      
+        font-size: 80px;
+        
+        line-height: 90px;
+        text-transform: uppercase;
+    }
+    .config-section1 .column .col-left p {
+      
+        font-size: 18px;
+     
+        line-height: 24px;
+        width: 80%;
+    }
+    .config-section1 .column .col-right img {
+        width: 400px;
+        /* padding-top: 100px; */
+    }
+    .config-section3 .column .col-left h2 {
+     
+        font-size: 80px;
+   
+        line-height: 90px;
+      
+    }
+    .config-section3 .column .col-right .paragraph1 p {
+       
+        font-size: 18px;
+     
+        line-height: 24px;
+    }
+    .config-section3 .row .full-widthcolumn .col1 h5 {
+ 
+        font-size: 30px;
+  
+        line-height: normal;
+    }
+    .config-section3 .row .full-widthcolumn .col1 p {
+    
+        font-size: 25px;
+   
+        line-height: normal;
+    }
+    .config-section3  .row .full-widthcolumn .col2 a {
+       
+        font-size: 18px;
+     
+        padding: 10px 20px;
+    }
+    .slider-remain .row .column h2 {
+   
+        font-size: 80px;
+    
+        line-height: 90px;
+        text-transform: uppercase;
+    }
+    .slider-remain .row .column .blurbs-slider .blurb h2.blurb-title {
+        
+        font-size: 30px;
+    
+    margin-bottom: 5px;
+        line-height: 40.864px;
+        text-transform: uppercase;
+    }
+    .slider-remain .row .column .blurbs-slider .blurb .blurb-img {
+        width: 100px;
+    }
+    .blurb-para {
+     
+        font-size: 18px;
+       
+        line-height: 28px;
+    }
 }
 @media only screen and (max-width:767px) {
+    .blurb {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    p.blurb-para {
+        text-align: center;
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .slider-remain .row .column .blurbs-slider .blurb h2.blurb-title {
+        font-size: 25px;
+        margin-bottom: 5px;
+        text-align: center !important;
+        line-height: 40.864px;
+        text-transform: uppercase;
+    }
+    .slider-remain .row .column h2 {
+        margin: 30px 0px;
+        font-size: 30px;
+        line-height: 40px;
+        text-transform: uppercase;
+    }
+    .slider-remain .row .column .blurbs-slider {
+        column-gap: 30px;
+        display: flex;
+        row-gap: 30px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .slider-remain .row .column h6 {
+        
+        font-size: 18px;
+        
+        line-height:  23.12px;
+        text-transform: uppercase;
+    }
+    .config-section3  .row .full-widthcolumn .col2 a {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    .config-section3 .row .full-widthcolumn .col2 {
+        align-items: flex-start;
+        width: 100% !important;
+    }
+    .config-section3 .row .full-widthcolumn .col1 {
+        width: 100% !important;
+    }
+    .config-section3 .row .full-widthcolumn {
+        row-gap: 30px;
+        flex-direction: column;
+    }
+    .config-section3 .column .col-right {
+        width: 100% !important;
+        padding-top: 0px;
+    }
+    .config-section3 .column .col-left {
+     
+        width: 100% !important;
+    }
+    .config-section3 .column {
+     
+        flex-direction: column;
+    }
+    .config-section3 .column .col-left h6 {
+     
+        font-size: 18px;
+        
+        line-height: 24px;
+        
+    }
+    .config-section3 .column .col-right .paragraph1 p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .config-section3 .column .col-left h2 {
+        font-size: 30px;
+        margin-top: 0px;
+        line-height: 40px;
+    }
+    .config-section1 .column .col-left h2 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 0px;
+        text-transform: uppercase;
+    }
+    .config-section1 .column .col-right img {
+        width: 250px;
+        /* padding-top: 100px; */
+    }
+    .config-section1 .column .col-left p {
+        font-size: 14px;
+        line-height: 24px;
+        width: 100%;
+    }
+    .config-section1 .column .col-left h6 {
+      
+        font-size: 18px;
+  
+        line-height: 34px;
+    
+    }
     .card {
        
         width: 250px !important;
@@ -2279,5 +2462,22 @@ section.config {
 }
 .Architecture-secion1 .row .column .content img {
     width: 100%;
+}
+.Architecture .column {
+    margin-top: 20vh !important;
+    margin-bottom: 5vh !important;
+
+}
+.r-d .column {
+    margin-top: 20vh !important;
+    margin-bottom: 5vh !important;
+ 
+}
+.auto .column {
+    margin-top: 20vh !important;
+    margin-bottom: 5vh !important;
+}.metaverse .column {
+    margin-top: 20vh !important;
+    margin-bottom: 5vh !important;
 }
 }
