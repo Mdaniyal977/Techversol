@@ -471,7 +471,6 @@ section.games .row {
     overflow: visible;
     overflow-y: visible !important;
 }
-
 .carousel .carousel-item {
     width: 450px;
     height: auto !important;
@@ -2069,3 +2068,216 @@ section.r-d{
     flex-direction: column;
 }
 /* --------- */
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1200px) {
+    .config .column .content h1 {
+        
+        font-size: 80px;
+      
+        line-height: 95px;
+      
+    }
+    .website .column .content p {
+   
+        width: 80%;
+      
+        font-size: 18px;
+       
+        line-height: 28px;
+    }
+
+    .training .column {
+        margin-top: 15vh !important;
+        margin-bottom: 0vh !important;
+        
+    }
+    section.config {
+        padding-top: 0px;
+    padding: 30vh 0px;
+    }
+    .Architecture-secion1 .row .column .content h2 {
+    
+        font-size: 80px;
+     margin: 0px;
+        line-height: 95px;
+      
+    }
+    .Architecture-secion1 .row .column .content p {
+        color: #395874;
+        text-align: center;
+        width: 70%;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        margin-bottom: 50px;
+        line-height: 28px;
+    }
+    .row {
+      
+        padding: 50px 30px;
+       
+    }
+    .Architecture-secion2 .col-left h2 {
+        font-size: 80px;
+        margin: 0px;
+           line-height: 95px;
+    }
+    .col-rightArchitecture {
+      
+        margin-top: 50px;
+        
+    }
+    section.Architecture-secion2 .row {
+        padding: 50px 30px;
+    }
+    .col-rightArchitecture div p {
+        font-size: 18px;
+       
+        line-height: 28px;
+    }
+    .games-section5 .top-content h2 {
+        font-size: 80px;
+        margin: 0px;
+           line-height: 95px;
+    }
+    .main-text h2 {
+       
+        font-size: 60px;
+     
+        font-weight: 800;
+        line-height: 76.864px;
+      
+    }
+    .main-text p {
+        
+        font-size: 18px;
+      
+        line-height: 28px;
+       
+    }
+    nav.desktop-menu {
+       display: none;
+    }
+}
+@media only screen and (max-width:767px) {
+    .card {
+       
+        width: 250px !important;
+       
+}
+.carousel .carousel-item {
+    width: 250px !important;
+    height: auto !important;
+}
+.main-text h2 {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 40.864px;
+}
+.main-text p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.games-section5 .top-content h2 {
+    font-size: 30px;
+    margin: 0px;
+    line-height: 40px;
+}
+.games-section5 .top-content h6 {
+
+    font-weight: 500;
+    line-height: 24px;
+    
+}
+.img-area {
+    height: 300px;
+    width: 100%;
+}
+.carousel {
+ 
+    margin-top: 35%;
+  
+}
+.Architecture-secion2 .col-left h2 {
+    font-size: 30px;
+    margin: 0px;
+    line-height: 40px;
+}
+.Architecture-secion2 .col-left h6 {
+ 
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+   
+}
+.col-rightArchitecture {
+    row-gap: 30px;
+    flex-direction: column;
+}
+.col-rightArchitecture div {
+    width: 100%;
+}
+.Architecture-secion1 .row .column .content h2 {
+    font-size: 30px;
+    margin: 0px;
+    line-height: 40px;
+}
+.Architecture-secion1 .row .column .content p {
+  
+    font-size: 14px;
+   
+    line-height: 24px;
+}
+.col-rightArchitecture div p {
+    font-size: 14px;
+    line-height: 24px;
+}
+.Architecture-secion1 .row .column .content h6 {
+   
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+
+}
+.Architecture-secion1 {
+    padding: 50px 0px;
+}
+html {
+    overflow-x: hidden;
+    font-size: 14px;
+}
+.config .column .content h1 {
+
+    font-size: 40px;
+
+    line-height: 50px;
+ 
+}
+.website .column .content p {
+    width: 80%;
+    font-size: 14px;
+    line-height: 24px;
+}
+section.config {
+    padding-top: 0px;
+    padding: 20vh 0px;
+}
+.Architecture-secion1 .row .column .content p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+}
+.Architecture-secion1 .row .column .content img {
+    width: 100%;
+}
+}

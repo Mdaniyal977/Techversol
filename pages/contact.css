@@ -1,4 +1,6 @@
 /* banner */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500;600;700&display=swap');
+
 .career-section1 {
     background-image: url(../images/about\ hero\ img.png);
     background-position: center;
@@ -309,5 +311,6 @@ input[type="checkbox"]:checked + .checkbox-container .checkbox-image {
     font-weight: 700;
     line-height: normal;
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500;600;700&display=swap');
 
 /* ----------- */
