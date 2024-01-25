@@ -1,12 +1,14 @@
 /* banner */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500;600;700&display=swap');
 .career-section1 {
-    background-image: url(../images/about\ hero\ img.png);
+    background-image: url(../images/menucareeer.jpg);
     background-position: center;
+    background-color: rgba(0, 0, 0, 0.244);
+    background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 35vh;
-    padding-bottom: 25vh;
+    padding-top: 45vh;
+    padding-bottom: 35vh;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -264,3 +266,92 @@ line-height: 80px; /* 119.403% */
 text-transform: uppercase;
 }
 /* ---------------- */
+
+@media only screen and (max-width:800px) {
+    div.b-h h1 {
+  
+        font-size: 40px;
+     
+    }
+    .d-f-a-j .w-m-d-f-a-j .b-s-h p {
+     
+        font-size: 18px;
+    
+    }
+    .career-section1 {
+        background-image: url(../images/about\ hero\ img.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 40vh;
+        padding-bottom: 35vh;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .career-section2-column p {
+      
+        font-size: 14px;
+
+        line-height: 24px;
+    }
+    .career-section3-column h1 {
+     
+        font-size: 30px;
+      
+        line-height: 40px;
+    
+    }
+    .career-section3-column p {
+      
+        margin-bottom: 50px;
+        font-size: 14px;
+   
+        line-height: 24px;
+    }
+    .list-container img {
+        transition: opacity 0.4s ease-in-out;
+        opacity: 0.2;
+        margin-bottom: 50px;
+        width: 15px;
+    }
+    .career-section4-column {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    .left-column {
+        width: 100%;
+    }
+    .right-column {
+        width: 100%;
+    }
+    .right-column h2 {
+       
+        font-size: 30px;
+       
+        line-height: 40px;
+        text-transform: uppercase;
+    }
+    .right-column p {
+      
+        font-size: 14px;
+      
+        line-height: 24px;
+    }
+    .color-change .career-section3-column h1 {
+      
+        font-size: 30px;
+      
+        line-height: 40px;
+        text-transform: uppercase;
+    }
+    .d-f-a-j .w-m-d-f-a-j .b-s-h p span {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        opacity: 0.5;
+    }
+}

@@ -9,26 +9,245 @@
     <link rel="stylesheet" href="../techversol.css">
     <link rel="stylesheet" href="./GWA.css">
     <title>WEBSITES</title>
+    <style>
+        .carousel-process {
+            max-width: 1400px !important;
+            position: relative;
+            overflow: hidden;
+            width: 85%;
+        }
+
+        .carousel__inner2 {
+            display: flex;
+            flex-wrap: nowrap;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .carousel__slide {
+
+            flex: 0 0 calc(100% / 3);
+            margin-right: 0.5rem;
+
+
+            transition: all 0.5s ease-in-out;
+        }
+
+        .carousel__slide.active {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        .butttttone {
+            position: absolute;
+            max-width: 1400px;
+            display: flex;
+            width: 98%;
+            padding-right: 30px;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .carousel__button {
+            /* position: absolute; */
+            top: 10%;
+            /* transform: translateY(-50%); */
+            width: 2rem;
+            height: 2rem;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        .carousel__button--left {
+            /* left: 1rem; */
+            z-index: 9999;
+        }
+
+        .carousel__button--right {
+            /* right: 1rem; */
+            z-index: 9999;
+        }
+
+        @media only screen and (max-width:980px) {
+            .carousel__slide {
+                display: block;
+                flex: 0 0 calc(100% / 2);
+                margin-right: 1rem;
+
+                transition: opacity 0.3s ease-in-out;
+            }
+
+            .slider-remain .headii h3 {
+                color: #FFF;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 60px !important;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 70px !important;
+                text-transform: uppercase;
+            }
+        }
+
+        @media only screen and (max-width:767px) {
+            .slider-remain .headii h6 {
+                color: #FFF;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 18px !important;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+                letter-spacing: 3.12px;
+                text-transform: uppercase;
+            }
+
+            .max-width {
+                padding: 50px 0px !important;
+            }
+
+            .slider-remain .headii h3 {
+                color: #FFF;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 30px !important;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 40px !important;
+                text-transform: uppercase;
+            }
+
+            .carousel__slide {
+                flex: 0 0 calc(100% / 1);
+                margin-right: 0rem;
+                opacity: 1;
+                transition: opacity 0.3s ease-in-out;
+            }
+
+            .inner2 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100% !important;
+                flex-direction: column;
+            }
+
+            .inner2 img {
+                width: 100px !important;
+            }
+
+            .inner2 h3 {
+                font-size: 30px !important;
+                line-height: 40px !important;
+                text-align: center;
+            }
+
+            .inner2 p {
+                font-size: 14px !important;
+                line-height: 24px !important;
+                text-align: center;
+            }
+        }
+
+        .inner2 {
+            width: 90%;
+        }
+
+        .inner2 img {
+            width: 150px;
+        }
+
+
+
+        button:focus {
+            outline: none;
+            background-color: #2ab7a900;
+        }
+
+        .max-width {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .inner2 h3 {
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 56.864px;
+            /* 89.091% */
+            text-transform: uppercase;
+        }
+
+        .inner2 p {
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 34px;
+            /* 154.545% */
+        }
+
+        .slider-remain .headii h6 {
+            color: #FFF;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 34px;
+            /* 141.667% */
+            letter-spacing: 3.12px;
+            text-transform: uppercase;
+        }
+
+        .slider-remain .headii h3 {
+            color: #FFF;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 165px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 147px;
+            /* 89.091% */
+
+            text-transform: uppercase;
+        }
+
+        .slider-remain .headii {
+            margin-bottom: 20px;
+        }
+
+        .max-width {
+            padding: 100px 0px;
+        }
+    </style>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             // Function to show the corresponding menu box on hover
             function showMenuBox(className) {
                 $('.menu-box').css({ height: 0, visibility: 'hidden' }); // Reset height and visibility for all menu boxes
-                $('#' + className + '-menu').css({ height: 'auto', visibility: 'visible' , overflow: 'visible' }); // Set height to auto for the specific menu box
+                $('#' + className + '-menu').css({ height: 'auto', visibility: 'visible', overflow: 'visible' }); // Set height to auto for the specific menu box
                 $('.menu-container').css({ overflow: 'visible' }); // Show overflow when menu is visible
             }
-    
+
             // Hover event for each menu item
-            $('.menu li').mouseenter(function() {
+            $('.menu li').mouseenter(function () {
                 // On hover in
                 var className = $(this).find('a').attr('class').split('-')[0];
                 showMenuBox(className);
             });
-    
+
             // Check mouse leave on both li and menu box
-            $('.menu li, .menu-box').mouseleave(function() {
-                setTimeout(function() {
+            $('.menu li, .menu-box').mouseleave(function () {
+                setTimeout(function () {
                     if (!$('.menu li:hover, .menu-box:hover').length) {
                         $('.menu-box').css({ height: 0, visibility: 'hidden' });
                         $('.menu-container').css({ overflow: 'hidden' }); // Hide overflow when menu is hidden
@@ -131,25 +350,25 @@
                         <div class="menu-li-items-container">
                             <div class="li-item">
                                 <a href="../pages/About-Us.html"  target="_blank"">
-                                    <img src="../images/3d m3nu.png" alt="">
+                                    <img src="../images/aboutbanner menu.jpg" alt="">
                                     <p>ABOUT</p>
                                 </a>
                             </div>
                             <div class="li-item">
                                 <a href="../pages/career.html"  target="_blank"">
-                                    <img src="../images/config-menu.png" alt="">
+                                    <img src="../images/baner caeer menu.jpg" alt="">
                                     <p>CAREERS</p>
                                 </a>
                             </div>
                             <div class="li-item">
                                 <a href="../pages/contact us .html"  target="_blank"">
-                                    <img src="../images/METAVERSEmenu.png" alt="">
+                                    <img src="../images/pink-mail-box-background.jpg" alt="">
                                     <p>CONTACT</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="#">
-                                    <img src="../images/alterreat.png" alt="">
+                                <a href="../pages/Blog.html">
+                                    <img src="../images/spotlight-illuminates-vibrant-color-stage-performance-generated-by-ai.jpg" alt="">
                                     <p>BLOG & NEWS</p>
                                 </a>
                             </div>
@@ -217,7 +436,8 @@
                 <div class="col-left">
                     <p>WEBSITES</p>
                     <h2>wHAT
-                       <br> IS IT? </h2>
+                        <br> IS IT?
+                    </h2>
                 </div>
                 <div class="col-right">
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page
@@ -248,57 +468,100 @@
                 <div class="col-left">
                     <h6>websites</h6>
                     <h2>BUILD YOUR DIGITAL BRAND HQ</h2>
-                    
+
                 </div>
                 <div class="col-right">
-                   <div class="paragraph1"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content<br><br>
+                    <div class="paragraph1">
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution of letters, as opposed to using 'Content<br><br>
 
-                    here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum<br><br>
-                    
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content</p></div>
-                  
-                   
-                                
+                            here, content here', making it look like readable English. Many desktop publishing packages
+                            and web page editors now use Lorem Ipsum as their default model text, and a search for
+                            'lorem ipsum<br><br>
+
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                            more-or-less normal distribution of letters, as opposed to using 'Content</p>
+                    </div>
+
+
+
                 </div>
-                
+
             </div>
             <div class="full-widthcolumn">
                 <div class="col1">
                     <h5>Would you like to get our advice?</h5>
                     <p class="text-light">We’ll help you get started.</p>
                 </div>
-               <div class="col2">
-                <button><a href="">Contact Us</a></button>
-               </div>
+                <div class="col2">
+                    <button><a href="">Contact Us</a></button>
+                </div>
             </div>
         </div>
     </section>
     <section class="slider-remain">
-        <div class="row">
-            <div class="column">
-                <h6>websites</h6>
-                <h2>Our<br>
-                    Process</h2>
-                <div class="blurbs-slider">
-                    <div class="blurb">
-                        <img class="blurb-img" src="../images/blurb-image1.png" alt="">
-                        <h2 class="blurb-title">Team Guidance</h2>
-                        <p class="blurb-para">It is a long established fact that a reader will be distracted by the
-                            readable</p>
+        <div class="headii">
+            <h6>Games</h6>
+            <h3>Our<br>
+                Process</h3>
+        </div>
+        <div class="max-width">
+
+
+            <div class="butttttone">
+                <button class="carousel__button carousel__button--left" aria-label="Previous slide"><img
+                        src="../images/Arrow 4 (1).png" alt=""></button>
+                <button class="carousel__button carousel__button--right" aria-label="Next slide"><img
+                        src="../images/Arrow 3 (1).png" alt=""></button>
+            </div>
+            <div class="carousel-process">
+
+                <div class="carousel__inner2">
+                    <div class="carousel__slide active">
+                        <div class="inner2">
+                            <img src="../images/blurb-image1.png" alt="">
+                            <h3>Team Guidance</h3>
+                            <p>It is a long established fact that a reader will be distracted by the readable</p>
+                        </div>
                     </div>
-                    <div class="blurb">
-                        <img class="blurb-img" src="../images/blurb-image1.png" alt="">
-                        <h2 class="blurb-title">Team Guidance</h2>
-                        <p class="blurb-para">It is a long established fact that a reader will be distracted by the
-                            readable</p>
+
+                    <div class="carousel__slide">
+                        <div class="inner2">
+                            <img src="../images/blurb-image1.png" alt="">
+                            <h3>Team Guidance</h3>
+                            <p>It is a long established fact that a reader will be distracted by the readable</p>
+                        </div>
                     </div>
-                    <div class="blurb">
-                        <img class="blurb-img" src="../images/blurb-image1.png" alt="">
-                        <h2 class="blurb-title">Team Guidance</h2>
-                        <p class="blurb-para">It is a long established fact that a reader will be distracted by the
-                            readable</p>
+
+                    <div class="carousel__slide">
+                        <div class="inner2">
+                            <img src="../images/blurb-image1.png" alt="">
+                            <h3>Team Guidance</h3>
+                            <p>It is a long established fact that a reader will be distracted by the readable</p>
+                        </div>
                     </div>
+
+                    <div class="carousel__slide">
+                        <div class="inner2">
+                            <img src="../images/blurb-image1.png" alt="">
+                            <h3>Team Guidance</h3>
+                            <p>It is a long established fact that a reader will be distracted by the readable</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel__slide">
+                        <div class="inner2">
+                            <img src="../images/blurb-image1.png" alt="">
+                            <h3>Team Guidance</h3>
+                            <p>It is a long established fact that a reader will be distracted by the readable</p>
+                        </div>
+                    </div>
+
+                    <!-- Add more slides as needed -->
                 </div>
+
             </div>
         </div>
     </section>
@@ -387,20 +650,42 @@
                 <div class="inner-column2">
                     <div class="inner-column2-item1">
                         <p class="gray-text">COMPANY</p>
-                        <a href="../pages/About-Us.html"><p>About Us</p></a>   
-                        <a href="../pages/contact us .html"><p>Contact Us</p></a>   
-                        <a href="#"> <p>Blog & News</p></a>  
-                        <a href="../pages/career.html"><p>Careers</p></a>  
+                        <a href="../pages/About-Us.html">
+                            <p>About Us</p>
+                        </a>
+                        <a href="../pages/contact us .html">
+                            <p>Contact Us</p>
+                        </a>
+                        <a href="../pages/Blog.html">
+                            <p>Blog & News</p>
+                        </a>
+                        <a href="../pages/career.html">
+                            <p>Careers</p>
+                        </a>
                     </div>
                     <div class="inner-column2-item2">
                         <p class="gray-text">SERVICES</p>
-                       <a href="../pages/3D Rendering.html"><P>3D Rendering</P></a> 
-                       <a href="../pages/Configurator.html"><P>Configurators</P></a>  
-                       <a href="../pages/Metaverse.html"><P>Metaverse</P></a> 
-                       <a href="../pages/Alternate Reality.html"><P>Alternate Reality</P></a>
-                       <a href="../pages/website.html"><P>Websites</P></a> 
-                       <a href="../pages/apps.html"><P>Apps</P></a>  
-                       <a href="../pages/games.html">  <P>Games</P></a>
+                        <a href="../pages/3D Rendering.html">
+                            <P>3D Rendering</P>
+                        </a>
+                        <a href="../pages/Configurator.html">
+                            <P>Configurators</P>
+                        </a>
+                        <a href="../pages/Metaverse.html">
+                            <P>Metaverse</P>
+                        </a>
+                        <a href="../pages/Alternate Reality.html">
+                            <P>Alternate Reality</P>
+                        </a>
+                        <a href="../pages/website.html">
+                            <P>Websites</P>
+                        </a>
+                        <a href="../pages/apps.html">
+                            <P>Apps</P>
+                        </a>
+                        <a href="../pages/games.html">
+                            <P>Games</P>
+                        </a>
                     </div>
                     <div class="inner-column2-item3">
                         <p class="gray-text">SOCIAL LINKS</p>
@@ -422,6 +707,64 @@
             </div>
         </div>
     </footer>
+    <script>
+        const carousel = document.querySelector('.carousel-process');
+        const inner = document.querySelector('.carousel__inner2');
+        const slides = document.querySelectorAll('.carousel__slide');
+        const prevButton = document.querySelector('.carousel__button--left');
+        const nextButton = document.querySelector('.carousel__button--right');
+        const slideWidth = slides[0].getBoundingClientRect().width;
+        const slideMarginRight = parseInt(getComputedStyle(slides[0]).marginRight);
+
+        let currentIndex = 0;
+        let autoPlayInterval;
+
+        function setSlidePosition() {
+            inner.style.transform = `translateX(-${(slideWidth + slideMarginRight) * currentIndex}px)`;
+            slides.forEach((slide, index) => {
+                slide.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        function handlePrevClick() {
+            currentIndex = currentIndex > 0 ? currentIndex - 1 : slides.length - 1;
+            setSlidePosition();
+        }
+
+        function handleNextClick() {
+            currentIndex = currentIndex < slides.length - 1 ? currentIndex + 1 : 0;
+            setSlidePosition();
+        }
+
+        function startAutoPlay() {
+            autoPlayInterval = setInterval(() => {
+                currentIndex = currentIndex < slides.length - 1 ? currentIndex + 1 : 0;
+                setSlidePosition();
+            }, 3000); // Adjust the interval (in milliseconds) as needed
+        }
+
+        function stopAutoPlay() {
+            clearInterval(autoPlayInterval);
+        }
+
+        prevButton.addEventListener('click', () => {
+            stopAutoPlay();
+            handlePrevClick();
+        });
+
+        nextButton.addEventListener('click', () => {
+            stopAutoPlay();
+            handleNextClick();
+        });
+
+        carousel.addEventListener('mouseenter', stopAutoPlay);
+        carousel.addEventListener('mouseleave', startAutoPlay);
+
+        // Set the first slide as the default slide
+        setSlidePosition();
+        startAutoPlay();
+
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
@@ -432,37 +775,38 @@
     </script>
 </body>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const gamesSection = document.querySelector('.games-section3');
-  const animatedDiv1 = document.querySelector('.animated-div.animated-div1');
-  const animatedDiv2 = document.querySelector('.animated-div.animated-div2');
-  const animatedDiv3 = document.querySelector('.animated-div.animated-div3');
-  const animatedDiv4 = document.querySelector('.animated-div.animated-div4');
+    document.addEventListener('DOMContentLoaded', function () {
+        const gamesSection = document.querySelector('.games-section3');
+        const animatedDiv1 = document.querySelector('.animated-div.animated-div1');
+        const animatedDiv2 = document.querySelector('.animated-div.animated-div2');
+        const animatedDiv3 = document.querySelector('.animated-div.animated-div3');
+        const animatedDiv4 = document.querySelector('.animated-div.animated-div4');
 
-  let animationsTriggered = false;
+        let animationsTriggered = false;
 
-  function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-    );
-  }
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+            );
+        }
 
-  function handleScroll() {
-    if (isElementInViewport(gamesSection) && !animationsTriggered) {
-      animatedDiv1.classList.add('animate');
-      animatedDiv2.classList.add('animate');
-      animatedDiv3.classList.add('animate');
-      animatedDiv4.classList.add('animate');
-      
-      animationsTriggered = true; // Set the flag to true to prevent re-triggering
-    }
-  }
+        function handleScroll() {
+            if (isElementInViewport(gamesSection) && !animationsTriggered) {
+                animatedDiv1.classList.add('animate');
+                animatedDiv2.classList.add('animate');
+                animatedDiv3.classList.add('animate');
+                animatedDiv4.classList.add('animate');
 
-  window.addEventListener('scroll', handleScroll);
-});
+                animationsTriggered = true; // Set the flag to true to prevent re-triggering
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+    });
 
 
 </script>
+
 </html>

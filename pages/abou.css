@@ -6,12 +6,14 @@
 
 /* banner */
 .about-section1 {
-    background-image: url(../images/about\ hero\ img.png);
+    background-image: url(../images/aboutbannner.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.293);
+    background-blend-mode:overlay ;
     background-size: cover;
-    padding-top: 35vh;
-    padding-bottom: 25vh;
+    padding-top: 45vh;
+    padding-bottom: 35vh;
     padding-left: 30px;
     padding-right: 30px;
 }

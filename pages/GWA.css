@@ -2440,11 +2440,36 @@ section.r-d {
 
         padding: 10px 30px;
     }
+    section.website {
+        padding-top: 100px;
+        
+    }
+    .website .column .content h1 {
+     
+      
+        font-size: 80px;
+ 
+        line-height: 90px;
+        text-transform: uppercase;
+    }
 
-
-
-
-
+    .website-section1 .column .col-left h2 {
+        
+        font-size: 80px;
+  
+        line-height: 80px;
+     
+    }
+    .website-section1 .column .col-right p {
+       
+        font-size: 18px;
+      
+        line-height: 28px;
+    }
+    .website-section3 .column .col-left h2 {
+        font-size: 80px;
+        line-height: 90px;
+    }
 
 
 
@@ -2960,6 +2985,68 @@ section.r-d {
         margin-top: 20vh;
         margin-bottom: 20vh;
     }
+
+    .website .column {
+        margin-top: 45vh !important;
+        margin-bottom: 10vh;
+   
+    }
+    .website .column .content h1 {
+        font-size: 40px;
+        line-height: 50px;
+        text-transform: uppercase;
+    }
+    .website-section1 .column {
+     
+        flex-direction: column;
+    }
+    .website-section1 .column .col-left {
+       
+        width: 100%;
+    }
+    .website-section1 .column .col-right {
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    .website-section1 .column .col-left p {
+        
+        font-size: 18px;
+        margin-bottom: 20px;
+    
+        line-height: 28px;
+     
+    }
+    .website-section1 .column .col-left h2 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 0px;
+    }
+
+    .website-section1 .column .col-right p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .website-section3 .row .full-widthcolumn .col2 a {
+        font-size: 18px;
+        padding: 10px 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 .games-section5 .top-content-wrapper {
