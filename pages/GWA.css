@@ -2440,32 +2440,36 @@ section.r-d {
 
         padding: 10px 30px;
     }
+
     section.website {
         padding-top: 100px;
-        
+
     }
+
     .website .column .content h1 {
-     
-      
+
+
         font-size: 80px;
- 
+
         line-height: 90px;
         text-transform: uppercase;
     }
 
     .website-section1 .column .col-left h2 {
-        
+
         font-size: 80px;
-  
+
         line-height: 80px;
-     
+
     }
+
     .website-section1 .column .col-right p {
-       
+
         font-size: 18px;
-      
+
         line-height: 28px;
     }
+
     .website-section3 .column .col-left h2 {
         font-size: 80px;
         line-height: 90px;
@@ -2490,6 +2494,8 @@ section.r-d {
 }
 
 @media only screen and (max-width:767px) {
+
+
     section.games {
         padding-top: 35vh;
         padding-bottom: 25vh;
@@ -2987,36 +2993,41 @@ section.r-d {
     }
 
     .website .column {
-        margin-top: 45vh !important;
+        margin-top: 25vh !important;
         margin-bottom: 10vh;
-   
+
     }
+
     .website .column .content h1 {
         font-size: 40px;
         line-height: 50px;
         text-transform: uppercase;
     }
+
     .website-section1 .column {
-     
+
         flex-direction: column;
     }
+
     .website-section1 .column .col-left {
-       
+
         width: 100%;
     }
+
     .website-section1 .column .col-right {
         width: 100%;
         padding-top: 0px;
     }
 
     .website-section1 .column .col-left p {
-        
+
         font-size: 18px;
         margin-bottom: 20px;
-    
+
         line-height: 28px;
-     
+
     }
+
     .website-section1 .column .col-left h2 {
         font-size: 30px;
         line-height: 40px;
@@ -3027,6 +3038,7 @@ section.r-d {
         font-size: 14px;
         line-height: 24px;
     }
+
     .website-section3 .row .full-widthcolumn .col2 a {
         font-size: 18px;
         padding: 10px 30px;
@@ -3054,4 +3066,206 @@ section.r-d {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media only screen and (max-width:1200px) {
+    .tablet-navbar {
+        display: flex !important;
+        position: absolute;
+        z-index: 9999;
+        top: 30px;
+
+    }
+
+    .navbar {
+        display: none !important;
+        z-index: 0;
+    }
+
+    .tablet-navbar nav {
+        width: 100% !important;
+        z-index: 9999;
+
+    }
+
+    .tablet-navbar .logo a img {
+        width: 60%;
+    }
+
+    .tablet-navbar .menu img {
+        width: 50px;
+    }
+
+    .toping .tablet-navbar {
+        /* margin-top: 30px; */
+        width: 90%;
+        z-index: 9999;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .tablet-dropdown-menu {
+        height: 0px;
+        z-index: 9999;
+        overflow: hidden;
+        background-color: #082C4C;
+        width: 100%;
+        padding: 0px 30px;
+        margin-top: 20px;
+        z-index: 9999;
+    }
+
+    .faq-header-container {
+        border: 1px solid rgba(255, 255, 255, 0.415);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px;
+        /* margin-bottom: 20px; */
+    }
+
+    .faq-header-container p {
+        color: #ffffff;
+        font-family: Poppins;
+        text-align: left;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .faq-content-menu-li {
+        width: 100%;
+    }
+
+    .faq-header-container .open-close-btn img {
+        width: 25px;
+
+    }
+
+    .li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    .open-close-btn {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        /* Added transition */
+    }
+
+    .faq-content-menu-li {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        /* Added transition */
+        padding: 0px 10px;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 0px 10px;
+    }
+
+    .faq-content-menu-li a {
+
+        width: 100% !important;
+    }
+
+    .faq-content-menu-li a p {
+        color: #000000;
+
+        text-transform: uppercase;
+        padding: 5px 0px;
+        width: 100%;
+        font-family: Poppins;
+        text-align: left;
+        transition: 0.5s ease-in-out;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        /* padding: 0px 10px; */
+    }
+
+    .faq-content-menu-li a p:hover {
+        color: #52C1D0;
+        transform: scale(1);
+        font-weight: 700;
+    }
+
+    .open-close-btn .open-close-btn {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .close {
+        display: none;
+        transition: 0.3s ease-in-out;
+    }
+
+    .close:hover {
+        transform: scale(1.1);
+
+    }
+
+    .open:hover {
+        transition: 0.3s ease-in-out;
+        transform: scale(1.1);
+
+    }
+
+    .open-humburger {
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    }
+
+    .open-humburger:hover {
+        transform: scale(1.1);
+    }
+
+    #tabletDropdownMenu {
+        height: 0px;
+        overflow: hidden;
+        background-color: #082C4C;
+        width: 95%;
+        padding: 0px 30px;
+        transition: height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    }
+
+    .z-depth-1,
+    nav,
+    .card-panel,
+    .card,
+    .toast,
+    .btn,
+    .btn-large,
+    .btn-small,
+    .btn-floating,
+    .dropdown-content,
+    .collapsible,
+    .sidenav {
+        -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: none !important;
+    }
+
+    .faq-content-menu-li  .ppp {
+        padding-top: 20px !important;
+    }
+
+    .faq-content-menu-li .pppp {
+        padding-bottom: 20px !important;
+    }
+}
+
+.tablet-navbar {
+    display: none;
 }

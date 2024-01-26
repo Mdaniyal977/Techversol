@@ -34,6 +34,54 @@
             });
         });
     </script>
+      <script>
+        function toggleContent(btn) {
+            var content = btn.parentElement.nextElementSibling; // Get the content element
+            var allContents = document.querySelectorAll('.faq-content-menu-li');
+ 
+            // Hide all other contents
+            allContents.forEach(function (item) {
+                if (item !== content) {
+                    item.style.maxHeight = '0';
+                    item.style.paddingTop = '0';
+                    item.style.paddingBottom = '0';
+                }
+            });
+ 
+            // Toggle current content
+            if (content.style.maxHeight === '0px' || content.style.maxHeight === '') {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                content.style.paddingTop = '20px !important';
+                content.style.paddingBottom = '20px !important';
+                btn.querySelector('.open').style.display = 'none';
+                btn.querySelector('.close').style.display = 'block';
+            } else {
+                content.style.maxHeight = '0px';
+                content.style.paddingTop = '0';
+                content.style.paddingBottom = '0';
+                btn.querySelector('.open').style.display = 'block';
+                btn.querySelector('.close').style.display = 'none';
+            }
+        }
+ 
+ 
+    </script>
+    <script>
+        function toggleDropdownMenu() {
+            var dropdownMenu = document.getElementById('tabletDropdownMenu1');
+ 
+            if (dropdownMenu.style.height === '0px' || dropdownMenu.style.height === '') {
+                // Open the dropdown menu
+                dropdownMenu.style.height = 'auto';
+                dropdownMenu.style.padding = '50px 30px';
+            } else {
+                // Close the dropdown menu
+                dropdownMenu.style.height = '0px';
+                dropdownMenu.style.padding = '0px 30px';
+            }
+        }
+ 
+    </script>
     <title>Blog & news</title>
 </head>
 <body>
@@ -192,6 +240,119 @@
     
     
                 </div>
+        </div>
+        <div class="tablet-navbar">
+            <nav>
+                <div class="logo">
+                    <a href="../index.html"><img src="../images/logo.png" alt="logo"></a>
+                </div>
+
+                <div class="menu">
+                    <img class="open-humburger" src="../images/humburger.png" alt="" onclick="toggleDropdownMenu()">
+                </div>
+            </nav>
+
+            <div class="tablet-dropdown-menu" id="tabletDropdownMenu1">
+                <div class="menu-items">
+
+                    <div class="company li">
+                        <div class="faq-header-container ">
+                            <p>company</p>
+                            <div class="open-close-btn" onclick="toggleContent(this)">
+                                <img class="open" src="../images/icons8-dropdown-64.png" alt="">
+                                <img class="close" src="../images/closeing.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="faq-content-menu-li">
+                            <a  href="../pages/About-Us.html">
+                                <p class="ppp">about us</p>
+                            </a>
+                            <a href="../pages/career.html">
+                                <p>career</p>
+                            </a>
+                            <a href="../pages/Blog.html">
+                                <p>blog</p>
+                            </a>
+                            <a  href="../pages/contact us .html">
+                                <p class="pppp">contact us</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="visualization li">
+                        <div class="faq-header-container">
+                            <p>Visualization </p>
+                            <div class="open-close-btn" onclick="toggleContent(this)">
+                                <img class="open" src="../images/icons8-dropdown-64.png" alt="">
+                                <img class="close" src="../images/closeing.png" alt="">
+                            </div>
+                        </div>
+                        <div class="faq-content-menu-li">
+                            <a href="../pages/3D Rendering.html">
+                                <p class="ppp">3D RENDERING</p>
+                            </a>
+                            <a href="../pages/Configurator.html">
+                                <p>CONFIGURATORS</p>
+                            </a>
+                            <a href="../pages/Metaverse.html">
+                                <p>METAVERSE</p>
+                            </a>
+                            <a href="../pages/Alternate Reality.html">
+                                <p class="pppp">ALTERNATE REALITY</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="development li">
+                        <div class="faq-header-container">
+                            <p>development</p>
+                            <div class="open-close-btn" onclick="toggleContent(this)">
+                                <img class="open" src="../images/icons8-dropdown-64.png" alt="">
+                                <img class="close" src="../images/closeing.png" alt="">
+                            </div>
+                        </div>
+                        <div class="faq-content-menu-li">
+                            <a href="../pages/website.html">
+                                <p class="ppp">Websites</p>
+                            </a>
+                            <a href="../pages/games.html">
+                                <p>GAMES</p>
+                            </a>
+                            <a href="../pages/apps.html">
+                                <p class="pppp">apps</p>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="industries li">
+                        <div class="faq-header-container">
+                            <p>industries</p>
+                            <div class="open-close-btn" onclick="toggleContent(this)">
+                                <img class="open" src="../images/icons8-dropdown-64.png" alt="">
+                                <img class="close" src="../images/closeing.png" alt="">
+                            </div>
+                        </div>
+                        <div class="faq-content-menu-li">
+                            <a href="../pages/Architecture.html">
+                                <p class="ppp">Architecture</p>
+                            </a>
+                            <a href="../pages/training.html">
+                                <p>Training</p>
+                            </a>
+                            <a href="../pages/automation.html">
+                                <p>Automation</p>
+                            </a>
+                            <a href="../pages/r&d.html">
+                                <p class="pppp">R&D</p>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
         </div>
     </header>
        <!-- banner -->
