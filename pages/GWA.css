@@ -2776,6 +2776,26 @@ section.r-d {
 
     }
 
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     .col-rightArchitecture {
         row-gap: 30px;
         flex-direction: column;
@@ -2784,7 +2804,15 @@ section.r-d {
     .col-rightArchitecture div {
         width: 100%;
     }
-
+    .content{
+        height: 1000vh !important;
+    }
+.content h1.ttext{
+    max-width: 1000px !important;
+    font-size: 25px;
+    line-height: 1.5;
+    height: 1000px !important;
+}
     .Architecture-secion1 .row .column .content h2 {
         font-size: 30px;
         margin: 0px;

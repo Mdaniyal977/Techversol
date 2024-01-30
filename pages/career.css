@@ -1,7 +1,7 @@
 /* banner */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500;600;700&display=swap');
 .career-section1 {
-    background-image: url(../images/menucareeer.jpg);
+    background-image: url(../images/NEWCAREERBANNER.jpg);
     background-position: center;
     background-color: rgba(0, 0, 0, 0.244);
     background-blend-mode: overlay;
@@ -279,7 +279,7 @@ text-transform: uppercase;
     
     }
     .career-section1 {
-        background-image: url(../images/about\ hero\ img.png);
+       
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
