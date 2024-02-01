@@ -951,12 +951,38 @@ section.section5 {
 .padding {
     padding: 20vh 30px;
 }
+.img-area-v{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.img-area-v video{
+    width: 100% !important;
+}
 
 
 
 
-
-
+.light-text{
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.section3 .light-text{
+    color: #082C4C;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
 
 
 /* footer */
