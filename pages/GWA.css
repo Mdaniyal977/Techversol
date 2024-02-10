@@ -3299,7 +3299,7 @@ section.r-d {
 }
 @media only screen and (max-width: 767px){
     .content {
-        height: 100% !importan
+        height: 100% !important;
     }
 }
 .white-screen{
