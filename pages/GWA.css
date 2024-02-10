@@ -3302,3 +3302,6 @@ section.r-d {
         height: 0vh !important;
     }
 }
+.white-screen{
+    background-color: #082C4C;
+}
