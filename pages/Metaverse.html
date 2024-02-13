@@ -232,24 +232,24 @@
     </style>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             // Function to show the corresponding menu box on hover
             function showMenuBox(className) {
                 $('.menu-box').css({ height: 0, visibility: 'hidden' }); // Reset height and visibility for all menu boxes
-                $('#' + className + '-menu').css({ height: 'auto', visibility: 'visible' , overflow: 'visible' }); // Set height to auto for the specific menu box
+                $('#' + className + '-menu').css({ height: 'auto', visibility: 'visible', overflow: 'visible' }); // Set height to auto for the specific menu box
                 $('.menu-container').css({ overflow: 'visible' }); // Show overflow when menu is visible
             }
-    
+
             // Hover event for each menu item
-            $('.menu li').mouseenter(function() {
+            $('.menu li').mouseenter(function () {
                 // On hover in
                 var className = $(this).find('a').attr('class').split('-')[0];
                 showMenuBox(className);
             });
-    
+
             // Check mouse leave on both li and menu box
-            $('.menu li, .menu-box').mouseleave(function() {
-                setTimeout(function() {
+            $('.menu li, .menu-box').mouseleave(function () {
+                setTimeout(function () {
                     if (!$('.menu li:hover, .menu-box:hover').length) {
                         $('.menu-box').css({ height: 0, visibility: 'hidden' });
                         $('.menu-container').css({ overflow: 'hidden' }); // Hide overflow when menu is hidden
@@ -258,11 +258,11 @@
             });
         });
     </script>
-      <script>
+    <script>
         function toggleContent(btn) {
             var content = btn.parentElement.nextElementSibling; // Get the content element
             var allContents = document.querySelectorAll('.faq-content-menu-li');
- 
+
             // Hide all other contents
             allContents.forEach(function (item) {
                 if (item !== content) {
@@ -271,7 +271,7 @@
                     item.style.paddingBottom = '0';
                 }
             });
- 
+
             // Toggle current content
             if (content.style.maxHeight === '0px' || content.style.maxHeight === '') {
                 content.style.maxHeight = content.scrollHeight + 'px';
@@ -287,13 +287,13 @@
                 btn.querySelector('.close').style.display = 'none';
             }
         }
- 
- 
+
+
     </script>
     <script>
         function toggleDropdownMenu() {
             var dropdownMenu = document.getElementById('tabletDropdownMenu1');
- 
+
             if (dropdownMenu.style.height === '0px' || dropdownMenu.style.height === '') {
                 // Open the dropdown menu
                 dropdownMenu.style.height = 'auto';
@@ -304,7 +304,7 @@
                 dropdownMenu.style.padding = '0px 30px';
             }
         }
- 
+
     </script>
 </head>
 
@@ -324,147 +324,146 @@
                             <li><a class="Industries-menu-trigger" href="#">Industries </a></li>
                         </ul>
                     </div>
-                </nav>
-                <div class="dropdown-menu">
-                    <div class="menu-container">
-                        <div id="Visualization-menu" class=" menu-box">
-                            <div class="menu-content-container">
-                                <h3>VISUALIZE ARCHITECTURE & ENVIRONMENTS </h3>
-                                <p>We give our clients the ability to see the future and deliver enriched customer
-                                    experiences
-                                    in a variety of virtual environments and visualization modes.</p>
-                            </div>
-                            <div class="menu-li-items-container">
-                                <div class="li-item">
-                                    <a href="../pages/3D Rendering.html"  target="_blank">
-                                        <img src="../images/3d m3nu.png" alt="">
-                                        <p>3D RENDERING</p>
-                                    </a>
-                                </div>
-                                <div class="li-item">
-                                    <a href="../pages/Configurator.html"  target="_blank">
-                                        <img src="../images/config-menu.png" alt="">
-                                        <p>CONFIGURATORS</p>
-                                    </a>
-                                </div>
-                                <div class="li-item">
-                                    <a href="../pages/Metaverse.html"  target="_blank">
-                                        <img src="../images/METAVERSEmenu.png" alt="">
-                                        <p>METAVERSE</p>
-                                    </a>
-                                </div>
-                                <div class="li-item">
-                                    <a href="../pages/Alternate Reality.html"  target="_blank">
-                                        <img src="../images/alterreat.png" alt="">
-                                        <p>ALTERNATE REALITY</p>
-                                    </a>
-                                </div>
-                            </div>
+            </nav>
+            <div class="dropdown-menu">
+                <div class="menu-container">
+                    <div id="Visualization-menu" class=" menu-box">
+                        <div class="menu-content-container">
+                            <h3>VISUALIZE ARCHITECTURE & ENVIRONMENTS </h3>
+                            <p>We give our clients the ability to see the future and deliver enriched customer
+                                experiences
+                                in a variety of virtual environments and visualization modes.</p>
                         </div>
-    
-                        <div id="development-menu" class=" menu-box">
-                            <div class="menu-content-container">
-                                <h3>Develop Digital Utilities and products </h3>
-                                <p>We develop assets, products, applications, and games that help clients solve their
-                                    customers’ problems or create value in their lives and businesses.</p>
+                        <div class="menu-li-items-container">
+                            <div class="li-item">
+                                <a href="../pages/3D Rendering.html" target="_blank">
+                                    <img src="../images/3d m3nu.png" alt="">
+                                    <p>3D RENDERING</p>
+                                </a>
                             </div>
-                            <div class="menu-li-items-container">
-                                <div class="li-item">
-                                    <a href="../pages/website.html "  target="_blank"">
-                                        <img src="../images/dev3menu (8).png" alt="">
-                                        <p>Websites</p>
-                                    </a>
-                                </div>
-                                <div class="li-item">
-                                    <a href="../pages/games.html "  target="_blank"">
-                                        <img src="../images/dev3menu (7).png" alt="">
-                                        <p>GAMES</p>
-                                    </a>
-                                </div>
-                                <div class="li-item">
-                                    <a href="../pages/apps.html "  target="_blank"">
-                                        <img src="../images/dev3menu (2).png" alt="">
-                                        <p>APPS</p>
-                                    </a>
-                                </div>
-    
+                            <div class="li-item">
+                                <a href="../pages/Configurator.html" target="_blank">
+                                    <img src="../images/config-menu.png" alt="">
+                                    <p>CONFIGURATORS</p>
+                                </a>
                             </div>
-                        </div>
-    
-                        <div id="company-menu" class="menu-box">
-                            <div class="menu-content-container">
-                                <h3>COMPANY</h3>
-                                <p>We give our clients the ability to see the future and deliver enriched customer
-                                    experiences
-                                    in a variety of virtual environments and visualization modes.</p>
+                            <div class="li-item">
+                                <a href="../pages/Metaverse.html" target="_blank">
+                                    <img src="../images/METAVERSEmenu.png" alt="">
+                                    <p>METAVERSE</p>
+                                </a>
                             </div>
-                            <div class="menu-li-items-container">
-                                <div class="li-item">
-                                    <a href="../pages/About-Us.html" target="_blank">
-                                        <img src="../images/NEWABOUTMENU.png" alt="">
-                                        <p>ABOUT</p>
-                                    </a>
-                                </div>
-                                <div class="li-item">
-                                    <a href="../pages/career.html" target="_blank">
-                                        <img src="../images/NEWCAREEREMENU.png" alt="">
-                                        <p>CAREERS</p>
-                                    </a>
-                                </div>
-                                <div class="li-item">
-                                    <a href="../pages/contact us .html" target="_blank">
-                                        <img src="../images/NEWCONTACTMENU.png" alt="">
-                                        <p>CONTACT</p>
-                                    </a>
-                                </div>
-                                <div class="li-item">
-                                    <a href="../pages/Blog.html">
-                                        <img src="../images/NEWLOG-MENU.png"
-                                            alt="">
-                                        <p>BLOG & NEWS</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div id="Industries-menu" class="menu-box">
-                            <div class="menu-content-container">
-                                <h3>Industries Shaping
-                                    The Future</h3>
-                                <p>Our 3D visualization team enables you to bring your complex product and architecture
-                                    designs to life in all the dimensions that matter..</p>
-                            </div>
-                            <div class="menu-li-items-container">
-                                <div class="li-item">
-                                    <a href="../pages/Architecture.html"  target="_blank"">
-                                        <img src="../images/artmene.png" alt="">
-                                        <p>Architecture</p>
-                                    </a>
-                                </div>
-                                <div class="li-item">
-                                    <a href="../pages/training.html"  target="_blank"">
-                                        <img src="../images/trainmenu.png" alt="">
-                                        <p>Training</p>
-                                    </a>
-                                </div>
-                                <div class="li-item">
-                                    <a href="../pages/automation.html"  target="_blank"">
-                                        <img src="../images/automenu.png" alt="">
-                                        <p>Automation</p>
-                                    </a>
-                                </div>
-                                <div class="li-item">
-                                    <a href="../pages/r&d.html"  target="_blank"">
-                                        <img src="../images/rndmenu.png" alt="">
-                                        <p>R&D</p>
-                                    </a>
-                                </div>
+                            <div class="li-item">
+                                <a href="../pages/Alternate Reality.html" target="_blank">
+                                    <img src="../images/alterreat.png" alt="">
+                                    <p>ALTERNATE REALITY</p>
+                                </a>
                             </div>
                         </div>
                     </div>
-    
-    
+
+                    <div id="development-menu" class=" menu-box">
+                        <div class="menu-content-container">
+                            <h3>Develop Digital Utilities and products </h3>
+                            <p>We develop assets, products, applications, and games that help clients solve their
+                                customers’ problems or create value in their lives and businesses.</p>
+                        </div>
+                        <div class="menu-li-items-container">
+                            <div class="li-item">
+                                <a href="../pages/website.html " target="_blank"">
+                                        <img src=" ../images/dev3menu (8).png" alt="">
+                                    <p>Websites</p>
+                                </a>
+                            </div>
+                            <div class="li-item">
+                                <a href="../pages/games.html " target="_blank"">
+                                        <img src=" ../images/dev3menu (7).png" alt="">
+                                    <p>GAMES</p>
+                                </a>
+                            </div>
+                            <div class="li-item">
+                                <a href="../pages/apps.html " target="_blank"">
+                                        <img src=" ../images/dev3menu (2).png" alt="">
+                                    <p>APPS</p>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="company-menu" class="menu-box">
+                        <div class="menu-content-container">
+                            <h3>COMPANY</h3>
+                            <p>We give our clients the ability to see the future and deliver enriched customer
+                                experiences
+                                in a variety of virtual environments and visualization modes.</p>
+                        </div>
+                        <div class="menu-li-items-container">
+                            <div class="li-item">
+                                <a href="../pages/About-Us.html" target="_blank">
+                                    <img src="../images/NEWABOUTMENU.png" alt="">
+                                    <p>ABOUT</p>
+                                </a>
+                            </div>
+                            <div class="li-item">
+                                <a href="../pages/career.html" target="_blank">
+                                    <img src="../images/NEWCAREEREMENU.png" alt="">
+                                    <p>CAREERS</p>
+                                </a>
+                            </div>
+                            <div class="li-item">
+                                <a href="../pages/contact us .html" target="_blank">
+                                    <img src="../images/NEWCONTACTMENU.png" alt="">
+                                    <p>CONTACT</p>
+                                </a>
+                            </div>
+                            <div class="li-item">
+                                <a href="../pages/Blog.html">
+                                    <img src="../images/NEWLOG-MENU.png" alt="">
+                                    <p>BLOG & NEWS</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Industries-menu" class="menu-box">
+                        <div class="menu-content-container">
+                            <h3>Industries Shaping
+                                The Future</h3>
+                            <p>Our 3D visualization team enables you to bring your complex product and architecture
+                                designs to life in all the dimensions that matter..</p>
+                        </div>
+                        <div class="menu-li-items-container">
+                            <div class="li-item">
+                                <a href="../pages/Architecture.html" target="_blank"">
+                                        <img src=" ../images/artmene.png" alt="">
+                                    <p>Architecture</p>
+                                </a>
+                            </div>
+                            <div class="li-item">
+                                <a href="../pages/training.html" target="_blank"">
+                                        <img src=" ../images/trainmenu.png" alt="">
+                                    <p>Training</p>
+                                </a>
+                            </div>
+                            <div class="li-item">
+                                <a href="../pages/automation.html" target="_blank"">
+                                        <img src=" ../images/automenu.png" alt="">
+                                    <p>Automation</p>
+                                </a>
+                            </div>
+                            <div class="li-item">
+                                <a href="../pages/r&d.html" target="_blank"">
+                                        <img src=" ../images/rndmenu.png" alt="">
+                                    <p>R&D</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+
+            </div>
         </div>
         <div class="tablet-navbar">
             <nav>
@@ -490,7 +489,7 @@
 
                         </div>
                         <div class="faq-content-menu-li">
-                            <a  href="../pages/About-Us.html">
+                            <a href="../pages/About-Us.html">
                                 <p class="ppp">about us</p>
                             </a>
                             <a href="../pages/career.html">
@@ -499,7 +498,7 @@
                             <a href="../pages/Blog.html">
                                 <p>blog</p>
                             </a>
-                            <a  href="../pages/contact us .html">
+                            <a href="../pages/contact us .html">
                                 <p class="pppp">contact us</p>
                             </a>
                         </div>
@@ -587,8 +586,6 @@
             <div class="column">
                 <div class="content">
                     <h1>metaverse</h1>
-                    <p>We give our clients the ability to see the future and deliver enriched customer experiences in a
-                        variety of virtual environments and visualization modes.</p>
                 </div>
             </div>
         </div>
@@ -599,20 +596,17 @@
         <div class="row">
             <div class="column">
                 <div class="col-left">
-                    <h6>metaverse</h6>
-                    <h2>WHAT IS 
-                        <br>METAVERSE?
+                    <h6>DIGITAL UNIVERSE</h6>
+                    <h2>WHAT IS THE METAVERSE?
                     </h2>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters, as opposed to using 'Content<br><br>
-
-                        here, content here', making it look like readable English. Many desktop publishing packages and
-                        web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem
-                        ipsum<br><br>
-
-                        It is a long established fact that a reader will be distracted by the readable content of a page
-                        when looking at its layout. The point of using Lorem Ipsum</p>
+                    <p>The metaverse is like a vast digital canvas, blending virtual reality (VR),
+                        augmented reality (AR), and the internet into a seamless, shared space. It's a
+                        realm where people can connect, explore, and create together, transcending
+                        the limitations of physical reality. <br><br>
+                        In this digital universe, individuals can immerse themselves in experiences,
+                        from social interactions to business ventures, all within a dynamic and ever-
+                        expanding virtual landscape. As technology evolves, the metaverse promises
+                        to be a canvas for endless possibilities, where imagination knows no bounds</p>
                 </div>
                 <div class="col-right">
                     <img src="../images/configu.png" alt="">
@@ -625,17 +619,18 @@
         <div class="row">
             <div class="column">
                 <div class="col-left">
-                    <h6>metaverse</h6>
-                    <h2>ENDLESS <br> REALITY</h2>
+                    <h6>CREATE WHATEVER YOU LIKE</h6>
+                    <h2>ENDLESS REALITY</h2>
 
                 </div>
                 <div class="col-right">
                     <div class="paragraph1">
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a
-                            page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                            more-or-less normal distribution of letters, as opposed to using 'Content<br><br>
-
-                            here, content here', making it look like readable English. Many desktop publishing packages
+                        <p>Techversol enables you to fully benefit from the metaverse. Our metaverse 
+                            development services excel in creativity, technical expertise, and precision. 
+                            With a dedicated team of developers and designers, we bring your vision to 
+                            life in the metaverse. <br><br>
+                            From immersive virtual experiences to custom solutions, we deliver 
+                            outstanding results that redefine engagement and drive success.
                         </p>
                     </div>
 
@@ -658,7 +653,7 @@
 
     <section class="slider-remain config-slidera">
         <div class="headii">
-            <h6>Games</h6>
+            <h6>HOW WE DEVELOP METAVERSE ASSETS</h6>
             <h3>Our<br>
                 Process</h3>
         </div>
@@ -676,43 +671,40 @@
                 <div class="carousel__inner2">
                     <div class="carousel__slide active">
                         <div class="inner2">
-                            <img src="../images/blurb-image1.png" alt="">
-                            <h3>Team Guidance</h3>
-                            <p>It is a long established fact that a reader will be distracted by the readable</p>
+                            <img src="../images/game brif.png" alt="">
+                            <h3>01 - CONCEPT BRIEF</h3>
+                            <p>We discuss your goals and preferences with you to construct a detailed 
+                                design brief</p>
                         </div>
                     </div>
 
                     <div class="carousel__slide">
                         <div class="inner2">
-                            <img src="../images/blurb-image1.png" alt="">
-                            <h3>Team Guidance</h3>
-                            <p>It is a long established fact that a reader will be distracted by the readable</p>
+                            <img src="../images/assect building icon.png" alt="">
+                            <h3>02 - ASSETS BUILDING</h3>
+                            <p>We follow the brief and build 3D assets required for the metaverse 
+                                environment.</p>
                         </div>
                     </div>
 
                     <div class="carousel__slide">
                         <div class="inner2">
-                            <img src="../images/blurb-image1.png" alt="">
-                            <h3>Team Guidance</h3>
-                            <p>It is a long established fact that a reader will be distracted by the readable</p>
+                            <img src="../images/programming icon.png" alt="">
+                            <h3>03 - IMPORT & PROGRAMMING</h3>
+                            <p>We take project assets to the metaverse environment and put everything 
+                                together including the programming required./p>
                         </div>
                     </div>
 
                     <div class="carousel__slide">
                         <div class="inner2">
-                            <img src="../images/blurb-image1.png" alt="">
-                            <h3>Team Guidance</h3>
-                            <p>It is a long established fact that a reader will be distracted by the readable</p>
+                            <img src="../images/deploying metaverse icon.png" alt="">
+                            <h3>04 - DEPLOYMENT</h3>
+                            <p>After thorough testing and QA, we deploy the project and make it live.</p>
                         </div>
                     </div>
 
-                    <div class="carousel__slide">
-                        <div class="inner2">
-                            <img src="../images/blurb-image1.png" alt="">
-                            <h3>Team Guidance</h3>
-                            <p>It is a long established fact that a reader will be distracted by the readable</p>
-                        </div>
-                    </div>
+                   
 
                     <!-- Add more slides as needed -->
                 </div>
@@ -736,12 +728,10 @@
                 <a class="carousel-item" href="#">
                     <div class="card">
 
-                        <div class="img-area"><img src="../images/game1.png" alt=""></div>
+                        <div class="img-area"><iframe src="https://drive.google.com/file/d/1jAdalnhPUP-mxEhOFRiL2mKILoEoEsEA/preview" width="100%" height="480" allow="false"></iframe></div>
                         <div class="main-text">
-                            <h2>Person One</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate recusandae quam
-                                amet enim voluptates alias accusantium sapiente! Adipisci vero fugiat aliquid explicabo
-                                quas eius!</p>
+                            <h2>Home Walk-through</h2>
+                           
                         </div>
                     </div>
                 </a>
@@ -749,24 +739,20 @@
                 <a class="carousel-item" href="#">
                     <div class="card">
 
-                        <div class="img-area"><img src="../images/game2.png" alt=""></div>
+                        <div class="img-area"><img src="../images/3D exterior modelling(003).jpeg" alt=""></div>
                         <div class="main-text">
-                            <h2>Person four</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate recusandae quam
-                                amet enim voluptates alias accusantium sapiente! Adipisci vero fugiat aliquid explicabo
-                                quas eius!</p>
+                            <h2>Furniture Showcase</h2>
+                            
                         </div>
                     </div>
                 </a>
                 <a class="carousel-item" href="#">
                     <div class="card">
 
-                        <div class="img-area"><img src="../images/game3.png" alt=""></div>
+                        <div class="img-area"><iframe src="https://drive.google.com/file/d/1ByoGwELsiFhho5B_dwOjzE7yYbEzb6dw/preview" width="100%" height="480" allow="false"></iframe></div>
                         <div class="main-text">
-                            <h2>Person five</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate recusandae quam
-                                amet enim voluptates alias accusantium sapiente! Adipisci vero fugiat aliquid explicabo
-                                quas eius!</p>
+                            <h2>Home Walk-through 2</h2>
+                           
                         </div>
                     </div>
                 </a>
@@ -805,20 +791,42 @@
                 <div class="inner-column2">
                     <div class="inner-column2-item1">
                         <p class="gray-text">COMPANY</p>
-                        <a href="../pages/About-Us.html"><p>About Us</p></a>   
-                        <a href="../pages/contact us .html"><p>Contact Us</p></a>   
-                        <a href="../pages/Blog.html"> <p>Blog & News</p></a>  
-                        <a href="../pages/career.html"><p>Careers</p></a>  
+                        <a href="../pages/About-Us.html">
+                            <p>About Us</p>
+                        </a>
+                        <a href="../pages/contact us .html">
+                            <p>Contact Us</p>
+                        </a>
+                        <a href="../pages/Blog.html">
+                            <p>Blog & News</p>
+                        </a>
+                        <a href="../pages/career.html">
+                            <p>Careers</p>
+                        </a>
                     </div>
                     <div class="inner-column2-item2">
                         <p class="gray-text">SERVICES</p>
-                       <a href="../pages/3D Rendering.html"><P>3D Rendering</P></a> 
-                       <a href="../pages/Configurator.html"><P>Configurators</P></a>  
-                       <a href="../pages/Metaverse.html"><P>Metaverse</P></a> 
-                       <a href="../pages/Alternate Reality.html"><P>Alternate Reality</P></a>
-                       <a href="../pages/website.html"><P>Websites</P></a> 
-                       <a href="../pages/apps.html"><P>Apps</P></a>  
-                       <a href="../pages/games.html">  <P>Games</P></a>
+                        <a href="../pages/3D Rendering.html">
+                            <P>3D Rendering</P>
+                        </a>
+                        <a href="../pages/Configurator.html">
+                            <P>Configurators</P>
+                        </a>
+                        <a href="../pages/Metaverse.html">
+                            <P>Metaverse</P>
+                        </a>
+                        <a href="../pages/Alternate Reality.html">
+                            <P>Alternate Reality</P>
+                        </a>
+                        <a href="../pages/website.html">
+                            <P>Websites</P>
+                        </a>
+                        <a href="../pages/apps.html">
+                            <P>Apps</P>
+                        </a>
+                        <a href="../pages/games.html">
+                            <P>Games</P>
+                        </a>
                     </div>
                     <div class="inner-column2-item3">
                         <p class="gray-text">SOCIAL LINKS</p>
@@ -846,40 +854,43 @@
         const slides = document.querySelectorAll('.carousel__slide');
         const prevButton = document.querySelector('.carousel__button--left');
         const nextButton = document.querySelector('.carousel__button--right');
-        const slideWidth = slides[0].getBoundingClientRect().width;
-        const slideMarginRight = parseInt(getComputedStyle(slides[0]).marginRight);
-
+        const slideWidth = slides[0].getBoundingClientRect().width + parseInt(getComputedStyle(slides[0]).marginRight); // Include margin in slide width
+        const totalSlides = slides.length;
         let currentIndex = 0;
         let autoPlayInterval;
 
+        // Function to set the position of slides
         function setSlidePosition() {
-            inner.style.transform = `translateX(-${(slideWidth + slideMarginRight) * currentIndex}px)`;
-            slides.forEach((slide, index) => {
-                slide.classList.toggle('active', index === currentIndex);
-            });
+            const translateValue = -1 * (slideWidth * currentIndex);
+            inner.style.transform = `translateX(${translateValue}px)`;
         }
 
+        // Function to handle click on previous button
         function handlePrevClick() {
-            currentIndex = currentIndex > 0 ? currentIndex - 1 : slides.length - 1;
+            currentIndex = currentIndex > 0 ? currentIndex - 1 : totalSlides - determineSlidesToShow(); // Move to the last set of slides if already at the beginning
             setSlidePosition();
         }
 
+        // Function to handle click on next button
         function handleNextClick() {
-            currentIndex = currentIndex < slides.length - 1 ? currentIndex + 1 : 0;
+            currentIndex = currentIndex < totalSlides - determineSlidesToShow() ? currentIndex + 1 : 0; // Move to the first set of slides if already at the end
             setSlidePosition();
         }
 
+        // Function to start auto play
         function startAutoPlay() {
             autoPlayInterval = setInterval(() => {
-                currentIndex = currentIndex < slides.length - 1 ? currentIndex + 1 : 0;
+                currentIndex = currentIndex < totalSlides - determineSlidesToShow() ? currentIndex + 1 : 0; // Move to the first set of slides if already at the end
                 setSlidePosition();
             }, 3000); // Adjust the interval (in milliseconds) as needed
         }
 
+        // Function to stop auto play
         function stopAutoPlay() {
             clearInterval(autoPlayInterval);
         }
 
+        // Event listeners for previous and next buttons
         prevButton.addEventListener('click', () => {
             stopAutoPlay();
             handlePrevClick();
@@ -890,12 +901,34 @@
             handleNextClick();
         });
 
+        // Event listeners for mouse enter and leave on carousel
         carousel.addEventListener('mouseenter', stopAutoPlay);
         carousel.addEventListener('mouseleave', startAutoPlay);
 
         // Set the first slide as the default slide
         setSlidePosition();
         startAutoPlay();
+
+        // Function to determine the number of slides to show based on screen size
+        function determineSlidesToShow() {
+            if (window.innerWidth >= 768) { // Adjust the breakpoint as needed
+                return 3; // Number of slides to show on larger screens (e.g., desktop)
+            } else if (window.innerWidth >= 480) { // Adjust the breakpoint as needed
+                return 2; // Number of slides to show on tablets
+            } else {
+                return 1; // Number of slides to show on smaller screens (e.g., mobile)
+            }
+        }
+        // Function to determine the number of slides to show based on screen size
+        function determineSlidesToShow() {
+            if (window.innerWidth >= 992) { // Adjust the breakpoint as needed
+                return 3; // Number of slides to show on larger screens (e.g., desktop)
+            } else if (window.innerWidth >= 768) { // Adjust the breakpoint as needed
+                return 2; // Number of slides to show on tablets
+            } else {
+                return 1; // Number of slides to show on smaller screens (e.g., mobile)
+            }
+        }
 
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

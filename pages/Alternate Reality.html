@@ -135,7 +135,6 @@
 
             .inner2 img {
                 width: 100px !important;
-                height: 100px;
             }
 
             .inner2 h3 {
@@ -844,62 +843,87 @@
 
     <script>
         const carousel = document.querySelector('.carousel-process');
-        const inner = document.querySelector('.carousel__inner2');
-        const slides = document.querySelectorAll('.carousel__slide');
-        const prevButton = document.querySelector('.carousel__button--left');
-        const nextButton = document.querySelector('.carousel__button--right');
-        const slideWidth = slides[0].getBoundingClientRect().width;
-        const slideMarginRight = parseInt(getComputedStyle(slides[0]).marginRight);
-
-        let currentIndex = 0;
-        let autoPlayInterval;
-
-        function setSlidePosition() {
-            inner.style.transform = `translateX(-${(slideWidth + slideMarginRight) * currentIndex}px)`;
-            slides.forEach((slide, index) => {
-                slide.classList.toggle('active', index === currentIndex);
-            });
-        }
-
-        function handlePrevClick() {
-            currentIndex = currentIndex > 0 ? currentIndex - 1 : slides.length - 1;
-            setSlidePosition();
-        }
-
-        function handleNextClick() {
-            currentIndex = currentIndex < slides.length - 1 ? currentIndex + 1 : 0;
-            setSlidePosition();
-        }
-
-        function startAutoPlay() {
-            autoPlayInterval = setInterval(() => {
-                currentIndex = currentIndex < slides.length - 1 ? currentIndex + 1 : 0;
-                setSlidePosition();
-            }, 3000); // Adjust the interval (in milliseconds) as needed
-        }
-
-        function stopAutoPlay() {
-            clearInterval(autoPlayInterval);
-        }
-
-        prevButton.addEventListener('click', () => {
-            stopAutoPlay();
-            handlePrevClick();
-        });
-
-        nextButton.addEventListener('click', () => {
-            stopAutoPlay();
-            handleNextClick();
-        });
-
-        carousel.addEventListener('mouseenter', stopAutoPlay);
-        carousel.addEventListener('mouseleave', startAutoPlay);
-
-        // Set the first slide as the default slide
+    const inner = document.querySelector('.carousel__inner2');
+    const slides = document.querySelectorAll('.carousel__slide');
+    const prevButton = document.querySelector('.carousel__button--left');
+    const nextButton = document.querySelector('.carousel__button--right');
+    const slideWidth = slides[0].getBoundingClientRect().width + parseInt(getComputedStyle(slides[0]).marginRight); // Include margin in slide width
+    const totalSlides = slides.length;
+    let currentIndex = 0;
+    let autoPlayInterval;
+    
+    // Function to set the position of slides
+    function setSlidePosition() {
+        const translateValue = -1 * (slideWidth * currentIndex);
+        inner.style.transform = `translateX(${translateValue}px)`;
+    }
+    
+    // Function to handle click on previous button
+    function handlePrevClick() {
+        currentIndex = currentIndex > 0 ? currentIndex - 1 : totalSlides - determineSlidesToShow(); // Move to the last set of slides if already at the beginning
         setSlidePosition();
-        startAutoPlay();
-
-    </script>
+    }
+    
+    // Function to handle click on next button
+    function handleNextClick() {
+        currentIndex = currentIndex < totalSlides - determineSlidesToShow() ? currentIndex + 1 : 0; // Move to the first set of slides if already at the end
+        setSlidePosition();
+    }
+    
+    // Function to start auto play
+    function startAutoPlay() {
+        autoPlayInterval = setInterval(() => {
+            currentIndex = currentIndex < totalSlides - determineSlidesToShow() ? currentIndex + 1 : 0; // Move to the first set of slides if already at the end
+            setSlidePosition();
+        }, 3000); // Adjust the interval (in milliseconds) as needed
+    }
+    
+    // Function to stop auto play
+    function stopAutoPlay() {
+        clearInterval(autoPlayInterval);
+    }
+    
+    // Event listeners for previous and next buttons
+    prevButton.addEventListener('click', () => {
+        stopAutoPlay();
+        handlePrevClick();
+    });
+    
+    nextButton.addEventListener('click', () => {
+        stopAutoPlay();
+        handleNextClick();
+    });
+    
+    // Event listeners for mouse enter and leave on carousel
+    carousel.addEventListener('mouseenter', stopAutoPlay);
+    carousel.addEventListener('mouseleave', startAutoPlay);
+    
+    // Set the first slide as the default slide
+    setSlidePosition();
+    startAutoPlay();
+    
+    // Function to determine the number of slides to show based on screen size
+    function determineSlidesToShow() {
+        if (window.innerWidth >= 768) { // Adjust the breakpoint as needed
+            return 3; // Number of slides to show on larger screens (e.g., desktop)
+        } else if (window.innerWidth >= 480) { // Adjust the breakpoint as needed
+            return 2; // Number of slides to show on tablets
+        } else {
+            return 1; // Number of slides to show on smaller screens (e.g., mobile)
+        }
+    }
+    // Function to determine the number of slides to show based on screen size
+    function determineSlidesToShow() {
+        if (window.innerWidth >= 992) { // Adjust the breakpoint as needed
+            return 3; // Number of slides to show on larger screens (e.g., desktop)
+        } else if (window.innerWidth >= 768) { // Adjust the breakpoint as needed
+            return 2; // Number of slides to show on tablets
+        } else {
+            return 1; // Number of slides to show on smaller screens (e.g., mobile)
+        }
+    }
+    
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 

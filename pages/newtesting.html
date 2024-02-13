@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="../techversol.css">
+    <link rel="stylesheet" href="./GWA.css">
+    <style>
+        .carousel-process {
+            max-width: 1400px !important;
+            position: relative;
+            overflow: hidden;
+            width: 85%;
+        }
+
+        .carousel__inner2 {
+            display: flex;
+            flex-wrap: nowrap;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .carousel__slide {
+
+            flex: 0 0 calc(100% / 3);
+            margin-right: 0.5rem;
+
+
+            transition: all 0.5s ease-in-out;
+        }
+
+        .carousel__slide.active {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        .butttttone {
+            position: absolute;
+            max-width: 1400px;
+            display: flex;
+            width: 98%;
+            padding-right: 30px;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .carousel__button {
+            /* position: absolute; */
+            top: 10%;
+            /* transform: translateY(-50%); */
+            width: 2rem;
+            height: 2rem;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        .carousel__button--left {
+            /* left: 1rem; */
+            z-index: 9999;
+        }
+
+        .carousel__button--right {
+            /* right: 1rem; */
+            z-index: 9999;
+        }
+
+        @media only screen and (max-width:980px) {
+            .carousel__slide {
+                display: block;
+                flex: 0 0 calc(100% / 2);
+                margin-right: 1rem;
+
+                transition: opacity 0.3s ease-in-out;
+            }
+
+            .slider-remain .headii h3 {
+                color: #FFF;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 60px !important;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 70px !important;
+                text-transform: uppercase;
+            }
+        }
+
+        @media only screen and (max-width:767px) {
+            .slider-remain .headii h6 {
+                color: #FFF;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 18px !important;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+                letter-spacing: 3.12px;
+                text-transform: uppercase;
+            }
+
+            .max-width {
+                padding: 50px 0px !important;
+            }
+
+            .slider-remain .headii h3 {
+                color: #FFF;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 30px !important;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 40px !important;
+                text-transform: uppercase;
+            }
+
+            .carousel__slide {
+                flex: 0 0 calc(100% / 1);
+                margin-right: 0rem;
+                opacity: 1;
+                transition: opacity 0.3s ease-in-out;
+            }
+
+            .inner2 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100% !important;
+                flex-direction: column;
+            }
+
+            .inner2 img {
+                width: 100px !important;
+                height: 100px;
+            }
+
+            .inner2 h3 {
+                font-size: 30px !important;
+                line-height: 40px !important;
+                text-align: center;
+            }
+
+            .inner2 p {
+                font-size: 14px !important;
+                line-height: 24px !important;
+                text-align: center;
+            }
+        }
+
+        .inner2 {
+            width: 90%;
+        }
+
+        .inner2 img {
+            width: 150px;
+            height: 150px;
+        }
+
+
+
+        button:focus {
+            outline: none;
+            background-color: #2ab7a900;
+        }
+
+        .max-width {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .inner2 h3 {
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 56.864px;
+            /* 89.091% */
+            text-transform: uppercase;
+        }
+
+        .inner2 p {
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 34px;
+            /* 154.545% */
+        }
+
+        .slider-remain .headii h6 {
+            color: #FFF;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 34px;
+            /* 141.667% */
+            letter-spacing: 3.12px;
+            text-transform: uppercase;
+        }
+
+        .slider-remain .headii h3 {
+            color: #FFF;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 165px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 147px;
+            /* 89.091% */
+
+            text-transform: uppercase;
+        }
+
+        .slider-remain .headii {
+            margin-bottom: 20px;
+        }
+
+        .max-width {
+            padding: 100px 0px;
+        }
+    </style>
+    <title>3D RENDERING</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+ 
+</head>
+
+<body>
+  
+
+    <!-- banner section -->
+    <section class="website config metaverse rendring3d">
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <h1>3D Rendering</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------- -->
+
+    <section class="slider-remain config-slidera">
+        <div class="headii">
+            <h6>HOW IT WORKS</h6>
+            <h3>Our<br>
+                Process</h3>
+        </div>
+        <div class="max-width">
+
+
+            <div class="butttttone">
+                <button class="carousel__button carousel__button--left" aria-label="Previous slide"><img
+                        src="../images/Arrow 4 (1).png" alt=""></button>
+                <button class="carousel__button carousel__button--right" aria-label="Next slide"><img
+                        src="../images/Arrow 3 (1).png" alt=""></button>
+            </div>
+            <div class="carousel-process">
+
+                <div class="carousel__inner2">
+                    <div class="carousel__slide active">
+                        <div class="inner2">
+                            <img src="../images/game brif.png" alt="">
+                            <h3>PROJECT BRIEF</h3>
+                            <p>We send you our 3D rendering brief and you fill it. Then we set up a meeting.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel__slide">
+                        <div class="inner2">
+                            <img src="../images/moduling.png" alt="">
+                            <h3>MODELING</h3>
+                            <p>Using selected references and specs, we start building the required models.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel__slide">
+                        <div class="inner2">
+                            <img src="../images/texture.png" alt="">
+                            <h3>TEXTURING</h3>
+                            <p>3D models are then UV mapped and textures are applied on them.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel__slide">
+                        <div class="inner2">
+                            <img src="../images/rendring.png" alt="">
+                            <h3>RENDERING</h3>
+                            <p>Scenes are set up with additional visualization elements and renders are produced.</p>
+                        </div>
+                    </div>
+
+                    <!-- Add more slides as needed -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+   
+    <script>
+    const carousel = document.querySelector('.carousel-process');
+const inner = document.querySelector('.carousel__inner2');
+const slides = document.querySelectorAll('.carousel__slide');
+const prevButton = document.querySelector('.carousel__button--left');
+const nextButton = document.querySelector('.carousel__button--right');
+const slideWidth = slides[0].getBoundingClientRect().width + parseInt(getComputedStyle(slides[0]).marginRight); // Include margin in slide width
+const totalSlides = slides.length;
+let currentIndex = 0;
+let autoPlayInterval;
+
+// Function to set the position of slides
+function setSlidePosition() {
+    const translateValue = -1 * (slideWidth * currentIndex);
+    inner.style.transform = `translateX(${translateValue}px)`;
+}
+
+// Function to handle click on previous button
+function handlePrevClick() {
+    currentIndex = currentIndex > 0 ? currentIndex - 1 : totalSlides - determineSlidesToShow(); // Move to the last set of slides if already at the beginning
+    setSlidePosition();
+}
+
+// Function to handle click on next button
+function handleNextClick() {
+    currentIndex = currentIndex < totalSlides - determineSlidesToShow() ? currentIndex + 1 : 0; // Move to the first set of slides if already at the end
+    setSlidePosition();
+}
+
+// Function to start auto play
+function startAutoPlay() {
+    autoPlayInterval = setInterval(() => {
+        currentIndex = currentIndex < totalSlides - determineSlidesToShow() ? currentIndex + 1 : 0; // Move to the first set of slides if already at the end
+        setSlidePosition();
+    }, 3000); // Adjust the interval (in milliseconds) as needed
+}
+
+// Function to stop auto play
+function stopAutoPlay() {
+    clearInterval(autoPlayInterval);
+}
+
+// Event listeners for previous and next buttons
+prevButton.addEventListener('click', () => {
+    stopAutoPlay();
+    handlePrevClick();
+});
+
+nextButton.addEventListener('click', () => {
+    stopAutoPlay();
+    handleNextClick();
+});
+
+// Event listeners for mouse enter and leave on carousel
+carousel.addEventListener('mouseenter', stopAutoPlay);
+carousel.addEventListener('mouseleave', startAutoPlay);
+
+// Set the first slide as the default slide
+setSlidePosition();
+startAutoPlay();
+
+// Function to determine the number of slides to show based on screen size
+function determineSlidesToShow() {
+    if (window.innerWidth >= 768) { // Adjust the breakpoint as needed
+        return 3; // Number of slides to show on larger screens (e.g., desktop)
+    } else if (window.innerWidth >= 480) { // Adjust the breakpoint as needed
+        return 2; // Number of slides to show on tablets
+    } else {
+        return 1; // Number of slides to show on smaller screens (e.g., mobile)
+    }
+}
+// Function to determine the number of slides to show based on screen size
+function determineSlidesToShow() {
+    if (window.innerWidth >= 992) { // Adjust the breakpoint as needed
+        return 3; // Number of slides to show on larger screens (e.g., desktop)
+    } else if (window.innerWidth >= 768) { // Adjust the breakpoint as needed
+        return 2; // Number of slides to show on tablets
+    } else {
+        return 1; // Number of slides to show on smaller screens (e.g., mobile)
+    }
+}
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });	
+    </script>
+</body>
+</html>

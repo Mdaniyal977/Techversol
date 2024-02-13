@@ -1067,9 +1067,12 @@ footer .inner-column2-item1 {
 
 
 
-
-
-
+@media only screen and (max-width:980px) {
+    .slide-item {
+        width: calc(100% / 2) !important;
+        box-sizing: border-box;
+    }
+}
 
 
 @media only screen and (max-width:1200px) {

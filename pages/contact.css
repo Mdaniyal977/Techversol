@@ -75,7 +75,7 @@ div.b-h h1 {
     align-items: center;
     justify-content: center;
   flex-direction: column;
-  margin-bottom: 100px;
+  
 }
 .sub-column2{
     display: flex;
@@ -286,8 +286,7 @@ input[type="checkbox"] {
 .checkbox-image {
     width: 100%; /* Adjust the width as needed */
     height: 100%; /* Adjust the height as needed */
-    background-color: #fff; /* Set background color for the checkbox */
-    border: 1px solid #ccc; /* Add border for styling */
+     /* Add border for styling */
     border-radius: 5px; /* Optional: Add border-radius for rounded corners */
     display: inline-block;
     vertical-align: middle;
@@ -788,5 +787,263 @@ text-transform: uppercase;
         font-weight: 600;
         line-height: 32px;
         padding: 30px 0px;
+    }
+}
+.form-button {
+  
+   
+}
+.form-button img{
+    display: inline-block !important;
+    width: 70%;
+    
+}
+button {
+    background-color: white !important;
+    display: inline-block;
+    width: 40%;
+    float: inline-end;
+}
+button {
+    color: #40B9C9;
+    cursor: pointer;
+    font-size: 18px;
+}
+input[type="email"] {
+    padding: 0px 10px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    WIDTH: 100%;
+    border: 1px solid #ffffff5e;
+    background: #40B9C9;
+    height: 75px;
+}
+input[type="number"] {
+    padding: 0px 10px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    WIDTH: 100%;
+    border: 1px solid #ffffff5e;
+    background: #40B9C9;
+    height: 75px;
+}
+
+@media only screen and (max-width:980px) {
+    .form-row {
+        width: calc(49.33% - 30px);
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .contant-section2-sub-row2 form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .checkbox-container {
+        display: flex;
+        width: calc(100% / 4);
+        flex-direction: column;
+        /* display: inline-block; */
+        position: relative;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-button {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .sub-column1 p {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        width: 80%;
+    }
+    .contant-section2-sub-row1 h2 {
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    .full-width {
+        width: 100%;
+    }
+    .checkbox-container h3.title {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .d-f-a-j .w-m-d-f-a-j .b-s-h p span {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        opacity: 0.5;
+    }
+}
+@media only screen and (max-width:980px) {
+    div.b-h h1 {
+        margin-top: 30px;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    .d-f-a-j .w-m-d-f-a-j .b-s-h p {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .d-f-a-j .w-m-d-f-a-j .b-s-h p span {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        opacity: 0.5;
+    }
+    .sub-column1 p {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        width: 100%;
+    }
+    .contant-section1 {
+        padding: 50px 0px;
+        background: #082C4C;
+    }
+    .form-row {
+        width: 100%;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    input[type="text"] {
+        padding: 0px 10px;
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 34px;
+        WIDTH: 100%;
+        border: 1px solid #ffffff5e;
+        background: #40B9C9;
+        height: 55px;
+    }
+    input[type="email"] {
+        padding: 0px 10px;
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 34px;
+        WIDTH: 100%;
+        border: 1px solid #ffffff5e;
+        background: #40B9C9;
+        height: 55px;
+    }
+    input[type="number"] {
+        padding: 0px 10px;
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 34px;
+        WIDTH: 100%;
+        border: 1px solid #ffffff5e;
+        background: #40B9C9;
+        height: 55px;
+    }
+    textarea {
+        padding: 10px 9px;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 34px;
+        WIDTH: 100%;
+        border: 1px solid #ffffff5e;
+        background: #40B9C9;
+        resize: both;
+    }
+    .checkbox-container h3.title {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .checkbox-container {
+        display: flex;
+        width: calc(100% / 3);
+        flex-direction: column;
+        /* display: inline-block; */
+        position: relative;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-button img {
+        display: inline-block !important;
+        width: 90%;
+    }
+    .form-button button {
+        color: #40B9C9;
+width: 100%;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    input[type="checkbox"] {
+        position: absolute;
+        top: 7px;
+        height: 20px;
+        width: 20px;
+        right: 5px;
     }
 }

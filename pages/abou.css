@@ -413,4 +413,198 @@ line-height: 39.667px; /* 136% */
     z-index: 9999;
 }
 /* ================= */
-/* ABOUT PAGE CSS END FROM THEIR *
+/* ABOUT PAGE CSS END FROM THEI*/
+
+
+@media only screen and ( max-width:980px ){
+    div.b-h h1 {
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    .d-f-a-j .w-m-d-f-a-j .b-s-h p span {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        opacity: 0.5;
+    }
+    .d-f-a-j .w-m-d-f-a-j .b-s-h p {
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .w-m-d-a-j {
+        width: 90%;
+        max-width: 1600px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        column-gap: 50px;
+        flex-direction: column;
+    }
+    .col {
+        width: 100%;
+    }
+    .col h2 {
+        color: #FFF;
+        /* text-align: center; */
+        font-family: Poppins;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    .col p {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+    }
+    .col2-about-2nd-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .col img {
+        width: 60%;
+    }
+
+    .heading-and-para  h2 {
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    .heading-and-para p {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        text-align: center;
+        line-height: 28px;
+    }
+    .m-t {
+        margin-top: 50px;
+    }
+    .col-md-4 h1 {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 80.122px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 90px;
+    }
+    .col-md-4 h3 {
+        padding-top: 10px;
+        border-top: 1px solid white;
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 25.712px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 35px;
+    }
+    .about-section2 {
+        background: #52C1D0;
+        padding: 50px 0px;
+    }
+    section.about-section3 .column h2 {
+        color: #082C4C;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    .profile-bio .bio h4 {
+        color: #082C4C;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 35.667px;
+    }
+    .profile-bio .bio p {
+        color: #5B7C99;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 18.167px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24.667px;
+    }
+    .profile-bio {
+        position: relative;
+        padding-top: 45%;
+        padding-bottom: 100px;
+        margin: 0px 20px;
+        background-color: #EBF9FB;
+    }
+    .slides-container {
+        width: 150% !important;
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    .slide-item {
+        width: 200px !important;
+        width: calc(70vw / 3);
+        box-sizing: border-box;
+    }
+    section.about-section4 .column h2 {
+        padding-top: 50px;
+        color: #ffffff;
+        font-family: Poppins;
+        text-align: left;
+        font-size: 30px;
+        font-style: normal;
+        width: 100%;
+        font-weight: 900;
+        line-height: normal;
+        text-transform: uppercase;
+    }.toggle-item-left h3 {
+        color: #ffffff28;
+        margin-bottom: 0px;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30.667px;
+        transition: all 0.4s ease-in-out;
+    }
+    .toggle-item-left p {
+        opacity: 0;
+        height: 0px;
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        transition: height 0.8s ease-in-out;
+    }
+}
