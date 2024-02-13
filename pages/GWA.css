@@ -1596,13 +1596,17 @@ section.config .row {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row ;
 }
+
+
+
 
 .config-section1 .column .col-left {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    z-index: 9999;
+    width: 40% !important;
 }
 
 .config-section1 .column .col-left h6 {
@@ -1621,7 +1625,7 @@ section.config .row {
     color: #082C4C;
     font-family: Poppins;
     text-align: left;
-    font-size: 85px;
+    font-size: 75px;
     font-style: normal;
     font-weight: 900;
     line-height: 95px;
@@ -1637,7 +1641,7 @@ section.config .row {
     font-weight: 500;
     line-height: 34px;
     /* 154.545% */
-    width: 60%;
+    width: 100%;
 }
 
 .config-section1 .column .col-left p.text-light {
@@ -1650,7 +1654,7 @@ section.config .row {
 }
 
 .config-section1 .column .col-right {
-    width: 100%;
+    width: 60%;
     display: flex;
     justify-content: center;
     padding-top: 100px;
