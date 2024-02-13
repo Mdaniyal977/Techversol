@@ -1621,10 +1621,10 @@ section.config .row {
     color: #082C4C;
     font-family: Poppins;
     text-align: left;
-    font-size: 155px;
+    font-size: 85px;
     font-style: normal;
     font-weight: 900;
-    line-height: 147px;
+    line-height: 95px;
     /* 94.839% */
     text-transform: uppercase;
 }
@@ -1657,7 +1657,7 @@ section.config .row {
 }
 
 .config-section1 .column .col-right img {
-    width: 600px;
+    width: 100%;
     /* padding-top: 100px; */
 }
 
@@ -3304,4 +3304,9 @@ section.r-d {
 }
 .white-screen{
     background-color: #082C4C;
+}
+
+
+.col-right video{
+    width: 100%;
 }
