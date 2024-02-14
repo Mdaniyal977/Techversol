@@ -476,7 +476,13 @@ section.games .row {
     width: 450px;
     height: auto !important;
 }
-
+.img-area  img.portolio-prevent-click{
+    width: 100%;
+  height: 75%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
 .card {
     position: relative;
     margin: .5rem 0 1rem 0;
@@ -487,7 +493,26 @@ section.games .row {
 
     box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.0);
 }
-
+.active .card .img-area .portolio-prevent-click {
+    width: 100%;
+    z-index: 999;
+    position: absolute;
+    display: none;
+}
+.active div.card .img-area iframe{
+    z-index: 999;
+    position: relative;
+}
+div.card .img-area iframe{
+    z-index: 0;
+    position: relative;
+}
+.card .img-area .portolio-prevent-click{
+    width: 100%;
+    z-index: 999;
+    position: absolute;
+    display: block;
+}
 .img-area {
     height: 500px;
     width: 100%;
@@ -507,10 +532,10 @@ section.games .row {
 .main-text h2 {
     color: #082C4C;
     font-family: Poppins;
-    font-size: 92px;
+    font-size: 60px;
     font-style: normal;
     font-weight: 800;
-    line-height: 86.864px;
+    line-height: 70.864px;
     /* 94.417% */
     text-transform: uppercase;
 }
@@ -1947,10 +1972,10 @@ section.Architecture {
     color: #082C4C;
     text-align: center;
     font-family: Poppins;
-    font-size: 165px;
+    font-size: 80px;
     font-style: normal;
     font-weight: 900;
-    line-height: 147px;
+    line-height: 90px;
     /* 89.091% */
     text-transform: uppercase;
 }
@@ -2115,7 +2140,34 @@ section.r-d {
 
 
 
+@media only screen and (max-width:980px) {
+    .config-section1 .column {
+        width: 90%;
+        max-width: 1400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .config-section1 .column .col-left {
+        display: flex;
+        flex-direction: column;
+        z-index: 9999;
+        width: 100% !important;
+    }
+    .config-section1 .column .col-right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+    }
+    .config-section1 .column .col-left h2 {
+        font-size: 60px !important;
+        line-height: 70px !important;
+        text-transform: uppercase;
+    }
 
+}
 
 
 
@@ -2203,12 +2255,9 @@ section.r-d {
     }
 
     .main-text h2 {
-
-        font-size: 60px;
-
+        font-size: 50px;
         font-weight: 800;
-        line-height: 76.864px;
-
+        line-height: 60.864px;
     }
 
     .main-text p {
@@ -2731,9 +2780,9 @@ section.r-d {
     }
 
     .main-text h2 {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 800;
-        line-height: 40.864px;
+        line-height: 30.864px;
     }
 
     .main-text p {
@@ -3304,6 +3353,26 @@ section.r-d {
 @media only screen and (max-width: 767px){
     .content {
         height: 100% !important;
+    }
+
+
+    .config-section1 .column .col-left h2 {
+        font-size: 30px !important;
+        line-height: 40px !important;
+        margin-top: 0px;
+        text-transform: uppercase;
+    }
+    .config-section3 .row .full-widthcolumn {
+        width: 90% !important;
+        padding: 50px 0px;
+        display: flex;
+        max-width: 1400px;
+        align-items: center;
+        justify-content: center;
+    }
+    .inner2 img {
+        width: 100px !important;
+        height: 100px !important;
     }
 }
 .white-screen{
