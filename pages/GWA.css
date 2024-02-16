@@ -238,6 +238,7 @@ section.games .row {
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
+    width: 80%;
     line-height: 34px;
     /* 154.545% */
 }
@@ -736,12 +737,16 @@ section.website .row {
 
 .website-section1 .column .col-right {
     width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 100px;
 }
 
 .website-section1 .column .col-right p {
     color: #FFF;
     font-family: Poppins;
+    width: 80%;
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
@@ -1176,6 +1181,7 @@ section.apps .row {
     font-family: Poppins;
     font-size: 22px;
     font-style: normal;
+    width: 80%;
     font-weight: 500;
     line-height: 34px;
     /* 154.545% */
@@ -1995,13 +2001,17 @@ section.Architecture {
 .Architecture-secion1 .row .column .content img {
     width: 80%;
 }
-
+.col-rightAr {
+    padding: 100px 0px;
+    
+}
 .col-rightArchitecture {
     display: flex;
     align-items: center;
     margin-top: 100px;
     justify-content: center;
     column-gap: 30px;
+    
 }
 
 .col-rightArchitecture div {
@@ -2009,10 +2019,12 @@ section.Architecture {
 }
 
 .col-rightArchitecture div img {
-    width: 80%;
+    margin-left: -30px;
+    width: 100%;
 }
 
 .col-rightArchitecture div p {
+    width: 80%;
     color: #FFF;
     font-family: Poppins;
     font-size: 22px;
@@ -2029,6 +2041,7 @@ section.Architecture-secion2 {
 }
 
 section.Architecture-secion2 .row {
+    padding-bottom: 0px;
     margin-bottom: 0px;
     background-color: #082C4C !important;
     background: #082C4C !important;
@@ -2244,7 +2257,7 @@ section.r-d {
 
     .col-rightArchitecture div p {
         font-size: 18px;
-
+        width: 100%;
         line-height: 28px;
     }
 
@@ -2393,7 +2406,7 @@ section.r-d {
     .games-section1 .column .col-right p {
 
         font-size: 18px;
-
+width: 100%;
         line-height: 28px;
     }
 
@@ -2458,7 +2471,7 @@ section.r-d {
     .website-section1-apps .column .col-right p {
 
         font-size: 18px;
-
+width: 80%;
         line-height: 28px;
     }
 
@@ -2517,7 +2530,7 @@ section.r-d {
     }
 
     .website-section1 .column .col-right p {
-
+width: 80%;
         font-size: 18px;
 
         line-height: 28px;
@@ -3050,6 +3063,7 @@ section.r-d {
     .website-section1-apps .column .col-right p {
         font-size: 14px;
         line-height: 24px;
+        width: 100%;
     }
 
     .website-section3 .column .col-right .paragraph1 {
@@ -3116,6 +3130,7 @@ section.r-d {
     }
 
     .website-section1 .column .col-right p {
+        width: 100%;
         font-size: 14px;
         line-height: 24px;
     }
@@ -3383,3 +3398,4 @@ section.r-d {
 .col-right video{
     width: 100%;
 }
+

@@ -3,3 +3,4 @@ document.addEventListener("DOMContentLoaded", function() {
     var loaderWrapper = document.querySelector('.page-loader');
     loaderWrapper.style.display = 'none';
   });
+  
