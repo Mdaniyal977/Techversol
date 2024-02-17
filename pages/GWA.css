@@ -1689,12 +1689,53 @@ section.config .row {
     display: flex;
     justify-content: center;
     padding-top: 100px;
+    position: relative;
 }
 
 .config-section1 .column .col-right img {
     width: 100%;
     /* padding-top: 100px; */
+   
 }
+.col-right .zdymainr2{
+width: 80% !important;
+animation: move  2s ease-in-out infinite !important;
+}
+.col-right .zdymainr{
+    animation: move  2s ease-in-out infinite !important;
+}
+.col-right .ZOOOM{
+    animation: zoom 3s ease-in-out infinite;
+}
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.04);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes move2{
+    0%, 100% {
+        transform: rotate(0deg) ;
+    }
+   
+    50% {
+        transform: rotate(5deg) rotate(-5deg);
+    }
+}
+@keyframes move {
+    0%, 100% {
+        transform: rotate(0deg) ;
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+}
+
 
 .config-section1 .column .col-right p {
     color: #FFF;
@@ -3426,4 +3467,15 @@ width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+@keyframes moveZ {
+    0% {
+        transform: translateZ(0);
+    }
+    50% {
+        transform: translateZ(-20px);
+    }
+    100% {
+        transform: translateZ(0);
+    }
 }

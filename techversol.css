@@ -1645,3 +1645,19 @@ footer .inner-column2-item1 {
 
 
 
+.blog-button button{
+    width: 100%;
+}
+.blog-slider-button {
+    FLOAT: left;
+    DISPLAY: inline-block;
+    opacity: 0;
+    margin-top: 20px;
+    padding: 8px 0px;
+    background: #52C1D0;
+    border: 2px solid #FFF;
+    transition: opacity 0.3s ease-in-out;
+}
+button.blog-slider-button a{
+    color: #52C1D0 !important;
+}
