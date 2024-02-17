@@ -1917,8 +1917,94 @@ animation: move  2s ease-in-out infinite !important;
 
 
 
+.alter{
+    padding: 30vh 0px;
+    background-repeat: no-repeat;
+    background-image: url(../images/meraterssssbannner.png);
+    background-position: center;
+    background-size: cover;
+}
+.alter .row{
+    background-color: transparent;
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+}
+.alter .column .content h1 {
+    font-size: 80px;
+    line-height: 90px;
+    text-transform: uppercase;
+}
+.alter  .row .column{
+    margin-top: 40vh;
+    margin-bottom: 10vh;
+    width: 90%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.alter .column .content h1 {
+    font-size: 80px;
+    line-height: 90px;
+    text-transform: uppercase;
+}
+.alter .column .content h1 {
+    color: #ffffff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 125px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 137px;
+    text-transform: uppercase;
+}
 
+@media only screen and (max-width:980px) {
+    .alter .column .content h1 {
+        color: #ffffff;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 90px;
+        text-transform: uppercase;
+    }
 
+}
+@media only screen and (max-width:767px) {
+
+    .alter .column .content h1 {
+        color: #ffffff;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 50px;
+        text-transform: uppercase;
+    }
+    .alter  .row .column {
+        margin-top: 20vh;
+        margin-bottom: 10vh;
+        width: 90%;
+        max-width: 1400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .alter {
+        padding: 20vh 0px;
+        background-repeat: no-repeat;
+        background-image: url(../images/meraterssssbannner.png);
+        background-position: center;
+        background-size: cover;
+    }
+}
 /* matavers */
 section.metaverse {
     /* padding: 40vh 0px;00 */
@@ -1950,6 +2036,7 @@ section.rendring3d {
 }
 
 /* ----------- */
+
 
 
 
