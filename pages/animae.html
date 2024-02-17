@@ -8,27 +8,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="../techversol.css">
     <link rel="stylesheet" href="./GWA.css">
-    <title>ARCHITECTURE</title>
+    <title>TRAINING</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             // Function to show the corresponding menu box on hover
             function showMenuBox(className) {
                 $('.menu-box').css({ height: 0, visibility: 'hidden' }); // Reset height and visibility for all menu boxes
-                $('#' + className + '-menu').css({ height: 'auto', visibility: 'visible' , overflow: 'visible' }); // Set height to auto for the specific menu box
+                $('#' + className + '-menu').css({ height: 'auto', visibility: 'visible', overflow: 'visible' }); // Set height to auto for the specific menu box
                 $('.menu-container').css({ overflow: 'visible' }); // Show overflow when menu is visible
             }
-    
+
             // Hover event for each menu item
-            $('.menu li').mouseenter(function() {
+            $('.menu li').mouseenter(function () {
                 // On hover in
                 var className = $(this).find('a').attr('class').split('-')[0];
                 showMenuBox(className);
             });
-    
+
             // Check mouse leave on both li and menu box
-            $('.menu li, .menu-box').mouseleave(function() {
-                setTimeout(function() {
+            $('.menu li, .menu-box').mouseleave(function () {
+                setTimeout(function () {
                     if (!$('.menu li:hover, .menu-box:hover').length) {
                         $('.menu-box').css({ height: 0, visibility: 'hidden' });
                         $('.menu-container').css({ overflow: 'hidden' }); // Hide overflow when menu is hidden
@@ -37,54 +37,54 @@
             });
         });
     </script>
-        <script>
-            function toggleContent(btn) {
-                var content = btn.parentElement.nextElementSibling; // Get the content element
-                var allContents = document.querySelectorAll('.faq-content-menu-li');
-     
-                // Hide all other contents
-                allContents.forEach(function (item) {
-                    if (item !== content) {
-                        item.style.maxHeight = '0';
-                        item.style.paddingTop = '0';
-                        item.style.paddingBottom = '0';
-                    }
-                });
-     
-                // Toggle current content
-                if (content.style.maxHeight === '0px' || content.style.maxHeight === '') {
-                    content.style.maxHeight = content.scrollHeight + 'px';
-                    content.style.paddingTop = '20px !important';
-                    content.style.paddingBottom = '20px !important';
-                    btn.querySelector('.open').style.display = 'none';
-                    btn.querySelector('.close').style.display = 'block';
-                } else {
-                    content.style.maxHeight = '0px';
-                    content.style.paddingTop = '0';
-                    content.style.paddingBottom = '0';
-                    btn.querySelector('.open').style.display = 'block';
-                    btn.querySelector('.close').style.display = 'none';
+    <script>
+        function toggleContent(btn) {
+            var content = btn.parentElement.nextElementSibling; // Get the content element
+            var allContents = document.querySelectorAll('.faq-content-menu-li');
+
+            // Hide all other contents
+            allContents.forEach(function (item) {
+                if (item !== content) {
+                    item.style.maxHeight = '0';
+                    item.style.paddingTop = '0';
+                    item.style.paddingBottom = '0';
                 }
+            });
+
+            // Toggle current content
+            if (content.style.maxHeight === '0px' || content.style.maxHeight === '') {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                content.style.paddingTop = '20px !important';
+                content.style.paddingBottom = '20px !important';
+                btn.querySelector('.open').style.display = 'none';
+                btn.querySelector('.close').style.display = 'block';
+            } else {
+                content.style.maxHeight = '0px';
+                content.style.paddingTop = '0';
+                content.style.paddingBottom = '0';
+                btn.querySelector('.open').style.display = 'block';
+                btn.querySelector('.close').style.display = 'none';
             }
-     
-     
-        </script>
-        <script>
-            function toggleDropdownMenu() {
-                var dropdownMenu = document.getElementById('tabletDropdownMenu1');
-     
-                if (dropdownMenu.style.height === '0px' || dropdownMenu.style.height === '') {
-                    // Open the dropdown menu
-                    dropdownMenu.style.height = 'auto';
-                    dropdownMenu.style.padding = '50px 30px';
-                } else {
-                    // Close the dropdown menu
-                    dropdownMenu.style.height = '0px';
-                    dropdownMenu.style.padding = '0px 30px';
-                }
+        }
+
+
+    </script>
+    <script>
+        function toggleDropdownMenu() {
+            var dropdownMenu = document.getElementById('tabletDropdownMenu1');
+
+            if (dropdownMenu.style.height === '0px' || dropdownMenu.style.height === '') {
+                // Open the dropdown menu
+                dropdownMenu.style.height = 'auto';
+                dropdownMenu.style.padding = '50px 30px';
+            } else {
+                // Close the dropdown menu
+                dropdownMenu.style.height = '0px';
+                dropdownMenu.style.padding = '0px 30px';
             }
-     
-        </script>
+        }
+
+    </script>
 </head>
 
 <body>
@@ -114,25 +114,25 @@
                         </div>
                         <div class="menu-li-items-container">
                             <div class="li-item">
-                                <a href="../pages/3D Rendering.html"  target="_blank">
+                                <a href="../pages/3D Rendering.html" target="_blank">
                                     <img src="../images/3d m3nu.png" alt="">
                                     <p>3D RENDERING</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/Configurator.html"  target="_blank">
+                                <a href="../pages/Configurator.html" target="_blank">
                                     <img src="../images/config-menu.png" alt="">
                                     <p>CONFIGURATORS</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/Metaverse.html"  target="_blank">
+                                <a href="../pages/Metaverse.html" target="_blank">
                                     <img src="../images/METAVERSEmenu.png" alt="">
                                     <p>METAVERSE</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/Alternate Reality.html"  target="_blank">
+                                <a href="../pages/Alternate Reality.html" target="_blank">
                                     <img src="../images/alterreat.png" alt="">
                                     <p>ALTERNATE REALITY</p>
                                 </a>
@@ -148,20 +148,20 @@
                         </div>
                         <div class="menu-li-items-container">
                             <div class="li-item">
-                                <a href="../pages/website.html "  target="_blank"">
-                                    <img src="../images/dev3menu (8).png" alt="">
+                                <a href="../pages/website.html " target="_blank"">
+                                    <img src=" ../images/dev3menu (8).png" alt="">
                                     <p>Websites</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/games.html "  target="_blank"">
-                                    <img src="../images/dev3menu (7).png" alt="">
+                                <a href="../pages/games.html " target="_blank"">
+                                    <img src=" ../images/dev3menu (7).png" alt="">
                                     <p>GAMES</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/apps.html "  target="_blank"">
-                                    <img src="../images/dev3menu (2).png" alt="">
+                                <a href="../pages/apps.html " target="_blank"">
+                                    <img src=" ../images/dev3menu (2).png" alt="">
                                     <p>APPS</p>
                                 </a>
                             </div>
@@ -197,8 +197,7 @@
                             </div>
                             <div class="li-item">
                                 <a href="../pages/Blog.html">
-                                    <img src="../images/NEWLOG-MENU.png"
-                                        alt="">
+                                    <img src="../images/NEWLOG-MENU.png" alt="">
                                     <p>BLOG & NEWS</p>
                                 </a>
                             </div>
@@ -214,26 +213,26 @@
                         </div>
                         <div class="menu-li-items-container">
                             <div class="li-item">
-                                <a href="../pages/Architecture.html"  target="_blank"">
-                                    <img src="../images/artmene.png" alt="">
+                                <a href="../pages/Architecture.html" target="_blank"">
+                                    <img src=" ../images/artmene.png" alt="">
                                     <p>Architecture</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/training.html"  target="_blank"">
-                                    <img src="../images/trainmenu.png" alt="">
+                                <a href="../pages/training.html" target="_blank"">
+                                    <img src=" ../images/trainmenu.png" alt="">
                                     <p>Training</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/automation.html"  target="_blank"">
-                                    <img src="../images/automenu.png" alt="">
+                                <a href="../pages/automation.html" target="_blank"">
+                                    <img src=" ../images/automenu.png" alt="">
                                     <p>Automation</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/r&d.html"  target="_blank"">
-                                    <img src="../images/rndmenu.png" alt="">
+                                <a href="../pages/r&d.html" target="_blank"">
+                                    <img src=" ../images/rndmenu.png" alt="">
                                     <p>R&D</p>
                                 </a>
                             </div>
@@ -268,7 +267,7 @@
 
                         </div>
                         <div class="faq-content-menu-li">
-                            <a  href="../pages/About-Us.html">
+                            <a href="../pages/About-Us.html">
                                 <p class="ppp">about us</p>
                             </a>
                             <a href="../pages/career.html">
@@ -277,7 +276,7 @@
                             <a href="../pages/Blog.html">
                                 <p>blog</p>
                             </a>
-                            <a  href="../pages/contact us .html">
+                            <a href="../pages/contact us .html">
                                 <p class="pppp">contact us</p>
                             </a>
                         </div>
@@ -360,12 +359,12 @@
     </header>
 
     <!-- banner section -->
-    <section class="website config Architecture">
+    <section class="website config training">
         <div class="row">
             <div class="column">
                 <div class="content">
-                    <h1>Architecture</h1>
-                
+                    <h1>training</h1>
+
                 </div>
             </div>
         </div>
@@ -376,16 +375,46 @@
         <div class="row">
             <div class="column">
                 <div class="content">
-                    <h6>CREATING THE FUTURE</h6>
-                    <h2>THE JOY OF BUILDING HOMES</h2>
-                    <p>Designing and developing new buildings is a journey filled with boundless creativity and 
-                        excitement. From envisioning architectural marvels to bringing them to life, every step in the 
-                        process is infused with the joy of creation. 
-                        Architects and developers have the privilege of shaping the physical landscape, transforming 
-                        ideas into tangible structures that stand as testaments to human ingenuity. The thrill of seeing a 
-                        concept evolve into a living, breathing space is unmatched, igniting passion and driving mankind 
-                        to push the boundaries of innovation.</p>
-                    <img src="../images/ARTITUCTURE METHOD.png" alt="">
+                    <h6>GLOBAL REACH UNLOCKED</h6>
+                    <h2>TRAIN WITH NO LIMITS</h2>
+                    <p>With virtual training environments, trainers like you are breaking geographical barriers and
+                        reaching audiences worldwide. This shift has unlocked a myriad of opportunities, empowering
+                        you to share your training expertise with a global audience like never before. <br><br>
+                        By embracing virtual training, you can expand your reach and impact, connecting with learners
+                        from diverse backgrounds and cultures. This global outreach may not only broaden your
+                        audience base but also enhance your reputation and credibility in the industry. By leveraging
+                        technology to innovate your training methods, you can deliver dynamic and personalized training
+                        experiences</p>
+
+
+                        
+                    <div class="amima-main">
+
+                        <div class="amima-main1">
+                            <img src="../images/framemain.png" alt="">
+                        </div>
+
+
+                        <div class="amima-main2">
+                            <div>
+                                <img src="../images/Line 53.png" alt="">
+                            </div>
+                            <div>
+                                <img src="../images/Line 53.png" alt="">
+                            </div>
+                            <div>
+                                <img src="../images/Line 53.png" alt="">
+                            </div>
+                            <div>
+                                <img src="../images/Line 53.png" alt="">
+                            </div>
+                            <div>
+                                <img src="../images/Line 53.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -395,34 +424,41 @@
         <div class="row">
             <div class="column">
                 <div class="col-left">
-                    <h6>CUT PROJECT COSTS</h6>
-                    <h2>SEE IT BEFORE YOU BUILD IT
+                    <h6>CUT TRAINING COSTS</h6>
+                    <h2>FOCUS ON QUALITY TRAININGS
                     </h2>
 
                 </div>
-                <div class="col-rightArchitecture ">
+                <div class="col-rightArchitecture col-rightAr">
                     <div>
-                        <img src="../images/artiture 2nd section image.png" alt="">
+                        <img src="../images/traning section image.png" alt="">
                     </div>
                     <div>
-                        <p>In today's competitive real estate market, developers can save money by visualizing their 
-                            projects in 3D. With Techversol at your side, you have the ability to see exactly how your project 
-                            would look before you build it.<br><br>
-                            We deliver accurate modeling, helping you conduct comprehensive analysis and thus minimize 
-                            costly errors and revisions while maximizing efficiency and quality.</p>
+                        <p>Virtual training can streamline costs, freeing up your resources to focus on quality. Without
+                            the
+                            expenses of physical venues and travel, you can invest more in refining content and
+                            enhancing
+                            the learning experience. This shift result in more engaging and effective training sessions
+                            for
+                            your learners.<br><br>
+                            At Techversol, we are helping clients like you deliver high quality trainings with the help
+                            of
+                            custom-built virtual environments, aligning with the needs of VR-based training as well as
+                            those
+                            delivered in the metaverse./p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-  
 
- 
+
+
     <section class="games-section5 config-sec-5">
         <div class="top-content-wrapper">
             <div class="top-content">
-                <h6>ARCHITECTURE</h6>
+                <h6>TRAINING</h6>
                 <h2>our<br>
                     portfolio</h2>
             </div>
@@ -435,35 +471,43 @@
                 <a class="carousel-item" href="JavaScript:void(0)">
                     <div class="card">
 
-                        <div class="img-area"><img src="../images/skyline-1925943_1920.jpg" alt=""></div>
+                        <div class="img-area"><iframe
+                                src="https://drive.google.com/file/d/1tXqTYr-emI0AVwzLtZSxbWhFNjDud2kV/preview"
+                                width="100%" height="100%" allow="false"></iframe>
+                            <img class="portolio-prevent-click" src="../images/TRAININGTHUM.jpg" alt="">
+                        </div>
                         <div class="main-text">
-                            <h2>Commercial Exterior</h2>
-                           
+                            <h2>Technical Training</h2>
+
+                        </div>
+                    </div>
+                </a>
+
+                <a class="carousel-item" href="JavaScript:void(0)">
+                    <div class="card">
+
+                        <div class="img-area"><iframe
+                                src="https://drive.google.com/file/d/1LKoRSZurtu1Q599oQeYO7Qkb2h6tQwqr/preview"
+                                width="100%" height="100%" allow="false"></iframe>
+                            <img class="portolio-prevent-click" src="../images/ALTERNATIVETHUM2.jpg" alt="">
+                        </div>
+                        <div class="main-text">
+                            <h2>Safety Drill</h2>
+
                         </div>
                     </div>
                 </a>
                 <a class="carousel-item" href="JavaScript:void(0)">
-                    
                     <div class="card">
 
-                        <div class="img-area"><iframe src="https://drive.google.com/file/d/1RsAv7I4rbVx9eE3f7mer6Po6VP2crse6/preview" width="100%" height="100%" allow="false"></iframe>
-                            <img class="portolio-prevent-click" src="../images/ARTITUTHUM2.jpg" alt="">
+                        <div class="img-area"><iframe
+                                src="https://drive.google.com/file/d/1YMNZgWwdyRadZZnRLmKuiFaD7C-B2U1z/preview"
+                                width="100%" height="100%" allow="false"></iframe>
+                            <img class="portolio-prevent-click" src="../images/ALTERNATIVETHUM3.jpg" alt="">
                         </div>
                         <div class="main-text">
-                            <h2>Industrial Development</h2>
-                          
-                        </div>
-                    </div>
-                </a>
-                
-                <a class="carousel-item" href="JavaScript:void(0)">
-                    <div class="card">
-
-                        <div class="img-area"><iframe src="https://drive.google.com/file/d/1Nl7gK1yME4uWnYBRGGUAqDW0ox9R4HJI/preview" width="100%" height="100%" allow="false"></iframe>
-                            <img class="portolio-prevent-click" src="../images/ARTITUTHUM1.jpg" alt=""></div>
-                        <div class="main-text">
-                            <h2>Apartments Video</h2>
-                            
+                            <h2>Industrial Maintenance Training</h2>
+                            =
                         </div>
                     </div>
                 </a>
@@ -480,7 +524,7 @@
             <div class="column">
                 <div class="last-container">
                     <h2>Reserve your spot today!</h2>
-                    <button><a href="./contact us .html">Let’s Talk</a></button>
+                    <button><a href="">Let’s Talk</a></button>
                 </div>
             </div>
         </div>
@@ -495,44 +539,67 @@
                         <p>8 The Green, Ste 16430, Dover, DE 19901</p>
                     </div>
                     <div class="inner-column1-item2">
-                        <p class="gray-text"><i><img src="../images/icons8-pakistan-96.png" alt=""></i>Pakistan Office</p>
+                        <p class="gray-text"><i><img src="../images/icons8-pakistan-96.png" alt=""></i>Pakistan Office
+                        </p>
                         <p>Plot # S3-S6 Block D Gulshan-e-Jamal, <br>Suite #101, Karachi, Sindh 75300, PK.</p>
                     </div>
                 </div>
                 <div class="inner-column2">
                     <div class="inner-column2-item1">
                         <p class="gray-text">COMPANY</p>
-                        <a href="../pages/About-Us.html"><p>About Us</p></a>   
-                        <a href="../pages/contact us .html"><p>Contact Us</p></a>   
-                        <a href="../pages/Blog.html"> <p>Blog & News</p></a>  
-                        <a href="../pages/career.html"><p>Careers</p></a>  
+                        <a href="../pages/About-Us.html">
+                            <p>About Us</p>
+                        </a>
+                        <a href="../pages/contact us .html">
+                            <p>Contact Us</p>
+                        </a>
+                        <a href="../pages/Blog.html">
+                            <p>Blog & News</p>
+                        </a>
+                        <a href="../pages/career.html">
+                            <p>Careers</p>
+                        </a>
                     </div>
                     <div class="inner-column2-item2">
                         <p class="gray-text">SERVICES</p>
-                       <a href="../pages/3D Rendering.html"><P>3D Rendering</P></a> 
-                       <a href="../pages/Configurator.html"><P>Configurators</P></a>  
-                       <a href="../pages/Metaverse.html"><P>Metaverse</P></a> 
-                       <a href="../pages/Alternate Reality.html"><P>Alternate Reality</P></a>
-                       <a href="../pages/website.html"><P>Websites</P></a> 
-                       <a href="../pages/apps.html"><P>Apps</P></a>  
-                       <a href="../pages/games.html">  <P>Games</P></a>
+                        <a href="../pages/3D Rendering.html">
+                            <P>3D Rendering</P>
+                        </a>
+                        <a href="../pages/Configurator.html">
+                            <P>Configurators</P>
+                        </a>
+                        <a href="../pages/Metaverse.html">
+                            <P>Metaverse</P>
+                        </a>
+                        <a href="../pages/Alternate Reality.html">
+                            <P>Alternate Reality</P>
+                        </a>
+                        <a href="../pages/website.html">
+                            <P>Websites</P>
+                        </a>
+                        <a href="../pages/apps.html">
+                            <P>Apps</P>
+                        </a>
+                        <a href="../pages/games.html">
+                            <P>Games</P>
+                        </a>
                     </div>
                     <div class="inner-column2-item3">
                         <p class="gray-text">SOCIAL LINKS</p>
-                       <a href="https://www.instagram.com/techversol.social/"><P>Instagram </P></a> 
-                      <a href="https://www.facebook.com/teamtechversol"><P>LinkedIn</P></a>  
-                       <a href="https://twitter.com/techversol"><P>Twitter</P></a> 
+                        <P>Instagram </P>
+                        <P>LinkedIn</P>
+                        <P>Twitter</P>
                     </div>
                     <div class="inner-column2-item4">
                         <p class="gray-text">CONTACT INFO</p>
-                        <a href="mailto:hello@techversol.com"><P>hello@techversol.com</P></a>
-                      <a href="mailto:jobs@techversol.com"><P>jobs@techversol.com</P></a>  
-                       <a href="mailto:business@techversol.com"><P>business@techversol.com</P></a> 
-                      <a href="mailto:press@techversol.com"><P>press@techversol.com</P></a>  
+                        <P>hello@techversol.com</P>
+                        <P>jobs@techversol.com</P>
+                        <P>business@techversol.com</P>
+                        <P>press@techversol.com</P>
                     </div>
                 </div>
                 <div class="inner-column3">
-                    <P>© 2023 <SPan style="color: #52C1D0;">Techversol </SPan>Inc. All Rights Reserved</P>
+                    <P>© 2024 <SPan style="color: #52C1D0;">Techversol </SPan>Inc. All Rights Reserved</P>
                 </div>
             </div>
         </div>

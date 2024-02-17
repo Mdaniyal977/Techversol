@@ -467,7 +467,7 @@ section.games .row {
 .carousel {
     height: 100 !important;
     perspective: 250px;
-    margin-top: 25%;
+    margin-top: 15%;
     margin-bottom: 25%;
     overflow: visible;
     overflow-y: visible !important;
@@ -515,7 +515,7 @@ div.card .img-area iframe{
     display: block;
 }
 .img-area {
-    height: 500px;
+    height: 350px;
     width: 100%;
 }
 
@@ -1788,6 +1788,7 @@ section.config .row {
 .config-section3 .column .col-right .paragraph1 p {
     color: #FFF;
     font-family: Poppins;
+    width: 80%;
     font-size: 22px;
     font-style: normal;
     font-weight: 500;
@@ -2323,7 +2324,7 @@ section.r-d {
     .config-section3 .column .col-right .paragraph1 p {
 
         font-size: 18px;
-
+width: 80%;
         line-height: 24px;
     }
 
@@ -2747,6 +2748,7 @@ width: 80%;
     .config-section3 .column .col-right .paragraph1 p {
         font-size: 14px;
         line-height: 24px;
+        width: 100%;
     }
 
     .config-section3 .column .col-left h2 {
@@ -2823,10 +2825,15 @@ width: 80%;
 
     .carousel {
 
-        margin-top: 35%;
+        margin-top: 15%;
 
     }
-
+    .games-section5 .top-content-wrapper {
+        padding-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .Architecture-secion2 .col-left h2 {
         font-size: 30px;
         margin: 0px;
@@ -3399,3 +3406,24 @@ width: 80%;
     width: 100%;
 }
 
+
+
+
+
+.amima-main{
+    width: 100%;
+}
+.amima-main1{
+    width: 100%;
+    margin-bottom: -10px;
+}
+.amima-main1 img{
+    width: 100% !important;
+}
+.amima-main2{
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
