@@ -86,6 +86,7 @@
    </script>
    <link rel="stylesheet" href="../pageloader.css">
    <script src="../pageloaderrr.js"></script>
+   <script src="./lazyload.js"></script>
 </head>
 
 <body>
@@ -102,9 +103,6 @@
          </div>
        </div>
      </div>
-
-
-
     <!-- header section of home start -->
     <header>
         <div class="navbar">
@@ -379,11 +377,8 @@
         </div>
     </header>
     <!-- header section of home end -->
-
-
-
     <!-- first banner section -->
-    <section class="about-section1">
+    <section class="about-section1 lazy-load " id="lazyLoadSection2" data-bg-image="../images/NEWABOUTBANNER.jpg">
         <div class="d-f-a-j">
             <div class="w-m-d-f-a-j">
                 <div class="b-h">
@@ -396,7 +391,6 @@
         </div>
     </section>
     <!-- first banner section -->
-
 
     <!-- 2nd section about start-->
     <section class="about-section2">
@@ -452,7 +446,6 @@
             </div>
         </div>
     </section>
-
 
     <section class="about-section3">
         <div class="row">
@@ -643,6 +636,7 @@
             </div>
         </div>
     </footer>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var toggleItems = document.querySelectorAll('.toggle-item');
@@ -662,12 +656,12 @@
             });
         });
     </script>
+
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
     <script src="./slider.js"></script>
 
-
     <script src="./counter.js"></script>
-
 
 </body>
 
