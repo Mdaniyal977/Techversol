@@ -9,24 +9,24 @@
     <title>Career</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             // Function to show the corresponding menu box on hover
             function showMenuBox(className) {
                 $('.menu-box').css({ height: 0, visibility: 'hidden' }); // Reset height and visibility for all menu boxes
-                $('#' + className + '-menu').css({ height: 'auto', visibility: 'visible' , overflow: 'visible' }); // Set height to auto for the specific menu box
+                $('#' + className + '-menu').css({ height: 'auto', visibility: 'visible', overflow: 'visible' }); // Set height to auto for the specific menu box
                 $('.menu-container').css({ overflow: 'visible' }); // Show overflow when menu is visible
             }
-    
+
             // Hover event for each menu item
-            $('.menu li').mouseenter(function() {
+            $('.menu li').mouseenter(function () {
                 // On hover in
                 var className = $(this).find('a').attr('class').split('-')[0];
                 showMenuBox(className);
             });
-    
+
             // Check mouse leave on both li and menu box
-            $('.menu li, .menu-box').mouseleave(function() {
-                setTimeout(function() {
+            $('.menu li, .menu-box').mouseleave(function () {
+                setTimeout(function () {
                     if (!$('.menu li:hover, .menu-box:hover').length) {
                         $('.menu-box').css({ height: 0, visibility: 'hidden' });
                         $('.menu-container').css({ overflow: 'hidden' }); // Hide overflow when menu is hidden
@@ -35,11 +35,11 @@
             });
         });
     </script>
-      <script>
+    <script>
         function toggleContent(btn) {
             var content = btn.parentElement.nextElementSibling; // Get the content element
             var allContents = document.querySelectorAll('.faq-content-menu-li');
- 
+
             // Hide all other contents
             allContents.forEach(function (item) {
                 if (item !== content) {
@@ -48,7 +48,7 @@
                     item.style.paddingBottom = '0';
                 }
             });
- 
+
             // Toggle current content
             if (content.style.maxHeight === '0px' || content.style.maxHeight === '') {
                 content.style.maxHeight = content.scrollHeight + 'px';
@@ -64,13 +64,13 @@
                 btn.querySelector('.close').style.display = 'none';
             }
         }
- 
- 
+
+
     </script>
     <script>
         function toggleDropdownMenu() {
             var dropdownMenu = document.getElementById('tabletDropdownMenu1');
- 
+
             if (dropdownMenu.style.height === '0px' || dropdownMenu.style.height === '') {
                 // Open the dropdown menu
                 dropdownMenu.style.height = 'auto';
@@ -81,13 +81,120 @@
                 dropdownMenu.style.padding = '0px 30px';
             }
         }
- 
+
     </script>
     <script src="../pages/lazyload.js"></script>
 </head>
+<!-- faq toggle -->
+<style>
+    .blue-toll{
+     
+        background-color: #43B3C2 !important;
+    }
+    .toggle-item-container-show {
+padding: 40px 30px;
+        width: 100%;
+        background-color: #072744;
+    }
+
+    .toggle-itemmms {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .content-of-toggle {
+        /* height: 200px; */
+    }
+
+    .toggle-item-container-show {
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: height 0.3s, opacity 0.3s;
+    }
+    .content-of-toggle-row2 h6{
+        color: white;
+        font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+margin-bottom: 10px;
+    }
+    .content-of-toggle-row2 p{
+        color: white;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 0px;
+        font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.content-of-toggle-row1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.div1row1{
+    margin-bottom: 30px;
+}
+.div1row1 p{
+    color: white;
+        font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+text-align: left;
+margin-bottom: 10px;
+font-weight: 500;
+}
+.div1row1 h5{
+    color: white;
+        font-family: Poppins;
+font-size: 34px;
+text-align: left;
+font-style: normal;
+font-weight: 500;
+}
+.div2row1 button{
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+.div2row1 button a{
+    /* height: 30px; */
+    color: white;
+        font-family: Poppins;
+font-size: 14px;
+text-align: center;
+padding: 10px 30px !important;
+font-style: normal;
+font-weight: 500;
+}
+@media only screen and (max-width:767px) {
+    .content-of-toggle-row1 {
+    width: 100%;
+    display: flex;
+    align-items: normal;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.career-section3-row {
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+</style>
+
 
 <body>
-    <header >
+    <header>
         <div class="navbar">
             <nav class="desktop-menu">
                 <div class="logo">
@@ -113,25 +220,25 @@
                         </div>
                         <div class="menu-li-items-container">
                             <div class="li-item">
-                                <a href="../pages/3D Rendering.html"  target="_blank">
+                                <a href="../pages/3D Rendering.html" target="_blank">
                                     <img src="../images/3d m3nu.png" alt="">
                                     <p>3D RENDERING</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/Configurator.html"  target="_blank">
+                                <a href="../pages/Configurator.html" target="_blank">
                                     <img src="../images/config-menu.png" alt="">
                                     <p>CONFIGURATORS</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/Metaverse.html"  target="_blank">
+                                <a href="../pages/Metaverse.html" target="_blank">
                                     <img src="../images/METAVERSEmenu.png" alt="">
                                     <p>METAVERSE</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/Alternate Reality.html"  target="_blank">
+                                <a href="../pages/Alternate Reality.html" target="_blank">
                                     <img src="../images/alterreat.png" alt="">
                                     <p>ALTERNATE REALITY</p>
                                 </a>
@@ -147,20 +254,20 @@
                         </div>
                         <div class="menu-li-items-container">
                             <div class="li-item">
-                                <a href="../pages/website.html "  target="_blank"">
-                                    <img src="../images/dev3menu (8).png" alt="">
+                                <a href="../pages/website.html " target="_blank"">
+                                    <img src=" ../images/dev3menu (8).png" alt="">
                                     <p>Websites</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/games.html "  target="_blank"">
-                                    <img src="../images/dev3menu (7).png" alt="">
+                                <a href="../pages/games.html " target="_blank"">
+                                    <img src=" ../images/dev3menu (7).png" alt="">
                                     <p>GAMES</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/apps.html "  target="_blank"">
-                                    <img src="../images/dev3menu (2).png" alt="">
+                                <a href="../pages/apps.html " target="_blank"">
+                                    <img src=" ../images/dev3menu (2).png" alt="">
                                     <p>APPS</p>
                                 </a>
                             </div>
@@ -196,8 +303,7 @@
                             </div>
                             <div class="li-item">
                                 <a href="../pages/Blog.html">
-                                    <img src="../images/NEWLOG-MENU.png"
-                                        alt="">
+                                    <img src="../images/NEWLOG-MENU.png" alt="">
                                     <p>BLOG & NEWS</p>
                                 </a>
                             </div>
@@ -213,26 +319,26 @@
                         </div>
                         <div class="menu-li-items-container">
                             <div class="li-item">
-                                <a href="../pages/Architecture.html"  target="_blank"">
-                                    <img src="../images/artmene.png" alt="">
+                                <a href="../pages/Architecture.html" target="_blank"">
+                                    <img src=" ../images/artmene.png" alt="">
                                     <p>Architecture</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/training.html"  target="_blank"">
-                                    <img src="../images/trainmenu.png" alt="">
+                                <a href="../pages/training.html" target="_blank"">
+                                    <img src=" ../images/trainmenu.png" alt="">
                                     <p>Training</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/automation.html"  target="_blank"">
-                                    <img src="../images/automenu.png" alt="">
+                                <a href="../pages/automation.html" target="_blank"">
+                                    <img src=" ../images/automenu.png" alt="">
                                     <p>Automation</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/r&d.html"  target="_blank"">
-                                    <img src="../images/rndmenu.png" alt="">
+                                <a href="../pages/r&d.html" target="_blank"">
+                                    <img src=" ../images/rndmenu.png" alt="">
                                     <p>R&D</p>
                                 </a>
                             </div>
@@ -267,7 +373,7 @@
 
                         </div>
                         <div class="faq-content-menu-li">
-                            <a  href="../pages/About-Us.html">
+                            <a href="../pages/About-Us.html">
                                 <p class="ppp">about us</p>
                             </a>
                             <a href="../pages/career.html">
@@ -276,7 +382,7 @@
                             <a href="../pages/Blog.html">
                                 <p>blog</p>
                             </a>
-                            <a  href="../pages/contact us .html">
+                            <a href="../pages/contact us .html">
                                 <p class="pppp">contact us</p>
                             </a>
                         </div>
@@ -358,7 +464,7 @@
         </div>
     </header>
 
-    <section class="career-section1 lazy-load " id="lazyLoadSection8" data-bg-image="../images/NEWCAREERBANNER.jpg" >
+    <section class="career-section1 lazy-load " id="lazyLoadSection8" data-bg-image="../images/NEWCAREERBANNER.jpg">
         <div class="d-f-a-j">
             <div class="w-m-d-f-a-j">
                 <div class="b-h">
@@ -375,9 +481,9 @@
         <div class="career-section2-row">
             <div class="career-section2-column">
                 <img src="../images/career2.png" alt="">
-                <p >At Techversol, we believe in working together and helping each other grow. Our team is like a 
-                    big family where everyone's ideas matter. We encourage sharing and learning from each other, 
-                    making sure everyone feels valued. Whether you are new to the field or an experienced pro, we 
+                <p>At Techversol, we believe in working together and helping each other grow. Our team is like a
+                    big family where everyone's ideas matter. We encourage sharing and learning from each other,
+                    making sure everyone feels valued. Whether you are new to the field or an experienced pro, we
                     are here to support your career journey.</p>
                 <img style="margin-top:50px;" src="../images/career3.png" alt="">
             </div>
@@ -388,35 +494,161 @@
         <div class="career-section3-row">
             <div class="career-section3-column">
                 <h1 class="margin-bottom-h1">We’re currently<br> hiring</h1>
-                <div class="list-container">
-                    <p class="list">01</p>
-                    <p class="list">UI/UX Designer</p>
-                    <p class="list">(02 Open Roles)</p>
-                    <img src="../images/career open.png" alt="">
+
+                <div class="toggle-itemmms">
+                    <div class="list-container">
+                        <p class="list">01</p>
+                        <p class="list">UI/UX Designer</p>
+                        <p class="list">(02 Open Roles)</p>
+                        <img class="open-toggle-btn" src="../images/openntoggle.png" alt="">
+                        <img class="close-toggle-btn" src="../images/closetoggle.png" alt="" style="display: none;">
+                    </div>
+                    <div class="toggle-item-container-show">
+                        <div class="content-of-toggle">
+                            <div class="content-of-toggle-row1">
+                                <div class="div1row1">
+                                    <p>Position</p>
+                                    <h5>Frontend Developer</h5>
+                                </div>
+                                <div class="div2row1">
+                                    <button><a href="">Apply Now</a></button>
+                                </div>
+                            </div>
+                            <div class="content-of-toggle-row2">
+                                <h6>Job Role:</h6>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and</p>
+                                <br>
+                                <h6>Responsiblities</h6>
+                                <p> &nbsp &nbsp  is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <br>
+                                <h6>Requirements</h6>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="list-container">
-                    <p class="list">01</p>
-                    <p class="list">UI/UX Designer</p>
-                    <p class="list">(02 Open Roles)</p>
-                    <img src="../images/career open.png" alt="">
+
+                <div class="toggle-itemmms">
+                    <div class="list-container">
+                        <p class="list">01</p>
+                        <p class="list">UI/UX Designer</p>
+                        <p class="list">(02 Open Roles)</p>
+                        <img class="open-toggle-btn" src="../images/openntoggle.png" alt="">
+                        <img class="close-toggle-btn" src="../images/closetoggle.png" alt="" style="display: none;">
+                    </div>
+                    <div class="toggle-item-container-show">
+                        <div class="content-of-toggle">
+                            <div class="content-of-toggle-row1">
+                                <div class="div1row1">
+                                    <p>Position</p>
+                                    <h5>Frontend Developer</h5>
+                                </div>
+                                <div class="div2row1">
+                                    <button><a href="">Apply Now</a></button>
+                                </div>
+                            </div>
+                            <div class="content-of-toggle-row2">
+                                <h6>Job Role:</h6>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and</p>
+                                <br>
+                                <h6>Responsiblities</h6>
+                                <p> &nbsp &nbsp  is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <br>
+                                <h6>Requirements</h6>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="list-container">
-                    <p class="list">01</p>
-                    <p class="list">UI/UX Designer</p>
-                    <p class="list">(02 Open Roles)</p>
-                    <img src="../images/career open.png" alt="">
+
+                <div class="toggle-itemmms">
+                    <div class="list-container">
+                        <p class="list">01</p>
+                        <p class="list">UI/UX Designer</p>
+                        <p class="list">(02 Open Roles)</p>
+                        <img class="open-toggle-btn" src="../images/openntoggle.png" alt="">
+                        <img class="close-toggle-btn" src="../images/closetoggle.png" alt="" style="display: none;">
+                    </div>
+                    <div class="toggle-item-container-show">
+                        <div class="content-of-toggle">
+                            <div class="content-of-toggle-row1">
+                                <div class="div1row1">
+                                    <p>Position</p>
+                                    <h5>Frontend Developer</h5>
+                                </div>
+                                <div class="div2row1">
+                                    <button><a href="">Apply Now</a></button>
+                                </div>
+                            </div>
+                            <div class="content-of-toggle-row2">
+                                <h6>Job Role:</h6>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and</p>
+                                <br>
+                                <h6>Responsiblities</h6>
+                                <p> &nbsp &nbsp  is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <br>
+                                <h6>Requirements</h6>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="list-container">
-                    <p class="list">01</p>
-                    <p class="list">UI/UX Designer</p>
-                    <p class="list">(02 Open Roles)</p>
-                    <img src="../images/career open.png" alt="">
-                </div>
-                <div class="list-container">
-                    <p class="list">01</p>
-                    <p class="list">UI/UX Designer</p>
-                    <p class="list">(02 Open Roles)</p>
-                    <img src="../images/career open.png" alt="">
+
+                <div class="toggle-itemmms">
+                    <div class="list-container">
+                        <p class="list">01</p>
+                        <p class="list">UI/UX Designer</p>
+                        <p class="list">(02 Open Roles)</p>
+                        <img class="open-toggle-btn" src="../images/openntoggle.png" alt="">
+                        <img class="close-toggle-btn" src="../images/closetoggle.png" alt="" style="display: none;">
+                    </div>
+                    <div class="toggle-item-container-show">
+                        <div class="content-of-toggle">
+                            <div class="content-of-toggle-row1">
+                                <div class="div1row1">
+                                    <p>Position</p>
+                                    <h5>Frontend Developer</h5>
+                                </div>
+                                <div class="div2row1">
+                                    <button><a href="">Apply Now</a></button>
+                                </div>
+                            </div>
+                            <div class="content-of-toggle-row2">
+                                <h6>Job Role:</h6>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and</p>
+                                <br>
+                                <h6>Responsiblities</h6>
+                                <p> &nbsp &nbsp  is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <br>
+                                <h6>Requirements</h6>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -425,15 +657,15 @@
     <section class="career-section4">
         <div class="career-section4-row">
             <div class="career-section4-column">
-              <div class="left-column"><img src="../images/updated career image.png" alt=""></div>
-              <div class="right-column">
-                <h2>Team Tech Stack</h2>
-                <p>Join our internship program at Techversol and jumpstart your career. Gain hands-on experience, 
-                learn from industry experts, and be part of exciting projects that make a real impact. 
-                Whether you are exploring different career paths or honing your skills, our internship program 
-                provides the perfect opportunity to grow and thrive in a supportive environment. Apply now and 
-                embark on a rewarding learning experience with us.</p>
-              </div>
+                <div class="left-column"><img src="../images/updated career image.png" alt=""></div>
+                <div class="right-column">
+                    <h2>Team Tech Stack</h2>
+                    <p>Join our internship program at Techversol and jumpstart your career. Gain hands-on experience,
+                        learn from industry experts, and be part of exciting projects that make a real impact.
+                        Whether you are exploring different career paths or honing your skills, our internship program
+                        provides the perfect opportunity to grow and thrive in a supportive environment. Apply now and
+                        embark on a rewarding learning experience with us.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -442,24 +674,165 @@
         <div class="career-section3-row color-change">
             <div class="career-section3-column">
                 <h1>internships</h1>
-                <p>We want you to love working here as much as we do. To inspire our team to be creative, productive, and most importantly – feel valued as employees, we offer endless perks and de-stressors. How fun it is to unwind while at work!</p>
-                <div class="list-container">
-                    <p class="list">01</p>
-                    <p class="list">UI/UX Designer</p>
-                    <p class="list">(02 Open Roles)</p>
-                    <img src="../images/career open.png" alt="">
+                <p>We want you to love working here as much as we do. To inspire our team to be creative, productive,
+                    and most importantly – feel valued as employees, we offer endless perks and de-stressors. How fun it
+                    is to unwind while at work!</p>
+
+
+             <div class="toggle-itemmms">
+                    <div class="list-container">
+                        <p class="list">01</p>
+                        <p class="list">UI/UX Designer</p>
+                        <p class="list">(02 Open Roles)</p>
+                        <img class="open-toggle-btn" src="../images/openntoggle.png" alt="">
+                        <img class="close-toggle-btn" src="../images/closetoggle.png" alt="" style="display: none;">
+                    </div>
+                    <div class="toggle-item-container-show blue-toll">
+                        <div class="content-of-toggle">
+                            <div class="content-of-toggle-row1">
+                                <div class="div1row1">
+                                    <p>Position</p>
+                                    <h5>Frontend Developer</h5>
+                                </div>
+                                <div class="div2row1">
+                                    <button><a href="">Apply Now</a></button>
+                                </div>
+                            </div>
+                            <div class="content-of-toggle-row2">
+                                <h6>Job Role:</h6>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and</p>
+                                <br>
+                                <h6>Responsiblities</h6>
+                                <p> &nbsp &nbsp  is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <br>
+                                <h6>Requirements</h6>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="list-container">
-                    <p class="list">01</p>
-                    <p class="list">UI/UX Designer</p>
-                    <p class="list">(02 Open Roles)</p>
-                    <img src="../images/career open.png" alt="">
+
+                <div class="toggle-itemmms">
+                    <div class="list-container">
+                        <p class="list">01</p>
+                        <p class="list">UI/UX Designer</p>
+                        <p class="list">(02 Open Roles)</p>
+                        <img class="open-toggle-btn" src="../images/openntoggle.png" alt="">
+                        <img class="close-toggle-btn" src="../images/closetoggle.png" alt="" style="display: none;">
+                    </div>
+                    <div class="toggle-item-container-show blue-toll">
+                        <div class="content-of-toggle">
+                            <div class="content-of-toggle-row1">
+                                <div class="div1row1">
+                                    <p>Position</p>
+                                    <h5>Frontend Developer</h5>
+                                </div>
+                                <div class="div2row1">
+                                    <button><a href="">Apply Now</a></button>
+                                </div>
+                            </div>
+                            <div class="content-of-toggle-row2">
+                                <h6>Job Role:</h6>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and</p>
+                                <br>
+                                <h6>Responsiblities</h6>
+                                <p> &nbsp &nbsp  is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <br>
+                                <h6>Requirements</h6>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="list-container">
-                    <p class="list">01</p>
-                    <p class="list">UI/UX Designer</p>
-                    <p class="list">(02 Open Roles)</p>
-                    <img src="../images/career open.png" alt="">
+
+                <div class="toggle-itemmms">
+                    <div class="list-container">
+                        <p class="list">01</p>
+                        <p class="list">UI/UX Designer</p>
+                        <p class="list">(02 Open Roles)</p>
+                        <img class="open-toggle-btn" src="../images/openntoggle.png" alt="">
+                        <img class="close-toggle-btn" src="../images/closetoggle.png" alt="" style="display: none;">
+                    </div>
+                    <div class="toggle-item-container-show blue-toll" >
+                        <div class="content-of-toggle">
+                            <div class="content-of-toggle-row1">
+                                <div class="div1row1">
+                                    <p>Position</p>
+                                    <h5>Frontend Developer</h5>
+                                </div>
+                                <div class="div2row1">
+                                    <button><a href="">Apply Now</a></button>
+                                </div>
+                            </div>
+                            <div class="content-of-toggle-row2">
+                                <h6>Job Role:</h6>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and</p>
+                                <br>
+                                <h6>Responsiblities</h6>
+                                <p> &nbsp &nbsp  is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <br>
+                                <h6>Requirements</h6>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="toggle-itemmms">
+                    <div class="list-container">
+                        <p class="list">01</p>
+                        <p class="list">UI/UX Designer</p>
+                        <p class="list">(02 Open Roles)</p>
+                        <img class="open-toggle-btn" src="../images/openntoggle.png" alt="">
+                        <img class="close-toggle-btn" src="../images/closetoggle.png" alt="" style="display: none;">
+                    </div>
+                    <div class="toggle-item-container-show blue-toll">
+                        <div class="content-of-toggle">
+                            <div class="content-of-toggle-row1">
+                                <div class="div1row1">
+                                    <p>Position</p>
+                                    <h5>Frontend Developer</h5>
+                                </div>
+                                <div class="div2row1">
+                                    <button><a href="">Apply Now</a></button>
+                                </div>
+                            </div>
+                            <div class="content-of-toggle-row2">
+                                <h6>Job Role:</h6>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and</p>
+                                <br>
+                                <h6>Responsiblities</h6>
+                                <p> &nbsp &nbsp  is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <br>
+                                <h6>Requirements</h6>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -475,40 +848,77 @@
                         <p>8 The Green, Ste 16430, Dover, DE 19901</p>
                     </div>
                     <div class="inner-column1-item2">
-                        <p class="gray-text"><i><img src="../images/icons8-pakistan-96.png" alt=""></i>Pakistan Office</p>
+                        <p class="gray-text"><i><img src="../images/icons8-pakistan-96.png" alt=""></i>Pakistan Office
+                        </p>
                         <p>Plot # S3-S6 Block D Gulshan-e-Jamal, <br>Suite #101, Karachi, Sindh 75300, PK.</p>
                     </div>
                 </div>
                 <div class="inner-column2">
                     <div class="inner-column2-item1">
                         <p class="gray-text">COMPANY</p>
-                        <a href="../pages/About-Us.html"><p>About Us</p></a>   
-                        <a href="../pages/contact us .html"><p>Contact Us</p></a>   
-                        <a href="../pages/Blog.html"> <p>Blog & News</p></a>  
-                        <a href="../pages/career.html"><p>Careers</p></a>  
+                        <a href="../pages/About-Us.html">
+                            <p>About Us</p>
+                        </a>
+                        <a href="../pages/contact us .html">
+                            <p>Contact Us</p>
+                        </a>
+                        <a href="../pages/Blog.html">
+                            <p>Blog & News</p>
+                        </a>
+                        <a href="../pages/career.html">
+                            <p>Careers</p>
+                        </a>
                     </div>
                     <div class="inner-column2-item2">
                         <p class="gray-text">SERVICES</p>
-                       <a href="../pages/3D Rendering.html"><P>3D Rendering</P></a> 
-                       <a href="../pages/Configurator.html"><P>Configurators</P></a>  
-                       <a href="../pages/Metaverse.html"><P>Metaverse</P></a> 
-                       <a href="../pages/Alternate Reality.html"><P>Alternate Reality</P></a>
-                       <a href="../pages/website.html"><P>Websites</P></a> 
-                       <a href="../pages/apps.html"><P>Apps</P></a>  
-                       <a href="../pages/games.html">  <P>Games</P></a>
+                        <a href="../pages/3D Rendering.html">
+                            <P>3D Rendering</P>
+                        </a>
+                        <a href="../pages/Configurator.html">
+                            <P>Configurators</P>
+                        </a>
+                        <a href="../pages/Metaverse.html">
+                            <P>Metaverse</P>
+                        </a>
+                        <a href="../pages/Alternate Reality.html">
+                            <P>Alternate Reality</P>
+                        </a>
+                        <a href="../pages/website.html">
+                            <P>Websites</P>
+                        </a>
+                        <a href="../pages/apps.html">
+                            <P>Apps</P>
+                        </a>
+                        <a href="../pages/games.html">
+                            <P>Games</P>
+                        </a>
                     </div>
                     <div class="inner-column2-item3">
                         <p class="gray-text">SOCIAL LINKS</p>
-                       <a href="https://www.instagram.com/techversol.social/"><P>Instagram </P></a> 
-                      <a href="https://www.facebook.com/teamtechversol"><P>LinkedIn</P></a>  
-                       <a href="https://twitter.com/techversol"><P>Twitter</P></a> 
+                        <a href="https://www.instagram.com/techversol.social/">
+                            <P>Instagram </P>
+                        </a>
+                        <a href="https://www.facebook.com/teamtechversol">
+                            <P>LinkedIn</P>
+                        </a>
+                        <a href="https://twitter.com/techversol">
+                            <P>Twitter</P>
+                        </a>
                     </div>
                     <div class="inner-column2-item4">
                         <p class="gray-text">CONTACT INFO</p>
-                        <a href="mailto:hello@techversol.com"><P>hello@techversol.com</P></a>
-                      <a href="mailto:jobs@techversol.com"><P>jobs@techversol.com</P></a>  
-                       <a href="mailto:business@techversol.com"><P>business@techversol.com</P></a> 
-                      <a href="mailto:press@techversol.com"><P>press@techversol.com</P></a>  
+                        <a href="mailto:hello@techversol.com">
+                            <P>hello@techversol.com</P>
+                        </a>
+                        <a href="mailto:jobs@techversol.com">
+                            <P>jobs@techversol.com</P>
+                        </a>
+                        <a href="mailto:business@techversol.com">
+                            <P>business@techversol.com</P>
+                        </a>
+                        <a href="mailto:press@techversol.com">
+                            <P>press@techversol.com</P>
+                        </a>
                     </div>
                 </div>
                 <div class="inner-column3">
@@ -517,7 +927,40 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all toggle buttons and containers
+            const openButtons = document.querySelectorAll('.open-toggle-btn');
+            const closeButtons = document.querySelectorAll('.close-toggle-btn');
+            const toggleContainers = document.querySelectorAll('.toggle-item-container-show');
 
+            // Hide close buttons initially and set toggle container styles
+            closeButtons.forEach(button => button.style.display = 'none');
+            toggleContainers.forEach(container => container.style.display = 'none');
+
+            // Add click event listener to each open button
+            openButtons.forEach((button, index) => {
+                button.addEventListener('click', () => {
+                    toggleContainers[index].style.display = 'block';
+                    toggleContainers[index].style.height = 'auto';
+                    toggleContainers[index].style.opacity = '1';
+                    openButtons[index].style.display = 'none';
+                    closeButtons[index].style.display = 'inline-block';
+                });
+            });
+
+            // Add click event listener to each close button
+            closeButtons.forEach((button, index) => {
+                button.addEventListener('click', () => {
+                    toggleContainers[index].style.height = '0';
+                    toggleContainers[index].style.opacity = '0';
+                    setTimeout(() => toggleContainers[index].style.display = 'none', 300); // Delay hiding container to allow transition
+                    openButtons[index].style.display = 'inline-block';
+                    closeButtons[index].style.display = 'none';
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

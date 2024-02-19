@@ -140,16 +140,17 @@ text-transform: uppercase;
    opacity: 1; /* Text color on hover */
 }
 .list-container{
-    margin-top: 40px;
+    margin-top: 20px;
     transition: all 0.4s ease-in-out;
  cursor: pointer;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 10px 2.5%;
+    padding-top: 30px;
 }
 .list-container :nth-child(1){
     margin-right: 0%;
@@ -175,7 +176,7 @@ line-height: 94.513px; /* 266.667% */
 
 .list-container:hover{
     transform: scale(1.019);
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-top: 1px solid rgb(255, 255, 255);
 }
 /* -------------------------9--------------------------------- */
 
