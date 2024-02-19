@@ -198,9 +198,11 @@ line-height: 34px; /* 154.545% */
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
+    align-items: center;
 }
 .form-row {
-    width: calc(33.33% - 30px);
+    width: calc(50% - 30px);
     margin-right: 10px;
     margin-bottom: 10px;
 }
@@ -1035,7 +1037,7 @@ input[type="number"] {
     }
     .form-button button {
         color: #40B9C9;
-width: 100%;
+width: 200px;
         cursor: pointer;
         font-size: 14px;
     }
@@ -1046,4 +1048,14 @@ width: 100%;
         width: 20px;
         right: 5px;
     }
+}
+.form-button {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.width-full-karni{
+    width: 100%;
 }

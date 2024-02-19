@@ -316,7 +316,7 @@ text-transform: uppercase;
         width: 15px;
     }
     .career-section4-column {
-        flex-direction: column;
+        flex-direction: column-reverse;
         row-gap: 40px;
     }
     .left-column {
@@ -328,7 +328,7 @@ text-transform: uppercase;
     .right-column h2 {
        
         font-size: 30px;
-       
+       text-align: center;
         line-height: 40px;
         text-transform: uppercase;
     }

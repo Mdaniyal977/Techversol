@@ -529,10 +529,13 @@ div.card .img-area iframe{
     text-align: left;
 
 }
-
+a.carousel-item.active .card .main-text h2{
+opacity: 1;
+}
 .main-text h2 {
     color: #082C4C;
     font-family: Poppins;
+    opacity: 0;
     font-size: 60px;
     font-style: normal;
     font-weight: 800;
