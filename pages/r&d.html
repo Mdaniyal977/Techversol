@@ -11,24 +11,24 @@
     <title>R&D</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             // Function to show the corresponding menu box on hover
             function showMenuBox(className) {
                 $('.menu-box').css({ height: 0, visibility: 'hidden' }); // Reset height and visibility for all menu boxes
-                $('#' + className + '-menu').css({ height: 'auto', visibility: 'visible' , overflow: 'visible' }); // Set height to auto for the specific menu box
+                $('#' + className + '-menu').css({ height: 'auto', visibility: 'visible', overflow: 'visible' }); // Set height to auto for the specific menu box
                 $('.menu-container').css({ overflow: 'visible' }); // Show overflow when menu is visible
             }
-    
+
             // Hover event for each menu item
-            $('.menu li').mouseenter(function() {
+            $('.menu li').mouseenter(function () {
                 // On hover in
                 var className = $(this).find('a').attr('class').split('-')[0];
                 showMenuBox(className);
             });
-    
+
             // Check mouse leave on both li and menu box
-            $('.menu li, .menu-box').mouseleave(function() {
-                setTimeout(function() {
+            $('.menu li, .menu-box').mouseleave(function () {
+                setTimeout(function () {
                     if (!$('.menu li:hover, .menu-box:hover').length) {
                         $('.menu-box').css({ height: 0, visibility: 'hidden' });
                         $('.menu-container').css({ overflow: 'hidden' }); // Hide overflow when menu is hidden
@@ -37,11 +37,11 @@
             });
         });
     </script>
-      <script>
+    <script>
         function toggleContent(btn) {
             var content = btn.parentElement.nextElementSibling; // Get the content element
             var allContents = document.querySelectorAll('.faq-content-menu-li');
- 
+
             // Hide all other contents
             allContents.forEach(function (item) {
                 if (item !== content) {
@@ -50,7 +50,7 @@
                     item.style.paddingBottom = '0';
                 }
             });
- 
+
             // Toggle current content
             if (content.style.maxHeight === '0px' || content.style.maxHeight === '') {
                 content.style.maxHeight = content.scrollHeight + 'px';
@@ -66,13 +66,13 @@
                 btn.querySelector('.close').style.display = 'none';
             }
         }
- 
- 
+
+
     </script>
     <script>
         function toggleDropdownMenu() {
             var dropdownMenu = document.getElementById('tabletDropdownMenu1');
- 
+
             if (dropdownMenu.style.height === '0px' || dropdownMenu.style.height === '') {
                 // Open the dropdown menu
                 dropdownMenu.style.height = 'auto';
@@ -83,7 +83,7 @@
                 dropdownMenu.style.padding = '0px 30px';
             }
         }
- 
+
     </script>
     <script src="../pages/lazyload.js"></script>
 </head>
@@ -115,25 +115,25 @@
                         </div>
                         <div class="menu-li-items-container">
                             <div class="li-item">
-                                <a href="../pages/3D Rendering.html"  target="_blank">
+                                <a href="../pages/3D Rendering.html" target="_blank">
                                     <img src="../images/3d m3nu.png" alt="">
                                     <p>3D RENDERING</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/Configurator.html"  target="_blank">
+                                <a href="../pages/Configurator.html" target="_blank">
                                     <img src="../images/config-menu.png" alt="">
                                     <p>CONFIGURATORS</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/Metaverse.html"  target="_blank">
+                                <a href="../pages/Metaverse.html" target="_blank">
                                     <img src="../images/METAVERSEmenu.png" alt="">
                                     <p>METAVERSE</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/Alternate Reality.html"  target="_blank">
+                                <a href="../pages/Alternate Reality.html" target="_blank">
                                     <img src="../images/alterreat.png" alt="">
                                     <p>ALTERNATE REALITY</p>
                                 </a>
@@ -149,20 +149,20 @@
                         </div>
                         <div class="menu-li-items-container">
                             <div class="li-item">
-                                <a href="../pages/website.html "  target="_blank"">
-                                    <img src="../images/dev3menu (8).png" alt="">
+                                <a href="../pages/website.html " target="_blank"">
+                                    <img src=" ../images/dev3menu (8).png" alt="">
                                     <p>Websites</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/games.html "  target="_blank"">
-                                    <img src="../images/dev3menu (7).png" alt="">
+                                <a href="../pages/games.html " target="_blank"">
+                                    <img src=" ../images/dev3menu (7).png" alt="">
                                     <p>GAMES</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/apps.html "  target="_blank"">
-                                    <img src="../images/dev3menu (2).png" alt="">
+                                <a href="../pages/apps.html " target="_blank"">
+                                    <img src=" ../images/dev3menu (2).png" alt="">
                                     <p>APPS</p>
                                 </a>
                             </div>
@@ -198,8 +198,7 @@
                             </div>
                             <div class="li-item">
                                 <a href="../pages/Blog.html">
-                                    <img src="../images/NEWLOG-MENU.png"
-                                        alt="">
+                                    <img src="../images/NEWLOG-MENU.png" alt="">
                                     <p>BLOG & NEWS</p>
                                 </a>
                             </div>
@@ -215,26 +214,26 @@
                         </div>
                         <div class="menu-li-items-container">
                             <div class="li-item">
-                                <a href="../pages/Architecture.html"  target="_blank"">
-                                    <img src="../images/artmene.png" alt="">
+                                <a href="../pages/Architecture.html" target="_blank"">
+                                    <img src=" ../images/artmene.png" alt="">
                                     <p>Architecture</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/training.html"  target="_blank"">
-                                    <img src="../images/trainmenu.png" alt="">
+                                <a href="../pages/training.html" target="_blank"">
+                                    <img src=" ../images/trainmenu.png" alt="">
                                     <p>Training</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/automation.html"  target="_blank"">
-                                    <img src="../images/automenu.png" alt="">
+                                <a href="../pages/automation.html" target="_blank"">
+                                    <img src=" ../images/automenu.png" alt="">
                                     <p>Automation</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/r&d.html"  target="_blank"">
-                                    <img src="../images/rndmenu.png" alt="">
+                                <a href="../pages/r&d.html" target="_blank"">
+                                    <img src=" ../images/rndmenu.png" alt="">
                                     <p>R&D</p>
                                 </a>
                             </div>
@@ -269,7 +268,7 @@
 
                         </div>
                         <div class="faq-content-menu-li">
-                            <a  href="../pages/About-Us.html">
+                            <a href="../pages/About-Us.html">
                                 <p class="ppp">about us</p>
                             </a>
                             <a href="../pages/career.html">
@@ -278,7 +277,7 @@
                             <a href="../pages/Blog.html">
                                 <p>blog</p>
                             </a>
-                            <a  href="../pages/contact us .html">
+                            <a href="../pages/contact us .html">
                                 <p class="pppp">contact us</p>
                             </a>
                         </div>
@@ -361,12 +360,12 @@
     </header>
 
     <!-- banner section -->
-    <section class="website config r-d lazy-load " id="lazyLoadSection13" data-bg-image="../images/r&d.png"  >
+    <section class="website config r-d lazy-load " id="lazyLoadSection13" data-bg-image="../images/r&d.png">
         <div class="row">
             <div class="column">
                 <div class="content">
                     <h1>r&d</h1>
-                   
+
                 </div>
             </div>
         </div>
@@ -379,18 +378,72 @@
                 <div class="content">
                     <h6>BUILDING NEW HORIZONS</h6>
                     <h2>CONSTRUCTING THE FUTURE</h2>
-                    <p>3D visualization offers significant R&D advantages, revolutionizing the way this sector innovate 
-                        and develop new products. By creating detailed and realistic 3D models, R&D teams can 
-                        visualize concepts and prototypes with unprecedented clarity and precision. This enables them 
+                    <p>3D visualization offers significant R&D advantages, revolutionizing the way this sector innovate
+                        and develop new products. By creating detailed and realistic 3D models, R&D teams can
+                        visualize concepts and prototypes with unprecedented clarity and precision. This enables them
                         to iterate and refine designs more effectively, accelerating the product development process and
                         reducing time-to-market.
-                        3D visualization enhances collaboration and communication within R&D teams and with clients. 
-                        With interactive 3D models, stakeholders can easily visualize and provide feedback on designs, 
+                        3D visualization enhances collaboration and communication within R&D teams and with clients.
+                        With interactive 3D models, stakeholders can easily visualize and provide feedback on designs,
                         facilitating better decision-making and problem-solving</p>
-                    <img src="../images/rnd method.png" alt="">
+                    <div class="amima-main">
+
+                        <div class="amima-main1">
+                            <img src="../images/framemain.png" alt="">
+                        </div>
+
+
+                        <div class="amima-main2">
+                            <div class="amima-main2-img-div asasa">
+                                <img src="../images/Line 53.png" alt="">
+                                <div class="iic">
+                                    <img src="../images/rAerospace & Defense.png" alt="">
+                                    <h3>Aerospace & Defense</h3>
+                                </div>
+                            </div>
+                            <div class="amima-main2-img-div asasa">
+                                <img src="../images/Line 53.png" alt="">
+                                <div class="iic">
+                                    <img src="../images/r IT & Software.png" alt="">
+                                    <h3> IT & Software</h3>
+                                </div>
+
+                            </div>
+                            <div class="amima-main2-img-div asasa">
+                                <img src="../images/Line 53.png" alt="">
+                                <div class="iic">
+                                    <img src="../images/rTransport.png" alt="">
+                                    <h3>Transport</h3>
+                                </div>
+
+                            </div>
+                            <div class="amima-main2-img-div asasa">
+                                <img src="../images/Line 53.png" alt="">
+                                <div class="iic">
+                                    <img src="../images/rConsumer Tech.png" alt="">
+                                    <h3>Consumer Tech</h3>
+                                </div>
+
+                            </div>
+                            <div class="amima-main2-img-div asasa">
+                                <img src="../images/Line 53.png" alt="">
+                                <div class="iic">
+                                    <img src="../images/renergy.png" alt="">
+                                    <h3>Energy</h3>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                  
+
+
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <section class=" Architecture-secion2">
@@ -407,10 +460,11 @@
                         <img src="../images/z.png" alt="">
                     </div>
                     <div>
-                        <p>R&D ideas can be challenging to articulate. But with our professional help, you can leverage 
-                            cutting-edge visualization technology and software tools to transform your R&D concepts into 
+                        <p>R&D ideas can be challenging to articulate. But with our professional help, you can leverage
+                            cutting-edge visualization technology and software tools to transform your R&D concepts into
                             tangible solutions. <br><br>
-                            At Techversol, we specialize in developing impeccable visualizations for R&D initiatives, enabling 
+                            At Techversol, we specialize in developing impeccable visualizations for R&D initiatives,
+                            enabling
                             you to realize your goals efficiently and cost-effectively</p>
                     </div>
                 </div>
@@ -418,9 +472,9 @@
         </div>
     </section>
 
-  
 
- 
+
+
     <section class="games-section5 config-sec-5">
         <div class="top-content-wrapper">
             <div class="top-content">
@@ -440,7 +494,7 @@
                         <div class="img-area"><img src="../images/game1.png" alt=""></div>
                         <div class="main-text">
                             <h2>Sample</h2>
-                           
+
                         </div>
                     </div>
                 </a>
@@ -451,7 +505,7 @@
                         <div class="img-area"><img src="../images/game2.png" alt=""></div>
                         <div class="main-text">
                             <h2>Sample</h2>
-                            
+
                         </div>
                     </div>
                 </a>
@@ -461,7 +515,7 @@
                         <div class="img-area"><img src="../images/game3.png" alt=""></div>
                         <div class="main-text">
                             <h2>Sample</h2>
-                           
+
                         </div>
                     </div>
                 </a>
@@ -477,8 +531,8 @@
         <div class="rows">
             <div class="column">
                 <div class="last-container">
-                    <h2>Reserve your spot today!</h2>
-                    <button><a href="./contact us .html" style="text-transform: lowercase;">Let’s Talk</a></button>
+                    <h2>Get in touch today!</h2>
+                    <button><a href="./contact us .html" >Let’s talk</a></button>
                 </div>
             </div>
         </div>
@@ -493,40 +547,77 @@
                         <p>8 The Green, Ste 16430, Dover, DE 19901</p>
                     </div>
                     <div class="inner-column1-item2">
-                        <p class="gray-text"><i><img src="../images/icons8-pakistan-96.png" alt=""></i>Pakistan Office</p>
-                        <p>Plot # S3-S6 Block D Gulshan-e-Jamal, <br>Suite #101, Karachi, Sindh 75300, PK.</p>
+                        <p class="gray-text"><i><img src="../images/icons8-pakistan-96.png" alt=""></i>Pakistan Office
+                        </p>
+                        <p style="margin-bottom: 30px;">Plot # S3-S6 Block D Gulshan-e-Jamal, <br>Suite #101, Karachi, Sindh 75300, PK.</p>
+                        <p class="gray-text"><i><img src="../images/whatsapp.png" alt=""></i>Phone no</p>
+                        <a href=" https://wa.me/+923308238905"> <p>+923308238905</p></a>
                     </div>
                 </div>
                 <div class="inner-column2">
                     <div class="inner-column2-item1">
                         <p class="gray-text">COMPANY</p>
-                        <a href="../pages/About-Us.html"><p>About Us</p></a>   
-                        <a href="../pages/contact us .html"><p>Contact Us</p></a>   
-                        <a href="../pages/Blog.html"> <p>Blog & News</p></a>  
-                        <a href="../pages/career.html"><p>Careers</p></a>  
+                        <a href="../pages/About-Us.html">
+                            <p>About Us</p>
+                        </a>
+                        <a href="../pages/contact us .html">
+                            <p>Contact Us</p>
+                        </a>
+                        <a href="../pages/Blog.html">
+                            <p>Blog & News</p>
+                        </a>
+                        <a href="../pages/career.html">
+                            <p>Careers</p>
+                        </a>
                     </div>
                     <div class="inner-column2-item2">
                         <p class="gray-text">SERVICES</p>
-                       <a href="../pages/3D Rendering.html"><P>3D Rendering</P></a> 
-                       <a href="../pages/Configurator.html"><P>Configurators</P></a>  
-                       <a href="../pages/Metaverse.html"><P>Metaverse</P></a> 
-                       <a href="../pages/Alternate Reality.html"><P>Alternate Reality</P></a>
-                       <a href="../pages/website.html"><P>Websites</P></a> 
-                       <a href="../pages/apps.html"><P>Apps</P></a>  
-                       <a href="../pages/games.html">  <P>Games</P></a>
+                        <a href="../pages/3D Rendering.html">
+                            <P>3D Rendering</P>
+                        </a>
+                        <a href="../pages/Configurator.html">
+                            <P>Configurators</P>
+                        </a>
+                        <a href="../pages/Metaverse.html">
+                            <P>Metaverse</P>
+                        </a>
+                        <a href="../pages/Alternate Reality.html">
+                            <P>Alternate Reality</P>
+                        </a>
+                        <a href="../pages/website.html">
+                            <P>Websites</P>
+                        </a>
+                        <a href="../pages/apps.html">
+                            <P>Apps</P>
+                        </a>
+                        <a href="../pages/games.html">
+                            <P>Games</P>
+                        </a>
                     </div>
                     <div class="inner-column2-item3">
                         <p class="gray-text">SOCIAL LINKS</p>
-                       <a href="https://www.instagram.com/techversol.social/"><P>Instagram </P></a> 
-                      <a href="https://www.facebook.com/teamtechversol"><P>LinkedIn</P></a>  
-                       <a href="https://twitter.com/techversol"><P>Twitter</P></a> 
+                        <a href="https://www.instagram.com/techversol.social/">
+                            <P>Instagram </P>
+                        </a>
+                        <a href="https://www.facebook.com/teamtechversol">
+                            <P>LinkedIn</P>
+                        </a>
+                        <a href="https://twitter.com/techversol"><P>X</P></a> 
                     </div>
                     <div class="inner-column2-item4">
                         <p class="gray-text">CONTACT INFO</p>
-                        <a href="mailto:hello@techversol.com"><P>hello@techversol.com</P></a>
-                      <a href="mailto:jobs@techversol.com"><P>jobs@techversol.com</P></a>  
-                       <a href="mailto:business@techversol.com"><P>business@techversol.com</P></a> 
-                      <a href="mailto:press@techversol.com"><P>press@techversol.com</P></a>  
+                        <a href="mailto:hello@techversol.com">
+                            <P>hello@techversol.com</P>
+                        </a>
+                        <a href="mailto:jobs@techversol.com">
+                            <P>jobs@techversol.com</P>
+                        </a>
+                        <a href="mailto:business@techversol.com">
+                            <P>business@techversol.com</P>
+                        </a>
+                        <a href="mailto:press@techversol.com">
+                            <P>press@techversol.com</P>
+                        </a>
                     </div>
                 </div>
                 <div class="inner-column3">
@@ -535,6 +626,60 @@
             </div>
         </div>
     </footer>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function performAnimation() {
+            var boxes = document.querySelectorAll('.iic');
+            var index = 0;
+            var animateForward = true;
+
+            function animateNext() {
+                if (index < boxes.length && animateForward) {
+                    if (index > 0) {
+                        // If it's not the first div, zoom out the previous one
+                        boxes[index - 1].classList.remove('zoom');
+                    }
+                    boxes[index].style.opacity = '1';
+                    boxes[index].classList.add('zoom');
+                    index++;
+                    setTimeout(animateNext, 1800);
+                } else {
+                    index--;
+                    animateForward = false;
+                    if (index >= 0) {
+                        boxes[index].classList.remove('zoom');
+                        boxes[index].style.opacity = '0';
+                        setTimeout(animateNext, 0); // Immediately start hiding animation
+                    } else {
+                        animateForward = true;
+                        index = 0;
+                        setTimeout(animateNext, 1000); // Restart the animation loop after a delay
+                    }
+                }
+            }
+
+            animateNext();
+        }
+
+        performAnimation();
+    </script>
+
+
+
+
+
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 

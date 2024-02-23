@@ -905,7 +905,7 @@ section.section5 {
     font-weight: 900;
     margin-bottom: 10px;
     line-height: 97px;
-    text-transform: capitalize;
+    /* text-transform: lowercase; */
 }
 
 .column button {
@@ -926,7 +926,7 @@ section.section5 {
     font-style: normal;
     font-weight: 800;
     line-height: 45px;
-    text-transform: uppercase;
+    /* text-transform: capitalize; */
     padding: 30px;
 }
 

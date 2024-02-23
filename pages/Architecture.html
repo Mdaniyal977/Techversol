@@ -386,7 +386,41 @@
                         ideas into tangible structures that stand as testaments to human ingenuity. The thrill of seeing a 
                         concept evolve into a living, breathing space is unmatched, igniting passion and driving mankind 
                         to push the boundaries of innovation.</p>
-                    <img src="../images/ARTITUCTURE METHOD.png" alt="">
+                        <div class="amima-main">
+
+                            <div class="amima-main1">
+                                <img src="../images/framemain.png" alt="">
+                            </div>
+    
+    
+                            <div class="amima-main2">
+                                <div class="amima-main2-img-div asasa">
+                                    <img src="../images/Line 53.png" alt="">
+                                    <div  class="iic">
+                                        <img  src="../images/aaresidence.png" alt="">
+                                        <h3>Residential</h3>
+                                    </div>
+                                </div>
+                                <div class="amima-main2-img-div asasa">
+                                    <img src="../images/Line 53.png" alt="">
+                                    <div  class="iic">
+                                        <img src="../images/aaCommercial.png" alt="">
+                                        <h3>Commercial</h3>
+                                    </div>
+                                    
+                                </div> 
+                                <div class="amima-main2-img-div asasa">
+                                    <img src="../images/Line 53.png" alt="">
+                                    <div  class="iic">
+                                        <img src="../images/aafactory.png" alt="">
+                                        <h3>Industrial</h3>
+                                    </div>
+                                    
+                                </div>
+                          
+                            </div>
+    
+                        </div>
                 </div>
             </div>
         </div>
@@ -480,8 +514,8 @@
         <div class="rows">
             <div class="column">
                 <div class="last-container">
-                    <h2>Reserve your spot today!</h2>
-                    <button><a href="./contact us .html" style="text-transform: lowercase;">Let’s Talk</a></button>
+                    <h2>Get in touch today!</h2>
+                    <button><a href="./contact us .html" >Let’s talk</a></button>
                 </div>
             </div>
         </div>
@@ -497,7 +531,9 @@
                     </div>
                     <div class="inner-column1-item2">
                         <p class="gray-text"><i><img src="../images/icons8-pakistan-96.png" alt=""></i>Pakistan Office</p>
-                        <p>Plot # S3-S6 Block D Gulshan-e-Jamal, <br>Suite #101, Karachi, Sindh 75300, PK.</p>
+                        <p style="margin-bottom: 30px;">Plot # S3-S6 Block D Gulshan-e-Jamal, <br>Suite #101, Karachi, Sindh 75300, PK.</p>
+                        <p class="gray-text"><i><img src="../images/whatsapp.png" alt=""></i>Phone no</p>
+                        <a href=" https://wa.me/+923308238905"> <p>+923308238905</p></a>
                     </div>
                 </div>
                 <div class="inner-column2">
@@ -522,7 +558,7 @@
                         <p class="gray-text">SOCIAL LINKS</p>
                        <a href="https://www.instagram.com/techversol.social/"><P>Instagram </P></a> 
                       <a href="https://www.facebook.com/teamtechversol"><P>LinkedIn</P></a>  
-                       <a href="https://twitter.com/techversol"><P>Twitter</P></a> 
+                      <a href="https://twitter.com/techversol"><P>X</P></a> 
                     </div>
                     <div class="inner-column2-item4">
                         <p class="gray-text">CONTACT INFO</p>
@@ -538,6 +574,55 @@
             </div>
         </div>
     </footer>
+
+
+
+
+
+    <script>
+        function performAnimation() {
+          var boxes = document.querySelectorAll('.iic');
+          var index = 0;
+          var animateForward = true;
+        
+          function animateNext() {
+            if (index < boxes.length && animateForward) {
+              if (index > 0) {
+                // If it's not the first div, zoom out the previous one
+                boxes[index - 1].classList.remove('zoom');
+              }
+              boxes[index].style.opacity = '1';
+              boxes[index].classList.add('zoom');
+              index++;
+              setTimeout(animateNext, 1800);
+            } else {
+              index--;
+              animateForward = false;
+              if (index >= 0) {
+                boxes[index].classList.remove('zoom');
+                boxes[index].style.opacity = '0';
+                setTimeout(animateNext, 0); // Immediately start hiding animation
+              } else {
+                animateForward = true;
+                index = 0;
+                setTimeout(animateNext, 1000); // Restart the animation loop after a delay
+              }
+            }
+          }
+        
+          animateNext();
+        }
+        
+        performAnimation();
+        </script>
+
+
+
+
+
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 

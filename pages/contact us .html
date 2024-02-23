@@ -403,12 +403,12 @@
 
                 </div>
                 <div class="contant-section2-sub-row2">
-                    <form id="contactForm" onsubmit="submitForm(event)">
+                    <form id="contactForm" onsubmit="sendEmail(); reset(); return false; ">
                         <div class="form-row">
                             <input type="text" name="name" placeholder="Name">
                         </div>
                         <div class="form-row">
-                            <input type="email" name="email" placeholder="Company Email" required>
+                            <input type="email" name="email" id="email" placeholder="Company Email" required>
                         </div>
                         <div class="form-row">
                             <input type="number" name="number" placeholder="Contact Number">
@@ -437,7 +437,7 @@
                         <label class="checkbox-container">
                             <input type="checkbox" value="Websites">
                             <span class="checkbox-image">
-                                <img src="../images/Group 122.png" alt="Image 2">
+                                <img src="../images/cont website.png" alt="Image 2">
                             </span>
                             <h3 class="title">Websites</h3>
                         </label>
@@ -445,7 +445,7 @@
                         <label class="checkbox-container">
                             <input type="checkbox" value="App">
                             <span class="checkbox-image">
-                                <img src="../images/Group 122.png" alt="Image 2">
+                                <img src="../images/cont apps.png" alt="Image 2">
                             </span>
                             <h3 class="title">App</h3>
                         </label>
@@ -453,7 +453,7 @@
                         <label class="checkbox-container">
                             <input type="checkbox" value="Game">
                             <span class="checkbox-image">
-                                <img src="../images/Group 122.png" alt="Image 2">
+                                <img src="../images/cont games.png" alt="Image 2">
                             </span>
                             <h3 class="title">Game</h3>
                         </label>
@@ -461,7 +461,7 @@
                         <label class="checkbox-container">
                             <input type="checkbox" value="Configurators">
                             <span class="checkbox-image">
-                                <img src="../images/Group 122.png" alt="Image 2">
+                                <img src="../images/cont configrator.png" alt="Image 2">
                             </span>
                             <h3 class="title">Configurators</h3>
                         </label>
@@ -469,14 +469,14 @@
                         <label class="checkbox-container">
                             <input type="checkbox" value="Metaverse">
                             <span class="checkbox-image">
-                                <img src="../images/Group 122.png" alt="Image 2">
+                                <img src="../images/cont metaverse.png" alt="Image 2">
                             </span>
                             <h3 class="title">Metaverse</h3>
                         </label>
                         <label class="checkbox-container">
                             <input type="checkbox" value="Alternate Reality">
                             <span class="checkbox-image">
-                                <img src="../images/Group 122.png" alt="Image 2">
+                                <img src="../images/ccont alternative.png" alt="Image 2">
                             </span>
                             <h3 class="title">Alternate Reality</h3>
                         </label>
@@ -493,7 +493,25 @@
         </div>
 
     </section>
-    
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <script>
+        function sendEmail(){
+            Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "daniyalmuhammad977@gmail.com",
+    Password : "daniyal_0344",
+    To : 'daniyalmuhammad977@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "contact form inquiry",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+        }
+   
+    </script>
     <footer>
 
         <div class="row">
@@ -505,7 +523,9 @@
                     </div>
                     <div class="inner-column1-item2">
                         <p class="gray-text"><i><img src="../images/icons8-pakistan-96.png" alt=""></i>Pakistan Office</p>
-                        <p>Plot # S3-S6 Block D Gulshan-e-Jamal, <br>Suite #101, Karachi, Sindh 75300, PK.</p>
+                        <p style="margin-bottom: 30px;">Plot # S3-S6 Block D Gulshan-e-Jamal, <br>Suite #101, Karachi, Sindh 75300, PK.</p>
+                        <p class="gray-text"><i><img src="../images/whatsapp.png" alt=""></i>Phone no</p>
+                        <a href=" https://wa.me/+923308238905"> <p>+923308238905</p></a>
                     </div>
                 </div>
                 <div class="inner-column2">
@@ -552,7 +572,7 @@
                         <p class="gray-text">SOCIAL LINKS</p>
                        <a href="https://www.instagram.com/techversol.social/"><P>Instagram </P></a> 
                       <a href="https://www.facebook.com/teamtechversol"><P>LinkedIn</P></a>  
-                       <a href="https://twitter.com/techversol"><P>Twitter</P></a> 
+                      <a href="https://twitter.com/techversol"><P>X</P></a> 
                     </div>
                     <div class="inner-column2-item4">
                         <p class="gray-text">CONTACT INFO</p>
