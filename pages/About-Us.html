@@ -6,27 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../techversol.css">
     <link rel="stylesheet" href="./abou.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
     <title>ABOUT US</title>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             // Function to show the corresponding menu box on hover
             function showMenuBox(className) {
                 $('.menu-box').css({ height: 0, visibility: 'hidden' }); // Reset height and visibility for all menu boxes
-                $('#' + className + '-menu').css({ height: 'auto', visibility: 'visible' , overflow: 'visible' }); // Set height to auto for the specific menu box
+                $('#' + className + '-menu').css({ height: 'auto', visibility: 'visible', overflow: 'visible' }); // Set height to auto for the specific menu box
                 $('.menu-container').css({ overflow: 'visible' }); // Show overflow when menu is visible
             }
-    
+
             // Hover event for each menu item
-            $('.menu li').mouseenter(function() {
+            $('.menu li').mouseenter(function () {
                 // On hover in
                 var className = $(this).find('a').attr('class').split('-')[0];
                 showMenuBox(className);
             });
-    
+
             // Check mouse leave on both li and menu box
-            $('.menu li, .menu-box').mouseleave(function() {
-                setTimeout(function() {
+            $('.menu li, .menu-box').mouseleave(function () {
+                setTimeout(function () {
                     if (!$('.menu li:hover, .menu-box:hover').length) {
                         $('.menu-box').css({ height: 0, visibility: 'hidden' });
                         $('.menu-container').css({ overflow: 'hidden' }); // Hide overflow when menu is hidden
@@ -35,75 +39,82 @@
             });
         });
     </script>
-     </script>
-     <script>
-       function toggleContent(btn) {
-           var content = btn.parentElement.nextElementSibling; // Get the content element
-           var allContents = document.querySelectorAll('.faq-content-menu-li');
-
-           // Hide all other contents
-           allContents.forEach(function (item) {
-               if (item !== content) {
-                   item.style.maxHeight = '0';
-                   item.style.paddingTop = '0';
-                   item.style.paddingBottom = '0';
-               }
-           });
-
-           // Toggle current content
-           if (content.style.maxHeight === '0px' || content.style.maxHeight === '') {
-               content.style.maxHeight = content.scrollHeight + 'px';
-               content.style.paddingTop = '20px !important';
-               content.style.paddingBottom = '20px !important';
-               btn.querySelector('.open').style.display = 'none';
-               btn.querySelector('.close').style.display = 'block';
-           } else {
-               content.style.maxHeight = '0px';
-               content.style.paddingTop = '0';
-               content.style.paddingBottom = '0';
-               btn.querySelector('.open').style.display = 'block';
-               btn.querySelector('.close').style.display = 'none';
-           }
-       }
 
 
-   </script>
-   <script>
-       function toggleDropdownMenu() {
-           var dropdownMenu = document.getElementById('tabletDropdownMenu1');
+   
+    <script>
+        function toggleContent(btn) {
+            var content = btn.parentElement.nextElementSibling; // Get the content element
+            var allContents = document.querySelectorAll('.faq-content-menu-li');
 
-           if (dropdownMenu.style.height === '0px' || dropdownMenu.style.height === '') {
-               // Open the dropdown menu
-               dropdownMenu.style.height = 'auto';
-               dropdownMenu.style.padding = '50px 30px';
-           } else {
-               // Close the dropdown menu
-               dropdownMenu.style.height = '0px';
-               dropdownMenu.style.padding = '0px 30px';
-           }
-       }
+            // Hide all other contents
+            allContents.forEach(function (item) {
+                if (item !== content) {
+                    item.style.maxHeight = '0';
+                    item.style.paddingTop = '0';
+                    item.style.paddingBottom = '0';
+                }
+            });
 
-   </script>
-   <link rel="stylesheet" href="../pageloader.css">
-   <script src="../pageloaderrr.js"></script>
-   <script src="./lazyload.js"></script>
+            // Toggle current content
+            if (content.style.maxHeight === '0px' || content.style.maxHeight === '') {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                content.style.paddingTop = '20px !important';
+                content.style.paddingBottom = '20px !important';
+                btn.querySelector('.open').style.display = 'none';
+                btn.querySelector('.close').style.display = 'block';
+            } else {
+                content.style.maxHeight = '0px';
+                content.style.paddingTop = '0';
+                content.style.paddingBottom = '0';
+                btn.querySelector('.open').style.display = 'block';
+                btn.querySelector('.close').style.display = 'none';
+            }
+        }
+
+
+    </script>
+
+    <script>
+        function toggleDropdownMenu() {
+            var dropdownMenu = document.getElementById('tabletDropdownMenu1');
+
+            if (dropdownMenu.style.height === '0px' || dropdownMenu.style.height === '') {
+                // Open the dropdown menu
+                dropdownMenu.style.height = 'auto';
+                dropdownMenu.style.padding = '50px 30px';
+            } else {
+                // Close the dropdown menu
+                dropdownMenu.style.height = '0px';
+                dropdownMenu.style.padding = '0px 30px';
+            }
+        }
+
+    </script>
+
+    <link rel="stylesheet" href="../pageloader.css">
+    <script src="../pageloaderrr.js"></script>
+    <script src="./lazyload.js"></script>
 </head>
 
 <body>
-   <div class="page-loader">
-       <div class="loader">
-         <div class="hexagons">
-           <div class="hexagon"></div>
-           <div class="hexagon"></div>
-           <div class="hexagon"></div>
-           <div class="hexagon"></div>
-           <div class="hexagon"></div>
-           <div class="hexagon"></div>
-           <div class="hexagon"></div>
-         </div>
-       </div>
-     </div>
-    <!-- header section of home start -->
+    <div class="page-loader">
+        <div class="loader">
+            <div class="hexagons">
+                <div class="hexagon"></div>
+                <div class="hexagon"></div>
+                <div class="hexagon"></div>
+                <div class="hexagon"></div>
+                <div class="hexagon"></div>
+                <div class="hexagon"></div>
+                <div class="hexagon"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <header>
         <div class="navbar">
 
@@ -131,25 +142,25 @@
                         </div>
                         <div class="menu-li-items-container">
                             <div class="li-item">
-                                <a href="../pages/3D Rendering.html"  target="_blank">
+                                <a href="../pages/3D Rendering.html" target="_blank">
                                     <img src="../images/3d m3nu.png" alt="">
                                     <p>3D RENDERING</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/Configurator.html"  target="_blank">
+                                <a href="../pages/Configurator.html" target="_blank">
                                     <img src="../images/config-menu.png" alt="">
                                     <p>CONFIGURATORS</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/Metaverse.html"  target="_blank">
+                                <a href="../pages/Metaverse.html" target="_blank">
                                     <img src="../images/METAVERSEmenu.png" alt="">
                                     <p>METAVERSE</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/Alternate Reality.html"  target="_blank">
+                                <a href="../pages/Alternate Reality.html" target="_blank">
                                     <img src="../images/alterreat.png" alt="">
                                     <p>ALTERNATE REALITY</p>
                                 </a>
@@ -165,20 +176,20 @@
                         </div>
                         <div class="menu-li-items-container">
                             <div class="li-item">
-                                <a href="../pages/website.html "  target="_blank"">
-                                    <img src="../images/dev3menu (8).png" alt="">
+                                <a href="../pages/website.html " target="_blank"">
+                                    <img src=" ../images/dev3menu (8).png" alt="">
                                     <p>Websites</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/games.html "  target="_blank"">
-                                    <img src="../images/dev3menu (7).png" alt="">
+                                <a href="../pages/games.html " target="_blank"">
+                                    <img src=" ../images/dev3menu (7).png" alt="">
                                     <p>GAMES</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/apps.html "  target="_blank"">
-                                    <img src="../images/dev3menu (2).png" alt="">
+                                <a href="../pages/apps.html " target="_blank"">
+                                    <img src=" ../images/dev3menu (2).png" alt="">
                                     <p>APPS</p>
                                 </a>
                             </div>
@@ -214,8 +225,7 @@
                             </div>
                             <div class="li-item">
                                 <a href="../pages/Blog.html">
-                                    <img src="../images/NEWLOG-MENU.png"
-                                        alt="">
+                                    <img src="../images/NEWLOG-MENU.png" alt="">
                                     <p>BLOG & NEWS</p>
                                 </a>
                             </div>
@@ -231,26 +241,26 @@
                         </div>
                         <div class="menu-li-items-container">
                             <div class="li-item">
-                                <a href="../pages/Architecture.html"  target="_blank"">
-                                    <img src="../images/artmene.png" alt="">
+                                <a href="../pages/Architecture.html" target="_blank"">
+                                    <img src=" ../images/artmene.png" alt="">
                                     <p>Architecture</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/training.html"  target="_blank"">
-                                    <img src="../images/trainmenu.png" alt="">
+                                <a href="../pages/training.html" target="_blank"">
+                                    <img src=" ../images/trainmenu.png" alt="">
                                     <p>Training</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/automation.html"  target="_blank"">
-                                    <img src="../images/automenu.png" alt="">
+                                <a href="../pages/automation.html" target="_blank"">
+                                    <img src=" ../images/automenu.png" alt="">
                                     <p>Automation</p>
                                 </a>
                             </div>
                             <div class="li-item">
-                                <a href="../pages/r&d.html"  target="_blank"">
-                                    <img src="../images/rndmenu.png" alt="">
+                                <a href="../pages/r&d.html" target="_blank"">
+                                    <img src=" ../images/rndmenu.png" alt="">
                                     <p>R&D</p>
                                 </a>
                             </div>
@@ -260,9 +270,9 @@
 
 
             </div>
-            
+
         </div>
-        <div class="tablet-navbar">
+         <div class="tablet-navbar">
             <nav>
                 <div class="logo">
                     <a href="../index.html"><img src="../images/logo.png" alt="logo"></a>
@@ -286,7 +296,7 @@
 
                         </div>
                         <div class="faq-content-menu-li">
-                            <a  href="../pages/About-Us.html">
+                            <a href="../pages/About-Us.html">
                                 <p class="ppp">about us</p>
                             </a>
                             <a href="../pages/career.html">
@@ -295,7 +305,7 @@
                             <a href="../pages/Blog.html">
                                 <p>blog</p>
                             </a>
-                            <a  href="../pages/contact us .html">
+                            <a href="../pages/contact us .html">
                                 <p class="pppp">contact us</p>
                             </a>
                         </div>
@@ -399,13 +409,14 @@
             <div class="w-m-d-a-j">
                 <div class="col1-about-2nd-section col">
                     <h2>Who We Are</h2>
-                    <p>Welcome to Techversol, where innovation meets visual excellence. We are a dynamic team of 
-                        passionate professionals dedicated to pushing the boundaries of technology and driving positive 
-                        change in the digital landscape. With a commitment to creativity, collaboration, and continuous 
-                        improvement, we strive to deliver cutting-edge solutions that exceed expectations and inspire 
+                    <p>Welcome to Techversol, where innovation meets visual excellence. We are a dynamic team of
+                        passionate professionals dedicated to pushing the boundaries of technology and driving positive
+                        change in the digital landscape. With a commitment to creativity, collaboration, and continuous
+                        improvement, we strive to deliver cutting-edge solutions that exceed expectations and inspire
                         innovation. <br><br>
-                        At Techversol, we are a tribe of innovators, dreamers, and achievers united by a shared vision of 
-                        shaping the future through technology. Join us on our journey as we reimagine possibilities and 
+                        At Techversol, we are a tribe of innovators, dreamers, and achievers united by a shared vision
+                        of
+                        shaping the future through technology. Join us on our journey as we reimagine possibilities and
                         unlock new opportunities together</p>
                 </div>
                 <div class="col2-about-2nd-section col">
@@ -414,31 +425,32 @@
             </div>
             <div class="w-m-d-f-a-j m-t heading-and-para">
                 <h2>WHAT SETS US APART</h2>
-                <p>We stand out for our relentless pursuit of excellence and innovation. Our focus on quality, 
-                    creativity, and customer satisfaction sets us apart in the digital realm. With a dedicated team and 
-                    a commitment to exceeding expectations, we deliver exceptional results that speak for 
+                <p>We stand out for our relentless pursuit of excellence and innovation. Our focus on quality,
+                    creativity, and customer satisfaction sets us apart in the digital realm. With a dedicated team and
+                    a commitment to exceeding expectations, we deliver exceptional results that speak for
                     themselves
-                <br><br>
-                Join us and experience the Techversol difference firsthand</p>
+                    <br><br>
+                    Join us and experience the Techversol difference firsthand
+                </p>
             </div>
             <div class="w-m-d-a-j">
                 <div class="col2-about-2nd-section col">
                     <div class="col-md-4">
-                        <h1><span class="counter" data-target="125">0</span></h1>
+                        <h1><span class="counter" data-target="25">0</span></h1>
                         <h3>Clients</h3>
                     </div>
                 </div>
 
                 <div class="col2-about-2nd-section col">
                     <div class="col-md-4">
-                        <h1><span class="counter" data-target="60">0</span></h1>
+                        <h1><span class="counter" data-target="18">0</span></h1>
                         <h3>Complete Projects</h3>
                     </div>
                 </div>
 
                 <div class="col2-about-2nd-section col">
                     <div class="col-md-4">
-                        <h1><span class="counter" data-target="1M">0</span></h1>
+                        <h1><span class="counter" data-target="2K">0</span></h1>
                         <h3>Clients Reached</h3>
                     </div>
                 </div>
@@ -451,98 +463,81 @@
         <div class="row">
             <div class="column">
                 <h2>Our Team</h2>
-                <div class="carousel-container">
-                    <div class="slides-container">
-                        <div id="sl4" class="slide-item">
-                            <div class="profle-image">
-                                <img src="../images/team.png" alt="">
-                            </div>
-                            <div class="profile-bio">
-                                <div class="bio">
-                                    <h4>John Brent</h4>
-                                    <p>Designer</p>
-                                </div>
-                                <div class="social-icons">
-                                    <img src="../images/fb.png" alt="">
-                                    <img src="../images/fb.png" alt="">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div id="sl3" class="slide-item">
-                            <div class="profle-image">
-                                <img src="../images/team.png" alt="">
-                            </div>
-                            <div class="profile-bio">
-                                <div class="bio">
-                                    <h4>John Brent</h4>
-                                    <p>Designer</p>
-                                </div>
-                                <div class="social-icons">
-                                    <img src="../images/fb.png" alt="">
-                                    <img src="../images/fb.png" alt="">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div id="sl2" class="slide-item">
-                            <div class="profle-image">
-                                <img src="../images/team.png" alt="">
-                            </div>
-                            <div class="profile-bio">
-                                <div class="bio">
-                                    <h4>John Brent</h4>
-                                    <p>Designer</p>
-                                </div>
-                                <div class="social-icons">
-                                    <img src="../images/fb.png" alt="">
-                                    <img src="../images/fb.png" alt="">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div id="sl1" class="slide-item wid">
-                            <div class="profle-image">
-                                <img src="../images/team.png" alt="">
-                            </div>
-                            <div class="profile-bio">
-                                <div class="bio">
-                                    <h4>John Brent</h4>
-                                    <p>Designer</p>
-                                </div>
-                                <div class="social-icons">
-                                    <img src="../images/fb.png" alt="">
-                                    <img src="../images/fb.png" alt="">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div id="sl" class="slide-item wid">
-                            <div class="profle-image">
-                                <img src="../images/team.png" alt="">
-                            </div>
-                            <div class="profile-bio">
-                                <div class="bio">
-                                    <h4>John Brent</h4>
-                                    <p>Designer</p>
-                                </div>
-                                <div class="social-icons">
-                                    <img src="../images/fb.png" alt="">
-                                    <img src="../images/fb.png" alt="">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sliders-arrows">
-                        <img class="prev-arrow" src="../images/Arrow 4 (1).png" alt="">
-                        <img class="next-arrow" src="../images/Arrow 3.png" alt="">
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
-
+    <div class="demo">
+            <div class="container">
+                  <div class="row">
+                      
+                              <div id="testimonial-slider" class="owl-carousel">
+                                    <div id="sl4" class="slide-item testimonial">
+                  <div class="profle-image">
+                    <img src="../images/team.png" alt="">
+                  </div>
+                  <div class="profile-bio">
+                    <div class="bio">
+                      <h4>John Brent</h4>
+                      <p>Designer</p>
+                    </div>
+    
+                  </div>
+                </div>
+                                   <div id="sl4" class="slide-item testimonial">
+                  <div class="profle-image">
+                    <img src="../images/team.png" alt="">
+                  </div>
+                  <div class="profile-bio">
+                    <div class="bio">
+                      <h4>John Brent</h4>
+                      <p>Designer</p>
+                    </div>
+    
+                  </div>
+                </div>
+                                    <div id="sl4" class="slide-item testimonial">
+                  <div class="profle-image">
+                    <img src="../images/team.png" alt="">
+                  </div>
+                  <div class="profile-bio">
+                    <div class="bio">
+                      <h4>John Brent</h4>
+                      <p>Designer</p>
+                    </div>
+    
+                  </div>
+                </div>
+                     <div id="sl4" class="slide-item testimonial">
+                  <div class="profle-image">
+                    <img src="../images/team.png" alt="">
+                  </div>
+                  <div class="profile-bio">
+                    <div class="bio">
+                      <h4>John Brent</h4>
+                      <p>Designer</p>
+                    </div>
+    
+                  </div>
+                </div>
+                <div id="sl4" class="slide-item testimonial">
+                  <div class="profle-image">
+                    <img src="../images/team.png" alt="">
+                  </div>
+                  <div class="profile-bio">
+                    <div class="bio">
+                      <h4>John Brent</h4>
+                      <p>Designer</p>
+                    </div>
+    
+                  </div>
+                </div>
+                                
+             
+                          </div>
+                    </div>
+              </div>
+      </div>
     <section class="about-section4">
         <div class="row">
             <div class="column">
@@ -551,7 +546,7 @@
                     <div class="toggle-item">
                         <div class="toggle-item-left">
                             <h3>We’re Tribal</h3>
-                            <p>We live and work like a community. Our commitment to every member of 
+                            <p>We live and work like a community. Our commitment to every member of
                                 our team is unflinching.</p>
                         </div>
                         <div class="toggle-item-right">
@@ -561,7 +556,7 @@
                     <div class="toggle-item">
                         <div class="toggle-item-left">
                             <h3>We’re Creative</h3>
-                            <p>We are known for our creative prowess. As a creative team, we help 
+                            <p>We are known for our creative prowess. As a creative team, we help
                                 clients discover possibilities</p>
                         </div>
                         <div class="toggle-item-right">
@@ -571,7 +566,7 @@
                     <div class="toggle-item">
                         <div class="toggle-item-left">
                             <h3>We’re Prepared</h3>
-                            <p> We think ahead and believe in being part of the solution, not the 
+                            <p> We think ahead and believe in being part of the solution, not the
                                 problem.</p>
                         </div>
                         <div class="toggle-item-right">
@@ -594,42 +589,82 @@
                         <p>8 The Green, Ste 16430, Dover, DE 19901</p>
                     </div>
                     <div class="inner-column1-item2">
-                        <p class="gray-text"><i><img src="../images/icons8-pakistan-96.png" alt=""></i>Pakistan Office</p>
-                        <p style="margin-bottom: 30px;">Plot # S3-S6 Block D Gulshan-e-Jamal, <br>Suite #101, Karachi, Sindh 75300, PK.</p>
+                        <p class="gray-text"><i><img src="../images/icons8-pakistan-96.png" alt=""></i>Pakistan Office
+                        </p>
+                        <p style="margin-bottom: 30px;">Plot # S3-S6 Block D Gulshan-e-Jamal, <br>Suite #101, Karachi,
+                            Sindh 75300, PK.</p>
                         <p class="gray-text"><i><img src="../images/whatsapp.png" alt=""></i>Phone no</p>
-                        <a href=" https://wa.me/+923308238905"> <p>+923308238905</p></a>
+                        <a href=" https://wa.me/+923308238905">
+                            <p>+923308238905</p>
+                        </a>
                     </div>
                 </div>
                 <div class="inner-column2">
                     <div class="inner-column2-item1">
                         <p class="gray-text">COMPANY</p>
-                        <a href="../pages/About-Us.html"><p>About Us</p></a>   
-                        <a href="../pages/contact us .html"><p>Contact Us</p></a>   
-                        <a href="../pages/Blog.html"> <p>Blog & News</p></a>  
-                        <a href="../pages/career.html"><p>Careers</p></a>  
+                        <a href="../pages/About-Us.html">
+                            <p>About Us</p>
+                        </a>
+                        <a href="../pages/contact us .html">
+                            <p>Contact Us</p>
+                        </a>
+                        <a href="../pages/Blog.html">
+                            <p>Blog & News</p>
+                        </a>
+                        <a href="../pages/career.html">
+                            <p>Careers</p>
+                        </a>
                     </div>
                     <div class="inner-column2-item2">
                         <p class="gray-text">SERVICES</p>
-                       <a href="../pages/3D Rendering.html"><P>3D Rendering</P></a> 
-                       <a href="../pages/Configurator.html"><P>Configurators</P></a>  
-                       <a href="../pages/Metaverse.html"><P>Metaverse</P></a> 
-                       <a href="../pages/Alternate Reality.html"><P>Alternate Reality</P></a>
-                       <a href="../pages/website.html"><P>Websites</P></a> 
-                       <a href="../pages/apps.html"><P>Apps</P></a>  
-                       <a href="../pages/games.html">  <P>Games</P></a>
+                        <a href="../pages/3D Rendering.html">
+                            <P>3D Rendering</P>
+                        </a>
+                        <a href="../pages/Configurator.html">
+                            <P>Configurators</P>
+                        </a>
+                        <a href="../pages/Metaverse.html">
+                            <P>Metaverse</P>
+                        </a>
+                        <a href="../pages/Alternate Reality.html">
+                            <P>Alternate Reality</P>
+                        </a>
+                        <a href="../pages/website.html">
+                            <P>Websites</P>
+                        </a>
+                        <a href="../pages/apps.html">
+                            <P>Apps</P>
+                        </a>
+                        <a href="../pages/games.html">
+                            <P>Games</P>
+                        </a>
                     </div>
                     <div class="inner-column2-item3">
                         <p class="gray-text">SOCIAL LINKS</p>
-                       <a href="https://www.instagram.com/techversol.social/"><P>Instagram </P></a> 
-                      <a href="https://www.facebook.com/teamtechversol"><P>LinkedIn</P></a>  
-                      <a href="https://twitter.com/techversol"><P>X</P></a> 
+                        <a href="https://www.instagram.com/techversol.social/">
+                            <P>Instagram </P>
+                        </a>
+                        <a href="https://www.facebook.com/teamtechversol">
+                            <P>LinkedIn</P>
+                        </a>
+                        <a href="https://twitter.com/techversol">
+                            <P>X</P>
+                        </a>
                     </div>
                     <div class="inner-column2-item4">
                         <p class="gray-text">CONTACT INFO</p>
-                        <a href="mailto:hello@techversol.com"><P>hello@techversol.com</P></a>
-                      <a href="mailto:jobs@techversol.com"><P>jobs@techversol.com</P></a>  
-                       <a href="mailto:business@techversol.com"><P>business@techversol.com</P></a> 
-                      <a href="mailto:press@techversol.com"><P>press@techversol.com</P></a>  
+                        <a href="mailto:hello@techversol.com">
+                            <P>hello@techversol.com</P>
+                        </a>
+                        <a href="mailto:jobs@techversol.com">
+                            <P>jobs@techversol.com</P>
+                        </a>
+                        <a href="mailto:business@techversol.com">
+                            <P>business@techversol.com</P>
+                        </a>
+                        <a href="mailto:press@techversol.com">
+                            <P>press@techversol.com</P>
+                        </a>
                     </div>
                 </div>
                 <div class="inner-column3">
@@ -638,7 +673,6 @@
             </div>
         </div>
     </footer>
-
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var toggleItems = document.querySelectorAll('.toggle-item');
@@ -659,12 +693,28 @@
         });
     </script>
 
+
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <script src="./slider.js"></script>
 
     <script src="./counter.js"></script>
-
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#testimonial-slider").owlCarousel({
+        items: 3,
+        itemsDesktop: [1000, 3],
+        itemsDesktopSmall: [979, 2],
+        itemsTablet: [768, 2],
+        itemsMobile: [650, 1],
+        pagination: true,
+        autoPlay: true
+      });
+    });
+  </script>
 </body>
 
 </html>

@@ -87,12 +87,13 @@
 </head>
 <!-- faq toggle -->
 <style>
-    .blue-toll{
-     
+    .blue-toll {
+
         background-color: #43B3C2 !important;
     }
+
     .toggle-item-container-show {
-padding: 40px 30px;
+        padding: 40px 30px;
         width: 100%;
         background-color: #072744;
     }
@@ -115,87 +116,97 @@ padding: 40px 30px;
         overflow: hidden;
         transition: height 0.3s, opacity 0.3s;
     }
-    .content-of-toggle-row2 h6{
+
+    .content-of-toggle-row2 h6 {
         color: white;
         font-family: Poppins;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-margin-bottom: 10px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        margin-bottom: 10px;
     }
-    .content-of-toggle-row2 p{
+
+    .content-of-toggle-row2 p {
         color: white;
         width: 100%;
         text-align: left;
         margin-bottom: 0px;
         font-family: Poppins;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-}
-.content-of-toggle-row1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.div1row1{
-    margin-bottom: 30px;
-}
-.div1row1 p{
-    color: white;
-        font-family: Poppins;
-font-size: 20px;
-font-style: normal;
-text-align: left;
-margin-bottom: 10px;
-font-weight: 500;
-}
-.div1row1 h5{
-    color: white;
-        font-family: Poppins;
-font-size: 34px;
-text-align: left;
-font-style: normal;
-font-weight: 500;
-}
-.div2row1 button{
-    padding: 10px 30px;
-    background-color: transparent;
-    border: 1px solid white;
-}
-.div2row1 button a{
-    /* height: 30px; */
-    color: white;
-        font-family: Poppins;
-font-size: 14px;
-text-align: center;
-padding: 10px 30px !important;
-font-style: normal;
-font-weight: 500;
-}
-@media only screen and (max-width:767px) {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
     .content-of-toggle-row1 {
-    width: 100%;
-    display: flex;
-    align-items: normal;
-    justify-content: space-between;
-    flex-direction: column;
-    margin-bottom: 40px;
-}
-.career-section3-row {
-    padding: 50px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-}
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .div1row1 {
+        margin-bottom: 30px;
+    }
+
+    .div1row1 p {
+        color: white;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        text-align: left;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+
+    .div1row1 h5 {
+        color: white;
+        font-family: Poppins;
+        font-size: 34px;
+        text-align: left;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    .div2row1 button {
+        padding: 10px 30px;
+        background-color: transparent;
+        border: 1px solid white;
+    }
+
+    .div2row1 button a {
+        /* height: 30px; */
+        color: white;
+        font-family: Poppins;
+        font-size: 14px;
+        text-align: center;
+        padding: 10px 30px !important;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    @media only screen and (max-width:767px) {
+        .content-of-toggle-row1 {
+            width: 100%;
+            display: flex;
+            align-items: normal;
+            justify-content: space-between;
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+
+        .career-section3-row {
+            padding: 50px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 </style>
 
 
 <body>
 
-    
+
     <header>
         <div class="navbar">
             <nav class="desktop-menu">
@@ -510,18 +521,22 @@ font-weight: 500;
                             <div class="content-of-toggle-row1">
                                 <div class="div1row1">
                                     <p>Position</p>
-                                    <h5>Frontend Developer</h5>
+                                    <h5 class="job-type-name">64Frontend Developer</h5>
                                 </div>
                                 <div class="div2row1">
-                                    <button><a href="">Apply Now</a></button>
+                                    <button onclick="showJobType(this)"><a>Apply Now</a></button>
                                 </div>
                             </div>
                             <div class="content-of-toggle-row2">
                                 <h6>Job Role:</h6>
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and</p>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is that
+                                    it has a more-or-less normal distribution of letters, as opposed to using 'Content
+                                    here, content here', making it look like readable English. Many desktop publishing
+                                    packages and</p>
                                 <br>
                                 <h6>Responsiblities</h6>
-                                <p> &nbsp &nbsp  is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
                                 <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
                                 <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
                                 <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
@@ -549,18 +564,22 @@ font-weight: 500;
                             <div class="content-of-toggle-row1">
                                 <div class="div1row1">
                                     <p>Position</p>
-                                    <h5>Frontend Developer</h5>
+                                    <h5 class="job-type-name"> Frontend Developer</h5>
                                 </div>
                                 <div class="div2row1">
-                                    <button><a href="">Apply Now</a></button>
+                                    <button onclick="showJobType(this)"><a >Apply Now</a></button>
                                 </div>
                             </div>
                             <div class="content-of-toggle-row2">
                                 <h6>Job Role:</h6>
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and</p>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is that
+                                    it has a more-or-less normal distribution of letters, as opposed to using 'Content
+                                    here, content here', making it look like readable English. Many desktop publishing
+                                    packages and</p>
                                 <br>
                                 <h6>Responsiblities</h6>
-                                <p> &nbsp &nbsp  is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
                                 <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
                                 <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
                                 <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
@@ -588,18 +607,22 @@ font-weight: 500;
                             <div class="content-of-toggle-row1">
                                 <div class="div1row1">
                                     <p>Position</p>
-                                    <h5>Frontend Developer</h5>
+                                    <h5 class="job-type-name">backend Developer</h5>
                                 </div>
                                 <div class="div2row1">
-                                    <button><a href="">Apply Now</a></button>
+                                    <button onclick="showJobType(this)"><a >Apply Now</a></button>
                                 </div>
                             </div>
                             <div class="content-of-toggle-row2">
                                 <h6>Job Role:</h6>
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and</p>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is that
+                                    it has a more-or-less normal distribution of letters, as opposed to using 'Content
+                                    here, content here', making it look like readable English. Many desktop publishing
+                                    packages and</p>
                                 <br>
                                 <h6>Responsiblities</h6>
-                                <p> &nbsp &nbsp  is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
                                 <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
                                 <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
                                 <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
@@ -627,18 +650,22 @@ font-weight: 500;
                             <div class="content-of-toggle-row1">
                                 <div class="div1row1">
                                     <p>Position</p>
-                                    <h5>Frontend Developer</h5>
+                                    <h5 class="job-type-name">Frontend Developer</h5>
                                 </div>
                                 <div class="div2row1">
-                                    <button><a href="">Apply Now</a></button>
+                                    <button onclick="showJobType(this)"><a >Apply Now</a></button>
                                 </div>
                             </div>
                             <div class="content-of-toggle-row2">
                                 <h6>Job Role:</h6>
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and</p>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is that
+                                    it has a more-or-less normal distribution of letters, as opposed to using 'Content
+                                    here, content here', making it look like readable English. Many desktop publishing
+                                    packages and</p>
                                 <br>
                                 <h6>Responsiblities</h6>
-                                <p> &nbsp &nbsp  is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
                                 <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
                                 <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
                                 <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
@@ -662,7 +689,7 @@ font-weight: 500;
                 <div class="left-column"><img src="../images/recareerpathern.png" alt=""></div>
                 <div class="right-column">
                     <h2>Team Tech Stack</h2>
-                   
+
                 </div>
             </div>
         </div>
@@ -677,7 +704,7 @@ font-weight: 500;
                     is to unwind while at work!</p>
 
 
-             <div class="toggle-itemmms">
+                <div class="toggle-itemmms">
                     <div class="list-container">
                         <p class="list">01</p>
                         <p class="list">UI/UX Designer</p>
@@ -690,18 +717,22 @@ font-weight: 500;
                             <div class="content-of-toggle-row1">
                                 <div class="div1row1">
                                     <p>Position</p>
-                                    <h5>Frontend Developer</h5>
+                                    <h5 class="job-type-name">1Frontend Developer</h5>
                                 </div>
                                 <div class="div2row1">
-                                    <button><a href="">Apply Now</a></button>
+                                    <button onclick="showJobType(this)"><a>Apply Now</a></button>
                                 </div>
                             </div>
                             <div class="content-of-toggle-row2">
                                 <h6>Job Role:</h6>
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and</p>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is that
+                                    it has a more-or-less normal distribution of letters, as opposed to using 'Content
+                                    here, content here', making it look like readable English. Many desktop publishing
+                                    packages and</p>
                                 <br>
                                 <h6>Responsiblities</h6>
-                                <p> &nbsp &nbsp  is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
                                 <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
                                 <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
                                 <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
@@ -729,57 +760,22 @@ font-weight: 500;
                             <div class="content-of-toggle-row1">
                                 <div class="div1row1">
                                     <p>Position</p>
-                                    <h5>Frontend Developer</h5>
+                                    <h5 class="job-type-name">2Frontend Developer</h5>
                                 </div>
                                 <div class="div2row1">
-                                    <button><a href="">Apply Now</a></button>
+                                    <button onclick="showJobType(this)"><a >Apply Now</a></button>
                                 </div>
                             </div>
                             <div class="content-of-toggle-row2">
                                 <h6>Job Role:</h6>
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and</p>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is that
+                                    it has a more-or-less normal distribution of letters, as opposed to using 'Content
+                                    here, content here', making it look like readable English. Many desktop publishing
+                                    packages and</p>
                                 <br>
                                 <h6>Responsiblities</h6>
-                                <p> &nbsp &nbsp  is a long established fact that a reader will be distracted</p>
                                 <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
-                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
-                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
-                                <br>
-                                <h6>Requirements</h6>
-                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
-                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
-                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
-                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="toggle-itemmms">
-                    <div class="list-container">
-                        <p class="list">01</p>
-                        <p class="list">UI/UX Designer</p>
-                        <p class="list">(02 Open Roles)</p>
-                        <img class="open-toggle-btn" src="../images/openntoggle.png" alt="">
-                        <img class="close-toggle-btn" src="../images/closetoggle.png" alt="" style="display: none;">
-                    </div>
-                    <div class="toggle-item-container-show blue-toll" >
-                        <div class="content-of-toggle">
-                            <div class="content-of-toggle-row1">
-                                <div class="div1row1">
-                                    <p>Position</p>
-                                    <h5>Frontend Developer</h5>
-                                </div>
-                                <div class="div2row1">
-                                    <button><a href="">Apply Now</a></button>
-                                </div>
-                            </div>
-                            <div class="content-of-toggle-row2">
-                                <h6>Job Role:</h6>
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and</p>
-                                <br>
-                                <h6>Responsiblities</h6>
-                                <p> &nbsp &nbsp  is a long established fact that a reader will be distracted</p>
                                 <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
                                 <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
                                 <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
@@ -807,18 +803,65 @@ font-weight: 500;
                             <div class="content-of-toggle-row1">
                                 <div class="div1row1">
                                     <p>Position</p>
-                                    <h5>Frontend Developer</h5>
+                                    <h5 class="job-type-name">Frontend Developer</h5>
                                 </div>
                                 <div class="div2row1">
-                                    <button><a href="">Apply Now</a></button>
+                                    <button onclick="showJobType(this)"><a >Apply Now</a></button>
                                 </div>
                             </div>
                             <div class="content-of-toggle-row2">
                                 <h6>Job Role:</h6>
-                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and</p>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is that
+                                    it has a more-or-less normal distribution of letters, as opposed to using 'Content
+                                    here, content here', making it look like readable English. Many desktop publishing
+                                    packages and</p>
                                 <br>
                                 <h6>Responsiblities</h6>
-                                <p> &nbsp &nbsp  is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <br>
+                                <h6>Requirements</h6>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="toggle-itemmms">
+                    <div class="list-container">
+                        <p class="list">01</p>
+                        <p class="list">UI/UX Designer</p>
+                        <p class="list">(02 Open Roles)</p>
+                        <img class="open-toggle-btn" src="../images/openntoggle.png" alt="">
+                        <img class="close-toggle-btn" src="../images/closetoggle.png" alt="" style="display: none;">
+                    </div>
+                    <div class="toggle-item-container-show blue-toll">
+                        <div class="content-of-toggle">
+                            <div class="content-of-toggle-row1">
+                                <div class="div1row1">
+                                    <p>Position</p>
+                                    <h5 class="job-type-name">23Frontend Developer</h5>
+                                </div>
+                                <div class="div2row1">
+                                    <button onclick="showJobForm()"><a>Apply Now</a></button>
+                                </div>
+                            </div>
+                            <div class="content-of-toggle-row2">
+                                <h6>Job Role:</h6>
+                                <p>It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is that
+                                    it has a more-or-less normal distribution of letters, as opposed to using 'Content
+                                    here, content here', making it look like readable English. Many desktop publishing
+                                    packages and</p>
+                                <br>
+                                <h6>Responsiblities</h6>
+                                <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
                                 <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
                                 <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
                                 <p> &nbsp &nbsp is a long established fact that a reader will be distracted</p>
@@ -836,6 +879,72 @@ font-weight: 500;
         </div>
     </section>
 
+
+
+    <section class="job-form-section">
+        <div class="job-form-container">
+
+            <div class="form-close-btn"><i><img class="close-job-popup" onclick="closeJobForm()" src="../images/Cross.png" alt=""></i></div>
+            <div class="job-form-text">
+                <div>
+                    <h2>Application Form</h2>
+                    <p>For Apply, You must have to fill out this form</p>
+                </div>
+             <div class="job-type-box">
+                <p class="job-type"></p>
+             </div>
+            </div>
+            <div class="job-form">
+                <form action="">
+
+                    <div class="full-row">
+                        <input type="text" placeholder="Full Name" name="full-name" id="name">
+                        <input type="Phone Number" placeholder="Phone Number" name="phone-number" id="phone-number">
+                    </div>
+
+                    <div class="full-filed">
+                        <input type="email" name="email" id="email" placeholder="Email Address">
+                    </div>
+
+                    <div class="upload-file">
+                        <label for="file-input" class="custom-file-upload">
+                            <img src="../images/uploadimg.png" alt="Upload Icon">
+                        </label>
+                        <input id="file-input" type="file">
+                        <p id="file-name">Upload Resume</p>
+                    </div>
+
+                    <div class="text-area">
+                        <textarea name="cover-letter" placeholder="Cover Letter" id="cover-letter" cols="30"
+                            rows="10"></textarea>
+                    </div>
+
+                    <div class="dropdown-fileds">
+                        <div class="current-salary">
+                            <label for="dropdown">current Salary:</label>
+                          <input type="number" name="current-salary" id=" current-salary" placeholder="50,000">
+
+                        </div>
+                        <div class="Expected-salary">
+                            <label for="dropdown">Expected Salary:</label>
+                            <select id="dropdown-Expected-salary">
+                                <option value="option1">10,000 to 20,000</option>
+                                <option value="option2">30,000 to 40,000</option>
+                                <option value="option3">50,000 to 60,000</option>
+                                <option value="option4">70,000 to 80,000</option>
+                            </select>
+
+                        </div>
+                      
+                    </div>
+                    <div class="on-submit-form-button">
+
+                        <button>submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
     <footer>
 
         <div class="row">
@@ -848,9 +957,12 @@ font-weight: 500;
                     <div class="inner-column1-item2">
                         <p class="gray-text"><i><img src="../images/icons8-pakistan-96.png" alt=""></i>Pakistan Office
                         </p>
-                        <p style="margin-bottom: 30px;">Plot # S3-S6 Block D Gulshan-e-Jamal, <br>Suite #101, Karachi, Sindh 75300, PK.</p>
+                        <p style="margin-bottom: 30px;">Plot # S3-S6 Block D Gulshan-e-Jamal, <br>Suite #101, Karachi,
+                            Sindh 75300, PK.</p>
                         <p class="gray-text"><i><img src="../images/whatsapp.png" alt=""></i>Phone no</p>
-                        <a href=" https://wa.me/+923308238905"> <p>+923308238905</p></a>
+                        <a href=" https://wa.me/+923308238905">
+                            <p>+923308238905</p>
+                        </a>
                     </div>
                 </div>
                 <div class="inner-column2">
@@ -901,7 +1013,9 @@ font-weight: 500;
                         <a href="https://www.facebook.com/teamtechversol">
                             <P>LinkedIn</P>
                         </a>
-                        <a href="https://twitter.com/techversol"><P>X</P></a> 
+                        <a href="https://twitter.com/techversol">
+                            <P>X</P>
+                        </a>
                     </div>
                     <div class="inner-column2-item4">
                         <p class="gray-text">CONTACT INFO</p>
@@ -925,6 +1039,315 @@ font-weight: 500;
             </div>
         </div>
     </footer>
+
+
+    <script>
+        document.getElementById('file-input').addEventListener('change', function () {
+            const file = this.files[0];
+            const fileName = file ? file.name : 'No file selected';
+            document.getElementById('file-name').textContent = fileName;
+        });
+
+    </script>
+    <style>
+        .div2row1 button{
+            transition: 0.4s ease-in-out;
+        }
+        .div2row1 button:hover{
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+.job-type-box{
+    width: 50%;
+}
+.job-type-box  p.job-type{
+            width: 100%;
+            text-align: left;
+            font-size: 18px;
+            color: #072744;
+        }
+        .on-submit-form-button button{
+            border: none;
+            outline: none;
+            width: 100%;
+            padding: 15px 10px;
+            font-size: 18px;
+            color: #FFF;
+            background-color: #43B3C2;
+        }
+        .on-submit-form-button{
+            width: 100%;
+            margin-top: 30px;
+        }
+        .Expected-salary {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .Expected-salary select {
+            width: 100%;
+            background: #f4f4f4;
+            padding: 20px 20px;
+            border: none;
+            resize: none;
+            color: black;
+        }
+
+        .current-salary input{
+            width: 94%;
+            background: #f4f4f4;
+            padding: 20px 20px;
+            border: none;
+            resize: none;
+            color: black;
+        }
+
+        .Expected-salary label {
+            text-align: center;
+            color: #072744;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 900;
+        }
+
+        .current-salary label {
+            text-align: center;
+            color: #072744;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 900;
+        }
+
+        .current-salary {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .dropdown-fileds {
+            gap: 30px;
+            margin-top: 30px;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text-area textarea {
+            width: 100%;
+            background: #f4f4f4;
+            padding: 20px 20px;
+            border: none;
+            resize: none;
+            color: black;
+        }
+
+        .text-area {
+            margin-top: 30px;
+            width: 96%;
+        }
+
+        .full-filed {
+            width: 96%;
+            margin-top: 20px;
+        }
+
+        .full-filed input#email {
+            width: 100%;
+            background: #f4f4f4;
+            padding: 20px 20px;
+            border: none;
+            color: black;
+        }
+
+        .job-form-text {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+        form {
+            border-top: 1px solid rgba(128, 128, 128, 0.235);
+            padding: 40px 0px;
+        }
+
+        .full-row {
+            gap: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .full-row input {
+            width: 50%;
+            background: #f4f4f4;
+            padding: 20px 20px;
+            border: none;
+            color: black;
+        }
+
+        .full-row {
+            width: 100%;
+        }
+
+        #file-name {
+            text-align: center;
+            color: #072744;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 900;
+        }
+
+        .custom-file-upload img {
+            margin-bottom: 10px;
+            width: 40px !important;
+        }
+
+        .custom-file-upload {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        #file-input {
+            display: none;
+        }
+
+        .upload-file {
+
+            border: 1px dashed gray;
+            padding: 20px 20px;
+            background-color: #f7f7f7;
+            width: 96%;
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .upload-file img {
+            width: 30px;
+        }
+
+        .form-close-btn {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 100%;
+        }
+
+        .form-close-btn i {
+            width: 20px;
+        }
+
+        .job-form-section {
+            width: 100%;
+            display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    /* padding: 20px; */
+    /* border: 1px solid #ccc; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    overflow-y: auto !important; /* Enable vertical scrolling */
+    max-height: calc(100vh - 20px);
+    transition: opacity 0.3s ease-in-out;
+
+
+
+            padding: 100px 10px;
+            background-color: #FFF;
+           
+        }
+        .job-form-section.show {
+          padding-top: 200px !important;
+    display: flex;
+    align-items: center;
+            justify-content: center;
+}
+        .job-form-container {
+            margin-top: 25%;
+            box-shadow: -9px 0px 37px #00000021;
+            width: 100%;
+            padding: 50px 30px;
+            max-width: 980px;
+        }
+
+        .job-form-text {
+            width: 100%;
+        }
+
+        .job-form-text h2 {
+            text-align: left;
+            color: #072744;
+            font-family: Poppins;
+            font-size: 40px;
+            font-style: normal;
+            margin-bottom: 10px;
+            font-weight: 900;
+            line-height: 34px;
+        }
+
+        .job-form-text p {
+            text-align: left;
+            color: #072744;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 34px;
+        }
+    </style>
+<script>
+
+
+
+
+   function showJobForm() {
+    var jobFormSection = document.querySelector('.job-form-section');
+    jobFormSection.classList.add('show');
+}
+
+function closeJobForm() {
+    var jobFormSection = document.querySelector('.job-form-section');
+    jobFormSection.classList.remove('show');
+}
+
+    
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Get all toggle buttons and containers
