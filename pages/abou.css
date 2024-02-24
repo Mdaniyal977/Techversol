@@ -281,9 +281,7 @@ width: 40%;
     
     width: 100%;
     }
-    .active .toggle-item-right{
-        /* animation: rotate 15s linear infinite; */
-    }
+  
     .active .toggle-item-left h3,
         .active .toggle-item-left p,
         .active .toggle-item-right {
