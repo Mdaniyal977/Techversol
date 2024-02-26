@@ -506,7 +506,7 @@
             <div class="career-section3-column">
                 <h1 class="margin-bottom-h1">We’re currently<br> hiring</h1>
 
-                <div class="toggle-itemmms">
+                <div class="toggle-itemmms ">
                     <div class="list-container">
                         <p class="list">01</p>
                         <p class="list">UI/UX Designer</p>
@@ -681,6 +681,31 @@
         </div>
     </section>
 
+
+
+<script>
+$(document).ready(function() {
+    $(".list-container").on("click", function() {
+        var toggleItem = $(this).next(".toggle-item-container-show");
+        toggleItem.toggleClass("active");
+        toggleItem.find(".open-toggle-btn").css("display", function(i, v) {
+            return v === "none" ? "flex" : "none";
+        });
+        toggleItem.find(".close-toggle-btn").css("display", function(i, v) {
+            return v === "none" ? "flex" : "none";
+        });
+    });
+});
+
+
+</script>
+<style>
+    .toggle-item-container-show.active {
+    display: flex !important;
+    height: auto !important;
+    opacity: 1 !important;
+}
+</style>
     <section class="career-section4">
         <div class="career-section4-row">
             <div class="career-section4-column">

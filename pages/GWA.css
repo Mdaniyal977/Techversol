@@ -3577,34 +3577,6 @@ width: 80%;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .amima-main{
     width: 100%;
 }
@@ -3750,4 +3722,46 @@ width: 80%;
         width: 100%;
     }
     
+}
+
+
+.training .column {
+    margin-top: 15vh !important;
+    margin-bottom: 0vh !important;
+    width: 90%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Architecture .column {
+    margin-top: 15vh !important;
+    margin-bottom: 0vh !important;
+    width: 90%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.r-d .column {
+    margin-top: 15vh !important;
+    margin-bottom: 0vh !important;
+    width: 90%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.auto .column {
+    margin-top: 15vh !important;
+    margin-bottom: 0vh !important;
+    width: 90%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
