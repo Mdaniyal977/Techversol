@@ -3770,3 +3770,7 @@ width: 80%;
         padding: 50px 10px;
     }
 }
+ .carousel-item a.carousel-meta{
+    z-index: 1 !important;
+    opacity: 0.333 !important;
+ } 
