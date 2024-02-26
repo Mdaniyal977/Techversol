@@ -3740,3 +3740,14 @@ width: 80%;
         animation: zoomInOut 2s infinite;
       }
   }
+  a.carousel-item.active .card .main-text h2 {
+    opacity: 1;
+    margin: 0px;
+}
+@media only screen and (max-width: 767px){
+    .img-area {
+        height: auto;
+        width: 100%;
+    }
+    
+}
