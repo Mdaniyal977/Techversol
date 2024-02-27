@@ -522,7 +522,7 @@
                                     <h5 class="job-type-name">64Frontend Developer</h5>
                                 </div>
                                 <div class="div2row1">
-                                    <button onclick="showJobType(this)"><a>Apply Now</a></button>
+                                    <button onclick="showJobForm(); showJobType(this);"><a>Apply Now</a></button>
                                 </div>
                             </div>
                             <div class="content-of-toggle-row2">
@@ -565,7 +565,7 @@
                                     <h5 class="job-type-name"> Frontend Developer</h5>
                                 </div>
                                 <div class="div2row1">
-                                    <button onclick="showJobType(this)"><a >Apply Now</a></button>
+                                    <button onclick="showJobForm(); showJobType(this);"><a >Apply Now</a></button>
                                 </div>
                             </div>
                             <div class="content-of-toggle-row2">
@@ -608,7 +608,7 @@
                                     <h5 class="job-type-name">backend Developer</h5>
                                 </div>
                                 <div class="div2row1">
-                                    <button onclick="showJobType(this)"><a >Apply Now</a></button>
+                                    <button onclick="showJobForm(); showJobType(this);"><a >Apply Now</a></button>
                                 </div>
                             </div>
                             <div class="content-of-toggle-row2">
@@ -651,7 +651,7 @@
                                     <h5 class="job-type-name">Frontend Developer</h5>
                                 </div>
                                 <div class="div2row1">
-                                    <button onclick="showJobType(this)"><a >Apply Now</a></button>
+                                    <button onclick="showJobForm(); showJobType(this);"><a >Apply Now</a></button>
                                 </div>
                             </div>
                             <div class="content-of-toggle-row2">
@@ -743,7 +743,7 @@ $(document).ready(function() {
                                     <h5 class="job-type-name">1Frontend Developer</h5>
                                 </div>
                                 <div class="div2row1">
-                                    <button onclick="showJobType(this)"><a>Apply Now</a></button>
+                                    <button onclick="showJobForm(); showJobType(this);"><a>Apply Now</a></button>
                                 </div>
                             </div>
                             <div class="content-of-toggle-row2">
@@ -786,7 +786,7 @@ $(document).ready(function() {
                                     <h5 class="job-type-name">2Frontend Developer</h5>
                                 </div>
                                 <div class="div2row1">
-                                    <button onclick="showJobType(this)"><a >Apply Now</a></button>
+                                    <button onclick="showJobForm(); showJobType(this);"><a >Apply Now</a></button>
                                 </div>
                             </div>
                             <div class="content-of-toggle-row2">
@@ -829,7 +829,7 @@ $(document).ready(function() {
                                     <h5 class="job-type-name">Frontend Developer</h5>
                                 </div>
                                 <div class="div2row1">
-                                    <button onclick="showJobType(this)"><a >Apply Now</a></button>
+                                    <button onclick="showJobForm(); showJobType(this);"><a >Apply Now</a></button>
                                 </div>
                             </div>
                             <div class="content-of-toggle-row2">
@@ -872,7 +872,7 @@ $(document).ready(function() {
                                     <h5 class="job-type-name">23Frontend Developer</h5>
                                 </div>
                                 <div class="div2row1">
-                                    <button onclick="showJobForm()"><a>Apply Now</a></button>
+                                    <button onclick="showJobForm(); showJobType(this);"><a>Apply Now</a></button>
                                 </div>
                             </div>
                             <div class="content-of-toggle-row2">
@@ -1305,7 +1305,6 @@ $(document).ready(function() {
 
 
 
-
    function showJobForm() {
     var jobFormSection = document.querySelector('.job-form-section');
     jobFormSection.classList.add('show');
@@ -1316,7 +1315,11 @@ function closeJobForm() {
     jobFormSection.classList.remove('show');
 }
 
-    
+function showJobType(button) {
+    var jobTypeName = button.parentElement.previousElementSibling.querySelector('.job-type-name').textContent;
+    document.querySelector('.job-type').textContent = jobTypeName;
+}
+
 
 </script>
 

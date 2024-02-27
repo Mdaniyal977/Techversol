@@ -699,13 +699,13 @@ width: 40%;
 
 .demo:hover .profle-image{
     margin-bottom: -30% !important;
-    z-index: 9999 !important; 
+    z-index: 0 !important; 
 }
 .profle-image {
     z-index: 0 !important; 
     margin-bottom: -100% !important;
     position: relative;
-    transition:z-index 0s  0.1s ,  margin-bottom 1s ease-in-out !important ;
+    transition:z-index 0s  0.1s ,  margin-bottom 0.5s ease-in-out !important ;
 }
 .demo {
     padding: 100px 0px;
