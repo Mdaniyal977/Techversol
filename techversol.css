@@ -533,7 +533,7 @@ section {
     float: left;
 }
 
-button.width-o {
+a button.width-o {
     display: inline-block !important;
     float: left;
     margin: 0px;
@@ -811,7 +811,7 @@ section.section5 {
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
-    line-height: 35px;
+    line-height: 24px;
     /* 126.667% */
 }
 
@@ -1660,4 +1660,89 @@ footer .inner-column2-item1 {
 }
 button.blog-slider-button a{
     color: #52C1D0 !important;
+}
+.flex-row.button-row a {
+    display: contents;
+    width: 100%;
+    
+}
+.flex-row.button-row a button{
+    width: 100%;
+    color: #082C4C;
+    font-family: Poppins;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: all 0.4s ease-in-out;
+}
+.flex-row.button-row a:hover button{
+    
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: all 0.4s ease-in-out;
+}
+@media only screen and (max-width: 767px){
+    
+    .flex-row.button-row a button {
+        width: 100%;
+        color: #082C4C;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        transition: all 0.4s ease-in-out;
+    }
+    .col-whit a button{
+        color: #ffffff !important;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        transition: all 0.4s ease-in-out;
+    }
+}
+.col-whit a button{
+    color: #ffffff !important;
+    font-family: Poppins;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: all 0.4s ease-in-out;
+}
+.col-whit  a:hover button{
+    
+    color: #40B9C9 !important;
+    font-family: Poppins;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: all 0.4s ease-in-out;
+}
+.col-wiht-hove-blu a button{
+    color: #ffffff !important;
+    font-family: Poppins;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: all 0.4s ease-in-out;
+}
+.col-wiht-hove-blu   a:hover button{
+    
+    color: #0D375C !important;
+    font-family: Poppins;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: all 0.4s ease-in-out;
 }

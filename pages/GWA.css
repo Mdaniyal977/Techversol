@@ -3774,3 +3774,10 @@ width: 80%;
     z-index: 1 !important;
     opacity: 0.333 !important;
  } 
+ a.turn {
+    z-index: 999 !important;
+    opacity: 0.4 !important;
+}
+a.turn.active{
+    opacity: 1 !important;
+}

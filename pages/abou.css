@@ -696,3 +696,22 @@ width: 40%;
     line-height: 97px;
     /* text-transform: lowercase; */
 }
+
+.demo:hover .profle-image{
+    margin-bottom: -30% !important;
+    z-index: 9999 !important; 
+}
+.profle-image {
+    z-index: 0 !important; 
+    margin-bottom: -100% !important;
+    position: relative;
+    transition:z-index 0s  0.1s ,  margin-bottom 1s ease-in-out !important ;
+}
+.demo {
+    padding: 100px 0px;
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+section.about-section3 {
+    margin-bottom: -55px;
+}
