@@ -386,7 +386,11 @@
                         ideas into tangible structures that stand as testaments to human ingenuity. The thrill of seeing a 
                         concept evolve into a living, breathing space is unmatched, igniting passion and driving mankind 
                         to push the boundaries of innovation.</p>
-                        <img src="../images/Archi.gif" alt="">
+                        <div class="animation-sectionn">
+                            <img class="gif" src="../images/Archi.gif" alt="">
+                            <img class="gif-image" src="../images/archi.png" alt="">
+                        </div>
+                      
                         <!-- <div class="amima-main">
 
                             <div class="amima-main1">
@@ -582,8 +586,8 @@
         </div>
     </footer>
 
-
-
+  
+      
 
 
     <script>
@@ -673,5 +677,45 @@
 
 
 </script>
+<style>
+    .animation-sectionn{
+        position: relative !important;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+        padding: 50px 0px;
 
+    }
+    
+  .gif-image {
+    position: absolute; /* Required for overlapping elements */
+    top: 0 !important;
+    left: 0 !important;
+   margin: 0px !important;
+    display: block !important;
+    transition: opacity 0.3s ease; /* Opacity transition */
+  }
+  .gif {
+    position: absolute; /* Required for overlapping elements */
+    top: 0 !important;
+    left: 0 !important;
+   margin: 0px !important;
+    display: block !important;
+    transition: opacity 0.3s ease; /* Opacity transition */
+  }
+  .gif-image {
+    opacity: 0; /* Initially hide the gif-image */
+    pointer-events: none; /* Disable pointer events on hidden element */
+  }
+  
+  .animation-sectionn:hover .gif {
+    opacity: 0; /* Hide the GIF when section is hovered */
+    pointer-events: none; /* Disable pointer events on hidden element */
+  }
+
+  .animation-sectionn:hover .gif-image {
+    opacity: 1; /* Show the gif-image when section is hovered */
+    pointer-events: auto; /* Enable pointer events on visible element */
+  }
+</style>
 </html>
