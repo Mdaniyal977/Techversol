@@ -1059,3 +1059,56 @@ width: 200px;
 .width-full-karni{
     width: 100%;
 }
+
+.cheak-box-img {
+    display: flex;
+    background-image: url(../images/formtamelptimg.png);
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.cheak-box-img img {
+    width: 30%;
+    object-fit: contain;
+}
+input[type="checkbox"] {
+    visibility: collapse;
+    position: absolute;
+    top: 10px;
+    height: 40px;
+    width: 40px;
+    right: 10px;
+}
+.cheak-box-img img {
+    opacity: 0.3; /* Initially set opacity to 0.5 */
+    transition: opacity 0.3s ease; /* Add a transition effect */
+}
+
+input[type="checkbox"]:checked + .checkbox-image .cheak-box-img img {
+    opacity: 1; /* Change opacity to 1 when checkbox is checked */
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:767px) {
+    .cheak-box-img {
+        display: flex;
+        background-image: url(../images/formtamelptimg.png);
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
