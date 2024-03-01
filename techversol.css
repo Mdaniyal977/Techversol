@@ -146,14 +146,14 @@ ul li a:hover:before {
     overflow: hidden !important;
 
     visibility: hidden;
-    height: 0px;
+    /* height: 0px; */
     background: #00192E;
     padding: 50px 30px;
     column-gap: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: height 0.4s ease;
+    transition: height 0.1s ease;
 }
 
 .toping .navbar .dropdown-menu {

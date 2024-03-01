@@ -403,7 +403,7 @@
 
                 </div>
                 <div class="contant-section2-sub-row2">
-                    <form id="contactForm" action="" >
+                    <form id="contactForm" action="" onsubmit="sendEmail()">
                         <div class="form-row">
                             <input type="text" name="name" placeholder="Name">
                         </div>
@@ -497,7 +497,7 @@
                 
                         <div class="form-button">
                             <!-- <img src="../images/contact form.png" alt=""> -->
-                            <button type="submit" onclick="sendEmail(event)">Send Message</button>
+                            <button type="submit" >Send Message</button>
 
                         </div>
                     </form>
@@ -514,66 +514,63 @@
     </script>
 
     <script>
-       function sendEmail(event) {
-        // Prevent page refresh
-        event.preventDefault();
+//        function sendEmail(event) {
+//         // Prevent page refresh
+//         event.preventDefault();
 
-        // Get form values
-        var name = document.getElementsByName('name')[0].value;
-        var email = document.getElementById('email').value;
-        var number = document.getElementsByName('number')[0].value;
-        var companyName = document.getElementsByName('company name')[0].value;
-        var projectBudget = document.getElementsByName('project budget')[0].value;
-        var comments = document.querySelector('textarea').value;
+//         // Get form values
+//         var name = document.getElementsByName('name')[0].value;
+//         var email = document.getElementById('email').value;
+//         var number = document.getElementsByName('number')[0].value;
+//         var companyName = document.getElementsByName('company name')[0].value;
+//         var projectBudget = document.getElementsByName('project budget')[0].value;
+//         var comments = document.querySelector('textarea').value;
 
-        // Get selected services
-        var services = [];
-        var checkboxes = document.querySelectorAll('input[type=checkbox]:checked');
-        checkboxes.forEach(function(checkbox) {
-            services.push(checkbox.value);
-        });
+//         // Get selected services
+//         var services = [];
+//         var checkboxes = document.querySelectorAll('input[type=checkbox]:checked');
+//         checkboxes.forEach(function(checkbox) {
+//             services.push(checkbox.value);
+//         });
 
-        // Display form values
-        var formValues = "<p>Name: " + name + "</p>" +
-            "<p>Email: " + email + "</p>" +
-            "<p>Contact Number: " + number + "</p>" +
-            "<p>Company Name: " + companyName + "</p>" +
-            "<p>Project Budget: " + projectBudget + "</p>" +
-            "<p>Additional Comments: " + comments + "</p>" +
-            "<p>Selected Services: " + services.join(', ') + "</p>";
+//         // Display form values
+//         var formValues = "<p>Name: " + name + "</p>" +
+//             "<p>Email: " + email + "</p>" +
+//             "<p>Contact Number: " + number + "</p>" +
+//             "<p>Company Name: " + companyName + "</p>" +
+//             "<p>Project Budget: " + projectBudget + "</p>" +
+//             "<p>Additional Comments: " + comments + "</p>" +
+//             "<p>Selected Services: " + services.join(', ') + "</p>";
 
 
-            Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "daniyalmuhammad977@gmail.com",
-    Password : "daniyal_0344",
-    To : 'daniyalmuhammad977@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "contact form inquiry",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
-
-        document.querySelector('.forms-values').innerHTML = formValues;
-
-        // Reset form fields
-        document.getElementById("contactForm").reset();
-    }
-//         function sendEmail(){
-            
 //             Email.send({
 //     Host : "smtp.elasticemail.com",
-//     Username : "daniyalmuhammad977@gmail.com",
-//     Password : "daniyal_0344",
-//     To : 'daniyalmuhammad977@gmail.com',
+//     Username : "info@techversol.com",
+//     Password : "9BD9D1E02302F1B1BE3C6B797D9520F28E0A",
+//     To : 'info@techversol.com',
 //     From : document.getElementById("email").value,
 //     Subject : "contact form inquiry",
 //     Body : "And this is the body"
 // }).then(
 //   message => alert(message)
 // );
-//         }
+
+//         document.querySelector('.forms-values').innerHTML = formValues;
+
+//         // Reset form fields
+//         document.getElementById("contactForm").reset();
+//     }
+        function sendEmail(){
+            Email.send({
+    SecureToken : "6079fa28-8e79-48a2-917d-a86363940c5c",
+    To : 'jobs@techversol.com',
+    From : "jobs@techversol.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+        }
    
     </script> 
     <footer>

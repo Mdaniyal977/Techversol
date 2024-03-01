@@ -3782,26 +3782,6 @@ a.turn.active{
     opacity: 1 !important;
 }
 
-.container-of-gif {
-
-    background-position: center;
-    height: 550px;
-    background-image: url(../images/archi.png);
-    background-size: cover;
+#sectionVideo{
     width: 100%;
-    background-repeat: no-repeat;
 }
-
-
-
-.Architecture-secion1:hover .container-of-gif {
-    background-position: center;
-    height: 550px;
-    background-image: url(../images/Archi.gif);
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-    transition: background 0.5s ease-in-out ;
-
-
-  }

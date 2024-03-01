@@ -373,7 +373,7 @@
     </section>
     <!-- ---------- -->
 
-    <section class="Architecture-secion1">
+    <section id="Architecture-secion1" class="Architecture-secion1">
         <div class="row">
             <div class="column">
                 <div class="content">
@@ -386,11 +386,11 @@
                         ideas into tangible structures that stand as testaments to human ingenuity. The thrill of seeing a 
                         concept evolve into a living, breathing space is unmatched, igniting passion and driving mankind 
                         to push the boundaries of innovation.</p>      
-                        <div class="container-of-gif">
-                            <!-- <img class="gif" src="../images/Archi.gif" alt="">     -->
-                            
-                        </div>        
-                            <!-- <img data-gifffer="../images/Archi.gif" />                -->
+                        <video id="sectionVideo" autoplay  muted>
+                            <source src="../images/ezgif-4-33b98914d6.mp4" type="video/mp4">
+                            <!-- Provide alternative content in case the video can't be played -->
+                            Your browser does not support the video tag.
+                          </video>
                 </div>
             </div>
         </div>
@@ -598,6 +598,39 @@
         });	
     </script>
 </body>
-
+<script>
+    // Get the video element
+    const video = document.getElementById('sectionVideo');
+    const ele = document.getElementById('Architecture-secion1');
+    // Function to check if an element is in the viewport
+    function isInViewport(ele) {
+      const rect = ele.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+  
+    // Function to play or pause video based on viewport visibility
+    function handleVideo() {
+      if (isInViewport(video)) {
+        video.play();
+      } else {
+        video.onended = (event) => {
+            video.pause();
+};
+       
+      }
+    }
+  
+    // Initial check on page load
+    handleVideo();
+  
+    // Listen for scroll events and check video status
+    window.addEventListener('scroll', handleVideo);
+  </script>
+  
 
 </html>

@@ -1083,12 +1083,13 @@ input[type="checkbox"] {
     right: 10px;
 }
 .cheak-box-img img {
-    opacity: 0.3; /* Initially set opacity to 0.5 */
-    transition: opacity 0.3s ease; /* Add a transition effect */
+    opacity: 0.2; /* Initially set opacity to 0.5 */
+    transition: opacity 0.5s ease , transform 0.5s ease; /* Add a transition effect */
 }
 
 input[type="checkbox"]:checked + .checkbox-image .cheak-box-img img {
     opacity: 1; /* Change opacity to 1 when checkbox is checked */
+    transform: scale(1.2) !important;
 }
 
 
