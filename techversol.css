@@ -1746,3 +1746,7 @@ button.blog-slider-button a{
     line-height: normal;
     transition: all 0.4s ease-in-out;
 }
+.menu-box {
+    height: 350px !important;
+    transition: 0.3s ease-in-out !important;
+}

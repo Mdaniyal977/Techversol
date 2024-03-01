@@ -32,8 +32,8 @@
             $('.menu li, .menu-box').mouseleave(function () {
                 setTimeout(function () {
                     if (!$('.menu li:hover, .menu-box:hover').length) {
-                        $('.menu-box').css({ height: 0, visibility: 'hidden' });
-                        $('.menu-container').css({ overflow: 'hidden' }); // Hide overflow when menu is hidden
+                        $('.menu-box').css({ height: 0, visibility: 'hidden', transition: '0.3s ease-in-out' });
+                        $('.menu-container').css({ overflow: 'hidden' , transition: '0.3s ease-in-out' }); // Hide overflow when menu is hidden
                     }
                 }, 100);
             });
@@ -133,6 +133,41 @@
             </nav>
             <div class="dropdown-menu">
                 <div class="menu-container">
+                    <div id="company-menu" class="menu-box">
+                        <div class="menu-content-container">
+                            <h3>COMPANY</h3>
+                            <p>We give our clients the ability to see the future and deliver enriched customer
+                                experiences
+                                in a variety of virtual environments and visualization modes.</p>
+                        </div>
+                        <div class="menu-li-items-container">
+                            <div class="li-item">
+                                <a href="../pages/About-Us.html" target="_blank">
+                                    <img src="../images/NEWABOUTMENU.png" alt="">
+                                    <p>ABOUT</p>
+                                </a>
+                            </div>
+                            <div class="li-item">
+                                <a href="../pages/career.html" target="_blank">
+                                    <img src="../images/NEWCAREEREMENU.png" alt="">
+                                    <p>CAREERS</p>
+                                </a>
+                            </div>
+                            <div class="li-item">
+                                <a href="../pages/contact us .html" target="_blank">
+                                    <img src="../images/NEWCONTACTMENU.png" alt="">
+                                    <p>CONTACT</p>
+                                </a>
+                            </div>
+                            <div class="li-item" style="opacity: 0.3;">
+                                <a href="../pages/Blog.html">
+                                    <img src="../images/NEWLOG-MENU.png" alt="">
+                                    <p>BLOG & NEWS</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                     <div id="Visualization-menu" class=" menu-box">
                         <div class="menu-content-container">
                             <h3>VISUALIZE ARCHITECTURE & ENVIRONMENTS </h3>
@@ -140,33 +175,42 @@
                                 experiences
                                 in a variety of virtual environments and visualization modes.</p>
                         </div>
+
                         <div class="menu-li-items-container">
+
                             <div class="li-item">
                                 <a href="../pages/3D Rendering.html" target="_blank">
                                     <img src="../images/3d m3nu.png" alt="">
                                     <p>3D RENDERING</p>
                                 </a>
                             </div>
+
                             <div class="li-item">
                                 <a href="../pages/Configurator.html" target="_blank">
                                     <img src="../images/config-menu.png" alt="">
                                     <p>CONFIGURATORS</p>
                                 </a>
                             </div>
+
                             <div class="li-item">
                                 <a href="../pages/Metaverse.html" target="_blank">
                                     <img src="../images/METAVERSEmenu.png" alt="">
                                     <p>METAVERSE</p>
                                 </a>
                             </div>
+
                             <div class="li-item">
                                 <a href="../pages/Alternate Reality.html" target="_blank">
                                     <img src="../images/alterreat.png" alt="">
                                     <p>ALTERNATE REALITY</p>
                                 </a>
                             </div>
+
                         </div>
                     </div>
+
+
+
 
                     <div id="development-menu" class=" menu-box">
                         <div class="menu-content-container">
@@ -197,41 +241,7 @@
                         </div>
                     </div>
 
-                    <div id="company-menu" class="menu-box">
-                        <div class="menu-content-container">
-                            <h3>COMPANY</h3>
-                            <p>We give our clients the ability to see the future and deliver enriched customer
-                                experiences
-                                in a variety of virtual environments and visualization modes.</p>
-                        </div>
-                        <div class="menu-li-items-container">
-                            <div class="li-item">
-                                <a href="../pages/About-Us.html" target="_blank">
-                                    <img src="../images/NEWABOUTMENU.png" alt="">
-                                    <p>ABOUT</p>
-                                </a>
-                            </div>
-                            <div class="li-item">
-                                <a href="../pages/career.html" target="_blank">
-                                    <img src="../images/NEWCAREEREMENU.png" alt="">
-                                    <p>CAREERS</p>
-                                </a>
-                            </div>
-                            <div class="li-item">
-                                <a href="../pages/contact us .html" target="_blank">
-                                    <img src="../images/NEWCONTACTMENU.png" alt="">
-                                    <p>CONTACT</p>
-                                </a>
-                            </div>
-                            <div class="li-item">
-                                <a href="../pages/Blog.html">
-                                    <img src="../images/NEWLOG-MENU.png" alt="">
-                                    <p>BLOG & NEWS</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
+                    
                     <div id="Industries-menu" class="menu-box">
                         <div class="menu-content-container">
                             <h3>Industries Shaping
