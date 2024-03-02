@@ -1,22 +1,24 @@
 <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get form data
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $number = $_POST['number'];
+    $companyname = $_POST['companyname'];
+    $projectbudget = $_POST['projectbudget'];
+    $message = $_POST['message'];
+    $services = implode(", ", $_POST['services']); // Assuming checkboxes named 'services[]'
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$number = $_POST['number'];
-$companyname = $_POST['companyname'];
-$projectbudget = $_POST['projectbudget'];
-$message = $_POST['message'];
+    // Email information
+    $to = "muhammad.daniyal@techversol.com";
+    $subject = "New Contact Form Submission";
+    $body = "Name: $name\nEmail: $email\nNumber: $number\nCompany Name: $companyname\nProject Budget: $projectbudget\nServices: $services\nMessage: $message";
 
-$mailheader = "From:".$name."<".$email.">\r\n";
-
-$recipient = "muhammad.daniyal@techversol.com";
-
-mail($recipient, $companyname, $message, $mailheader)
-
-or die("error!")
-
-
-echo 'messages send';
-
-
+    // Send email
+    if (mail($to, $subject, $body)) {
+        echo "Message sent successfully!";
+    } else {
+        echo "Failed to send message. Please try again.";
+    }
+}
 ?>
