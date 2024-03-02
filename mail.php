@@ -1,23 +1,30 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+// Your existing PHP code follows here...
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect form data
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $number = $_POST['number'];
-    $companyname = $_POST['companyname'];
-    $projectbudget = $_POST['projectbudget'];
-    $message = $_POST['message'];
+    $name = $_REQUEST['name'];
+    $email = $_REQUEST['email'];
+    $message = $_REQUEST['message'];
 
-    // Compose email message
-    $to = "muhammad.daniyal@techversol.com";
-    $subject = "New Contact Form Submission";
-    $body = "Name: $name\nEmail: $email\nContact Number: $number\nCompany Name: $companyname\nProject Budget: $projectbudget\nMessage: $message";
-
-    // Send email
-    if (mail($to, $subject, $body)) {
-        echo "<script>alert('Your message has been sent.');</script>";
+    // Check if any field is empty
+    if (empty($name) || empty($email) || empty($message)) {
+        echo "Please fill all the fields";
     } else {
-        echo "<script>alert('There was a problem sending your message. Please try again later.');</script>";
+        // Compose email message
+        $to = "info@techversol.com";
+        $subject = "Webtech Message";
+        $body = $message;
+        $headers = "From: $name <$email>";
+
+        // Send email
+        if (mail($to, $subject, $body, $headers)) {
+            echo "<script>alert('Your message has been sent successfully');</script>";
+        } else {
+            echo "Failed to send the message. Please try again later.";
+        }
     }
 }
 ?>
