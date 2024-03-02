@@ -403,7 +403,7 @@
 
                 </div>
                 <div class="contant-section2-sub-row2">
-                    <form id="contactForm" action="" onsubmit="sendEmail()">
+                    <form id="contactForm" action="mail.php" onsubmit="sendEmail()" method="post">
                         <div class="form-row">
                             <input type="text" name="name" placeholder="Name">
                         </div>
@@ -415,15 +415,15 @@
                         </div>
                 
                         <div class="form-row">
-                            <input type="text" name="company name" placeholder="Company Name">
+                            <input type="text" name="companyname" placeholder="Company Name">
                         </div>
                         <div class="form-row width-full-karni">
-                            <input type="text" name="project budget" placeholder="Project budget" required>
+                            <input type="text" name="projectbudget" placeholder="Project budget" required>
                         </div>
                        
                 
                         <div class="form-row full-width">
-                            <textarea placeholder="Additional Comments" rows="4"></textarea>
+                            <textarea name="message" placeholder="Additional Comments" rows="4"></textarea>
                         </div>
                 
                         <label class="checkbox-container">
@@ -560,17 +560,17 @@
 //         // Reset form fields
 //         document.getElementById("contactForm").reset();
 //     }
-        function sendEmail(){
-            Email.send({
-    SecureToken : "6079fa28-8e79-48a2-917d-a86363940c5c",
-    To : 'jobs@techversol.com',
-    From : "jobs@techversol.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
-        }
+//         function sendEmail(){
+//             Email.send({
+//     SecureToken : "6079fa28-8e79-48a2-917d-a86363940c5c",
+//     To : 'jobs@techversol.com',
+//     From : "jobs@techversol.com",
+//     Subject : "This is the subject",
+//     Body : "And this is the body"
+// }).then(
+//   message => alert(message)
+// );
+//         }
    
     </script> 
     <footer>
